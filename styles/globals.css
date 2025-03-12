@@ -1,0 +1,186 @@
+/* Define the font using @font-face */
+@font-face {
+  font-family: 'HVFont'; /* You can name this whatever you like */
+  src: url('/font/Helvetica-Light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'georgia'; /* You can name this whatever you like */
+  src: url('/font/Georgia.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'kievitot'; /* You can name this whatever you like */
+  src: url('/font/KievitOT-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'buch'; /* You can name this whatever you like */
+  src: url('/font/buch.otf') format('otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Apply the custom font globally */
+.helvetica-font {
+  font-family: 'HVFont', sans-serif;
+}
+
+.georgia-font {
+  font-family: 'georgia', sans-serif;
+}
+.buch-font {
+  font-family: 'buch', sans-serif;
+}
+.kievitot-font {
+  font-family: 'kievitot', sans-serif;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+/* Add to your global CSS or Tailwind styles */
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.spinner {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #3498db;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+.shimmer {
+  color: white;
+ 
+  
+  /* Shimmer effect */
+  mask: linear-gradient(-60deg, #000 30%, #0005, #000 70%) right/350% 100%;
+  -webkit-mask: linear-gradient(-60deg, #000 30%, #0005, #000 70%) right/350% 100%;
+  
+  animation: shimmer 2.0s infinite;
+}
+
+@keyframes shimmer {
+  100% {
+    mask-position: left;
+    -webkit-mask-position: left;
+  }
+}
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.grotesk-text {
+  font-family: "Space Grotesk", sans-serif;
+  font-display: swap;
+}
+
+.roboto-text {
+  font-family: "Roboto", sans-serif;
+  font-display: swap;
+}
+/* styles/globals.css */
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  z-index: 9999;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+  
+
+.card:hover {
+  transform: translate3d(0px);
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.5s forwards; /* Adjust the duration as needed */
+}
+.blog-carousal .slick-track
+{
+  /* background-color: red; */
+  display: flex;
+  gap:8px
+}
+.blog-carousal  .slick-arrow::before {
+  color: black;
+  background-color: white;
+}
+.htmlContent a {
+  color: blue;
+  text-decoration: underline;
+}
+@keyframes gradient-animation {
+  10% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+
+.animate-gradient {
+  background-size: 200% 100%;
+  animation: gradient-animation 5s ease infinite;
+}
