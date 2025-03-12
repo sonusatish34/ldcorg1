@@ -73,6 +73,27 @@ export default function Place({ cars, canonicalUrl }) {
         return () => clearTimeout(timer);
     }, []);
 
+    const handleStoreRedirect = () => {
+        const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+    
+        if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+          // Redirect to App Store if iOS
+          window.open(
+            "https://apps.apple.com/in/app/long-drive-cars/id6466695391",
+            "_blank"
+          );
+        } else if (/android/i.test(userAgent)) {
+          // Redirect to Play Store if Android
+          window.open(
+            "https://play.google.com/store/search?q=long+drive+cars&c=apps",
+            "_blank"
+          );
+        } else {
+          // Optional: Provide a message for non-mobile devices
+          alert("App is available only on mobile devices.");
+        }
+      };
+
     return (
         <div>
             <Layout phoneno={"9666-677-405"}>
@@ -151,7 +172,7 @@ export default function Place({ cars, canonicalUrl }) {
                             <div className="flex justify-between items-center">
 
                                 <div className="text-lg font-semibold">
-                                    <p className='uppercase text-2xl font-light pb-4'>Download our app</p>
+                                    <p onClick={handleStoreRedirect} className='uppercase text-2xl font-light pb-4'>Download our app</p>
                                     <p className='animate-bounce'><span className='bg-gradient-to-r from-green-700 to-green-700 bg-clip-text text-transparent text-3xl animate-spin'>₹ 500 off</span>  </p>
                                     <p>on your first booking!</p>
                                 </div>
