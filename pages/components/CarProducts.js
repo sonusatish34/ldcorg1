@@ -147,6 +147,8 @@ function CarProducts({ data, branch, phoneno, count }) {
                             height={1000}
                             alt="Long Drive Cars app"
                             src={replaceText(item?.car_image_front_view)}
+                            srcSet={`${replaceText(item?.car_image_front_view)} 1000w, ${replaceText(item?.car_image_front_view)} 500w`}
+                            sizes="(max-width: 768px) 500px, 1000px"
                           ></Image>
                         </Link>
                       }
