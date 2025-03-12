@@ -15,6 +15,7 @@ import Layout from './components/Layout/Layout';
 import PriceList from './components/PriceList/PriceList';
 import Head from 'next/head';
 import Image from 'next/image';
+import ldcqr from './images/ldcqr.png';
 
 const metaData = [
     {
@@ -75,24 +76,24 @@ export default function Place({ cars, canonicalUrl }) {
 
     const handleStoreRedirect = () => {
         const userAgent = navigator.userAgent || navigator.vendor || window.opera;
-    
+
         if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-          // Redirect to App Store if iOS
-          window.open(
-            "https://apps.apple.com/in/app/long-drive-cars/id6466695391",
-            "_blank"
-          );
+            // Redirect to App Store if iOS
+            window.open(
+                "https://apps.apple.com/in/app/long-drive-cars/id6466695391",
+                "_blank"
+            );
         } else if (/android/i.test(userAgent)) {
-          // Redirect to Play Store if Android
-          window.open(
-            "https://play.google.com/store/search?q=long+drive+cars&c=apps",
-            "_blank"
-          );
+            // Redirect to Play Store if Android
+            window.open(
+                "https://play.google.com/store/search?q=long+drive+cars&c=apps",
+                "_blank"
+            );
         } else {
-          // Optional: Provide a message for non-mobile devices
-          alert("App is available only on mobile devices.");
+            // Optional: Provide a message for non-mobile devices
+            alert("App is available only on mobile devices.");
         }
-      };
+    };
 
     return (
         <div>
@@ -172,7 +173,7 @@ export default function Place({ cars, canonicalUrl }) {
                             <div className="flex justify-between items-center">
 
                                 <div className="text-lg font-semibold">
-                                    <p  className='uppercase text-2xl font-light pb-4'>Download our app</p>
+                                    <p className='uppercase text-2xl font-light pb-4'>Download our app</p>
                                     <p className='animate-bounce'><span className='bg-gradient-to-r from-green-700 to-green-700 bg-clip-text text-transparent text-3xl animate-spin'>₹ 500 off</span>  </p>
                                     <p>on your first booking!</p>
                                 </div>
@@ -187,18 +188,49 @@ export default function Place({ cars, canonicalUrl }) {
                                 />
 
 
+
                             </div>
                             <div className="mt-3 text-sm text-">
                                 <p className="font-medium">Hurry, offer ends soon!</p>
                                 <p className="">Services</p>
                             </div>
-                            <div onClick={handleStoreRedirect} className="mt-3 flex justify-center">
-                                <a
-                                    href="#"
-                                    className="py-2 px-4 bg-white text-purple-600 font-semibold rounded-full shadow-lg hover:bg-purple-100 transition-all"
-                                >
-                                    Download Now
-                                </a>
+                            <div onClick={handleStoreRedirect} className="mt-3 flex lg:hidden justify-center">
+                            <a
+  href="#"
+  className="py-2 px-4 text-white font-semibold rounded-full shadow-lg border-[1px] border-[#5566ee] relative overflow-hidden bg-gradient-to-r from-green-600 via-[#556ee6] to-indigo-400 animate-gradient p-2"
+>
+  Download Now
+  <style jsx>{`
+    @keyframes gradientAnimation {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    .animate-gradient {
+      background-size: 300% 300%;
+      animation: gradientAnimation 5s linear infinite;
+    }
+  `}</style>
+</a>
+
+                            </div>
+                            <div className="mt-3 lg:flex flex-col gap-y-2 items-center hidden justify-center">
+                                <p>Scan Qr to download the app</p>
+                                <Image
+                                    className="lg:w-28 w-28"
+                                    src={ldcqr}
+                                    alt="Long Drive Cars"
+                                    width={500}
+                                    height={500}
+                                // placeholder="blur"
+                                />
                             </div>
                         </div>
                     )
