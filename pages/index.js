@@ -172,7 +172,7 @@ export default function Place({ cars, canonicalUrl }) {
                             <div className="flex justify-between items-center">
 
                                 <div className="text-lg font-semibold">
-                                    <p onClick={handleStoreRedirect} className='uppercase text-2xl font-light pb-4'>Download our app</p>
+                                    <p  className='uppercase text-2xl font-light pb-4'>Download our app</p>
                                     <p className='animate-bounce'><span className='bg-gradient-to-r from-green-700 to-green-700 bg-clip-text text-transparent text-3xl animate-spin'>₹ 500 off</span>  </p>
                                     <p>on your first booking!</p>
                                 </div>
@@ -192,7 +192,7 @@ export default function Place({ cars, canonicalUrl }) {
                                 <p className="font-medium">Hurry, offer ends soon!</p>
                                 <p className="">Services</p>
                             </div>
-                            <div className="mt-3 flex justify-center">
+                            <div onClick={handleStoreRedirect} className="mt-3 flex justify-center">
                                 <a
                                     href="#"
                                     className="py-2 px-4 bg-white text-purple-600 font-semibold rounded-full shadow-lg hover:bg-purple-100 transition-all"
