@@ -16,6 +16,7 @@ import DynWhyChooseUs from '../components/WhyChooseUs/WhyChooseUs';
 import Layout from '../components/Layout/Layout';
 import PriceList from '../components/PriceList/PriceList';
 import Head from 'next/head';
+import PopUp from '../components/PopUp';
 
 export default function Place({cars,canonicalUrl}) {
     const [carData, setCarData] = useState(null);
@@ -77,6 +78,7 @@ export default function Place({cars,canonicalUrl}) {
                     </div>
                     <GetInTouch phoneno={'9666699583'} />
                     <PriceList city={'hyd'} />
+                    <PopUp />
                 </div>
             </Layout>
         </div>

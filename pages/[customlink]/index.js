@@ -13,6 +13,7 @@ const DynamicFaqComponent = dynamic(() => import('../components/FaqAccordian/Faq
 import DynWhyChooseUs from '../components/WhyChooseUs/WhyChooseUs';
 import Layout from '../components/Layout/Layout';
 import PriceList from '../components/PriceList/PriceList';
+import PopUp from '../components/PopUp';
 
 const metaData = [
     {
@@ -133,6 +134,7 @@ export default function Place({ cars, canonicalUrl }) {
                     </div>
                     <GetInTouch city={'hyderabad'} phoneno={'9666677405'} />
                     <PriceList city={'hyd'} phoneno={'9666677405'} />
+                    <PopUp />
                 </div>
             </Layout>
         </div>
