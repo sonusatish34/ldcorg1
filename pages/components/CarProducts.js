@@ -21,7 +21,7 @@ import ldcqr from '../images/ldcqr.png'
 import dnf from '../images/datanotfound.webp'
 import { FaAppStore } from "react-icons/fa";
 
-import { BiLogoPlayStore } from "react-icons/bi";g
+import { BiLogoPlayStore } from "react-icons/bi";
 import { FaIndianRupeeSign } from "react-icons/fa6";
 import { RiArrowRightDoubleLine } from "react-icons/ri";
 import { useRouter } from "next/router";
