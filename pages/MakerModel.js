@@ -4,7 +4,7 @@ import { BsFuelPump } from 'react-icons/bs';
 import { TbManualGearbox } from 'react-icons/tb';
 import { MdOutlineAirlineSeatReclineExtra } from 'react-icons/md';
 import { useEffect, useState } from 'react';
-import customData from './components/kk.json';
+import customData from './components/car_desc.json';
 import { PiCarFill } from "react-icons/pi";
 import { BiPhoneCall } from "react-icons/bi";
 import Link from 'next/link';
@@ -19,7 +19,7 @@ import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const CarDetails = ({ city, phoneno }) => {
+const CarDetails = ({ city, phoneno,wspno }) => {
   const [caritem, setCarItem] = useState(null);
   const [loading, setLoading] = useState(true);
 
@@ -31,7 +31,7 @@ const CarDetails = ({ city, phoneno }) => {
     async function fetchCarDetails() {
       setLoading(true);
       try {
-        const response = await fetch(`https://api.longdrivecarz.in/site/cars-info?location=hyderabad`);
+        const response = await fetch(`https://api.longdrivecarz.in/site/cars-info?location=${city?city:'hyderabad'}`);
         const items = await response.json();
         const cars = items?.data?.results;
         const car = cars?.find(i => i?.maker_model.toLowerCase() === mdyfmaker_model);
@@ -57,11 +57,11 @@ const CarDetails = ({ city, phoneno }) => {
   return (
     <div className='bg-white text-black'>
       <Head>
-        <title> Check Real Car Images and Book Self-drive cars with No deposit </title>
-        <meta name="description" content="Starting at just ₹1488/day, rent a Self-drive car like the Dzire ₹1680/day or Ertiga ₹2496/day.You can also check Real Car Images on the Long Drive Cars App." />
+        <title> Self-Drive Cars: No Deposit, Unlimited KMs </title>
+        <meta name="description" content="Cars Starting From ₹1488/day, Swift ₹1680/day, Ertiga ₹2496/day. Get 1 day free car for new users. Home delivery available & Check real car images." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta property="og:title" content=" Check Real Car Images and Book Self-drive cars with No deposit " />
-        <meta property="og:description" content="Starting at just ₹1488/day, rent a Self-drive car like the Dzire ₹1680/day or Ertiga ₹2496/day.You can also check Real Car Images on the Long Drive Cars App." />
+        <meta property="og:title" content=" Self-Drive Cars: No Deposit, Unlimited KMs " />
+        <meta property="og:description" content="Cars Starting From ₹1488/day, Swift ₹1680/day, Ertiga ₹2496/day. Get 1 day free car for new users. Home delivery available & Check real car images." />
       </Head>
       <div className='xl:mx-16  mx-4'>
         <div className='flex flex-col mt-[10.2rem] md:mt-20 lg:mt-2 md:flex-row p-2 border-2  lg:pl-20 border-purple-500 lg:rounded  rounded-md'>
@@ -82,17 +82,17 @@ const CarDetails = ({ city, phoneno }) => {
                 <div>
                   <Image
                     src={replaceText(caritem?.car_image_front_view)}
-                    alt="Front View"
+                    alt={`${mdyfmaker_model} for rent`}
                     width={525}
                     height={634}
                     className="lg:w-[525px] lg:h-[634px] h-[450px] object-cover rounded-md"
-                    priority
+                    fetchpriority="high"
                   />
                 </div>
                 <div>
                   <Image
                     src={replaceText(caritem?.car_image_back_inner)}
-                    alt="Back Inner View"
+                    alt={`${mdyfmaker_model} for rent`}
                     width={525}
                     height={634}
                     className="lg:w-[525px] lg:h-[634px] h-[450px] rounded-md"
@@ -101,7 +101,7 @@ const CarDetails = ({ city, phoneno }) => {
                 <div>
                   <Image
                     src={replaceText(caritem?.car_image_reading_view)}
-                    alt="Reading View"
+                    alt={`${mdyfmaker_model} for rent`}
                     width={525}
                     height={634}
                     className="lg:w-[525px] lg:h-[634px] h-[450px] rounded-md"
@@ -110,7 +110,7 @@ const CarDetails = ({ city, phoneno }) => {
                 <div>
                   <Image
                     src={replaceText(caritem?.car_image_back_view)}
-                    alt="Back View"
+                    alt={`${mdyfmaker_model} for rent`}
                     width={525}
                     height={634}
                     className="lg:w-[525px] lg:h-[634px] h-[450px] rounded-md"
@@ -128,7 +128,7 @@ const CarDetails = ({ city, phoneno }) => {
               <p className='font-semibold text-2xl '>Contact us  by</p>
               <div className='flex justify-start lg:gap-5 xl:gap-8 xl:pt-4 pb-2 gap-6 pt-2 text-white'>
                 <button className='bg-green-500 rounded-full p-2 lg:p-3'>
-                  <Link href={`https://api.whatsapp.com/send?phone=+91${phoneno}&text=Hi%0AI%20am%20looking%20for%20a%20car%20booking.`} target='_blank'>
+                  <Link href={`https://api.whatsapp.com/send?phone=+91${wspno}&text=Hi%0AI%20am%20looking%20for%20a%20car%20booking.`} target='_blank'>
                     <p className=' flex items-center gap-1 text-base'><span><FaWhatsapp className='xl:size-6' /></span> <span>Whatsapp</span></p>
                   </Link>
                 </button>
@@ -145,7 +145,7 @@ const CarDetails = ({ city, phoneno }) => {
           <p className='font-semibold text-2xl'>Contact us by</p>
           <div className='flex justify-start lg:gap-5 xl:gap-8 xl:pt-4 pb-2 gap-6 pt-2 text-white'>
             <button className='bg-green-500 rounded-full p-2 lg:p-3'>
-              <Link href={`https://api.whatsapp.com/send?phone=+91${phoneno}&text=Hi%0AI%20am%20looking%20for%20a%20car%20booking.`} target='_blank'>
+              <Link href={`https://api.whatsapp.com/send?phone=+91${wspno}&text=Hi%0AI%20am%20looking%20for%20a%20car%20booking.`} target='_blank'>
                 <p className=' flex items-center gap-1 text-xl'><span><FaWhatsapp className='xl:size-6' /></span> <span>Whatsapp</span></p>
               </Link>
             </button>

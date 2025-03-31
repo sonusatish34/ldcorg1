@@ -8,11 +8,11 @@ function exploreselfdrivecars({ canonicalUrl }) {
 
     <div>
       <Head>
-        <title>No Deposit & Unlimited km - Travel with low-cost Self drive car rentals services</title>
-        <meta name="description" content="Explore with Self-drive cars starting at ₹1488/day. With low prices, Book Dzire ₹1680/day,Ertiga ₹2496/day or Install Long Drive Cars app for more options." />
+        <title>Self-Drive Cars: No Deposit, Unlimited KMs</title>
+        <meta name="description" content="Cars Starting From ₹1488/day, Swift ₹1680/day, Ertiga ₹2496/day. Get 1 day free car for new users. Home delivery available & Check real car images." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta property="og:title" content="  Unlimited km - Travel with low-cost Self drive car rentals services" />
-        <meta property="og:description" content="Explore with Self-drive cars starting at ₹1488/day. With low prices, Book Dzire ₹1680/day,Ertiga ₹2496/day or Install Long Drive Cars app for more options." />
+        <meta property="og:title" content="Self-Drive Cars: No Deposit, Unlimited KMs" />
+        <meta property="og:description" content="Cars Starting From ₹1488/day, Swift ₹1680/day, Ertiga ₹2496/day. Get 1 day free car for new users. Home delivery available & Check real car images." />
 
         <link rel="canonical" href={canonicalUrl} />
       </Head>

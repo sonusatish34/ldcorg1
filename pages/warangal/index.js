@@ -38,11 +38,11 @@ export default function Place({cars,canonicalUrl}) {
         <div>
             <Layout locname={'warangal'} phoneno={"9000-777-665"}>
                 <Head>
-                    <title> No Deposit &   Unlimited km - Rent a car under 5 kms with Self-drive car rental services</title>
-                    <meta name="description" content="Plan your trips with Lowest Price Self-Drive car rentals starting at just ₹1488/day. So book Dzire for ₹1680/day or Ertiga at ₹2496/day now with Unlimited kms ." />
+                    <title>Self-Drive Cars: No Deposit, Unlimited KMs</title>
+                    <meta name="description" content="Cars Starting From ₹1488/day, Swift ₹1680/day, Ertiga ₹2496/day. Get 1 day free car for new users. Home delivery available & Check real car images." />
                     <meta name="viewport" content="width=device-width, initial-scale=1" />
-                    <meta property="og:title" content="  No Deposit &  Unlimited km - Rent a car under 5 kms with Self-drive car rental services" />
-                    <meta property="og:description" content="Plan your trips with Lowest Price Self-Drive car rentals starting at just ₹1488/day. So book Dzire for ₹1680/day or Ertiga at ₹2496/day now with Unlimited kms ." />
+                    <meta property="og:title" content="  No Deposit &  Self-Drive Cars: No Deposit, Unlimited KMs" />
+                    <meta property="og:description" content="Cars Starting From ₹1488/day, Swift ₹1680/day, Ertiga ₹2496/day. Get 1 day free car for new users. Home delivery available & Check real car images." />
                     <script
                         async
                         src="https://www.googletagmanager.com/gtag/js?id=AW-16647839094"
@@ -83,19 +83,49 @@ export default function Place({cars,canonicalUrl}) {
 
 
 
-export async function getServerSideProps({req}) {
+// export async function getServerSideProps({req}) {
+//     const response = await fetch('https://api.longdrivecarz.in/site/cars-info?location=hyderabad');
+//     const items = await response.json();
+//     const cars = items?.data?.results;
+//     const host = req.headers.host;
+//     const canonicalUrl = host.includes('.in')
+//       ? 'https://www.longdrivecars.in/warangal'
+//       : 'https://www.longdrivecars.com/warangal';
+  
+//     return {
+//       props: {
+//         cars,
+//         canonicalUrl,
+//       },
+//     };
+//   }
+export async function getServerSideProps({ req }) {
     const response = await fetch('https://api.longdrivecarz.in/site/cars-info?location=hyderabad');
     const items = await response.json();
     const cars = items?.data?.results;
+
+    const filteredCars = cars?.map(car => ({
+        maker_model: car.maker_model,
+        price_24_hours: car.price_24_hours,
+        car_image_front_view: car.car_image_front_view,
+        car_image_back_view: car.car_image_back_view,
+        car_image_back_inner: car.car_image_back_inner,
+        car_image_car_left_view:car.car_image_car_left_view,
+        car_image_reading_view: car.car_image_reading_view,
+        fuel_type: car.fuel_type,
+        transmission_type: car.transmission_type,
+        seater: car.seater,
+    }));
+
     const host = req.headers.host;
     const canonicalUrl = host.includes('.in')
-      ? 'https://www.longdrivecars.in/warangal'
-      : 'https://www.longdrivecars.com/warangal';
-  
+        ? 'https://www.longdrivecars.in/warangal'
+        : 'https://www.longdrivecars.com/warangal';
+
     return {
-      props: {
-        cars,
-        canonicalUrl,
-      },
+        props: {
+            cars: filteredCars,  // Return only the filtered data
+            canonicalUrl,
+        },
     };
-  }
+}

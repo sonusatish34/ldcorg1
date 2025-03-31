@@ -10,10 +10,10 @@ function getnearbycars({ canonicalUrl }) {
   return (
     <div className='bg-white'>
       <Head>
-        <title> No Deposit &   Unlimited km - Rent a car under 5 kms with Self-drive car rental services</title>
+        <title>Self-Drive Cars: No Deposit, Unlimited KMs</title>
         <meta name="description" content="Plan your trips with Lowest Price Self-Drive car rentals starting at just ₹1488/day. So book Dzire for ₹1680/day or Ertiga at ₹2496/day now with No Deposit &  Unlimited kms." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta property="og:title" content="No Deposit &  Unlimited km - Rent a car under 5 kms with Self-drive car rental services" />
+        <meta property="og:title" content="No Deposit &  Self-Drive Cars: No Deposit, Unlimited KMs" />
         <meta property="og:description" content="Plan your trips with Lowest Price Self-Drive car rentals starting at just ₹1488/day. So book Dzire for ₹1680/day or Ertiga at ₹2496/day now with Unlimited kms" />
 
         <link rel="canonical" href={canonicalUrl} />

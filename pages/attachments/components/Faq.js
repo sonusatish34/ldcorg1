@@ -10,12 +10,12 @@ export default function Faq() {
         {
             title: "1. What documents are required for car attachment?",
             content:
-                '<ul class="list-disc pl-5"><li>RC (Registration Certificate)</li><li>Pollution Certificate</li><li>Zero Depreciation Insurance</li><li>Bank Details</li><li>Car Owner’s Aadhar Card</li></ul>',
+                '<ul className="list-disc pl-5"><li>RC (Registration Certificate)</li><li>Pollution Certificate</li><li>Zero Depreciation Insurance</li><li>Bank Details</li><li>Car Owner’s Aadhar Card</li></ul>',
         },
         {
             title: "2. Who is responsible for general service and damage?",
             content:
-                '<ul class="list-disc pl-5"><li>Engine Oil</li><li>Filters</li><li>Bank Details</li><li>Brake Pads</li></ul><p>For any damages, Long Drive Cars will take care of the repairs.</p>',
+                '<ul className="list-disc pl-5"><li>Engine Oil</li><li>Filters</li><li>Bank Details</li><li>Brake Pads</li></ul><p>For any damages, Long Drive Cars will take care of the repairs.</p>',
         },
         {
             title: "3. What happens in case of an accident?",
@@ -40,7 +40,7 @@ export default function Faq() {
         {
             title: "7. How will I know if my car is booked?",
             content:
-                '<ul class="list-disc pl-5"><li>Customer’s Aadhar</li><li>Driving License</li><li>Car Pictures</li></ul><p>Car owners receive automatic WhatsApp updates for every booking.</p>',
+                '<ul className="list-disc pl-5"><li>Customer’s Aadhar</li><li>Driving License</li><li>Car Pictures</li></ul><p>Car owners receive automatic WhatsApp updates for every booking.</p>',
         },
         {
             title: "8. How are payments and settlements handled?",

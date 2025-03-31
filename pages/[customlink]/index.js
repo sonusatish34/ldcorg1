@@ -21,7 +21,7 @@ const metaData = [
         description: "Book your Self-drive car rental starting at ₹1488/day. Install the Long Drive Cars app to book Dzire ₹1680/day, Ertiga ₹2496/day or explore other options for your next trip",
     },
     {
-        title: "Check Real Car Images and Book Self-drive cars with No deposit ",
+        title: "Self-Drive Cars: No Deposit, Unlimited KMs ",
         description: "Starting at just ₹1488/day, rent a Self-drive car like the Dzire ₹1680/day or Ertiga ₹2496/day. You can also check Real Car Images on the Long Drive Cars App.",
     },
     {
@@ -35,7 +35,7 @@ export default function Place({ cars, canonicalUrl }) {
     const { customlink } = router.query;
 
     // Allowed links
-    const allowedLinks = ['hyderabad', 'selfdrivecars_hyderabad','car_rentals_in_hyderabad','index.html'];
+    const allowedLinks = ['hyderabad', 'selfdrivecars_hyderabad', 'car_rentals_in_hyderabad', 'index.html'];
 
     // Check if the customlink is valid
     useEffect(() => {
@@ -44,7 +44,7 @@ export default function Place({ cars, canonicalUrl }) {
             router.push(`/${customlink}`);
             return
         }
-        else{
+        else {
             router.push('/404');
         }
     }, [customlink]);
@@ -64,13 +64,13 @@ export default function Place({ cars, canonicalUrl }) {
 
     return (
         <div>
-            <Layout locname={'hyderabad'} phoneno={"9666-677-405"}>
+            <Layout locname={'hyderabad'} phoneno={"9000-478-478"}>
                 <Head>
-                    <title>{currentMeta.title}</title>
-                    <meta name="description" content={currentMeta.description} />
+                    <title>Self-Drive Cars: No Deposit, Unlimited KMs</title>
+                    <meta name="description" content="Cars Starting From ₹1488/day, Swift ₹1680/day, Ertiga ₹2496/day. Get 1 day free car for new users. Home delivery available & Check real car images." />
                     <meta name="viewport" content="width=device-width, initial-scale=1" />
-                    <meta property="og:title" content={currentMeta.title} />
-                    <meta property="og:description" content={currentMeta.description} />
+                    <meta property="og:title" content="Self-Drive Cars: No Deposit, Unlimited KMs" />
+                    <meta property="og:description" content="Cars Starting From ₹1488/day, Swift ₹1680/day, Ertiga ₹2496/day. Get 1 day free car for new users. Home delivery available & Check real car images." />
                     <script
                         async
                         src="https://www.googletagmanager.com/gtag/js?id=AW-16731119855"
@@ -119,7 +119,7 @@ export default function Place({ cars, canonicalUrl }) {
                             style={{ display: 'none', visibility: 'hidden' }}
                         />
                     </noscript>
-                    <CarProducts data={cars} branch={'hyderabad'} phoneno={'9666677405'} count={6} />
+                    <CarProducts data={cars} branch={'hyderabad'} phoneno={'9000478478'} wspno={'9666677405'} count={6} />
                     <DynImageChange locname={'hyderabad'} />
                     <div>
                         <DynNearByApi city={'hyderabad'} />
@@ -132,8 +132,8 @@ export default function Place({ cars, canonicalUrl }) {
                         <p className='uppercase p-2 mb-4 text-center text-black font-bold xl:text-2xl font-manrope'>Frequently asked questions</p>
                         <DynamicFaqComponent city={'hyderabad'} />
                     </div>
-                    <GetInTouch city={'hyderabad'} phoneno={'9666677405'} />
-                    <PriceList city={'hyd'} phoneno={'9666677405'} />
+                    <GetInTouch city={'hyderabad'} phoneno={'9000478478'} wspno={'9666677405'} />
+                    <PriceList city={'hyd'} phoneno={'9000478478'} wspno={'9666677405'} />
                     <PopUp />
                 </div>
             </Layout>
@@ -141,18 +141,35 @@ export default function Place({ cars, canonicalUrl }) {
     );
 }
 
-export async function getServerSideProps({ req }) {
+export async function getServerSideProps(context) {
     const response = await fetch('https://api.longdrivecarz.in/site/cars-info?location=hyderabad');
     const items = await response.json();
     const cars = items?.data?.results;
+
+    const filteredCars = cars?.map(car => ({
+        maker_model: car.maker_model,
+        price_24_hours: car.price_24_hours,
+        car_image_front_view: car.car_image_front_view,
+        car_image_back_view: car.car_image_back_view,
+        car_image_back_inner: car.car_image_back_inner,
+        car_image_car_left_view:car.car_image_car_left_view,
+        car_image_reading_view: car.car_image_reading_view,
+        fuel_type: car.fuel_type,
+        transmission_type: car.transmission_type,
+        seater: car.seater,
+    }));
+    const { req,params } = context; 
+    const {customlink} = params; 
+
     const host = req.headers.host;
+
     const canonicalUrl = host.includes('.in')
-        ? 'https://www.longdrivecars.in/hyderabad'
-        : 'https://www.longdrivecars.com/hyderabad';
+        ? `https://www.longdrivecars.in/${customlink}`
+        : `https://www.longdrivecars.com/${customlink}`;
 
     return {
         props: {
-            cars,
+            cars:filteredCars,
             canonicalUrl,
         },
     };

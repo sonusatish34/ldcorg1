@@ -37,7 +37,7 @@ const CallBackForm = () => {
     }
     return (
         <div className='bg-white lg:py-10 py-6'>
-            <div className='flex lg:mx-[70px] p-5 xl:mx-[96px] mx-3 rounded-md justify-center bg-[#660066] items-center pb-5 lg:pt-5 text-white shadow-md'>
+            <div className='flex lg:mx-[70px] p-5 xl:mx-[80px] mx-3 rounded-md justify-center bg-[#660066] items-center pb-5 lg:pt-5 text-white shadow-md'>
                 <div className='lg:flex lg:flex-col lg:justify-center lg:items-center xl:p-5 lg:w-2/3 xl:w-2/5 p-0 lg:p-0'>
                     <div className='  xl:px-6 lg:py-3'>
                         <p className='md:text-2xl md:font-semibold font-sans text-xl xl:text-2xl font-semibold text-center'>Can't find the perfect car? </p>

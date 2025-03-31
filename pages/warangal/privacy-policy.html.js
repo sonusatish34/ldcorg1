@@ -4,6 +4,51 @@ function privacypolicyhtml() {
     return (
         <div className='bg-white'>
             <Layout locname={'warangal'} phoneno={"9000-777-665"}>
+                <Head>
+                    <title>Self-Drive Cars: No Deposit, Unlimited KMs</title>
+                    <meta name="description" content="Cars Starting From ₹1488/day, Swift ₹1680/day, Ertiga ₹2496/day. Get 1 day free car for new users. Home delivery available & Check real car images." />
+                    <meta name="viewport" content="width=device-width, initial-scale=1" />
+                    <meta property="og:title" content="Self-Drive Cars: No Deposit, Unlimited KMs" />
+                    <meta property="og:description" content="Cars Starting From ₹1488/day, Swift ₹1680/day, Ertiga ₹2496/day. Get 1 day free car for new users. Home delivery available & Check real car images." />
+                    <script
+                        async
+                        src="https://www.googletagmanager.com/gtag/js?id=AW-16731119855"
+                    ></script>
+                    <script
+                        dangerouslySetInnerHTML={{
+                            __html: `
+                        window.dataLayer = window.dataLayer || [];
+                        function gtag(){dataLayer.push(arguments);}
+                        gtag('js', new Date());
+                        gtag('config', 'AW-16731119855');
+                    `,
+                        }}
+                    ></script>
+                    <script
+                        async
+                        src="https://www.googletagmanager.com/gtag/js?id=G-8RGJTJSJCW">
+                    </script>
+                    <script
+                        dangerouslySetInnerHTML={{
+                            __html: `
+                        window.dataLayer = window.dataLayer || [];
+                        function gtag(){dataLayer.push(arguments);}
+                        gtag('js', new Date());
+                        gtag('config', 'G-8RGJTJSJCW');
+                    `,
+                        }}
+                    ></script>
+                    <script
+                        dangerouslySetInnerHTML={{
+                            __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+                                j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+                                'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+                                })(window,document,'script','dataLayer','GTM-KBCJDV6F');`,
+                        }}
+                    />
+                    <link rel="canonical" href={canonicalUrl} />
+                </Head>
                 <div className=' text-[#666] lg:px-20 pl-8 pr-6 pt-40 lg:pt-4 text-sm lg:text-base font-light grotesk-text leading-6 lg:leading-7'>
                     <p className='font-bold text-xs text-right'>Updated On: 25th Sep, 2024.</p>
                     <p className='text-center font-bold pt-3 text-base text-black'>PRIVACY POLICY</p>
@@ -39,9 +84,23 @@ function privacypolicyhtml() {
                     </div>
                 </div>
             </Layout>
-            
+
         </div>
     )
 }
 
 export default privacypolicyhtml
+export async function getServerSideProps(context) {
+    const { req, params } = context; // Extract `params` if using dynamic routes
+
+    const host = req.headers.host;
+    const canonicalUrl = host.includes('.in')
+        ? `https://www.longdrivecars.in/warangal/privacy-policy.html`
+        : `https://www.longdrivecars.com/warangal/privacy-policy.html`;
+
+    return {
+        props: {
+            canonicalUrl,
+        },
+    };
+}

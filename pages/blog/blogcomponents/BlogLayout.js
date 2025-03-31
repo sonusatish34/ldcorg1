@@ -71,8 +71,8 @@ const BlogLayout = ({
             {
                 breakpoint: 2000,
                 settings: {
-                    slidesToShow: 4,
-                    slidesToScroll: 4,
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
                 },
             },
             {
@@ -117,18 +117,12 @@ const BlogLayout = ({
 
     return (
         <div>
-            <div className="xl:px-14  py-1 lg:border-8 lg:border-blue-100 ">
-                <div className="flex flex-col lg:flex-row lg:items-center xl:gap-24 lg:gap-20 gap-2">
-                    <div className="flex justify-between px-4 mxs:px-6 lg:items-center border-8 border-blue-100 lg:border-none">
-                        <Link href={`/`} className="">
-                            <Image
-                                className="w-10 lg:w-14 lg:block hidden"
-                                src="/logos/logo3.webp"
-                                alt="Long Drive Cars"
-                                width={500}
-                                height={500}
-                            />
-                            <p className="lg:hidden block  text-[#1859c9] capitalize font-bold text-[15px] py-4 text-blue-00">long drive cars</p>
+            <div className="xl:px-14  py-1 lg:border-8 lg:border-blue-100">
+                <div className="flex flex-col lg:flex-row lg:items-center xl:gap-14 lg:gap-6 gap-2">
+                    <div className="flex gap-x-1 mxs:gap-x-4 px-4 mxs:px-6 lg:items-center border-8 border-blue-100 lg:border-none">
+                        <Link href={`/`} className="py-4">
+
+                            <p className='font-bold text-[#0456e8] text-base xl:text-4xl lg:text-3xl lg:w-full w-36 popins-text'>Long Drive Cars</p>
                         </Link>
                         <div className="flex items-center">
                             <p className="relative left-8">
@@ -140,11 +134,11 @@ const BlogLayout = ({
                                 placeholder="Search"
                                 onChange={handleSearch}
                                 maxLength={10}
-                                className="lg:rounded-full xl:w-56 w-32 border-none bg-gray-100   rounded-full lg:py-2 pl-10"
+                                className="lg:rounded-full xl:w-56 w-28 border-none bg-gray-100   rounded-full lg:py-2 pl-10"
                             />
                         </div>
                     </div>
-                    <div className="flex lg:gap-20 gap-10 items-center px-2 pt-1 border-t-[1p] ">
+                    <div className="flex xl:gap-20 gap-10 items-center px-2 pt-1 border-t-[1p] ">
                         <Link
                             href={`/blog/explore-topics`}
                             className={`text-base py-1 lg:bg-[#1859c9] lg:rounded-3xl `}
@@ -158,7 +152,7 @@ const BlogLayout = ({
                                 </span>
                             </div>
                         </Link>
-                        <div className="xl:w-[600px] lg:w-[315px] w-48 mxs:w-60 text-center">
+                        <div className="xl:w-[400px] lg:w-[305px] w-48 mxs:w-60 text-center">
                             <Slider
                                 key={JSON.stringify(cList)}
                                 {...settings}
@@ -171,8 +165,8 @@ const BlogLayout = ({
                                             href={`/blog/${cat.name.toLowerCase()}${recommended ? "/recommended" : ""
                                                 }`}
                                             className={`p-[5px] capitalize font-medium bg-[#1859c9]  text-[14px] lg:text-sm  rounded-3xl lg:rounded-3xl ${cat.name.toLowerCase() === catg?.toLowerCase()
-                                                    ? "border-2 border-yellow-500 text-yellow-500"
-                                                    : "text-white"
+                                                ? "border-2 border-yellow-500 text-yellow-500"
+                                                : "text-white"
                                                 }`}
                                         >
                                             {cat.name.toLowerCase()}

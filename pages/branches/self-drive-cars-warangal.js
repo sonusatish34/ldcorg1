@@ -10,11 +10,11 @@ function warangal() {
     <div className='bg-white'>
       
       <Head>
-        <title>  No Deposit & Unlimited km - Self-Drive Car Rentalss In Hyderabad</title>
-        <meta name="description" content="Stop here if you are searching for Self Drive Cars Warangal"/>
+        <title>Self-Drive Cars: No Deposit, Unlimited KMs</title>
+        <meta name="description" content="Cars Starting From ₹1488/day, Swift ₹1680/day, Ertiga ₹2496/day. Get 1 day free car for new users. Home delivery available & Check real car images."/>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta property="og:title" content="  No Deposit & Unlimited km - Self-Drive Car Rentalss In Hyderabad" />
-        <meta property="og:description" content="Stop here if you are searching for Self Drive Cars Warangal"/> 
+        <meta property="og:title" content="Self-Drive Cars: No Deposit, Unlimited KMs" />
+        <meta property="og:description" content="Cars Starting From ₹1488/day, Swift ₹1680/day, Ertiga ₹2496/day. Get 1 day free car for new users. Home delivery available & Check real car images."/> 
       </Head>
 
       <HamburgerMenu locname={'hyderabad'} phoneno={'9000-478-478'} />

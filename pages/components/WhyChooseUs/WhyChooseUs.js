@@ -13,8 +13,8 @@ import { VscColorMode } from "react-icons/vsc";
 
 function WhyChooseUs({locname}) {
     return (
-        <div className='flex justify-center xl:justify-between lg:mx-7 flex-wrap bg-white lg:py-10 '>
-            <div className='xl:pl-16 xl:pt-16 xl:p-2 w-[100%] lg:w-[485px] xl:w-[767px] xs'>
+        <div className='flex justify-between lg:mx-16 flex-wrap bg-white lg:py-10 '>
+            <div className='xl:pl-4 lg:pt-16 xl:p-2 w-[100%] lg:w-[485px] xl:w-[767px] xs'>
                 <div className='p-[1rem] xl:py-16 xl:p-6 lg:py-12 bg-[#660066] rounded-lg text-black lg:w-fit border-[2px] border-gray-400 shadow-lg'>
                     
                     <div className="flex gap-4 items-center justify-center pt-4 text-xs

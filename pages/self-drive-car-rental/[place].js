@@ -55,7 +55,7 @@ const metadata = {
   },
   
   medipally: {
-    title: '  No Deposit & Unlimited km - Self-Drive Car Rentalss In Hyderabad',
+    title: '  Self-Drive Cars: No Deposit, Unlimited KMs',
     description: 'Self Drive Car Rentals in Uppal, Medipally',
     ogDescription: 'Self Drive Car Rentals in Uppal, Medipally',
   },
@@ -74,7 +74,7 @@ const metadata = {
 
 
   shamshabad: {
-    title: '  No Deposit & Unlimited km - Self-Drive Car Rentalss In Hyderabad',
+    title: '  Self-Drive Cars: No Deposit, Unlimited KMs',
     description: "Explore the variety of self-drive car services in Shamshabad",
     ogDescription: 'Explore the variety of self-drive car services in Shamshabad',
   },
@@ -128,7 +128,7 @@ function Place({ place, title, description, ogDescription, canonicalUrl }) {  //
   }, [place]);
 
   return (
-    <Layout phoneno={'9666-677-405'}>
+    <Layout phoneno={'9000-478-478'} wspno={'9666677405'}>
       <Head>
         <title>{title}</title>
         <meta name="description" content={description} />

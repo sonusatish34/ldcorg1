@@ -11,7 +11,7 @@ import Marquee from 'react-fast-marquee';
 import { SiLinkedin } from "react-icons/si";
 
 const HamburgerMenu = ({ locname, phoneno }) => {
-  
+
   const [isOpen, setIsOpen] = useState(false);
   const menuRef = useRef(null);
   const buttonRef = useRef(null);
@@ -42,7 +42,7 @@ const HamburgerMenu = ({ locname, phoneno }) => {
         <div className='xl:w-[86%] w-[60%] '>
           <Marquee speed={70}>
             <div className={'flex p-1 text-xs gap-x-20 lg:text-lg'}>
-              {['No Deposit','Unlimited Kilometers', 'Neatly Washed Car', 'Choose your Favourite Color Car', 'Check Original Car Photos & Book', 'Choose Your Own Hours 36hr, 50hr', 'Car Starts ₹1488/day, min 24hrs', 'Any Problem 24/7 Service', 'Lowest Price Challenge', 'Dzire 1992 per day', 'Just pay 10% Advance & book'].map((text, index) => (
+              {['No Deposit', 'Unlimited Kilometers', 'Neatly Washed Car', 'Choose your Favourite Color Car', 'Check Original Car Photos & Book', 'Choose Your Own Hours 36hr, 50hr', 'Car Starts ₹1488/day, min 24hrs', 'Any Problem 24/7 Service', 'Lowest Price Challenge', 'Dzire 1992 per day', 'Just pay 10% Advance & book'].map((text, index) => (
                 <p
                   key={index}
                   className={`flex items-center gap-1 justify-center ${index === 0 ? 'ml-20' : ''}`}
@@ -82,16 +82,8 @@ const HamburgerMenu = ({ locname, phoneno }) => {
       <div>
         <div className='flex cursor-pointer items-center lg:px-14 pl-4 border-8 border-blue-100'>
           <div className='flex items-center lg:gap-6 gap-3 lg:w-fit'>
-            <Link href={`${locname?.length ? `/${locname}` : '/'}`} className='flex items-center lg:gap-6 gap-3'>
-              <Image
-                className="lg:w-24 w-14"
-                src="/logos/logo3.webp"
-                alt="Long Drive Cars"
-                width={500}
-                height={500}
-              // placeholder="blur"
-              />
-              <p className='font-semibold text-[#0456e8] text-base xl:text-4xl lg:text-3xl lg:w-[384px] w-48 popins-text'>Long Drive Cars</p>
+            <Link href={`${locname?.length ? `/${locname}` : '/'}`} className='flex items-center lg:gap-6 gap-30 lg:py-6 py-4'>
+              <p className='font-bold text-[#0456e8] text-base xl:text-4xl lg:text-3xl lg:w-[384px] w-48 popins-text'>Long Drive Cars</p>
             </Link>
           </div>
           <div className='lg:w-fit text-black lg:mt-2  xl:pl-56'>
@@ -133,7 +125,7 @@ const HamburgerMenu = ({ locname, phoneno }) => {
               alt="Long Drive Cars app"
               width={192}
               height={192}
-              priority
+              fetchpriority="high"
             />
             <div className='w-48 text-black 2xl:w-full lg:w-96 lg:mt-2'>
               <p className='text-xl font-bold'>
@@ -142,7 +134,7 @@ const HamburgerMenu = ({ locname, phoneno }) => {
             </div>
           </div>
         </Link>
-        <ul className="pl-6 pt-1 pb-1 border-t-2 border-gray-200 font-semibold flex flex-col gap-2 items-start text-black">
+        <ul className="py-2 border-t-2 border-b-2 border-b-gray-300 border-t-gray-300 pl-6 border-gray-200 font-semibold flex flex-col gap-2 items-start text-black">
           <li className="w-32 text-start"><Link href={'/'}>Home</Link></li>
           <li className="w-32 text-start"><Link href={`${locname?.length ? `/${locname}/contact.html` : '/contact.html'}`}>Contact Us</Link></li>
           <li className="w-32 text-start"><Link href={`${locname?.length ? `/${locname}/about` : '/about'}`}>About Us</Link></li>
@@ -153,17 +145,11 @@ const HamburgerMenu = ({ locname, phoneno }) => {
           <div className="flex items-center">
             <ul>
               <li>Telangana, AP</li>
-              <li className="font-bold text-2xl text-black">
-                <Link href="tel:9666677405" target='_blank'>9666-677-405</Link>
+              <li className="font-bold text-2xl text-black pt-2">
+                <Link href="tel:9000478478" target='_blank'>9666-677-405</Link>
               </li>
             </ul>
           </div>
-          {/* <div className="flex items-center">
-            <ul>
-              <li>Bangalore</li>
-              <li className="font-bold text-2xl text-black">912-912-2525</li>
-            </ul>
-          </div> */}
         </div>
       </nav>
     </div>

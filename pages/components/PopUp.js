@@ -1,7 +1,8 @@
-import React from 'react';
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import ldcqr from '../images/ldcqr.png';
+import { MdOutlineCancel } from "react-icons/md";
+
 const PopUp = (props) => {
     const [isVisible, setIsVisible] = useState(false);
 
@@ -47,16 +48,18 @@ const PopUp = (props) => {
                     <div className="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm z-20" />
 
                     <div
-                        className="fixed lg:top-52 top-40 z-30 left-1/2 transform -translate-x-1/2 w-5/6 h-fit  max-w-sm p-4 bg-gradient-to-r from-blue-300 to-cyan-100 rounded-lg shadow-xl text-black transition-opacity duration-500 flex"
+                        className="fixed lg:top-52 top-40 z-30 left-1/2 transform -translate-x-1/2 w-5/6 h-fit max-w-sm p-4 bg-white border-2 border-[#0456e8] rounded-lg shadow-xl text-black transition-opacity duration-500 flex"
                         style={{ opacity: isVisible ? 1 : 0 }}
                     >
                         <div>
                             <div className="flex justify-between items-center">
                                 <div className="text-lg font-semibold">
-                                    <p className="uppercase text-2xl font-light pb-4 flex flex-col"><span>Download</span><span>our app</span> </p>
+                                    <p className="uppercase text-2xl font-light pb-4 flex flex-col">
+                                        <span>Download</span><span>our app</span>
+                                    </p>
                                     <p className="animate-bounce">
                                         <span className="bg-gradient-to-r from-green-700 to-green-700 bg-clip-text text-transparent text-3xl animate-spin">
-                                            ₹ 500 off
+                                            ₹ 100 off
                                         </span>{' '}
                                     </p>
                                     <p className="capitalize">on your first booking!</p>
@@ -68,6 +71,7 @@ const PopUp = (props) => {
                                     alt="Long Drive Cars"
                                     width={1000}
                                     height={1000}
+                                    fetchPriority='high'
                                 />
                             </div>
                             <div className="mt-3 text-sm">
@@ -80,23 +84,23 @@ const PopUp = (props) => {
                                 >
                                     Download Now
                                     <style jsx>{`
-                                                @keyframes gradientAnimation {
-                                                    0% {
-                                                        background-position: 0% 50%;
-                                                    }
-                                                    50% {
-                                                        background-position: 100% 50%;
-                                                    }
-                                                    100% {
-                                                        background-position: 0% 50%;
-                                                    }
-                                                }
-                    
-                                                .animate-gradient {
-                                                    background-size: 300% 300%;
-                                                    animation: gradientAnimation 5s linear infinite;
-                                                }
-                                            `}</style>
+                                        @keyframes gradientAnimation {
+                                            0% {
+                                                background-position: 0% 50%;
+                                            }
+                                            50% {
+                                                background-position: 100% 50%;
+                                            }
+                                            100% {
+                                                background-position: 0% 50%;
+                                            }
+                                        }
+
+                                        .animate-gradient {
+                                            background-size: 300% 300%;
+                                            animation: gradientAnimation 5s linear infinite;
+                                        }
+                                    `}</style>
                                 </a>
                             </div>
                             <div className="mt-3 lg:flex flex-col gap-y-2 items-center hidden justify-center">
@@ -113,9 +117,9 @@ const PopUp = (props) => {
 
                         <button
                             onClick={() => setIsVisible(false)}
-                            className="absolute top-0 right-0 p-2 text-red-700 bg-transparent  focus:outline-none  flex items-center justify-center z-40  pt-4 pr-4"
+                            className="absolute top-0 right-0 p-2 bg-transparent focus:outline-none flex items-center justify-center z-40 pt-4 pr-4"
                         >
-                            <span className="text-white text-lg bg-[#ff605c] hover:text-black w-6 h-6 rounded-full relative bottom-1 flex justify-center items-center">x</span>
+                            <span className="text-lg w-6 h-6 rounded-full relative hover:scale-105 bottom-1 flex justify-center items-center"><MdOutlineCancel size={30}/></span>
                         </button>
 
                     </div>

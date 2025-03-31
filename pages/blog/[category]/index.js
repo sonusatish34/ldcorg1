@@ -82,7 +82,7 @@ const CategoryPage = ({ canonicalUrl }) => {
 
     // Fetch categories and posts with try-catch and loader management
     useEffect(() => {
-        setLoading(true); 
+        setLoading(true);
         const fetchCatAndPosts = async () => {
             setLoading(true); // Show loader before fetching
 
@@ -161,7 +161,7 @@ const CategoryPage = ({ canonicalUrl }) => {
                 <meta name="description" content="Self-drive cars start at 62/hr, We offer Long Drive Cars for the best prices with unlimited km , Book clDzire @ ₹83/hr, Baleno @ ₹91/hr, Ertiga @ ₹124/hr, Swift @ ₹83/hr, Thar @ ₹208/hr." />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <meta property="og:title" content="  No Deposit & Unlimited km - Self-Drive Car Rentalss" />
-                <meta property="og:description" content="Self-drive cars start at 62/hr, We offer Long Drive Cars for the best prices with unlimited km , Book Dzire @ ₹83/hr, Baleno @ ₹91/hr, Ertiga @ ₹124/hr, Swift @ ₹83/hr, Thar @ ₹208/hr." />
+                <meta property="og:description" content="Cars Starting From ₹1488/day, Swift ₹1680/day, Ertiga ₹2496/day. Get 1 day free car for new users. Home delivery available & Check real car images." />
                 <link rel="canonical" href={canonicalUrl} />
             </Head>
             <div >
@@ -169,7 +169,7 @@ const CategoryPage = ({ canonicalUrl }) => {
                     <div className='xl:px-32 lg:px-12 flex items-center helvetica-font'>
                         <div className='lg:py-10 py-5 justify-center sm:justify-items-center px-[6px]'>
                             <p className="capitalize text-4xl text-center font-semibold lg:pt-3 pb-3 buch-font">{category}</p>
-                            <ul className='lg:flex justify-center items-center pt-2 gap-3 hidden'>
+                            <ul className='flex justify-center items-center pt-2 gap-3'>
                                 <li>Topic</li>
                                 <li><GoDotFill /></li>
                                 <li>{postlist?.length} stories</li>
@@ -177,12 +177,10 @@ const CategoryPage = ({ canonicalUrl }) => {
                             <div className='text-center flex justify-center lg:pt-10 pt-4'>
                                 <PostsListing catg={category} data={filteredPosts} />
                             </div>
-                            {/* <p>kjo</p> */}
                             <RandomPosts data={randomPostlist} />
                         </div>
                     </div>
-
-                    <div className=" py-2 pb-9 lg:py-5 flex flex-row lg:pl-36 pl-3 helvetica-font">
+                    <div className=" py-2 pb-9 lg:py-5 flex flex-row xl:pl-36 lg:pl-20 pl-3 helvetica-font">
                         <Link href={`/blog/${category ? category + '/' : ''}recommended`} className="flex space-x-2">
                             <span className="border-2 text-white rounded-full p-2 bg-[#1859c9] text-sm flex items-center space-x-2">
                                 <span>See more</span>

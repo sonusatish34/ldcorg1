@@ -87,19 +87,50 @@ export default function Place({cars,canonicalUrl}) {
 
 
 
-export async function getServerSideProps({req}) {
+// export async function getServerSideProps({req}) {
+//     const response = await fetch('https://api.longdrivecarz.in/site/cars-info?location=hyderabad');
+//     const items = await response.json();
+//     const cars = items?.data?.results;
+//     const host = req.headers.host;
+//     const canonicalUrl = host.includes('.in')
+//       ? 'https://www.longdrivecars.in/vijayawada'
+//       : 'https://www.longdrivecars.com/vijayawada';
+  
+//     return {
+//       props: {
+//         cars,
+//         canonicalUrl,
+//       },
+//     };
+//   }
+
+export async function getServerSideProps({ req }) {
     const response = await fetch('https://api.longdrivecarz.in/site/cars-info?location=hyderabad');
     const items = await response.json();
     const cars = items?.data?.results;
+
+    const filteredCars = cars?.map(car => ({
+        maker_model: car.maker_model,
+        price_24_hours: car.price_24_hours,
+        car_image_front_view: car.car_image_front_view,
+        car_image_back_view: car.car_image_back_view,
+        car_image_back_inner: car.car_image_back_inner,
+        car_image_car_left_view:car.car_image_car_left_view,
+        car_image_reading_view: car.car_image_reading_view,
+        fuel_type: car.fuel_type,
+        transmission_type: car.transmission_type,
+        seater: car.seater,
+    }));
+
     const host = req.headers.host;
     const canonicalUrl = host.includes('.in')
-      ? 'https://www.longdrivecars.in/vijayawada'
-      : 'https://www.longdrivecars.com/vijayawada';
-  
+        ? 'https://www.longdrivecars.in/vijayawada'
+        : 'https://www.longdrivecars.com/vijayawada';
+
     return {
-      props: {
-        cars,
-        canonicalUrl,
-      },
+        props: {
+            cars: filteredCars,  // Return only the filtered data
+            canonicalUrl,
+        },
     };
-  }
+}

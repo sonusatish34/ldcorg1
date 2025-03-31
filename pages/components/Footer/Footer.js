@@ -11,7 +11,7 @@ const a = ['warangal', 'vizag']
 function Footer({ locname, forblog }) {
     return (
         <div className={`bg-white pt-4`}>
-            <div className={`${['warangal', 'vizag', 'vijayawada'].includes(locname) ? 'hidden' : ''} flex pl-10 py-5 md:justify-between text-white xl:px-28 lg:py-14 flex-wrap bg-[#660066] rounded-md mx-[14px] lg:mx-[58px] my-3 items-center ${forblog ? 'hidden' : ''}`}>
+            <div className={`${['warangal', 'vizag', 'vijayawada'].includes(locname) ? 'hidden' : ''} flex pl-10 p-5 md:justify-between text-white xl:px-28 xl:mx-20 lg:mx-14 flex-wrap bg-[#660066] rounded-md mx-[14px]  mb-10 items-center ${forblog ? 'hidden' : ''}`}>
                 <div className=' xl:text-left xl:text-base text-left text-xs font-semibold'>
                     <ul className='lg:gap-x-12 lg:gap-y-3 gap-2 grid lg:grid-cols-3 grid-cols-1 capitalize'>
                         <li className='hover:scale-105'><Link href={'/self-drive-car-rental/gachibowli'}>Self drive car rental in Gachibowli</Link></li>
@@ -75,10 +75,10 @@ function Footer({ locname, forblog }) {
                                     <Link href={`/attachments `} target='_blank'>
                                         <p className='hover:text-blue-500 cursor-pointer'>Car Attachment</p>
                                     </Link>
-                                    <Link href={`${forblog ? '/hyderabad/privacy-policy.html#cancel_refund_policy' : `${locname?locname:``}/privacy-policy.html#cancel_refund_policy`} `} target='_blank'>
+                                    <Link href={`${forblog ? '/hyderabad/privacy-policy.html#cancel_refund_policy' : `${locname?`/${locname}`:``}/privacy-policy.html#cancel_refund_policy`} `} target='_blank'>
                                         <p className='hover:text-blue-500 cursor-pointer'>Refund & Cancelation Policy</p>
                                     </Link>
-                                    <Link href={`${forblog ? '/hyderabad/privacy-policy.html' : `${locname?locname:``}/privacy-policy.html`} `} target='_blank'>
+                                    <Link href={`${forblog ? '/hyderabad/privacy-policy.html' : `${locname?`/${locname}`:``}/privacy-policy.html`} `} target='_blank'>
                                         <p className='hover:text-blue-500 cursor-pointer'>Terms & Conditions</p>
                                     </Link>
                                 </div>
@@ -96,7 +96,7 @@ function Footer({ locname, forblog }) {
                                         <p className='hover:text-blue-500 cursor-pointer'><SiLinkedin className='lg:size-8 size-9' /></p>
                                     </Link>
                                     <Link href={'https://www.youtube.com/@longdrivecars_official'} target='_blank'>
-                                        <p className='hover:text-blue-500 cursor-pointer'><FaYoutube className='lg:size-8 size-9' /></p>
+                                        <p className='hover:text-red-500 cursor-pointer'><FaYoutube className='lg:size-8 size-9' /></p>
                                     </Link>
                                 </div>
                             </div>
@@ -108,7 +108,7 @@ function Footer({ locname, forblog }) {
                                     <div className='flex justify-center items-center pt-2'>
                                         <ul>
                                             <li className='text-base'>Telangana, AP</li>
-                                            <li className='text-base mxs:text-lg lg:text-2xl font-bold'><Link href="tel:9666677405" target='_blank'>9666-677-405</Link></li>
+                                            <li className='text-base mxs:text-lg lg:text-2xl font-bold'><Link href="tel:9000478478" target='_blank'>9666-677-405</Link></li>
                                         </ul>
                                     </div>
                                     {/* <div className='flex items-center'>

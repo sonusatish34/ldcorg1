@@ -3,7 +3,13 @@ import Image from "next/image";
 import Link from "next/link";
 import carnearbtn from "../../images/carnearbtn.png";
 import mapright from "../../images/mapright.webp";
-import compareldc from "../../images/compareldc.webp";
+import hundredcash from '../../images/offersimages/100cashback.webp'
+import bday from '../../images/offersimages/bday.webp'
+import cashback from '../../images/offersimages/cashback.webp'
+import freecarshare from '../../images/offersimages/freecarshare.webp'
+import selfie from '../../images/offersimages/selfie.webp'
+import share from '../../images/offersimages/share.webp'
+
 function NearByApi({ city }) {
   return (
     <div className="xl:px-20 lg:px-16 px-2 py-6 lg:py-14">
@@ -41,14 +47,63 @@ function NearByApi({ city }) {
           </Link>
         </div>
       </div>
-      <div className="pt-5 lg:hidden">
-        <div className="text-white font-bold xl:px-28 lg:px-12 rounded-md py-4 ">
-          <Image
-            src={compareldc}
-            width={1000}
-            height={1000}
-            className="rounded-md"
-          />
+      <div className="lg:pt-20 pt-4">
+        <p className="lg:flex hidden text-4xl font-bold py-2">Offers And Discounts</p>
+        <div className="pt-5 lg:grid lg:grid-cols-3 lg:gap-10 grid gap-y-4">
+          <div className=" ">
+            <Image
+              src={bday}
+              width={1000}
+              height={1000}
+              className="rounded-md"
+              alt="long drive cars app"
+            />
+          </div>
+          <div className=" ">
+            <Image
+              src={hundredcash}
+              width={1000}
+              height={1000}
+              className="rounded-md"
+              alt="long drive cars app"
+            />
+          </div>
+          <div className=" ">
+            <Image
+              src={cashback}
+              width={1000}
+              height={1000}
+              className="rounded-md"
+              alt="long drive cars app"
+            />
+          </div>
+          <div className=" ">
+            <Image
+              src={freecarshare}
+              width={1000}
+              height={1000}
+              className="rounded-md"
+              alt="long drive cars app"
+            />
+          </div>
+          <div className=" ">
+            <Image
+              src={selfie}
+              width={1000}
+              height={1000}
+              className="rounded-md"
+              alt="long drive cars app"
+            />
+          </div>
+          <div className="flex items-center justify-center ">
+            <Image
+              src={share}
+              width={1000}
+              height={1000}
+              className="rounded-md"
+              alt="long drive cars app"
+            />
+          </div>
         </div>
       </div>
     </div>

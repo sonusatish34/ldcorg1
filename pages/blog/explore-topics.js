@@ -32,11 +32,11 @@ const ComponentName = ({canonicalUrl}) => {
     return (
         <BlogLayout>
              <Head>
-                <title>  No Deposit & Unlimited km - Self-Drive Car Rentalss In vizag</title>
+                <title>  Self-Drive Cars: No Deposit, Unlimited KMs</title>
                 <meta name="description" content="Self-drive cars start at 62/hr, We offer Long Drive Cars for the best prices with unlimited km , Book clDzire @ ₹83/hr, Baleno @ ₹91/hr, Ertiga @ ₹124/hr, Swift @ ₹83/hr, Thar @ ₹208/hr." />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <meta property="og:title" content="  No Deposit & Unlimited km - Self-Drive Car Rentalss In vizag" />
-                <meta property="og:description" content="Self-drive cars start at 62/hr, We offer Long Drive Cars for the best prices with unlimited km , Book Dzire @ ₹83/hr, Baleno @ ₹91/hr, Ertiga @ ₹124/hr, Swift @ ₹83/hr, Thar @ ₹208/hr." />
+                <meta property="og:title" content="  Self-Drive Cars: No Deposit, Unlimited KMs" />
+                <meta property="og:description" content="Cars Starting From ₹1488/day, Swift ₹1680/day, Ertiga ₹2496/day. Get 1 day free car for new users. Home delivery available & Check real car images." />
 
                 <link rel="canonical" href={canonicalUrl} />
                 </Head>

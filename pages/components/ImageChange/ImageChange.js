@@ -17,7 +17,7 @@ import { IoCarSportSharp } from "react-icons/io5";
 const ImageChange = ({ locname }) => {
 
   return (
-    <div className='xl:mt-0 lg:mt-0 xl:pl-16 lg:pl-4 px-2 py-2 lg:pb-10'>
+    <div className='xl:mt-0 lg:mt-0 xl:px-20 lg:pl-4 px-2 py-2 lg:pb-10'>
       <div className='bg-white'>
         <div className='lg:flex lg:flex-row-reverse flex flex-col justify-center items-center lg:px-6 xl:px-0'>
           <Image
@@ -26,12 +26,12 @@ const ImageChange = ({ locname }) => {
             height={1000}
             width={1000}
             className='xl:w-[500px] lg:w-[350px] w-[300px]'
-            priority
+            fetchpriority="high"
           />
           <div className="lg:text-left xl:pl-0 lg:pl-4 text-black font-[500] xl:text-base text-xl lg:pt-10 pt-3">
             <h1 className='xl:text-3xl lg:text-2xl text-xl text-center lg:text-left  font-bold  lg:w-2/3 capitalize'>Self Drive Car Rentals {locname ? ` in ${locname}` : ""}</h1>
             <h2 className='xl:text-2xl lg:text-xl text-lg text-center lg:text-left font-semibold lg:w-2/3 pt-7'>1000 + Cars Near You</h2>
-          
+
             <h3 className='pt-2 xl:text-2xl lg:text-xl text-lg text-center lg:text-left font-semibold lg:w-3/5'>Download Long Drive Cars App to Check Available Cars & Book</h3>
             <div className='flex flex-wrap justify-center lg:justify-normal lg:gap-8 pt-2 gap-2 lg:w-full text-sm md:text-xs xl:text-base'>
               <div className="flex gap-2 py-2 justify-center lg:justify-normal items-center">
@@ -42,7 +42,7 @@ const ImageChange = ({ locname }) => {
                     alt="apple"
                     className="lg:w-40 lg:h-14 w-28 h-11 lg:hover:scale-105"
                     src={apple}
-                    priority={true}
+                    fetchpriority="high"
                   />
                 </Link>
                 <Link href="https://play.google.com/store/search?q=long+drive+cars&c=apps">
@@ -52,11 +52,11 @@ const ImageChange = ({ locname }) => {
                     alt="google"
                     className="lg:w-48 lg:h-20 w-32 h-16 lg:hover:scale-105"
                     src={google}
-                    priority={true}
+                    fetchpriority="high"
                   />
                 </Link>
               </div>
-              <div className='hidden lg:block'>
+              <div className=''>
                 <div className="flex gap-4  pt-4 pr-4  text-xs font-medium lg:text-sm  flex-wrap text-white">
                   <div className="flex items-center gap-1 p-2 bg-[#660066] xl:text-base lg:text-xs text-sm  border-[1px] border-black lg:rounded-full rounded-md lg:hover:scale-105 xl:w-[330px] lg:w-[250px]  w-full">
                     <FaRegClock className="bg-white text-black lg:rounded-full rounded-md p-1" size={40} />
@@ -89,7 +89,7 @@ const ImageChange = ({ locname }) => {
                   </div>
                   <div className="flex items-center gap-1 p-2 bg-[#660066] xl:text-base lg:text-xs text-sm  border-[1px] border-black lg:rounded-full rounded-md lg:hover:scale-105 xl:w-[330px] lg:w-[250px]  w-full">
                     <IoCarSportSharp className="bg-white text-black lg:rounded-full rounded-md p-1" size={40} />
-                    <p className="ml-2">Swift Dzire {(locname !== 'bangalore') ? '1776' : '2280'} per Day</p>
+                    <p className="ml-2">Swift Dzire {(locname !== 'bangalore') ? '₹ 1776' : '2280'} per Day</p>
                   </div>
                   <div className="flex items-center gap-1 p-2 bg-[#660066] xl:text-base lg:text-xs text-sm  border-[1px] border-black lg:rounded-full rounded-md lg:hover:scale-105 xl:w-[330px] lg:w-[250px]  w-full">
                     <SiContactlesspayment className="bg-white text-black lg:rounded-full rounded-md p-1" size={40} />

@@ -1,9 +1,9 @@
 import React from 'react'
 import Layout from '../components/Layout/Layout'
-function privacypolicyhtml() {
+function privacypolicyhtml({canonicalUrl}) {
     return (
         <div className='bg-white'>
-            <Layout locname={'hyderabad'}  phoneno={'9666-677-405'}>
+            <Layout locname={'hyderabad'}  phoneno={'9000-478-478'} wspno={'9666677405'}>
                 <div className=' text-[#666] lg:px-20 pl-8 pr-6 pt-40 lg:pt-4 text-sm lg:text-base font-light grotesk-text leading-6 lg:leading-7'>
                     <p className='font-bold text-xs text-right'>Updated On: 25th Sep, 2024.</p>
                     <p className='text-center font-bold pt-3 text-base text-black'>PRIVACY POLICY</p>
@@ -44,3 +44,20 @@ function privacypolicyhtml() {
 }
 
 export default privacypolicyhtml
+export async function getServerSideProps(context) {
+    const { req,params } = context; // Extract `params` if using dynamic routes
+    const {customlink} = params; // Example fallback for category
+
+    const host = req.headers.host;
+    // <link rel="canonical" href={canonicalUrl} />
+    // Ensure that the category is lowercase, as it's used in the URL
+    const canonicalUrl = host.includes('.in')
+        ? `https://www.longdrivecars.in/${customlink}/privacy-policy.html`
+        : `https://www.longdrivecars.com/${customlink}/privacy-policy.html`;
+
+    return {
+        props: {
+            canonicalUrl,
+        },
+    };
+}

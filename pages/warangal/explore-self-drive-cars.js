@@ -7,11 +7,11 @@ function exploreselfdrivecars({ canonicalUrl }) {
   return (
     <div>
       <Head>
-        <title>  Unlimited km - Rent a car under 5 kms with Self-drive car rental services</title>
-        <meta name="description" content="Plan your trips with Lowest Price Self-Drive car rentals starting at just ₹1488/day. So book Dzire for ₹1680/day or Ertiga at ₹2496/day now with Unlimited kms ." />
+        <title>  Self-Drive Cars: No Deposit, Unlimited KMs</title>
+        <meta name="description" content="Cars Starting From ₹1488/day, Swift ₹1680/day, Ertiga ₹2496/day. Get 1 day free car for new users. Home delivery available & Check real car images." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta property="og:title" content="  Unlimited km - Rent a car under 5 kms with Self-drive car rental services" />
-        <meta property="og:description" content="Plan your trips with Lowest Price Self-Drive car rentals starting at just ₹1488/day. So book Dzire for ₹1680/day or Ertiga at ₹2496/day now with Unlimited kms ." />
+        <meta property="og:title" content="  Self-Drive Cars: No Deposit, Unlimited KMs" />
+        <meta property="og:description" content="Cars Starting From ₹1488/day, Swift ₹1680/day, Ertiga ₹2496/day. Get 1 day free car for new users. Home delivery available & Check real car images." />
 
         <link rel="canonical" href={canonicalUrl} />
       </Head>

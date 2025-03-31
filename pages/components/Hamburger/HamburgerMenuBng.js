@@ -127,7 +127,7 @@ const HamburgerMenu = ({ locname, phoneno }) => {
               alt="Long Drive Cars app"
               width={192}
               height={192}
-              priority
+              fetchpriority="high"
             />
             <div className='w-48 text-black 2xl:w-full lg:w-96 lg:mt-2'>
               <p className='text-xl font-bold'>
