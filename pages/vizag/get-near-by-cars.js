@@ -6,19 +6,19 @@ const DynNearby = dynamic(() => import('../components/GetNearByPage/GetNearByPag
   ssr: false, // Set to false if you want to load it only on the client side
 
 });
-function  getnearbycars({ canonicalUrl }) {
+function getnearbycars({ canonicalUrl }) {
   return (
     <div className='bg-white'>
       <Head>
-      <title> Self-Drive Cars: No Deposit, Unlimited KMs</title>
-        <meta name="description" content="Cars Starting From ₹1488/day, Swift ₹1680/day, Ertiga ₹2496/day. Get 1 day free car for new users. Home delivery available & Check real car images.." />
+        <title> No Deposit | Unlimited Kms - Cheapest Self Drive Cars Near U</title>
+        <meta id="meta-desc" name="description" content="1 day Free Car @ New User - Self Drive Cars @ 1488/Day - Check Real Photos & Book - Home Delivery" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta property="og:title" content=" Self-Drive Cars: No Deposit, Unlimited KMs" />
-        <meta property="og:description" content="Cars Starting From ₹1488/day, Swift ₹1680/day, Ertiga ₹2496/day. Get 1 day free car for new users. Home delivery available & Check real car images.." />
+        <meta property="og:title" content=" No Deposit | Unlimited Kms - Cheapest Self Drive Cars Near U" />
+        <meta property="og:description" content="1 day Free Car @ New User - Self Drive Cars @ 1488/Day - Check Real Photos & Book - Home Delivery." />
         <link rel="canonical" href={canonicalUrl} />
       </Head>
       <Layout locname={'vizag'} phoneno={"96666-99583"}>
-        <DynNearby locname={'vizag'} phoneno={"9666699583"}/>
+        <DynNearby locname={'vizag'} phoneno={"9666699583"} />
       </Layout>
     </div>
   )

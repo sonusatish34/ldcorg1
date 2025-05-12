@@ -11,11 +11,12 @@ import { BsFillFuelPumpFill } from "react-icons/bs";
 import { GrGroup } from "react-icons/gr";
 import { TbManualGearbox } from "react-icons/tb";
 import { FaGooglePlay } from "react-icons/fa";
-import { FaAppStore  } from "react-icons/fa";
+import { FaAppStore } from "react-icons/fa";
 import { BiLogoPlayStore } from "react-icons/bi";
+import { handleStoreRedirect } from '../../../utils/redirectUtils';
 
 import ldcqr from '../../images/ldcqr.png'
-const LocationFetcher = ({ phoneno,locname,wspno }) => {
+const LocationFetcher = ({ phoneno, locname, wspno }) => {
 
   const [location, setLocation] = useState(null);
   const [error, setError] = useState(null);
@@ -31,14 +32,17 @@ const LocationFetcher = ({ phoneno,locname,wspno }) => {
   };
 
   const today = new Date();
-  const year = today.getFullYear();
-  const month = String(today.getMonth() + 1).padStart(2, "0");
-  const day = today.getDate() + 1;
-  const daynum = today.getDate() + 2;
+  const tomorrow = new Date(today);
+  tomorrow.setDate(today.getDate() + 1);
+  const dayAfterTomorrow = new Date(today);
+  dayAfterTomorrow.setDate(today.getDate() + 2);
 
-  const compldate = `${year}-${month}-${day}`;
-  const compldateend = `${year}-${month}-${daynum}`;
-  const [showDown, setShowDown] = useState(false)
+  const formatDate = (date) => date.toISOString().split("T")[0];
+
+  const compldate = formatDate(tomorrow);
+  const compldateend = formatDate(dayAfterTomorrow);
+
+  const [showDown, setShowDown] = useState(false);
 
   useEffect(() => {
     const fetchLocation = () => {
@@ -96,8 +100,7 @@ const LocationFetcher = ({ phoneno,locname,wspno }) => {
     };
 
     fetchData();
-  }, [location, lat, lon]); // Fetch data when location changes
-
+  }, [location, lat, lon]);
   const getOrderedImages = (attributes) => {
     const imageMap = {};
     attributes.forEach((attr) => {
@@ -111,21 +114,6 @@ const LocationFetcher = ({ phoneno,locname,wspno }) => {
       imageMap["car_image_back_view"],
     ];
   };
-  const handleStoreRedirect = () => {
-    const userAgent = navigator.userAgent || navigator.vendor || window.opera;
-
-    if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-      // Redirect to App Store if iOS
-      window.open('https://apps.apple.com/in/app/long-drive-cars/id6466695391', '_blank');
-    } else if (/android/i.test(userAgent)) {
-      // Redirect to Play Store if Android
-      window.open('https://play.google.com/store/search?q=long+drive+cars&c=apps', '_blank');
-
-    } else {
-      // Optional: Provide a message for non-mobile devices
-      alert("App is available only on mobile devices.");
-    }
-  }
 
 
   return (
@@ -184,7 +172,7 @@ const LocationFetcher = ({ phoneno,locname,wspno }) => {
                               className="h-[430px] flex justify-center items-center"
                             >
                               <Link
-                                href={`/${(`${locname?`${locname}/`:''}car-rental/` + item.maker_model)
+                                href={`/${(`${locname ? `${locname}/` : ''}car-rental/` + item.maker_model)
                                   .toLowerCase()
                                   .replace(/ /g, "-")}`}
                               >
@@ -272,14 +260,14 @@ const LocationFetcher = ({ phoneno,locname,wspno }) => {
                       </ul>
                       <div onClick={handleStoreRedirect} className=" lg:hidden flex justify-center items-center cursor-pointer text-black py-4 text-lg font-semibold">
                         <p className="bg-gradient-to-r from-green-600 via-[#556ee6] to-indigo-400 inline-block text-transparent bg-clip-text animate-gradient border-[1px] border-[#5566ee] p-2 rounded-md">
-                          Download LDC App
+                          Download  Long Drive Cars App
                         </p>
 
                       </div>
 
                       <div onClick={() => { setShowDown(true) }} className="lg:flex hidden  justify-center items-center cursor-pointer text-black py-4 text-lg font-semibold">
                         <p className="bg-gradient-to-r from-green-600 via-[#556ee6] to-indigo-400 text-transparent bg-clip-text animate-gradient border-[1px] border-[#5566ee] p-2 rounded-md lg:block hidden">
-                          Download LDC App
+                          Download  Long Drive Cars App
                         </p>
                       </div>
                       {showDown && (
@@ -328,6 +316,16 @@ const LocationFetcher = ({ phoneno,locname,wspno }) => {
               </React.Fragment>
             ))}
           </div>
+          {data?.length < 1 && <div>
+            <p className="pl-6 py-4">Sorry no cars available near you </p>
+            {/* <p>If possible you can check cars near </p>
+            <ul>
+              <li>Hyderabad</li>
+              <li>Warangal</li>
+              <li>Vizag</li>
+              <li>Vijayawada</li>
+            </ul> */}
+          </div>}
         </div>
       </div>
     </div>

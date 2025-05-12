@@ -77,34 +77,31 @@ var settings = {
   ]
 };
 
+
 const fddata = [
-  {
-    carname: "MARUTHI SWIFT",
-    src: swift
-  },
-  {
-    carname: "MARUTHI ERTIGA",
-    src: ertiga
-  },
-  {
-    carname: "INNOVA CRYSTA",
-    src: inv
-  },
-  {
-    carname: "MARUTHI BALENO",
-    src: baleno
-  },
-  {
-    carname: "HYUNDAI CRETA",
-    src: creta
-  },
-]
+  { carname: "MARUTHI WAGON R", src: "https://ldcars.blr1.cdn.digitaloceanspaces.com/ldcars_nextjs_images/cars/14k/Wagon-R_8_11zon-transformed.webp" },
+  { carname: "MARUTHI SWIFT", src: "https://ldcars.blr1.cdn.digitaloceanspaces.com/ldcars_nextjs_images/cars/20000/Swift.webp" },
+  { carname: "MARUTHI DZIRE", src: 'https://ldcars.blr1.cdn.digitaloceanspaces.com/ldcars_nextjs_images/cars/20000/Swift-Dzire.webp' },
+  { carname: "GRAND NIOS", src: "https://ldcars.blr1.cdn.digitaloceanspaces.com/ldcars_nextjs_images/cars/20000/Grand-I10-Nios.webp" },
+  { carname: "MARUTHI BALENO", src: "https://ldcars.blr1.cdn.digitaloceanspaces.com/ldcars_nextjs_images/cars/20000/Baleno.webp" },
+  { carname: "HYUNDAI I20", src: "https://ldcars.blr1.cdn.digitaloceanspaces.com/ldcars_nextjs_images/cars/20000/I20.webp" },
+  { carname: "HYUNDAI VENUE", src: "https://ldcars.blr1.cdn.digitaloceanspaces.com/ldcars_nextjs_images/cars/20000/Venue.webp" },
+  { carname: "KIA SONET", src: "https://ldcars.blr1.cdn.digitaloceanspaces.com/ldcars_nextjs_images/cars/20000/sonnet.webp" },
+  { carname: "KIA SELTOS", src: "https://ldcars.blr1.cdn.digitaloceanspaces.com/ldcars_nextjs_images/cars/20000/Seltos.webp" },
+  { carname: "KIA SONET SUNROOF", src: "https://ldcars.blr1.cdn.digitaloceanspaces.com/ldcars_nextjs_images/cars/30000/Kia-Sonet-sunroof.webp" },
+  { carname: "SELTOS SUNROOF", src: "https://ldcars.blr1.cdn.digitaloceanspaces.com/ldcars_nextjs_images/cars/40000/seltos-sunroof.webp" },
+  { carname: "MARUTHI ERTIGA", src: "https://ldcars.blr1.cdn.digitaloceanspaces.com/ldcars_nextjs_images/cars/30000/ERTIGA_RED.webp" },
+  { carname: "MAHINDRA THAR 2024", src: "https://ldcars.blr1.cdn.digitaloceanspaces.com/ldcars_nextjs_images/cars/60000/Mahindra-Thar.webp" },
+  { carname: "INNOVA CRYSTA", src: "https://ldcars.blr1.cdn.digitaloceanspaces.com/ldcars_nextjs_images/cars/60000/InnovaCrysta.webp" },
+  { carname: "MAHINDRA XUV 700", src: "https://ldcars.blr1.cdn.digitaloceanspaces.com/ldcars_nextjs_images/cars/60000/XUV700.webp" },
+];
+
 
 function FeaturedCars({ data, branch }) {
   return (
     <div className='feature-cars bg  text-black px-7 py-6 h-[655px] bg-gray-800 '>
       <p className='text-center lg:text-4xl text-2xl font-semibold lg:py-8 py-4 text-white'>Check Out Our Featured Cars</p>
-      <div className="slider-container h-[600px] ">
+      <div className="slider-container h-[600px] mx-auto ">
         <Slider {...settings}>
           {
             data?.map((item, index) => (
@@ -113,7 +110,7 @@ function FeaturedCars({ data, branch }) {
                   <div key={index} className=' '>
                     {(item.maker_model == inside.carname) && <div
                       key={index}
-                      className={`pt-3 flex flex-col text-black w-[250px] mxs:w-[270px] rounded-md`}
+                      className={`pt-3 flex flex-col text-black w-[250px] mxs:w-[300px] rounded-md`}
                     >
                       <div className='relative border-2 border-[#660066]-200 bg-white rounded-md'>
                         <p className='bg-[#660066] text-white rounded-t-md pl-5'>Make Year {item?.manufacture_date}</p>
@@ -123,7 +120,7 @@ function FeaturedCars({ data, branch }) {
                             alt="Long Drive Cars app"
                             width={1000}
                             height={1000}
-                            className='w-[250px] h-[150px] '
+                            className='w-[250px] h-[150px] lg:scale-100 scale-90 '
                           />
                         </div>
                         <div className={`flex flex-col gap-3 text-center $`}>
@@ -175,7 +172,6 @@ function FeaturedCars({ data, branch }) {
                               </Image>
                             </Link>
                           </div>
-
                         </div>
                       </div>
                     </div>}

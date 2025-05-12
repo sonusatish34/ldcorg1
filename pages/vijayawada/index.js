@@ -35,7 +35,6 @@ export default function Place({cars,canonicalUrl}) {
         }
         fetchCarDetails();
     }, []);
-
     return (
         <div>
             <Layout locname={'vijayawada'} phoneno={"96666-99583"}>

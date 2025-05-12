@@ -14,7 +14,7 @@ import DynWhyChooseUs from '../components/WhyChooseUs/WhyChooseUs';
 import Layout from '../components/Layout/Layout';
 import PriceList from '../components/PriceList/PriceList';
 import Head from 'next/head';
-export default function Place({cars,canonicalUrl}) {
+export default function Place({ cars, canonicalUrl }) {
     const [carData, setCarData] = useState(null);
     const [carData2, setCarData2] = useState(null);
     const router = useRouter();
@@ -27,22 +27,23 @@ export default function Place({cars,canonicalUrl}) {
                 const items = await response.json();
                 const cars = items?.data?.results;
                 setCarData2(cars);
-            } catch (error) {``
+            } catch (error) {
+                ``
                 console.error('Error fetching car details:', error);
             }
         }
         fetchCarDetails();
     }, []);
-    
+
     return (
         <div>
             <Layout locname={'warangal'} phoneno={"9000-777-665"}>
                 <Head>
-                    <title>Self-Drive Cars: No Deposit, Unlimited KMs</title>
-                    <meta name="description" content="Cars Starting From ₹1488/day, Swift ₹1680/day, Ertiga ₹2496/day. Get 1 day free car for new users. Home delivery available & Check real car images." />
+                    <title>No Deposit | Unlimited Kms - Cheapest Self Drive Cars Near U</title>
+                    <meta id="meta-desc" name="description" content="1 day Free Car @ New User - Self Drive Cars @ 1488/Day - Check Real Photos & Book - Home Delivery" />
                     <meta name="viewport" content="width=device-width, initial-scale=1" />
-                    <meta property="og:title" content="  No Deposit &  Self-Drive Cars: No Deposit, Unlimited KMs" />
-                    <meta property="og:description" content="Cars Starting From ₹1488/day, Swift ₹1680/day, Ertiga ₹2496/day. Get 1 day free car for new users. Home delivery available & Check real car images." />
+                    <meta property="og:title" content="  No Deposit &  No Deposit | Unlimited Kms - Cheapest Self Drive Cars Near U" />
+                    <meta property="og:description" content="1 day Free Car @ New User - Self Drive Cars @ 1488/Day - Check Real Photos & Book - Home Delivery" />
                     <script
                         async
                         src="https://www.googletagmanager.com/gtag/js?id=AW-16647839094"
@@ -60,8 +61,8 @@ export default function Place({cars,canonicalUrl}) {
                     <link rel="canonical" href={canonicalUrl} />
                 </Head>
                 <div className='pt-32 lg:pt-0'>
-                    <CarProducts data={cars} branch={"warangal"} phoneno={'9000777665'} count={7}/>
-                    <DynImageChange locname={'warangal'}/>
+                    <CarProducts data={cars} branch={"warangal"} phoneno={'9000777665'} count={7} />
+                    <DynImageChange locname={'warangal'} />
                     <div>
                         <DynNearByApi city={'warangal'} />
                     </div>
@@ -91,7 +92,7 @@ export default function Place({cars,canonicalUrl}) {
 //     const canonicalUrl = host.includes('.in')
 //       ? 'https://www.longdrivecars.in/warangal'
 //       : 'https://www.longdrivecars.com/warangal';
-  
+
 //     return {
 //       props: {
 //         cars,
@@ -110,7 +111,7 @@ export async function getServerSideProps({ req }) {
         car_image_front_view: car.car_image_front_view,
         car_image_back_view: car.car_image_back_view,
         car_image_back_inner: car.car_image_back_inner,
-        car_image_car_left_view:car.car_image_car_left_view,
+        car_image_car_left_view: car.car_image_car_left_view,
         car_image_reading_view: car.car_image_reading_view,
         fuel_type: car.fuel_type,
         transmission_type: car.transmission_type,

@@ -157,11 +157,11 @@ const CategoryPage = ({ canonicalUrl }) => {
     return (
         <div>
             <Head>
-                <title>  No Deposit & Unlimited km - Self-Drive Car Rentalss </title>
+                <title> No Deposit | Unlimited Kms - Cheapest Self Drive Cars Near U</title>
                 <meta name="description" content="Self-drive cars start at 62/hr, We offer Long Drive Cars for the best prices with unlimited km , Book clDzire @ ₹83/hr, Baleno @ ₹91/hr, Ertiga @ ₹124/hr, Swift @ ₹83/hr, Thar @ ₹208/hr." />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <meta property="og:title" content="  No Deposit & Unlimited km - Self-Drive Car Rentalss" />
-                <meta property="og:description" content="Cars Starting From ₹1488/day, Swift ₹1680/day, Ertiga ₹2496/day. Get 1 day free car for new users. Home delivery available & Check real car images." />
+                <meta property="og:description" content="1 day Free Car @ New User - Self Drive Cars @ 1488/Day - Check Real Photos & Book - Home Delivery" />
                 <link rel="canonical" href={canonicalUrl} />
             </Head>
             <div >

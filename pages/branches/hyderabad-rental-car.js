@@ -4,17 +4,18 @@ import Footer from '../components/Footer/Footer';
 import www from '../images/branchimages/2.webp'
 import Image from 'next/image';
 import Head from 'next/head';
-function hyderabadrentalcar() {
+function hyderabadrentalcar({canonicalUrl}) {
   return (
     <div className='bg-white text-black'>
       <HamburgerMenu locname={'hyderabad'} phoneno={'9000-478-478'} />
     
       <Head>
-        <title>  Self-Drive Cars: No Deposit, Unlimited KMs</title>
-        <meta name="description" content="Hyderabad rental car in a matter of minutes!"/>
+        <title>  No Deposit | Unlimited Kms - Cheapest Self Drive Cars Near U</title>
+        <meta name="description" content="1 day Free Car @ New User - Self Drive Cars @ 1488/Day - Check Real Photos & Book - Home Delivery"/>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta property="og:title" content="  Self-Drive Cars: No Deposit, Unlimited KMs" />
-        <meta property="og:description" content="Hyderabad rental car in a matter of minutes!"/> 
+        <meta property="og:title" content="  No Deposit | Unlimited Kms - Cheapest Self Drive Cars Near U" />
+        <meta property="og:description" content="1 day Free Car @ New User - Self Drive Cars @ 1488/Day - Check Real Photos & Book - Home Delivery"/> 
+        <link rel="canonical" href={canonicalUrl} />
       </Head>
       <div className=' py-36 lg:pt-16 bg-white'>
         <p className='text-xl font-bold py-2 pt-5 lg:py-4 lg:text-4xl xl:mx-72 lg:mx-80 mx-6 '>Hyderabad rental car in a matter of minutes!</p>
@@ -90,3 +91,17 @@ function hyderabadrentalcar() {
 }
 
 export default hyderabadrentalcar;
+
+export async function getServerSideProps({ req }) {
+  
+  const host = req.headers.host;
+  const canonicalUrl = host.includes('.in')
+      ? 'https://www.longdrivecars.in/branches/hyderabad-rental-car'
+      : 'https://www.longdrivecars.com/branches/hyderabad-rental-car';
+
+  return {
+      props: {
+          canonicalUrl,
+      },
+  };
+}

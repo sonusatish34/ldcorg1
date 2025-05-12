@@ -41,7 +41,7 @@ const HamburgerMenu = ({ locname, phoneno }) => {
         <div className='xl:w-[86%] w-[60%] '>
           <Marquee speed={75} >
             <div className={'flex p-1 text-xs gap-24 lg:text-lg'}>
-              {['Unlimited Kilometers', 'Neatly Washed Car', 'Choose your Favourite Color Car', 'Check Original Car Photos & Book', 'Choose Your Own Hours 36hr, 50hr', 'Car Starts ₹1488/day, min 24hrs', 'Any Problem 24/7 Service', 'Lowest Price Challenge', 'Baleno, Dzire 1584 per day', 'Just pay 10% Advance & book'].map((text, index) => (
+              {['Unlimited Kilometers', 'Neatly Washed Car', 'Choose your Favourite Color Car', 'Check Original Car Photos & Books & Book', 'Choose Your Own Hours 36hr, 50hr', 'Car Starts ₹1488/day, min 24hrs', 'Any Problem 24/7 Service', 'Lowest Price Challenge', 'Baleno, Dzire 1584 per day', 'Just pay 10% Advance & book'].map((text, index) => (
                 <p key={index} className='flex items-center gap-1 justify-center'>
                   <TbPointFilled /><span>{text}</span>
                 </p>

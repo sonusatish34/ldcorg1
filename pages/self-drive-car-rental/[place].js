@@ -55,7 +55,7 @@ const metadata = {
   },
   
   medipally: {
-    title: '  Self-Drive Cars: No Deposit, Unlimited KMs',
+    title: '  No Deposit | Unlimited Kms - Cheapest Self Drive Cars Near U',
     description: 'Self Drive Car Rentals in Uppal, Medipally',
     ogDescription: 'Self Drive Car Rentals in Uppal, Medipally',
   },
@@ -74,7 +74,7 @@ const metadata = {
 
 
   shamshabad: {
-    title: '  Self-Drive Cars: No Deposit, Unlimited KMs',
+    title: '  No Deposit | Unlimited Kms - Cheapest Self Drive Cars Near U',
     description: "Explore the variety of self-drive car services in Shamshabad",
     ogDescription: 'Explore the variety of self-drive car services in Shamshabad',
   },

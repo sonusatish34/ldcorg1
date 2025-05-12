@@ -8,18 +8,15 @@ import { FaRegComment } from "react-icons/fa";
 import Image from 'next/image';
 import Link from "next/link";
 import { BiCategory } from "react-icons/bi";
-import { CgProfile } from "react-icons/cg";
 import { IoTimeOutline } from "react-icons/io5";
-import { RiRectangleFill } from "react-icons/ri";
 import BlogLayout from '../blogcomponents/BlogLayout';
 import { MdExpandMore } from "react-icons/md";
 import Loading from '@/pages/components/Loading';
 import Head from 'next/head';
 import { IoMdVolumeHigh, IoMdVolumeOff } from "react-icons/io";
-function SinglePost({ canonicalUrl }) {
+function SinglePost({ canonicalUrl, postDisplay }) {
   const router = useRouter();
   const { slug } = router.query;
-  const [postDisplay, setPostDisplay] = useState(null);
   const [postlist, setPostlist] = useState([]);
   const [cat, setCat] = useState('');
   const [commentShow, setCommentShow] = useState(false);
@@ -32,7 +29,6 @@ function SinglePost({ canonicalUrl }) {
     const getVoices = () => {
       const voices = window.speechSynthesis.getVoices();
 
-      // Priority 1: Exact match for a common English voice name
       let selectedVoice = voices.find(v =>
         v.name.toLowerCase().includes('google') || // Common on Android
         v.name.toLowerCase().includes('microsoft') || // Common on Windows
@@ -126,7 +122,6 @@ function SinglePost({ canonicalUrl }) {
         if (!querySnapshot.empty) {
           const postDoc = querySnapshot.docs[0];
           const postData = postDoc.data();
-          setPostDisplay(postData);
           setLikesCount(postData.likes || 0); // Set the likes count
           setComments(postData.comments || []); // Set the comments array
           setCat(postData?.categoryname); // Set the category
@@ -233,19 +228,18 @@ function SinglePost({ canonicalUrl }) {
   return (
     <div>
 
-      {loading ? <Loading /> : <BlogLayout>
+      {<BlogLayout>
         <section className="section">
           <Head>
-            <title> {postDisplay?.title}</title>
+            <title>{String(postDisplay?.title || 'LDC Blog')}</title>
             <meta name="description" content={postDisplay?.description} />
             <meta name="viewport" content="width=device-width, initial-scale=1" />
             <meta property="og:title" content={postDisplay?.description} />
             <meta property="og:description" content={postDisplay?.description} />
-
             <link rel="canonical" href={canonicalUrl} />
           </Head>
           <div className='flex flex-col lg:px-0 py-2 lg:py-2 text-black'>
-            <div className='xl:mx-96 lg:mx-44 mx-6 lg:px-0'>
+            <div className='xl:mx-96 lg:mx-56 mx-6 lg:px-0'>
               <p className='lg:text-[40px] lg:leading-normal text-2xl font-bold lg:py-4 py-2 helvetica-font tracking-tight'>{postDisplay?.title}</p>
               <p className='helvetica-font text-[#6B6B6B] text-base lg:text-xl lg:pb-6 py-2 lg:py-4'>{postDisplay?.description}</p>
             </div>
@@ -259,7 +253,7 @@ function SinglePost({ canonicalUrl }) {
               />
             </div>
             <div className=''>
-              <div className="flex items-center flex-wrap lg:gap-6 gap-4 py-3 text-sm lg:text-lg xl:mx-96 lg:mx-44 mxs: mx-6 ">
+              <div className="flex items-center flex-wrap lg:gap-6 gap-4 py-3 text-sm lg:text-lg xl:mx-96 lg:mx-56 mxs: mx-6 ">
                 <p>{postDisplay?.timetake} min read</p>
                 {/* <p>{StaticData(postDisplay?.time.seconds)}</p> */}
                 <p className="flex items-center gap-1">
@@ -283,18 +277,17 @@ function SinglePost({ canonicalUrl }) {
                   )}
                 </button>
               </div>
-              {/* Rest of your component */}
-              <ul className="py-2 flex  items-center justify-start gap-x-8 text-xs lg:text-base xl:mx-96 lg:mx-44 mx-6 ">
-                <li className="flex items-center gap-5"><span>{<p>{StaticData(postDisplay?.time.seconds)}</p>}</span>
+              <ul className="py-2 flex  items-center justify-start gap-x-8 text-xs lg:text-base xl:mx-96 lg:mx-56 mx-6 ">
+                <li className="flex items-center gap-5"><span>{<p>{StaticData(Math.floor(new Date(postDisplay?.time).getTime() / 1000))}</p>}</span>
                   <p>{postDisplay?.date.slice(0, 12)}</p>
                 </li>
               </ul>
             </div>
             <div
-              className="text-[#242424] lg:text-justify text-base lg:text-[20px] leading-8 lg:leading-9 lg:tracking-wide pt-4 pb-4 px-1 lg:px-0  rounded-lg georgia-font xl:mx-96 lg:mx-44 mx-6"
+              className="text-[#242424] lg:text-justify text-base lg:text-[20px] leading-8 lg:leading-9 lg:tracking-wide pt-4 pb-4 px-1 lg:px-0  rounded-lg georgia-font xl:mx-96 lg:mx-56 mx-6"
               dangerouslySetInnerHTML={{ __html: postDisplay?.content }}
             />
-            <div className='flex gap-8 py-4 border-t-2 border-b-2 xl:mx-96 lg:mx-44 mx-6 px-4 lg:px-0' >
+            <div className='flex gap-8 py-4 border-t-2 border-b-2 xl:mx-96 lg:mx-56 mx-6 px-4 lg:px-0' >
               <p className='flex gap-2'>
                 <span className='hover:cursor-pointer'>
                   <GrLike size={20} onClick={handleLike} />
@@ -309,7 +302,7 @@ function SinglePost({ canonicalUrl }) {
               </p>
             </div>
             {commentShow && (
-              <div className='rounded-sm w-[400px] xl:mx-96 lg:mx-44 mx-6 px-4 lg:px-0'>
+              <div className='rounded-sm w-[400px] xl:mx-96 lg:mx-56 mx-6 px-4 lg:px-0'>
                 <span>Please Leave A Reply here</span>
                 <form className="flex flex-col gap-4 bg-gray-100 border-2 p-4" onSubmit={handleCommentSubmit}>
                   <textarea
@@ -346,8 +339,7 @@ function SinglePost({ canonicalUrl }) {
                 </div>
               </div>
             )}
-
-            <div className="pt-4 xl:mx-96 lg:mx-44 mx-6 lg:px-0">
+            <div className="pt-4 xl:mx-96 lg:mx-56 mx-6 lg:px-0">
               <p className="text-xl font-semibold">Related Posts</p>
               <div className=" lg:grid-cols-2 grid grid-cols-2 lg:gap-x-8 lg:gap-y-20 gap-6 pt-6  lg:pt-6">
                 {postlist?.length > 0 ? postlist.slice(0, 4).map((post, i) => (
@@ -360,7 +352,7 @@ function SinglePost({ canonicalUrl }) {
                           alt={post?.cialt}
                           width={2000}
                           height={2000}
-                          fetchPriority={i === 0 ? 'high' : 'low'} // Use fetchPriority here, not priority
+                          priority={i === 0 ? true : false}
                         />
                       )}
                     </Link>
@@ -398,7 +390,7 @@ function SinglePost({ canonicalUrl }) {
               </div>
 
             </div>
-            <div className=" py-6 lg:mt-12 flex flex-row xl:mx-96 lg:mx-44 mx-1.5 px-4 lg:px-0 text-white">
+            <div className=" py-6 lg:mt-12 flex flex-row xl:mx-96 lg:mx-56 mx-1.5 px-4 lg:px-0 text-white">
               <Link href={`/blog/${cat ? cat[0] + '/' : ''}recommended`} className="flex  space-x-2">
                 <span className="border-2 bg-[#556ee6] rounded-full p-2 text-sm flex items-center space-x-2">
                   <span>See more</span>
@@ -424,13 +416,11 @@ export async function getServerSideProps({ req, params }) {
 
     const q = query(collection(fireDb, "blogPost"), where("slug", "==", slug));
     const querySnapshot = await getDocs(q);
-
     if (querySnapshot.empty) {
       return {
         notFound: true,
       };
     }
-
 
     const postData = querySnapshot.docs[0].data();
 
@@ -439,9 +429,10 @@ export async function getServerSideProps({ req, params }) {
       time: postData.time?.toDate().toISOString(),
     };
 
+
     const canonicalUrl = host.includes('.in')
-      ? `https://www.longdrivecars.in/blog/posts/${(postDisplay.slug)}`
-      : `https://www.longdrivecars.com/blog/posts/${(postDisplay.slug)}`;
+      ? `https://www.dozzy.in/blog/posts/${(postDisplay.slug)}`
+      : `https://www.dozzy.com/blog/posts/${(postDisplay.slug)}`;
 
     return {
       props: {

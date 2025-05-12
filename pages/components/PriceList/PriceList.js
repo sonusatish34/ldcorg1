@@ -228,7 +228,7 @@ export default function PriceList({ city }) {
 
                 <div className="lg:text-left xl:pl-0 lg:pl-4 text-black font-[500] xl:text-base text-xl lg:pt-10 pt-3">
                     <h1 className='xl:text-3xl lg:text-2xl text-xl text-center lg:text-left  font-bold  lg:w-2/3 capitalize'>Self Drive Car Rentals</h1>
-                    <h2 className='xl:text-2xl lg:text-xl text-lg text-center lg:text-left font-semibold lg:w-2/3 lg:pt-7 pt-3'>1000 + Cars Near You</h2>
+                    <h2 className='xl:text-2xl lg:text-xl text-lg text-center lg:text-left font-semibold lg:w-2/3 lg:pt-7 pt-3'>1 Lakh + Cars Near You</h2>
                     <h3 className='pt-2 xl:text-2xl lg:text-xl text-lg text-center lg:text-left font-semibold lg:w-3/5'>Download Long Drive Cars App to Check Available Cars & Book</h3>
                     <div className='flex flex-wrap justify-center lg:justify-normal lg:gap-8 pt-2 gap-2 lg:w-full text-sm md:text-xs xl:text-base'>
                         <div className="flex gap-2 py-2 justify-center lg:justify-normal items-center">
@@ -274,7 +274,7 @@ export default function PriceList({ city }) {
 
                                 <div className="flex items-center gap-1 p-2 bg-[#660066] xl:text-base lg:text-xs text-sm  border-[1px] border-black lg:rounded-full rounded-md lg:hover:scale-105 xl:w-[330px] lg:w-[250px]  w-full">
                                     <FaCar className="bg-white text-black lg:rounded-full rounded-md p-1" size={40} />
-                                    <p className="ml-2">Check Original Car Photo</p>
+                                    <p className="ml-2">Check Original Car Photos & Book</p>
                                 </div>
                                 <div className="flex items-center gap-1 p-2 bg-[#660066] xl:text-base lg:text-xs text-sm  border-[1px] border-black lg:rounded-full rounded-md lg:hover:scale-105 xl:w-[330px] lg:w-[250px]  w-full">
                                     <FaCarSide className="bg-white text-black lg:rounded-full rounded-md p-1" size={40} />
@@ -284,10 +284,10 @@ export default function PriceList({ city }) {
                                     <IoMdArrowDropdownCircle className="bg-white text-black lg:rounded-full rounded-md p-1" size={40} />
                                     <p className="ml-2">Lowest Price Challenge</p>
                                 </div>
-                                <div className="flex items-center gap-1 p-2 bg-[#660066] xl:text-base lg:text-xs text-sm  border-[1px] border-black lg:rounded-full rounded-md lg:hover:scale-105 xl:w-[330px] lg:w-[250px]  w-full">
+                                {/* <div className="flex items-center gap-1 p-2 bg-[#660066] xl:text-base lg:text-xs text-sm  border-[1px] border-black lg:rounded-full rounded-md lg:hover:scale-105 xl:w-[330px] lg:w-[250px]  w-full">
                                     <IoCarSportSharp className="bg-white text-black lg:rounded-full rounded-md p-1" size={40} />
                                     <p className="ml-2">Swift Dzire { '₹1992'} per Day</p>
-                                </div>
+                                </div> */}
                                 <div className="flex items-center gap-1 p-2 bg-[#660066] xl:text-base lg:text-xs text-sm  border-[1px] border-black lg:rounded-full rounded-md lg:hover:scale-105 xl:w-[330px] lg:w-[250px]  w-full">
                                     <SiContactlesspayment className="bg-white text-black lg:rounded-full rounded-md p-1" size={40} />
                                     <p className="ml-2">Just pay 10% Advance & book</p>

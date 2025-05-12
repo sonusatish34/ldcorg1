@@ -1,16 +1,16 @@
 import Head from "next/head"
 import ContactUS from "./components/ContactUs/ContactUs"
 import Layout from "./components/Layout/Layout"
-function contact({canonicalUrl}) {
+function contact({ canonicalUrl }) {
 
     return (
-        <Layout phoneno={"9666699583"}>
+        <Layout phoneno={"9000-478-478"}>
             <Head>
-                <title>Self-Drive Cars: No Deposit, Unlimited KMs</title>
-                <meta name="description" content="Cars Starting From ₹1488/day, Swift ₹1680/day, Ertiga ₹2496/day. Get 1 day free car for new users. Home delivery available & Check real car images." />
+                <title>No Deposit | Unlimited Kms - Cheapest Self Drive Cars Near U</title>
+                <meta id="meta-desc" name="description" content="1 day Free Car @ New User - Self Drive Cars @ 1488/Day - Check Real Photos & Book - Home Delivery" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <meta property="og:title" content="Self-Drive Cars: No Deposit, Unlimited KMs" />
-                <meta property="og:description" content="Cars Starting From ₹1488/day, Swift ₹1680/day, Ertiga ₹2496/day. Get 1 day free car for new users. Home delivery available & Check real car images." />
+                <meta property="og:title" content="No Deposit | Unlimited Kms - Cheapest Self Drive Cars Near U" />
+                <meta property="og:description" content="1 day Free Car @ New User - Self Drive Cars @ 1488/Day - Check Real Photos & Book - Home Delivery" />
                 <script
                     async
                     src="https://www.googletagmanager.com/gtag/js?id=AW-16731119855"
@@ -57,7 +57,7 @@ function contact({canonicalUrl}) {
 
 export default contact
 export async function getServerSideProps(context) {
-    const { req,params } = context; // Extract `params` if using dynamic routes
+    const { req, params } = context; // Extract `params` if using dynamic routes
 
     const host = req.headers.host;
     const canonicalUrl = host.includes('.in')

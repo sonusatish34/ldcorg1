@@ -109,7 +109,7 @@ const ContactUS = () => {
                             <li >
                                 <p className='bg-[#0556e8] p-2 w-32 text-white'>Telangana</p>
                                 <p className='flex flex-col gap-2 pt-3'><span>For Attachments Call us on</span><span><Link href="tel:9888988828" target="_blank">9888-9888-28</Link></span></p>
-                                <p className='flex flex-col gap-2 pt-3'><span>For Bookings Call us on</span><span><Link href="tel:9000478478" target="_blank">9666-677-405</Link></span></p>
+                                <p className='flex flex-col gap-2 pt-3'><span>For Bookings Call us on</span><span><Link href="tel:9000478478" target="_blank">9000-478-478</Link></span></p>
                             </li>
                             <li>
                                 <p className='bg-[#0556e8] p-2 w-32 text-white'>Vizag</p>

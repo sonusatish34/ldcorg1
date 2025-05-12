@@ -105,7 +105,7 @@ const HamburgerMenu = ({ locname, phoneno }) => {
           onClick={() => setIsOpen(!isOpen)}
           aria-label="Toggle menu"
         >
-          <svg className="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <svg className="w-6 h-6 mxs:w-7 mxs:h-7 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
             <path fillRule="evenodd" clipRule="evenodd" d="M4 6h16v2H4V6zm0 5h16v2H4v-2zm0 5h16v2H4v-2z" />
           </svg>
         </button>
@@ -146,7 +146,7 @@ const HamburgerMenu = ({ locname, phoneno }) => {
             <ul>
               <li>Telangana, AP</li>
               <li className="font-bold text-2xl text-black pt-2">
-                <Link href="tel:9000478478" target='_blank'>9666-677-405</Link>
+                <Link href="tel:9000478478" target='_blank'>9000-478-478</Link>
               </li>
             </ul>
           </div>

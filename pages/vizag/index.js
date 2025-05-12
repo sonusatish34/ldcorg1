@@ -40,10 +40,10 @@ export default function Place({ cars, canonicalUrl }) {
         <div>
             <Layout locname={'vizag'} phoneno={"96666-99583"}>
                 <Head>
-                    <title>Self-Drive Cars: No Deposit, Unlimited KMs</title>
+                    <title>No Deposit | Unlimited Kms - Cheapest Self Drive Cars Near U</title>
                     <meta name="description" content="Rent a 5 Seater- Dzire for ₹1680/day with No Deposit & Unlimited Kms for a stress-free travel. With prices starting at ₹1488/day, Choose Your Own Hours with self-drive car rentals." />
                     <meta name="viewport" content="width=device-width, initial-scale=1" />
-                    <meta property="og:title" content="Self-Drive Cars: No Deposit, Unlimited KMs" />
+                    <meta property="og:title" content="No Deposit | Unlimited Kms - Cheapest Self Drive Cars Near U" />
                     <meta property="og:description" content="Rent a 5 Seater- Dzire for ₹1680/day with No Deposit & Unlimited Kms for a stress-free travel. With prices starting at ₹1488/day, Choose Your Own Hours with self-drive car rentals." />
                     <script
                         async

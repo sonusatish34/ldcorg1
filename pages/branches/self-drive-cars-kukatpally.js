@@ -5,15 +5,16 @@ import Image from 'next/image';
 import www from '../images/branchimages/6.webp'
 import Head from 'next/head';
 
-function kukatpally() {
+function kukatpally({canonicalUrl}) {
   return (
     <div className='bg-white'>
       <Head>
-        <title>  Self-Drive Cars: No Deposit, Unlimited KMs</title>
-        <meta name="description" content="It's time for self drive cars in Kukatpally" />
+        <title>  No Deposit | Unlimited Kms - Cheapest Self Drive Cars Near U</title>
+        <meta name="description" content="1 day Free Car @ New User - Self Drive Cars @ 1488/Day - Check Real Photos & Book - Home Delivery" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta property="og:title" content="  Self-Drive Cars: No Deposit, Unlimited KMs" />
-        <meta property="og:description" content="It's time for self drive cars in Kukatpally" />
+        <meta property="og:title" content="  No Deposit | Unlimited Kms - Cheapest Self Drive Cars Near U" />
+        <meta property="og:description" content="1 day Free Car @ New User - Self Drive Cars @ 1488/Day - Check Real Photos & Book - Home Delivery" />
+        <link rel="canonical" href={canonicalUrl} />
       </Head>
 
       <HamburgerMenu forblog={true} locname={'hyderabad'} phoneno={'9000-478-478'} />
@@ -96,3 +97,16 @@ function kukatpally() {
 }
 
 export default kukatpally;
+export async function getServerSideProps({ req }) {
+  
+  const host = req.headers.host;
+  const canonicalUrl = host.includes('.in')
+      ? 'https://www.longdrivecars.in/branches/self-drive-cars-kukatpally'
+      : 'https://www.longdrivecars.com/branches/self-drive-cars-kukatpally';
+
+  return {
+      props: {
+          canonicalUrl,
+      },
+  };
+}

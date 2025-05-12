@@ -14,13 +14,9 @@ import Image from 'next/image';
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import StaticData from '../../../images/StaticData';
 import Loading from '@/pages/components/Loading';
-import Slider from "react-slick";
-// import React, { useEffect, useState } from 'react';
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import Head from 'next/head';
 
-const ComponentName = ( { canonicalUrl }) => {
+const ComponentName = ({ canonicalUrl }) => {
     const [categories, setCategories] = useState([]);
     const router = useRouter();
     const { category } = router.query; // Get the category name from the URL
@@ -30,76 +26,7 @@ const ComponentName = ( { canonicalUrl }) => {
     const [filteredPosts, setFilteredPosts] = useState([]); // Filtered posts state
     const [loading, setLoading] = useState(true); // State to manage loading
     const [error, setError] = useState(null); // State to manage errors
-    const [cList, setCList] = useState();
-
-
-
-    const settings = {
-        className: "center",
-        // centerMode: true,
-        infinite: true,
-        // centerPadding: "60px",
-        // slidesToShow: 6,
-        speed: 500,
-        arrows: true,
-        responsive: [
-            {
-                breakpoint: 2000, // Largest breakpoint first
-                settings: {
-                    slidesToShow: 4,
-                    slidesToScroll: 1,
-                    infinite: true,
-                },
-            },
-            {
-                breakpoint: 1020,
-                settings: {
-                    slidesToShow: 4,
-                    slidesToScroll: 1,
-                    infinite: true,
-                },
-            },
-
-            {
-                breakpoint: 770,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 2,
-                    infinite: true,
-                },
-            },
-
-
-            {
-                breakpoint: 475,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1,
-                    slidesToScroll: 3,
-                    infinite: true,
-                },
-            },
-
-            {
-                breakpoint: 370,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1,
-                    infinite: true,
-                },
-            },
-
-            {
-                breakpoint: 320, // Smallest breakpoint last
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1,
-                    infinite: true,
-                },
-            },
-        ],
-
-    };
+    const [cLis, setCList] = useState();
 
 
 
@@ -169,11 +96,11 @@ const ComponentName = ( { canonicalUrl }) => {
     return (
         <BlogLayout onSearch={setSearchQuery} catg={category} recommended={true}>
             <Head>
-                <title>  Self-Drive Cars: No Deposit, Unlimited KMs</title>
+                <title>  No Deposit | Unlimited Kms - Cheapest Self Drive Cars Near U</title>
                 <meta name="description" content="Self-drive cars start at 62/hr, We offer Long Drive Cars for the best prices with unlimited km , Book clDzire @ ₹83/hr, Baleno @ ₹91/hr, Ertiga @ ₹124/hr, Swift @ ₹83/hr, Thar @ ₹208/hr." />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <meta property="og:title" content="  Self-Drive Cars: No Deposit, Unlimited KMs" />
-                <meta property="og:description" content="Cars Starting From ₹1488/day, Swift ₹1680/day, Ertiga ₹2496/day. Get 1 day free car for new users. Home delivery available & Check real car images." />
+                <meta property="og:title" content="  No Deposit | Unlimited Kms - Cheapest Self Drive Cars Near U" />
+                <meta property="og:description" content="1 day Free Car @ New User - Self Drive Cars @ 1488/Day - Check Real Photos & Book - Home Delivery" />
 
                 <link rel="canonical" href={canonicalUrl} />
             </Head>
@@ -192,24 +119,6 @@ const ComponentName = ( { canonicalUrl }) => {
                         <p className="text-center text-2xl lg:text-4xl font-semibold lg:w-80 leading-relaxed">
                             Recommended stories in "{category}"
                         </p>
-
-                        {/* Subheading */}
-                        {/* <p className="text-lg font-semibold ">More Topics To Explore</p> */}
-
-                        {/* <div className='xl:w-[400px] lg:w-[300px] w-44 mxs:w-60  text-center '>
-                            <Slider key={JSON.stringify(cList)} {...settings} className="blog-carousal">
-                                {cList?.length > 0 &&
-                                    cList.map((cat, i) => (
-                                        <Link
-                                            key={`category-${i}`}
-                                            href={`/blog/${cat.name.toLowerCase()}/recommended`}
-                                            className={`capitalize font-medium text-white text-[14px] lg:text-base bg-[#1859c9] rounded-3xl lg:rounded-3xl ${cat.name.toLowerCase() === category?.toLowerCase() ? 'border-2 border-yellow-500 text-yellow-500 rounded-3xl' : ''}`}
-                                        >
-                                            {cat.name.toLowerCase()}
-                                        </Link>
-                                    ))}
-                            </Slider>
-                        </div> */}
                     </div>
                 </div>
 
@@ -257,8 +166,8 @@ const ComponentName = ( { canonicalUrl }) => {
                                             </li>
                                         </ul> */}
                                         <ul className="mt-4 flex flex-wrap justify-items-center space-x-4 text-xs">
-                                        <li className="hidden lg:block">{StaticData(post?.time?.seconds)}</li>
-                                        <li className="flex items-center gap-1">
+                                            <li className="hidden lg:block">{StaticData(post?.time?.seconds)}</li>
+                                            <li className="flex items-center gap-1">
                                                 <span><BiCategory className="text-blue-400" /></span>
                                                 <span>{post?.categoryname[0]}</span>
                                             </li>
@@ -300,7 +209,7 @@ const ComponentName = ( { canonicalUrl }) => {
                                                     alt={post?.cialt}
                                                     width={2000}
                                                     height={2000}
-                                                    fetchPriority={i === 0 ? 'high' : 'low'} 
+                                                    fetchPriority={i === 0 ? 'high' : 'low'}
                                                 />
                                             )}
                                         </Link>

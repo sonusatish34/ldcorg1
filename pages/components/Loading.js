@@ -10,6 +10,7 @@ const Loading = () => {
           alt="Long Drive Cars"
           width={500}
           height={500}
+          unoptimized={true}
         // placeholder="blur"
         />
       </div>

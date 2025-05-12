@@ -4,15 +4,16 @@ import Footer from '../components/Footer/Footer';
 import Image from 'next/image';
 import www from '../images/branchimages/4.webp'
 import Head from 'next/head';
-function dilshuknagar() {
+function dilshuknagar({canonicalUrl}) {
   return (
     <div className='bg-white'>
          <Head>
-        <title>  Self-Drive Cars: No Deposit, Unlimited KMs</title>
-        <meta name="description" content="Easy access to self drive cars in Dilsukhnagar"/>
+        <title>  No Deposit | Unlimited Kms - Cheapest Self Drive Cars Near U</title>
+        <meta name="description" content="1 day Free Car @ New User - Self Drive Cars @ 1488/Day - Check Real Photos & Book - Home Delivery"/>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta property="og:title" content="  Self-Drive Cars: No Deposit, Unlimited KMs" />
-        <meta property="og:description" content="Easy access to self drive cars in Dilsukhnagar"/> 
+        <meta property="og:title" content="  No Deposit | Unlimited Kms - Cheapest Self Drive Cars Near U" />
+        <meta property="og:description" content="1 day Free Car @ New User - Self Drive Cars @ 1488/Day - Check Real Photos & Book - Home Delivery"/> 
+        <link rel="canonical" href={canonicalUrl} />
       </Head>
       <HamburgerMenu  locname={'hyderabad'} phoneno={'9000-478-478'} />
       <div className='text-black lg:px-16 px-4 leading-9 lg:leading-10 pt-36 lg:pt-16'>
@@ -73,3 +74,17 @@ function dilshuknagar() {
 }
 
 export default dilshuknagar;
+
+export async function getServerSideProps({ req }) {
+  
+  const host = req.headers.host;
+  const canonicalUrl = host.includes('.in')
+      ? 'https://www.longdrivecars.in/branches/self-drive-cars-lbnagar-kothapet'
+      : 'https://www.longdrivecars.com/branches/self-drive-cars-lbnagar-kothapet';
+
+  return {
+      props: {
+          canonicalUrl,
+      },
+  };
+}

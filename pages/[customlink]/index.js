@@ -21,7 +21,7 @@ const metaData = [
         description: "Book your Self-drive car rental starting at ₹1488/day. Install the Long Drive Cars app to book Dzire ₹1680/day, Ertiga ₹2496/day or explore other options for your next trip",
     },
     {
-        title: "Self-Drive Cars: No Deposit, Unlimited KMs ",
+        title: "No Deposit | Unlimited Kms - Cheapest Self Drive Cars Near U ",
         description: "Starting at just ₹1488/day, rent a Self-drive car like the Dzire ₹1680/day or Ertiga ₹2496/day. You can also check Real Car Images on the Long Drive Cars App.",
     },
     {
@@ -66,11 +66,11 @@ export default function Place({ cars, canonicalUrl }) {
         <div>
             <Layout locname={'hyderabad'} phoneno={"9000-478-478"}>
                 <Head>
-                    <title>Self-Drive Cars: No Deposit, Unlimited KMs</title>
-                    <meta name="description" content="Cars Starting From ₹1488/day, Swift ₹1680/day, Ertiga ₹2496/day. Get 1 day free car for new users. Home delivery available & Check real car images." />
+                    <title>No Deposit | Unlimited Kms - Cheapest Self Drive Cars Near U</title>
+                    <meta id="meta-desc" name="description" content="1 day Free Car @ New User - Self Drive Cars @ 1488/Day - Check Real Photos & Book - Home Delivery" />
                     <meta name="viewport" content="width=device-width, initial-scale=1" />
-                    <meta property="og:title" content="Self-Drive Cars: No Deposit, Unlimited KMs" />
-                    <meta property="og:description" content="Cars Starting From ₹1488/day, Swift ₹1680/day, Ertiga ₹2496/day. Get 1 day free car for new users. Home delivery available & Check real car images." />
+                    <meta property="og:title" content="No Deposit | Unlimited Kms - Cheapest Self Drive Cars Near U" />
+                    <meta property="og:description" content="1 day Free Car @ New User - Self Drive Cars @ 1488/Day - Check Real Photos & Book - Home Delivery" />
                     <script
                         async
                         src="https://www.googletagmanager.com/gtag/js?id=AW-16731119855"
@@ -152,14 +152,14 @@ export async function getServerSideProps(context) {
         car_image_front_view: car.car_image_front_view,
         car_image_back_view: car.car_image_back_view,
         car_image_back_inner: car.car_image_back_inner,
-        car_image_car_left_view:car.car_image_car_left_view,
+        car_image_car_left_view: car.car_image_car_left_view,
         car_image_reading_view: car.car_image_reading_view,
         fuel_type: car.fuel_type,
         transmission_type: car.transmission_type,
         seater: car.seater,
     }));
-    const { req,params } = context; 
-    const {customlink} = params; 
+    const { req, params } = context;
+    const { customlink } = params;
 
     const host = req.headers.host;
 
@@ -169,7 +169,7 @@ export async function getServerSideProps(context) {
 
     return {
         props: {
-            cars:filteredCars,
+            cars: filteredCars,
             canonicalUrl,
         },
     };

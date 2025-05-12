@@ -17,7 +17,7 @@ const FaqAccordion = ({ city }) => {
     },
     {
       question: 'Refund & Cancellation Policy',
-      answer: "<p>There is No Refund  If you cancel the booking </p><p>As you are our Precious Customer </p><p>We Will Add same amount of LDC points into LDC Wallet if you Cancel the Booking before pickup Time only. </p><p><strong>Note -</strong> LDC Wallet points can be used from Monday to Thursday pickup only maximum 500 per booking.</p>",
+      answer: "<p>There is No Refund  If you cancel the booking </p><p>As you are our Precious Customer </p><p>We Will Add same amount of LDC points into LDC Wallet if you Cancel the Booking before pickup Time only. </p>",
     },
   ];
 

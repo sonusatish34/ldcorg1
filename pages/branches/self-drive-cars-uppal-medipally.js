@@ -6,16 +6,17 @@ import www from '../images/branchimages/5.webp';
 import Head from 'next/head';
 
 
-function hyderabadrentalcar() {
+function hyderabadrentalcar({canonicalUrl}) {
   return (
     <div className='bg-white'>
       
       <Head>
-        <title>  Self-Drive Cars: No Deposit, Unlimited KMs</title>
-        <meta name="description" content="Now it's easy to get self drive cars in Uppal, Medipally"/>
+        <title>  No Deposit | Unlimited Kms - Cheapest Self Drive Cars Near U</title>
+        <meta name="description" content="1 day Free Car @ New User - Self Drive Cars @ 1488/Day - Check Real Photos & Book - Home Delivery"/>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta property="og:title" content="  Self-Drive Cars: No Deposit, Unlimited KMs" />
-        <meta property="og:description" content="Now it's easy to get self drive cars in Uppal, Medipally"/> 
+        <meta property="og:title" content="  No Deposit | Unlimited Kms - Cheapest Self Drive Cars Near U" />
+        <meta property="og:description" content="1 day Free Car @ New User - Self Drive Cars @ 1488/Day - Check Real Photos & Book - Home Delivery"/> 
+        <link rel="canonical" href={canonicalUrl} />
       </Head>
 
       <HamburgerMenu locname={'hyderabad'} phoneno={'9000-478-478'}/>
@@ -68,3 +69,17 @@ function hyderabadrentalcar() {
 }
 
 export default hyderabadrentalcar;
+
+export async function getServerSideProps({ req }) {
+  
+  const host = req.headers.host;
+  const canonicalUrl = host.includes('.in')
+      ? 'https://www.longdrivecars.in/branches/self-drive-cars-uppal-medipally'
+      : 'https://www.longdrivecars.com/branches/self-drive-cars-uppal-medipally';
+
+  return {
+      props: {
+          canonicalUrl,
+      },
+  };
+}
