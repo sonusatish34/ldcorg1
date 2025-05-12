@@ -13,7 +13,7 @@ function getnearbycars({ canonicalUrl }) {
         <title>No Deposit | Unlimited Kms - Cheapest Self Drive Cars Near U</title>
         <meta name="description" content="Plan your trips with Lowest Price Self-Drive car rentals starting at just ₹1488/day. So book Dzire for ₹1680/day or Ertiga at ₹2496/day now with No Deposit &  Unlimited kms." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta property="og:title" content="No Deposit &  No Deposit | Unlimited Kms - Cheapest Self Drive Cars Near U" />
+        <meta property="og:title" content="No Deposit | Unlimited Kms - Cheapest Self Drive Cars Near U" />
         <meta property="og:description" content="Plan your trips with Lowest Price Self-Drive car rentals starting at just ₹1488/day. So book Dzire for ₹1680/day or Ertiga at ₹2496/day now with Unlimited kms" />
 
         <link rel="canonical" href={canonicalUrl} />

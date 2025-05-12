@@ -91,7 +91,7 @@ const CardFragment = ({ item, wspno, phoneno, index }) => {
                                         className=" rounded-md h-[440px] object-cover"
                                         width={1000}
                                         height={1000}
-                                        src={replaceText(item?.car_image_back_inner)}
+                                        src={replaceText(item?.car_image_back_view)}
                                         loading="lazy"
                                     ></Image>
                                 </Link>

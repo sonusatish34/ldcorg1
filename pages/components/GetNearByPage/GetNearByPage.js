@@ -110,7 +110,6 @@ const LocationFetcher = ({ phoneno, locname, wspno }) => {
     return [
       imageMap["car_image_front_view"],
       imageMap["car_image_car_right_view"],
-      imageMap["car_image_back_inner"],
       imageMap["car_image_back_view"],
     ];
   };

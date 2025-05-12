@@ -108,7 +108,6 @@ const CarDetails = ({ city, phoneno, wspno }) => {
                     priority={true}
                   />
                 </div>
-                
                 <div>
                   <Image
                     src={replaceText(caritem?.car_image_reading_view)}
@@ -121,6 +120,15 @@ const CarDetails = ({ city, phoneno, wspno }) => {
                 <div>
                   <Image
                     src={replaceText(caritem?.car_image_back_view)}
+                    alt={`${mdyfmaker_model} for rent`}
+                    width={525}
+                    height={634}
+                    className="lg:w-[525px] lg:h-[634px] h-[450px] rounded-md"
+                  />
+                </div>
+                <div>
+                  <Image
+                    src={replaceText(caritem?.car_image_car_left_view)}
                     alt={`${mdyfmaker_model} for rent`}
                     width={525}
                     height={634}

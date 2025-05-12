@@ -24,6 +24,11 @@ export default function Place({ cars, canonicalUrl }) {
                     <meta name="viewport" content="width=device-width, initial-scale=1" />
                     <meta property="og:title" content="No Deposit | Unlimited Kms - Cheapest Self Drive Cars Near U" />
                     <meta property="og:description" content="1 day Free Car @ New User - Self Drive Cars @ 1488/Day - Check Real Photos & Book - Home Delivery" />
+                    <meta property="og:type" content="website" />
+                    <meta property="og:url" content={`${canonicalUrl}`} />
+                    <meta property="og:image" content="https://www.longdrivecars.com/logos/logo3.webp" />
+                    <meta name="robots" content="index, follow" />
+                    <link rel="canonical" href={canonicalUrl} />
                     <script
                         async
                         src="https://www.googletagmanager.com/gtag/js?id=AW-16731119855"
@@ -61,7 +66,6 @@ export default function Place({ cars, canonicalUrl }) {
                                 })(window,document,'script','dataLayer','GTM-KBCJDV6F');`,
                         }}
                     />
-                    <link rel="canonical" href={canonicalUrl} />
                 </Head>
                 <div className='pt-32 lg:pt-0'>
                     <CarProducts data={cars} phoneno={'9000478478'} wspno={'9666677405'} count={7} />

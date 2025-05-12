@@ -18,7 +18,7 @@ import PriceList from '../components/PriceList/PriceList';
 import Head from 'next/head';
 import PopUp from '../components/PopUp';
 
-export default function Place({cars,canonicalUrl}) {
+export default function Place({ cars, canonicalUrl }) {
     const [carData, setCarData] = useState(null);
     const [carData2, setCarData2] = useState(null);
 
@@ -29,7 +29,8 @@ export default function Place({cars,canonicalUrl}) {
                 const items = await response.json();
                 const cars = items?.data?.results;
                 setCarData2(cars);
-            } catch (error) {``
+            } catch (error) {
+                ``
                 console.error('Error fetching car details:', error);
             }
         }
@@ -39,12 +40,17 @@ export default function Place({cars,canonicalUrl}) {
         <div>
             <Layout locname={'vijayawada'} phoneno={"96666-99583"}>
                 <Head>
-                    <title>No Deposit & Unlimited km - Travel with low-cost Self drive car rentals services</title>
-                    <meta name="description" content="Explore with Self-drive cars starting at ₹1488/day. With low prices, Book Dzire ₹1680/day,Ertiga ₹2496/day or Install Long Drive Cars app for more options." />
+                    <title>No Deposit | Unlimited Kms - Cheapest Self Drive Cars Near U</title>
+                    <meta id="meta-desc" name="description" content="1 day Free Car @ New User - Self Drive Cars @ 1488/Day - Check Real Photos & Book - Home Delivery" />
                     <meta name="viewport" content="width=device-width, initial-scale=1" />
-                    <meta property="og:title" content="  Unlimited km - Travel with low-cost Self drive car rentals services" />
-                    <meta property="og:description" content="Explore with Self-drive cars starting at ₹1488/day. With low prices, Book Dzire ₹1680/day,Ertiga ₹2496/day or Install Long Drive Cars app for more options." />
-                    
+                    <meta property="og:title" content="No Deposit | Unlimited Kms - Cheapest Self Drive Cars Near U" />
+                    <meta property="og:description" content="1 day Free Car @ New User - Self Drive Cars @ 1488/Day - Check Real Photos & Book - Home Delivery" />
+                    <meta property="og:type" content="website" />
+                    <meta property="og:url" content={`${canonicalUrl}`} />
+                    <meta property="og:image" content="https://www.longdrivecars.com/logos/logo3.webp" />
+                    <meta name="robots" content="index, follow" />
+                    <link rel="canonical" href={canonicalUrl} />
+
                     <script
                         async
                         src="https://www.googletagmanager.com/gtag/js?id=AW-16647839094"
@@ -62,10 +68,10 @@ export default function Place({cars,canonicalUrl}) {
                     <link rel="canonical" href={canonicalUrl} />
                 </Head>
                 <div className='pt-32 lg:pt-0'>
-                    <CarProducts data={cars} branch={"vijayawada"} phoneno={'9666699583'} count={7}/>
-                    <DynImageChange locname={'Vijayawada'}/>
+                    <CarProducts data={cars} branch={"vijayawada"} phoneno={'9666699583'} count={7} />
+                    <DynImageChange locname={'Vijayawada'} />
                     <div>
-                        <DynNearByApi city={'vijayawada'}/>
+                        <DynNearByApi city={'vijayawada'} />
                     </div>
                     <div><DynNearYou /></div>
                     <FeaturedCars data={carData2} branch={"vijayawada"} />
@@ -94,7 +100,7 @@ export default function Place({cars,canonicalUrl}) {
 //     const canonicalUrl = host.includes('.in')
 //       ? 'https://www.longdrivecars.in/vijayawada'
 //       : 'https://www.longdrivecars.com/vijayawada';
-  
+
 //     return {
 //       props: {
 //         cars,
@@ -113,7 +119,7 @@ export async function getServerSideProps({ req }) {
         price_24_hours: car.price_24_hours,
         car_image_front_view: car.car_image_front_view,
         car_image_back_view: car.car_image_back_view,
-        car_image_car_left_view:car.car_image_car_left_view,
+        car_image_car_left_view: car.car_image_car_left_view,
         car_image_reading_view: car.car_image_reading_view,
         fuel_type: car.fuel_type,
         transmission_type: car.transmission_type,
