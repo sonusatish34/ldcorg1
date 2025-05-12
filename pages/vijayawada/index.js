@@ -113,7 +113,6 @@ export async function getServerSideProps({ req }) {
         price_24_hours: car.price_24_hours,
         car_image_front_view: car.car_image_front_view,
         car_image_back_view: car.car_image_back_view,
-        car_image_back_inner: car.car_image_back_inner,
         car_image_car_left_view:car.car_image_car_left_view,
         car_image_reading_view: car.car_image_reading_view,
         fuel_type: car.fuel_type,

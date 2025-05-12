@@ -75,23 +75,6 @@ const CardFragment = ({ item, wspno, phoneno, index }) => {
                                         className=" rounded-md h-[440px] object-cover"
                                         width={1000}
                                         height={1000}
-                                        src={replaceText(item?.car_image_car_left_view)}
-                                        loading="lazy"
-                                    ></Image>
-                                </Link>
-                            </div>
-
-                            <div>
-                                <Link
-                                    href={`${("car-rental/" + item?.maker_model)
-                                        .toLowerCase()
-                                        .replace(/ /g, "-")}`}
-                                >
-                                    <Image
-                                        alt={`${item?.maker_model.toLowerCase()} car rental in long drive cars`}
-                                        className=" rounded-md h-[440px] object-cover"
-                                        width={1000}
-                                        height={1000}
                                         src={replaceText(item?.car_image_reading_view)}
                                         loading="lazy"
                                     ></Image>
@@ -108,7 +91,7 @@ const CardFragment = ({ item, wspno, phoneno, index }) => {
                                         className=" rounded-md h-[440px] object-cover"
                                         width={1000}
                                         height={1000}
-                                        src={replaceText(item?.car_image_back_view)}
+                                        src={replaceText(item?.car_image_back_inner)}
                                         loading="lazy"
                                     ></Image>
                                 </Link>
@@ -124,7 +107,7 @@ const CardFragment = ({ item, wspno, phoneno, index }) => {
                                         className=" rounded-md h-[440px] object-cover"
                                         width={1000}
                                         height={1000}
-                                        src={replaceText(item?.car_image_back_inner)}
+                                        src={replaceText(item?.car_image_car_left_view)}
                                         loading="lazy"
                                     ></Image>
                                 </Link>
