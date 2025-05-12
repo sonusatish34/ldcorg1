@@ -143,7 +143,7 @@ const PopUp = props => {
               alt={` for rent`}
               width={1025}
               height={1034}
-              className='h-[400px] mxs:[200px] lg:h-fit'
+              className='h-[400px] lg:h-fit'
               priority
             />
 
