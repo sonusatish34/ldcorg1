@@ -59,7 +59,7 @@ function about({canonicalUrl}) {
 
 export default about
 export async function getServerSideProps(context) {
-    const { req,params } = context; 
+    const { req } = context; 
     const host = req.headers.host;
    
     const canonicalUrl = host.includes('.in')

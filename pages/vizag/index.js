@@ -62,7 +62,7 @@ export default function Place({ cars, canonicalUrl }) {
                     <link rel="canonical" href={canonicalUrl} />
                 </Head>
                 <div className='pt-32 lg:pt-0'>
-                    <CarProducts data={cars} branch={"vizag"} phoneno={'9666699583'} count={7} />
+                    <CarProducts data={cars} branch={"vizag"} wspno={'9666699583'} phoneno={'9666699583'} count={7} />
                     <DynImageChange locname={'Vizag'} />
                     <div>
                         <DynNearByApi city={'vizag'} />

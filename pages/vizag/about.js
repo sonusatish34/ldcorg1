@@ -57,12 +57,8 @@ function about({ canonicalUrl }) {
 
 export default about
 export async function getServerSideProps(context) {
-    const { req, params } = context; // Extract `params` if using dynamic routes
-    const { customlink } = params; // Example fallback for category
-
+    const { req } = context; // Extract `params` if using dynamic routes
     const host = req.headers.host;
-    // <link rel="canonical" href={canonicalUrl} />
-    // Ensure that the category is lowercase, as it's used in the URL
     const canonicalUrl = host.includes('.in')
         ? `https://www.longdrivecars.in/vizag/about`
         : `https://www.longdrivecars.com/vizag/about`;

@@ -25,7 +25,7 @@ function CarProducts({ data, branch, phoneno, count, wspno }) {
     useEffect(() => {
         const timer = setTimeout(() => {
             setDebouncedQuery(searchQuery);
-        }, 200);
+        }, 100);
 
         return () => clearTimeout(timer);
     }, [searchQuery]);
@@ -35,7 +35,7 @@ function CarProducts({ data, branch, phoneno, count, wspno }) {
     const sortedData = filteredData?.sort(
         (a, b) => a.price_24_hours - b.price_24_hours
     );
-    const carModels = ['MARUTHI WAGON R', 'MARUTHI SWIFT', 'MARUTHI DZIRE', 'GRAND NIOS', 'MARUTHI BALENO', 'HYUNDAI I20', 'HYUNDAI VENUE', 'KIA SONET', 'KIA SELTOS', 'KIA SONET SUNROOF', 'SELTOS SUNROOF', 'MARUTHI ERTIGA', 'MAHINDRA THAR 2024', 'INNOVA CRYSTA', 'MAHINDRA XUV 700'];
+    const carModels = ['MARUTHI WAGON R', 'MARUTHI SWIFT', 'MARUTHI DZIRE', 'GRAND NIOS', 'MARUTHI BALENO', 'HYUNDAI I20', 'HYUNDAI VENUE', 'KIA SONET', 'KIA SELTOS', 'KIA SONET SUNROOF', 'SELTOS SUNROOF', 'MARUTHI ERTIGA', 'MAHINDRA THAR 2024 Diesel', 'INNOVA CRYSTA Diesel', 'MAHINDRA XUV 700 Diesel'];
     // const carModels = ['MAHINDRA XUV 700', 'INNOVA CRYSTA AUTOMATIC', 'MAHINDRA XUV 500', 'MG HECTOR PLUS SUNROOF', 'HYUNDAI VERNA', 'KIA CARENS SUNROOF AUTOMATIC 2024', 'MAHINDRA XUV 700 AX7 AUTOMATIC', 'MAHINDRA XUV 700 AX5', 'HYUNDAI CRETA SUNROOF', 'NEXON SUNROOF AUTOMATIC', 'VENUE SUNROOF IMT', 'HYUNDAI I20 SUNROOF', 'MAHINDRA XUV 300 SUNROOF AUTOMATIC', 'MAHINDRA THAR AUTOMATIC', 'KIA SONET SUNROOF IMT 2024'];
 
     const filteredItems = carModels.flatMap((model) =>

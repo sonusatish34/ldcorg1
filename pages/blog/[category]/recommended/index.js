@@ -235,7 +235,14 @@ export async function getServerSideProps(context) {
 
     const host = req.headers.host || 'localhost';
     const category = params?.category || 'default-category'; // Example fallback for category
+    const catQuerySnapshot = await getDocs(collection(fireDb, "catgforldc"));
+    const categoriesData = catQuerySnapshot.docs.map(doc => doc.data().name.toLowerCase());
 
+    if (!categoriesData.includes(category.toLowerCase())) {
+        return {
+            notFound: true, // This will render the 404 page
+        };
+    }
     const canonicalUrl = host.includes('.in')
         ? `https://www.longdrivecars.in/blog/${category}/recommended`
         : `https://www.longdrivecars.com/blog/${category}/recommended`;

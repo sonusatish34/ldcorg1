@@ -1,4 +1,5 @@
 import ContactUS from "../components/ContactUs/ContactUs"
+import Head from "next/head"
 import Layout from "../components/Layout/Layout"
 function contact({ canonicalUrl }) {
 
@@ -56,7 +57,7 @@ function contact({ canonicalUrl }) {
 
 export default contact
 export async function getServerSideProps(context) {
-    const { req, params } = context; // Extract `params` if using dynamic routes
+    const { req } = context; // Extract `params` if using dynamic routes
 
     const host = req.headers.host;
     const canonicalUrl = host.includes('.in')

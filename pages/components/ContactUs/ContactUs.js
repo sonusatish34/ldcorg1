@@ -5,12 +5,8 @@ import clock from '../../../pages/images/icon-clock.svg'
 import deposit from '../../../pages/images/deposit.svg'
 import ggle from '../../../pages/images/ggle.webp'
 import apple from '../../../pages/images/apple.webp'
-import { BiPhoneCall } from "react-icons/bi";
-import { FaWhatsapp } from "react-icons/fa";
 import Link from 'next/link';
-import lady from '../../../pages/images/tboo_lady_image.svg'
-import Layout from '../Layout/Layout';
-import app from '../../../pages/images/appcontact.webp'
+import app from '../../../pages/images/homebanner.webp'
 const ContactUS = () => {
 
     return (

@@ -128,7 +128,7 @@ const PostsListing = ({ data, catg }) => {
           } grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8  xl:mt-2 lg:mt-6 lg:px-0 pt-10`}
       >
         {data?.length > 0 ? (
-          data.slice(2, 8).map((post, i) => (
+          data.slice(8, 14).map((post, i) => (
             <div key={`key-${i}`}>
               <Link href={`/blog/posts/${post.slug.toLowerCase().replace(/ /g, "-")}`} className="lg:px-0  w-full">
                 <p

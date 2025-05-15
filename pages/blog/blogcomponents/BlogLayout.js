@@ -117,7 +117,7 @@ const BlogLayout = ({
 
     return (
         <div>
-            <div className="xl:px-14  py-1 lg:border-8 lg:border-blue-100">
+            <div className="xl:px-14 lg:border-8 lg:border-blue-100">
                 <div className="flex flex-col lg:flex-row lg:items-center xl:gap-14 lg:gap-6 gap-2">
                     <div className="flex gap-x-1 mxs:gap-x-4 px-4 mxs:px-6 lg:items-center border-8 border-blue-100 lg:border-none">
                         <Link href={`/`} className="py-4">

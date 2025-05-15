@@ -12,7 +12,6 @@ import { FaCar } from "react-icons/fa";
 import { IoMdArrowDropdownCircle } from "react-icons/io";
 import { SiContactlesspayment } from "react-icons/si";
 import { FaCarSide } from "react-icons/fa";
-import { IoCarSportSharp } from "react-icons/io5";
 
 const ImageChange = ({ locname }) => {
 

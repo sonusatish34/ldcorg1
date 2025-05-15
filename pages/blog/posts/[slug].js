@@ -429,10 +429,15 @@ export async function getServerSideProps({ req, params }) {
       time: postData.time?.toDate().toISOString(),
     };
 
+    if (postDisplay?.blogfor !== 'LDC') {
+      return {
+        notFound: true, // This will render the 404 page
+      };
+    }
 
     const canonicalUrl = host.includes('.in')
-      ? `https://www.dozzy.in/blog/posts/${(postDisplay.slug)}`
-      : `https://www.dozzy.com/blog/posts/${(postDisplay.slug)}`;
+      ? `https://www.longdrivecars.in/blog/posts/${(postDisplay.slug)}`
+      : `https://www.longdrivecars.com/blog/posts/${(postDisplay.slug)}`;
 
     return {
       props: {

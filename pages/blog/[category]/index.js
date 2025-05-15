@@ -15,6 +15,7 @@ import { MdExpandMore } from "react-icons/md";
 import { MdExplore } from "react-icons/md";
 import Head from 'next/head';
 import RandomPosts from '../blogcomponents/RandomPosts';
+
 const CategoryPage = ({ canonicalUrl }) => {
     const [categories, setCategories] = useState([]);
     const [postlist, setPostlist] = useState([]);
@@ -201,7 +202,14 @@ export async function getServerSideProps(context) {
 
     const host = req.headers.host || 'localhost';
     const category = params?.category || 'default-category'; // Example fallback for category
+     const catQuerySnapshot = await getDocs(collection(fireDb, "catgforldc"));
+    const categoriesData = catQuerySnapshot.docs.map(doc => doc.data().name.toLowerCase());
 
+    if (!categoriesData.includes(category.toLowerCase())) {
+        return {
+            notFound: true, // This will render the 404 page
+        };
+    }
     // Ensure that the category is lowercase, as it's used in the URL
     const canonicalUrl = host.includes('.in')
         ? `https://www.longdrivecars.in/blog/${category}`
