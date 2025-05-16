@@ -3,8 +3,6 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { FaSearch } from "react-icons/fa";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import { useEffect } from "react";
 import { RiArrowDownWideLine } from "react-icons/ri";
 import dnf from '../images/datanotfound.webp'
