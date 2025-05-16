@@ -1,14 +1,14 @@
 import React from 'react';
 import dynamic from 'next/dynamic';
 import CarProducts from './components/CarProducts';
-const DynCallBackForm = dynamic(() => import('./components/CallBackForm/CallBackForm'), { ssr: false });
-const DynNearYou = dynamic(() => import('./components/NearYou/NearYou'), { ssr: false });
-const DynImageChange = dynamic(() => import('./components/ImageChange/ImageChange'), { ssr: false });
-const DynNearByApi = dynamic(() => import('./components/NearByApi/NearByApi'), { ssr: false });
-const GetInTouch = dynamic(() => import('./components/GetInTouch/GetInTouch'), { ssr: false });
-const FeaturedCars = dynamic(() => import('./components/FeaturedCars/FeaturedCars'), { ssr: false });
-const DynamicFaqComponent = dynamic(() => import('./components/FaqAccordian/FaqAccordian'), { ssr: false });
-const DynWhyChooseUs = dynamic(() => import('./components/WhyChooseUs/WhyChooseUs'), { ssr: false });
+const DynCallBackForm = dynamic(() => import('./components/CallBackForm/CallBackForm'), );
+const DynNearYou = dynamic(() => import('./components/NearYou/NearYou'), );
+const DynImageChange = dynamic(() => import('./components/ImageChange/ImageChange'), );
+const DynNearByApi = dynamic(() => import('./components/NearByApi/NearByApi'), );
+const GetInTouch = dynamic(() => import('./components/GetInTouch/GetInTouch'), );
+const FeaturedCars = dynamic(() => import('./components/FeaturedCars/FeaturedCars'), );
+const DynamicFaqComponent = dynamic(() => import('./components/FaqAccordian/FaqAccordian'), );
+const DynWhyChooseUs = dynamic(() => import('./components/WhyChooseUs/WhyChooseUs'), );
 import Layout from './components/Layout/Layout';
 import PriceList from './components/PriceList/PriceList';
 import Head from 'next/head';
@@ -70,7 +70,7 @@ export default function Place({ cars, canonicalUrl }) {
                 <div className='pt-32 lg:pt-0'>
                     <CarProducts data={cars} phoneno={'9000478478'} wspno={'9666677405'} count={7} />
                     <DynImageChange locname={'hyderabad'} />
-                    <DynNearByApi />
+                        <DynNearByApi />
                     <DynNearYou />
                     <FeaturedCars data={cars} branch={"hyderabad"} />
                     <DynCallBackForm />
@@ -92,7 +92,7 @@ export async function getServerSideProps({ req }) {
     const response = await fetch('https://api.longdrivecarz.in/site/cars-info?location=hyderabad');
     const items = await response.json();
     const cars = items?.data?.results;
-    
+
     const filteredCars = cars?.map(car => ({
         maker_model: car.maker_model,
         price_24_hours: car.price_24_hours,
