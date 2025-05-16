@@ -149,7 +149,7 @@ const PopUp = props => {
 
             <button
               onClick={() => setIsVisible1ruppe(false)}
-              className='absolute top-0 right-0 p-2 bg-transparent focus:outline-none flex items-center justify-center z-40 pt-4 pr-4'
+              className='absolute top-[-4px] right-0 p-2 bg-transparent focus:outline-none flex items-center justify-center z-40 pt-4 pr-4'
             >
               <span className='text-lg w-6 h-6 rounded-full relative hover:scale-105 bottom-1 flex justify-center items-center'>
                 <MdOutlineCancel size={30} />

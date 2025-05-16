@@ -7,11 +7,7 @@ import ldcqr from '../../images/ldcqr.png'
 import { BsFillFuelPumpFill } from "react-icons/bs";
 import { GrGroup } from "react-icons/gr";
 import { TbManualGearbox } from "react-icons/tb";
-import disc1 from "../../images/offersimages/onerupee.webp";
 
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import { FaAppStore } from "react-icons/fa";
 import { BiLogoPlayStore } from "react-icons/bi";
 import { handleStoreRedirect } from '../../../utils/redirectUtils';
@@ -33,94 +29,35 @@ const CardFragment = ({ item, wspno, phoneno, index }) => {
             {
                 <div className=" lg:rounded-md flex flex-col  w-[100%] md:w-72 first-line:h-[555px] ">
                     <div className="relative lg:rounded-md h-[445px]">
-                        <Slider
-                            dots={false}
-                            infinite={true}
-                            speed={500}
-                            slidesToShow={1}
-                            slidesToScroll={1}
-                            centerMode={true}
-                            centerPadding={0}
-                            focusOnSelect={true}
-                            arrows={false}
-                            pauseOnFocus={true}
-                            pauseOnHover={true}
-                            className="relative lg:rounded-md"
-                        >
-                            <div>
-                                {
-                                    <Link
-                                        href={`${("/car-rental/" + item?.maker_model).toLowerCase().replace(/ /g, "-")}`}
-                                    >
-                                        <Image
-                                            alt={`${item?.maker_model.toLowerCase()} car rental in long drive cars`}
-                                            className="rounded-md h-[440px] object-cover"
-                                            width={1000}
-                                            height={1000}
-                                            src={replaceText(item?.car_image_front_view)}
-                                            priority={true}
-                                            sizes="(max-width: 200px) 100vw, 50vw"
-                                        />
-                                    </Link>
-                                }
-                            </div>
-                            <div onClick={() => { }}>
-                                <Link
-                                    href={`${("car-rental/" + item?.maker_model)
-                                        .toLowerCase()
-                                        .replace(/ /g, "-")}`}
-                                >
+
+                        <div>
+                            <Link
+                                href={`${("car-rental/" + item?.maker_model)
+                                    .toLowerCase()
+                                    .replace(/ /g, "-")}`}
+                            >
+                                <div className="relative w-full h-[440px]">
                                     <Image
+                                        src={replaceText(item?.car_image_front_view)}
                                         alt={`${item?.maker_model.toLowerCase()} car rental in long drive cars`}
-                                        className=" rounded-md h-[440px] object-cover"
-                                        width={1000}
-                                        height={1000}
-                                        src={replaceText(item?.car_image_reading_view)}
-                                        loading="lazy"
-                                    ></Image>
-                                </Link>
-                            </div>
-                            <div>
-                                <Link
-                                    href={`${("car-rental/" + item?.maker_model)
-                                        .toLowerCase()
-                                        .replace(/ /g, "-")}`}
-                                >
-                                    <Image
-                                        alt={`${item?.maker_model.toLowerCase()} car rental in long drive cars`}
-                                        className=" rounded-md h-[440px] object-cover"
-                                        width={1000}
-                                        height={1000}
-                                        src={replaceText(item?.car_image_back_view)}
-                                        loading="lazy"
-                                    ></Image>
-                                </Link>
-                            </div>
-                            <div onClick={() => { }}>
-                                <Link
-                                    href={`${("car-rental/" + item?.maker_model)
-                                        .toLowerCase()
-                                        .replace(/ /g, "-")}`}
-                                >
-                                    <Image
-                                        alt={`  null`}
-                                        className=" rounded-md h-[440px] object-cover"
-                                        width={1000}
-                                        height={1000}
-                                        src={replaceText(item?.car_image_car_left_view)}
-                                        loading="lazy"
-                                    ></Image>
-                                </Link>
-                            </div>
-                        </Slider>
-                        <div className="relative h-20 z-20 bg-gradient-to-b from-black opacity-90 lg:rounded-md bottom-[28rem] lg:bottom-[28rem]">
+                                        fill
+                                        className="object-cover rounded-md"
+                                        priority
+                                        sizes="(max-width: 768px) 100vw, 50vw"
+                                    />
+                                </div>
+                            </Link>
+                        </div>
+
+
+                        <div className="relative h-20 z-20 bg-gradient-to-b from-black opacity-90 lg:rounded-md bottom-[27.5rem] lg:bottom-[28rem]">
                             <div className="flex flex-col gap-2 items-end pt-4 pr-1">
                                 <p className="relative bottom-3 capitalize p-1  text-white rounded-md  z-50 font-manrope lg:text-sm text-xs mxs:text-base  pt-2 ">
                                     {item?.maker_model.toLowerCase()}
                                 </p>
                             </div>
                         </div>
-                        <div className="relative z-20 bottom-[12.6rem] lg:bottom-[12.4rem] lg:rounde bg-gradient-to-t from-black opacity-90 text-white">
+                        <div className="relative z-20 bottom-[12.2rem] lg:bottom-[12.4rem] lg:rounde bg-gradient-to-t from-black opacity-90 text-white">
                             <div className="flex gap-x-8 mxs:gap-x-16  items-center justify-center pt-5 pb-2 w-full">
                                 <p className="text-[15px] shadow-black">Book Now</p>
                                 <p className="capitalize p-1 font-bold text-white  rounded-md  z-50 font-manrope text-base  lg:text-sm pt-2">

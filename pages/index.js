@@ -68,12 +68,10 @@ export default function Place({ cars, canonicalUrl }) {
                     />
                 </Head>
                 <div className='pt-32 lg:pt-0'>
-                    <DynImageChange locname={'hyderabad'} />
                     <CarProducts data={cars} phoneno={'9000478478'} wspno={'9666677405'} count={7} />
-                    <div>
-                        <DynNearByApi />
-                    </div>
-                    <div><DynNearYou /></div>
+                    <DynImageChange locname={'hyderabad'} />
+                    <DynNearByApi />
+                    <DynNearYou />
                     <FeaturedCars data={cars} branch={"hyderabad"} />
                     <DynCallBackForm />
                     <DynWhyChooseUs />
@@ -94,7 +92,7 @@ export async function getServerSideProps({ req }) {
     const response = await fetch('https://api.longdrivecarz.in/site/cars-info?location=hyderabad');
     const items = await response.json();
     const cars = items?.data?.results;
-
+    
     const filteredCars = cars?.map(car => ({
         maker_model: car.maker_model,
         price_24_hours: car.price_24_hours,
