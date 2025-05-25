@@ -1,5 +1,5 @@
 
-const EXTERNAL_DATA_URL = 'https://api.longdrivecarz.in/site/cars-info?location=hyderabad';
+const EXTERNAL_DATA_URL = 'https://api.longdrivecars.in/site/cars-info?location=hyderabad';
 import { fireDb } from '@/public/firebase';
 import { getDocs, collection, query, where } from 'firebase/firestore';
 import { useEffect, useState } from 'react';

@@ -1,19 +1,26 @@
 import React from 'react';
 import dynamic from 'next/dynamic';
 import CarProducts from './components/CarProducts';
-const DynCallBackForm = dynamic(() => import('./components/CallBackForm/CallBackForm'), { ssr: false });
-const DynNearYou = dynamic(() => import('./components/NearYou/NearYou'), { ssr: false });
+import { useInView } from 'react-intersection-observer';
+import TripPlanner from './components/TripPlanner/TripPlanner';
+const DynCallBackForm = dynamic(() => import('./components/CallBackForm/CallBackForm'));
+const DynNearYou = dynamic(() => import('./components/NearYou/NearYou'));
 const DynImageChange = dynamic(() => import('./components/ImageChange/ImageChange'), { ssr: false });
 const DynNearByApi = dynamic(() => import('./components/NearByApi/NearByApi'), { ssr: false });
 const GetInTouch = dynamic(() => import('./components/GetInTouch/GetInTouch'), { ssr: false });
-const FeaturedCars = dynamic(() => import('./components/FeaturedCars/FeaturedCars'), { ssr: false });
+const FeaturedCars = dynamic(() => import('./components/FeaturedCars/FeaturedCars'));
 const DynamicFaqComponent = dynamic(() => import('./components/FaqAccordian/FaqAccordian'), { ssr: false });
 const DynWhyChooseUs = dynamic(() => import('./components/WhyChooseUs/WhyChooseUs'), { ssr: false });
+
 import Layout from './components/Layout/Layout';
 import PriceList from './components/PriceList/PriceList';
 import Head from 'next/head';
 import PopUp from './components/PopUp';
 export default function Place({ cars, canonicalUrl }) {
+    const { ref: ref1, inView: inView1 } = useInView({ triggerOnce: true, threshold: 0.1 });
+    const { ref: ref2, inView: inView2 } = useInView({ triggerOnce: true, threshold: 0.1 });
+    const { ref: ref3, inView: inView3 } = useInView({ triggerOnce: true, threshold: 0.1 });
+    const { ref: ref4, inView: inView4 } = useInView({ triggerOnce: true, threshold: 0.1 });
 
     return (
         <div>
@@ -29,67 +36,44 @@ export default function Place({ cars, canonicalUrl }) {
                     <meta property="og:image" content="https://www.longdrivecars.com/logos/logo3.webp" />
                     <meta name="robots" content="index, follow" />
                     <link rel="canonical" href={canonicalUrl} />
-                    <script
-                        async
-                        src="https://www.googletagmanager.com/gtag/js?id=AW-16731119855"
-                    ></script>
-                    <script
-                        dangerouslySetInnerHTML={{
-                            __html: `
-                        window.dataLayer = window.dataLayer || [];
-                        function gtag(){dataLayer.push(arguments);}
-                        gtag('js', new Date());
-                        gtag('config', 'AW-16731119855');
-                    `,
-                        }}
-                    ></script>
-                    <script
-                        async
-                        src="https://www.googletagmanager.com/gtag/js?id=G-8RGJTJSJCW">
-                    </script>
-                    <script
-                        dangerouslySetInnerHTML={{
-                            __html: `
-                        window.dataLayer = window.dataLayer || [];
-                        function gtag(){dataLayer.push(arguments);}
-                        gtag('js', new Date());
-                        gtag('config', 'G-8RGJTJSJCW');
-                    `,
-                        }}
-                    ></script>
-                    <script
-                        dangerouslySetInnerHTML={{
-                            __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-                                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-                                j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-                                'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-                                })(window,document,'script','dataLayer','GTM-KBCJDV6F');`,
-                        }}
-                    />
                 </Head>
                 <div className='pt-32 lg:pt-0'>
+                    <TripPlanner />
                     <CarProducts data={cars} phoneno={'9000478478'} wspno={'9666677405'} count={7} />
-                    <DynImageChange locname={'hyderabad'} />
-                        <DynNearByApi />
+                    <div ref={ref1}>
+                        {inView1 && <DynImageChange locname={'hyderabad'} />}
+                    </div>
+                    <DynNearByApi />
                     <DynNearYou />
                     <FeaturedCars data={cars} branch={"hyderabad"} />
                     <DynCallBackForm />
-                    <DynWhyChooseUs />
+                    <div ref={ref2}>
+                        {inView2 && <DynWhyChooseUs />}
+                    </div>
                     <div className='bg-white rounded xl:py-12 lg:px-14 xl:px-14 p-2'>
                         <p className='uppercase p-2 mb-4 text-center text-black font-bold xl:text-2xl font-manrope'>Frequently asked questions</p>
-                        <DynamicFaqComponent />
+
+                        <div ref={ref3}>
+                            {inView3 && <DynamicFaqComponent />}
+                        </div>
                     </div>
-                    <GetInTouch phoneno={'9000478478'} wspno={'9666677405'} />
+                    <div ref={ref3}>
+                        {inView3 && <GetInTouch phoneno={'9000478478'} wspno={'9666677405'} />}
+                    </div>
+
                     <PriceList city={'hyd'} />
-                    <PopUp />
+                    <div ref={ref4}>
+                        {inView4 && <PopUp />}
+                    </div>
+
                 </div>
             </Layout>
         </div>
     );
 }
 
-export async function getServerSideProps({ req }) {
-    const response = await fetch('https://api.longdrivecarz.in/site/cars-info?location=hyderabad');
+export async function getStaticProps() {
+    const response = await fetch('https://api.longdrivecars.in/site/cars-info?location=hyderabad');
     const items = await response.json();
     const cars = items?.data?.results;
 
@@ -105,15 +89,16 @@ export async function getServerSideProps({ req }) {
         seater: car.seater,
     }));
 
-    const host = req.headers.host;
-    const canonicalUrl = host.includes('.in')
-        ? 'https://www.longdrivecars.in'
-        : 'https://www.longdrivecars.com';
+    // Canonical URL logic (you can move this to the component if req is needed)
+    const canonicalUrl = 'https://www.longdrivecars.in';
 
     return {
         props: {
-            cars: filteredCars,
+            cars: filteredCars || [],
             canonicalUrl,
         },
+        // Revalidate every 60 minutes (3600 seconds)
+        revalidate: 3600,
     };
 }
+

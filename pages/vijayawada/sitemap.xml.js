@@ -1,5 +1,5 @@
 
-const EXTERNAL_DATA_URL = 'https://api.longdrivecarz.in/site/cars-info?location=vijayawada';
+const EXTERNAL_DATA_URL = 'https://api.longdrivecars.in/site/cars-info?location=vijayawada';
 
 function generateSiteMap(cars) {
     return `
@@ -35,7 +35,7 @@ function generateSiteMap(cars) {
         return `
 
         <url>
-            <loc>${`hhttps://www.longdrivecars.com/vijayawada/car-rental/${item?.maker_model.replaceAll(' ','-').toLowerCase()}`}</loc>
+            <loc>${`hhttps://www.longdrivecars.com/vijayawada/car-rental/${item?.maker_model.replaceAll(' ', '-').toLowerCase()}`}</loc>
             <changefreq>weekly</changefreq>
             <priority>0.9</priority>
         </url>
@@ -58,9 +58,9 @@ export async function getServerSideProps({ res, req }) {
     const items = await response.json();
     // const cars = ['book-a-rental-car-in-vijayawada','sedan-cars-for-rent-in-vijayawada','cars-rental-services-in-vijayawada'];
     const cars = items?.data?.results;
-    
-      const  sitemap = generateSiteMap(cars)
-    
+
+    const sitemap = generateSiteMap(cars)
+
     // Generate the XML sitemap
 
     // Set the response header for XML

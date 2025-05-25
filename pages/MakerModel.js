@@ -45,12 +45,12 @@ const CarDetails = ({ city, phoneno, wspno }) => {
     return formatted;
   }
   const mdyfmaker_model = formatMakerModel(maker_model);
-  
+
   useEffect(() => {
     async function fetchCarDetails() {
       setLoading(true);
       try {
-        const response = await fetch(`https://api.longdrivecarz.in/site/cars-info?location=${city ? city : 'hyderabad'}`);
+        const response = await fetch(`https://api.longdrivecars.in/site/cars-info?location=${city ? city : 'hyderabad'}`);
         const items = await response.json();
         const cars = items?.data?.results;
         const car = cars?.find(i => i?.maker_model.toLowerCase() === mdyfmaker_model);
@@ -173,13 +173,13 @@ const CarDetails = ({ city, phoneno, wspno }) => {
                 <p className=' flex items-center gap-1 text-xl'><span><BiPhoneCall className='xl:size-6' /></span> <span>Call Us</span></p>
               </Link>
             </button>
-            
+
           </div>
           <div onClick={handleStoreRedirect} className=" lg:hidden flex items-center cursor-pointer text-black pt-4 text-sm mxs:text-base font-semibold">
-              <p className="bg-gradient-to-r from-green-600 via-[#556ee6] to-indigo-400 inline-block text-transparent bg-clip-text animate-gradient border-[1px] border-[#5566ee] p-2 rounded-md">
-                Download Long Drive Cars App
-              </p>
-            </div>
+            <p className="bg-gradient-to-r from-green-600 via-[#556ee6] to-indigo-400 inline-block text-transparent bg-clip-text animate-gradient border-[1px] border-[#5566ee] p-2 rounded-md">
+              Download Long Drive Cars App
+            </p>
+          </div>
         </div>
         <div className='xl:mx-64  lg:mx-48'>
           <div className='py-4'>

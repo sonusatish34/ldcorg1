@@ -24,7 +24,7 @@ export default function Place({ cars, canonicalUrl }) {
     useEffect(() => {
         async function fetchCarDetails() {
             try {
-                const response = await fetch(`https://api.longdrivecarz.in/site/cars-info?location=hyderabad`);
+                const response = await fetch(`https://api.longdrivecars.in/site/cars-info?location=hyderabad`);
                 const items = await response.json();
                 const cars = items?.data?.results;
                 setCarData2(cars);
@@ -45,20 +45,6 @@ export default function Place({ cars, canonicalUrl }) {
                     <meta name="viewport" content="width=device-width, initial-scale=1" />
                     <meta property="og:title" content="No Deposit | Unlimited Kms - Cheapest Self Drive Cars Near U" />
                     <meta property="og:description" content="1 day Free Car @ New User - Self Drive Cars @ 1488/Day - Check Real Photos & Book - Home Delivery" />
-                    <script
-                        async
-                        src="https://www.googletagmanager.com/gtag/js?id=AW-16647839094"
-                    ></script>
-                    <script
-                        dangerouslySetInnerHTML={{
-                            __html: `
-                        window.dataLayer = window.dataLayer || [];
-                        function gtag(){dataLayer.push(arguments);}
-                        gtag('js', new Date());
-                        gtag('config', 'AW-16647839094');
-                    `,
-                        }}
-                    ></script>
                     <link rel="canonical" href={canonicalUrl} />
                 </Head>
                 <div className='pt-32 lg:pt-0'>
@@ -87,7 +73,7 @@ export default function Place({ cars, canonicalUrl }) {
 
 
 // export async function getServerSideProps({ req }) {
-//     const response = await fetch('https://api.longdrivecarz.in/site/cars-info?location=hyderabad');
+//     const response = await fetch('https://api.longdrivecars.in/site/cars-info?location=hyderabad');
 //     const items = await response.json();
 //     const cars = items?.data?.results;
 //     const host = req.headers.host;
@@ -103,7 +89,7 @@ export default function Place({ cars, canonicalUrl }) {
 //     };
 // }
 export async function getServerSideProps({ req }) {
-    const response = await fetch('https://api.longdrivecarz.in/site/cars-info?location=hyderabad');
+    const response = await fetch('https://api.longdrivecars.in/site/cars-info?location=hyderabad');
     const items = await response.json();
     const cars = items?.data?.results;
 

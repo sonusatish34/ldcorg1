@@ -239,13 +239,10 @@ function CarProducts({ data, branch, phoneno, count, wspno }) {
                             </div>
                         )}
                     </>
-
                 ))}
                 {searchQuery.length >= 1 && filteredData?.map((item, index) => (
                     <>
-
                         <CardFragment key={index} item={item} wspno={wspno} phoneno={phoneno} />
-
                     </>
                 ))}
 
@@ -262,7 +259,6 @@ function CarProducts({ data, branch, phoneno, count, wspno }) {
                     </button>
                 </Link>
             )}
-
         </div>
     );
 }

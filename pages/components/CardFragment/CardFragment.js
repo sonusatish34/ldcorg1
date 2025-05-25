@@ -50,14 +50,14 @@ const CardFragment = ({ item, wspno, phoneno, index }) => {
                         </div>
 
 
-                        <div className="relative h-20 z-20 bg-gradient-to-b from-black opacity-90 lg:rounded-md bottom-[27.5rem] lg:bottom-[28rem]">
+                        <div className="relative h-20 z-20 bg-gradient-to-b from-black opacity-90 lg:rounded-md bottom-[27.5rem] lg:bottom-[27.5rem]">
                             <div className="flex flex-col gap-2 items-end pt-4 pr-1">
                                 <p className="relative bottom-3 capitalize p-1  text-white rounded-md  z-50 font-manrope lg:text-sm text-xs mxs:text-base  pt-2 ">
                                     {item?.maker_model.toLowerCase()}
                                 </p>
                             </div>
                         </div>
-                        <div className="relative z-20 bottom-[12.2rem] lg:bottom-[12.4rem] lg:rounde bg-gradient-to-t from-black opacity-90 text-white">
+                        <div className="relative z-20 bottom-[12.2rem] lg:bottom-[12rem] lg:rounded-b-md bg-gradient-to-t from-black opacity-90 text-white">
                             <div className="flex gap-x-8 mxs:gap-x-16  items-center justify-center pt-5 pb-2 w-full">
                                 <p className="text-[15px] shadow-black">Book Now</p>
                                 <p className="capitalize p-1 font-bold text-white  rounded-md  z-50 font-manrope text-base  lg:text-sm pt-2">

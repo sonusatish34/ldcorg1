@@ -99,15 +99,7 @@ function NearByApi({ city }) {
               alt="long drive cars app"
             />
           </div>
-          {/* <div className=" ">
-            <Image
-              src={cashback}
-              width={1000}
-              height={1000}
-              className="rounded-md"
-              alt="long drive cars app"
-            />
-          </div> */}
+         
           <div className="flex  items-center justify-center ">
             <Image
               src={freecarshare100}
