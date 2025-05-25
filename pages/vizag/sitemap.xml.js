@@ -1,5 +1,5 @@
 
-const EXTERNAL_DATA_URL = 'https://api.longdrivecars.in/site/cars-info?location=vizag';
+const EXTERNAL_DATA_URL = 'https://api.longdrivecars.com/site/cars-info?location=vizag';
 
 function generateSiteMap(cars) {
     return `

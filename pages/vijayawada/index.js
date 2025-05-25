@@ -25,7 +25,7 @@ export default function Place({ cars, canonicalUrl }) {
     useEffect(() => {
         async function fetchCarDetails() {
             try {
-                const response = await fetch(`https://api.longdrivecars.in/site/cars-info?location=hyderabad`);
+                const response = await fetch(`https://api.longdrivecars.com/site/cars-info?location=hyderabad`);
                 const items = await response.json();
                 const cars = items?.data?.results;
                 setCarData2(cars);
@@ -77,7 +77,7 @@ export default function Place({ cars, canonicalUrl }) {
 
 
 // export async function getServerSideProps({req}) {
-//     const response = await fetch('https://api.longdrivecars.in/site/cars-info?location=hyderabad');
+//     const response = await fetch('https://api.longdrivecars.com/site/cars-info?location=hyderabad');
 //     const items = await response.json();
 //     const cars = items?.data?.results;
 //     const host = req.headers.host;
@@ -94,7 +94,7 @@ export default function Place({ cars, canonicalUrl }) {
 //   }
 
 export async function getServerSideProps({ req }) {
-    const response = await fetch('https://api.longdrivecars.in/site/cars-info?location=hyderabad');
+    const response = await fetch('https://api.longdrivecars.com/site/cars-info?location=hyderabad');
     const items = await response.json();
     const cars = items?.data?.results;
 

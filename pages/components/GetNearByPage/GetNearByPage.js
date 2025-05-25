@@ -86,7 +86,7 @@ const LocationFetcher = ({ phoneno, locname, wspno }) => {
 
       try {
         const response = await fetch(
-          `https://api.longdrivecars.in/user/updated-home?lat=${lat}&long=${lon}&start_date=${compldate}%2000%3A00%3A00&end_date=${compldateend}%2000%3A00%3A00&no_of_days=1&color=Marron,Blue,Grey,Red,Green,Black,Orange&index=0&limit=20`,
+          `https://api.longdrivecars.com/user/updated-home?lat=${lat}&long=${lon}&start_date=${compldate}%2000%3A00%3A00&end_date=${compldateend}%2000%3A00%3A00&no_of_days=1&color=Marron,Blue,Grey,Red,Green,Black,Orange&index=0&limit=20`,
           requestOptions
         );
         const result = await response.json();

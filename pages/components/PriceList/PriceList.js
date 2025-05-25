@@ -20,7 +20,7 @@ export default function PriceList({ city }) {
     useEffect(() => {
         async function fetchCarDetails() {
             try {
-                const response = await fetch(`https://api.longdrivecars.in/site/${city}-prices`);
+                const response = await fetch(`https://api.longdrivecars.com/site/${city}-prices`);
                 const items = await response.json();
                 const listprice = items?.results;
                 setListP(listprice);

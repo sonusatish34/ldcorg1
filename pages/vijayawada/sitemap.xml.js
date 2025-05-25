@@ -1,5 +1,5 @@
 
-const EXTERNAL_DATA_URL = 'https://api.longdrivecars.in/site/cars-info?location=vijayawada';
+const EXTERNAL_DATA_URL = 'https://api.longdrivecars.com/site/cars-info?location=vijayawada';
 
 function generateSiteMap(cars) {
     return `

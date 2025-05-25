@@ -37,7 +37,7 @@ export default function ExploreCars({ loc, phoneno, wspno, branch }) {
         async function fetchCarDetails() {
             setLoader(true);
             try {
-                const response = await fetch(`https://api.longdrivecars.in/site/cars-info?location=${loc ? loc : 'hyderabad'}`);
+                const response = await fetch(`https://api.longdrivecars.com/site/cars-info?location=${loc ? loc : 'hyderabad'}`);
                 const items = await response.json();
                 const cars = items?.data?.results;
                 setCarData(cars);

@@ -50,7 +50,7 @@ const CarDetails = ({ city, phoneno, wspno }) => {
     async function fetchCarDetails() {
       setLoading(true);
       try {
-        const response = await fetch(`https://api.longdrivecars.in/site/cars-info?location=${city ? city : 'hyderabad'}`);
+        const response = await fetch(`https://api.longdrivecars.com/site/cars-info?location=${city ? city : 'hyderabad'}`);
         const items = await response.json();
         const cars = items?.data?.results;
         const car = cars?.find(i => i?.maker_model.toLowerCase() === mdyfmaker_model);

@@ -73,7 +73,7 @@ export default function Place({ cars, canonicalUrl }) {
 }
 
 export async function getStaticProps() {
-    const response = await fetch('https://api.longdrivecars.in/site/cars-info?location=hyderabad');
+    const response = await fetch('https://api.longdrivecars.com/site/cars-info?location=hyderabad');
     const items = await response.json();
     const cars = items?.data?.results;
 
