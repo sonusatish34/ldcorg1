@@ -71,7 +71,7 @@ export default function Place({ cars, canonicalUrl }) {
     );
 }
 
-export async function getStaticProps({req}) {
+export async function getServerSideProps({ req }) {
     const response = await fetch('https://api.longdrivecars.com/site/cars-info?location=hyderabad');
     const items = await response.json();
     const cars = items?.data?.results;
@@ -87,6 +87,7 @@ export async function getStaticProps({req}) {
         transmission_type: car.transmission_type,
         seater: car.seater,
     }));
+
     const host = req.headers.host;
     const canonicalUrl = host.includes('.in')
         ? 'https://www.longdrivecars.in'
@@ -94,11 +95,9 @@ export async function getStaticProps({req}) {
 
     return {
         props: {
-            cars: filteredCars || [],
+            cars: filteredCars,  // Return only the filtered data
             canonicalUrl,
         },
-        // Revalidate every 60 minutes (3600 seconds)
-        revalidate: 3600,
     };
 }
 
