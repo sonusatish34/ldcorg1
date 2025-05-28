@@ -88,9 +88,10 @@ export async function getStaticProps() {
         transmission_type: car.transmission_type,
         seater: car.seater,
     }));
-
-    // Canonical URL logic (you can move this to the component if req is needed)
-    const canonicalUrl = 'https://www.longdrivecars.in';
+    const host = req.headers.host;
+    const canonicalUrl = host.includes('.in')
+        ? 'https://www.longdrivecars.in'
+        : 'https://www.longdrivecars.com';
 
     return {
         props: {
