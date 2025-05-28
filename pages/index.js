@@ -65,14 +65,13 @@ export default function Place({ cars, canonicalUrl }) {
                     <div ref={ref4}>
                         {inView4 && <PopUp />}
                     </div>
-
                 </div>
             </Layout>
         </div>
     );
 }
 
-export async function getStaticProps() {
+export async function getStaticProps({req}) {
     const response = await fetch('https://api.longdrivecars.com/site/cars-info?location=hyderabad');
     const items = await response.json();
     const cars = items?.data?.results;
