@@ -83,7 +83,7 @@ const HamburgerMenu = ({ locname, phoneno }) => {
         <div className='flex cursor-pointer items-center lg:px-14 pl-4 border-8 border-blue-100'>
           <div className='flex items-center lg:gap-6 gap-3 lg:w-fit'>
             <Link href={`${locname?.length ? `/${locname}` : '/'}`} className='flex items-center lg:gap-6 gap-30 lg:py-6 py-4'>
-              <p className='font-bold text-[#0456e8] text-base xl:text-4xl lg:text-3xl lg:w-[384px] w-48 popins-text'>Long Drive Cars</p>
+              <p className='font-bold text-[#0456e8] text-base xl:text-4xl lg:text-3xl lg:w-[384px] w-48 popins-text'>Long Drive Cars App</p>
             </Link>
           </div>
           <div className='lg:w-fit text-black lg:mt-2  xl:pl-56'>

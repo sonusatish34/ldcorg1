@@ -62,7 +62,7 @@ function CarProducts({ data, branch, phoneno, count, wspno }) {
             <div className="flex flex-wrap gap-x-8 gap-y-8  lg:items-start justify-center lg:pl-12 items-center text-white lg:pb-10 pt-10">
                 {!(searchQuery.length >= 1) && filteredItems?.map((item, index) => (
                     <>
-                        <CardFragment key={index} item={item} wspno={wspno} phoneno={phoneno} />
+                        <CardFragment key={index} item={item} wspno={wspno} phoneno={phoneno} loc={branch} />
                         {(index + 1 == 3 || index + 1 == 6 || index + 1 == 8) && (
                             <div className=" items-center block lg:hidden pb-5">
                                 <div className=" lg:rounded-md items-center lg:w-72 flex flex-col relative">

@@ -83,7 +83,7 @@ export default function Place({ cars, canonicalUrl }) {
                             style={{ display: 'none', visibility: 'hidden' }}
                         />
                     </noscript>
-                    <CarProducts data={cars} branch={'hyderabad'} phoneno={'9000478478'} wspno={'9666677405'} count={6} />
+                    <CarProducts data={cars} branch={'hyderabad'} phoneno={'9000478478'} wspno={'9000478478'} count={6} />
                     <DynImageChange locname={'hyderabad'} />
                     <div>
                         <DynNearByApi city={'hyderabad'} />
@@ -96,8 +96,8 @@ export default function Place({ cars, canonicalUrl }) {
                         <p className='uppercase p-2 mb-4 text-center text-black font-bold xl:text-2xl font-manrope'>Frequently asked questions</p>
                         <DynamicFaqComponent city={'hyderabad'} />
                     </div>
-                    <GetInTouch city={'hyderabad'} phoneno={'9000478478'} wspno={'9666677405'} />
-                    <PriceList city={'hyd'} phoneno={'9000478478'} wspno={'9666677405'} />
+                    <GetInTouch city={'hyderabad'} phoneno={'9000478478'} wspno={'9000478478'} />
+                    <PriceList city={'hyd'} phoneno={'9000478478'} wspno={'9000478478'} />
                     <PopUp />
                 </div>
             </Layout>

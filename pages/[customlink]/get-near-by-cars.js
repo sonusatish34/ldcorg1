@@ -18,8 +18,8 @@ function getnearbycars({ canonicalUrl }) {
         <link rel="canonical" href={canonicalUrl} />
       </Head>
 
-      <Layout locname={'hyderabad'} phoneno={'9000-478-478'} wspno={'9666677405'}>
-        <DynNearby locname={'hyderabad'} phoneno={'9000478478'} wspno={'9666677405'} />
+      <Layout locname={'hyderabad'} phoneno={'9000-478-478'} wspno={'9000478478'}>
+        <DynNearby locname={'hyderabad'} phoneno={'9000478478'} wspno={'9000478478'} />
       </Layout>
     </div>
   )

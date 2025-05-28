@@ -35,7 +35,7 @@ function generateSiteMap(cars) {
         return `
 
         <url>
-            <loc>${`hhttps://www.longdrivecars.com/vizag/car-rental/${item?.maker_model.replaceAll(' ', '-').toLowerCase()}`}</loc>
+            <loc>${`hhttps://www.longdrivecars.com/vizag/car-rental/${item?.maker_model.replaceAll(' ','-').toLowerCase()}`}</loc>
             <changefreq>weekly</changefreq>
             <priority>0.9</priority>
         </url>
@@ -58,9 +58,9 @@ export async function getServerSideProps({ res, req }) {
     const items = await response.json();
     // const cars = ['book-a-rental-car-in-vizag','sedan-cars-for-rent-in-vizag','cars-rental-services-in-vizag'];
     const cars = items?.data?.results;
-
-    const sitemap = generateSiteMap(cars)
-
+    
+      const  sitemap = generateSiteMap(cars)
+    
     // Generate the XML sitemap
 
     // Set the response header for XML

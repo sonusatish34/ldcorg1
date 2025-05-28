@@ -18,8 +18,8 @@ function exploreselfdrivecars({ canonicalUrl }) {
         <meta property="og:description" content="1 day Free Car @ New User - Self Drive Cars @ 1488/Day - Check Real Photos & Book - Home Delivery" />
         <link rel="canonical" href={canonicalUrl} />
       </Head>
-      <Layout phoneno={'9000-478-478'} wspno={'9666677405'}>
-        <ExploreCars phoneno={"9000478478"} wspno={"9666677405"} />
+      <Layout phoneno={'9000-478-478'} wspno={'9000478478'}>
+        <ExploreCars phoneno={"9000478478"} wspno={"9000478478"} />
       </Layout>
     </div>
   );

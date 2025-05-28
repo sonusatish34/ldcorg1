@@ -9,16 +9,14 @@ const PopUp = props => {
   const [isVisible, setIsVisible] = useState(false)
   const [isVisible1ruppe, setIsVisible1ruppe] = useState(false)
 
-  // Delay popup visibility for 65 seconds
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsVisible(true)
-    }, 65000)
+    }, 60000)
 
     return () => clearTimeout(timer)
   }, [])
 
-  // Delay secondary popup visibility for 3 seconds
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsVisible1ruppe(true)
@@ -27,14 +25,21 @@ const PopUp = props => {
     return () => clearTimeout(timer)
   }, [])
 
-  // Combine useEffect for managing overflow
   useEffect(() => {
-    if (isVisible || isVisible1ruppe) {
+    if (isVisible) {
       document.body.style.overflow = 'hidden'
     } else {
       document.body.style.overflow = 'auto'
     }
-  }, [isVisible, isVisible1ruppe])
+  }, [isVisible])
+
+  useEffect(() => {
+    if (isVisible1ruppe) {
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = 'auto'
+    }
+  }, [isVisible1ruppe])
 
   return (
     <div>
@@ -60,15 +65,13 @@ const PopUp = props => {
                   <p className='capitalize'>on your first booking!</p>
                 </div>
 
-                {/* Lazy Loading the Image */}
                 <Image
                   className='lg:w-44 w-28 scale-90 mxs:scale-100'
                   src='/popup.webp'
                   alt='Long Drive Cars'
                   width={1000}
                   height={1000}
-                  
-                  loading="lazy"
+                  priority
                   onError={() => console.error('Image failed to load!')}
                 />
               </div>
@@ -84,6 +87,24 @@ const PopUp = props => {
                   className='py-2 px-4 text-white font-semibold rounded-full shadow-lg border-[1px] border-[#5566ee] relative overflow-hidden bg-gradient-to-r from-green-600 via-[#556ee6] to-indigo-400 animate-gradient p-2 text-xs mxs:text-sm capitalize'
                 >
                   download long drive cars app
+                  <style jsx>{`
+                    @keyframes gradientAnimation {
+                      0% {
+                        background-position: 0% 50%;
+                      }
+                      50% {
+                        background-position: 100% 50%;
+                      }
+                      100% {
+                        background-position: 0% 50%;
+                      }
+                    }
+
+                    .animate-gradient {
+                      background-size: 300% 300%;
+                      animation: gradientAnimation 5s linear infinite;
+                    }
+                  `}</style>
                 </a>
               </div>
               <div className='mt-3 lg:flex flex-col gap-y-2 items-center hidden justify-center'>
@@ -94,7 +115,7 @@ const PopUp = props => {
                   alt='Long Drive Cars'
                   width={500}
                   height={500}
-                  loading="lazy"
+                  priority
                 />
               </div>
             </div>
@@ -110,12 +131,11 @@ const PopUp = props => {
           </div>
         </>
       )}
-
       {isVisible1ruppe && (
         <>
           <div className='fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm z-20' />
           <div
-            className='fixed lg:top-5 mxs:top-10 top-20 z-50 left-1/2 transform -translate-x-1/2 w-5/6 h-fit max-w-sm p-3 lg:p-8 bg-white pt-10 rounded-lg shadow-xl text-black transition-opacity duration-500 flex'
+            className='fixed lg:top-10 mxs:top-10 top-20 z-50 left-1/2 transform -translate-x-1/2 w-5/6 h-fit max-w-sm p-3 lg:p-8 bg-white pt-10 rounded-lg shadow-xl text-black transition-opacity duration-500 flex'
             style={{ opacity: isVisible1ruppe ? 1 : 0 }}
           >
             <Image
@@ -124,12 +144,11 @@ const PopUp = props => {
               width={1025}
               height={1034}
               className='h-[400px] mxs:h-[500px] lg:h-fit'
-              loading="lazy"
+              priority
             />
-
             <button
               onClick={() => setIsVisible1ruppe(false)}
-              className='absolute top-[-4px] right-0 p-2 bg-transparent focus:outline-none flex items-center justify-center z-40 pt-4 pr-4'
+              className='absolute -top-1 -right-2 p-2 bg-transparent focus:outline-none flex items-center justify-center z-40 pt-4 pr-4'
             >
               <span className='text-lg w-6 h-6 rounded-full relative hover:scale-105 bottom-1 flex justify-center items-center'>
                 <MdOutlineCancel size={30} />

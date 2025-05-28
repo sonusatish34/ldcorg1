@@ -24,7 +24,7 @@ const metadata = {
 
   ameerpet: {
     title: ' Self Drive Cars Hyderabad- Best Car Rentals in Ameerpet',
-    description:"Explore a wide range of self-drive cars in Ameerpet with Self Drive Cars Hyderabad. Enjoy quality, convenience, and flexibility with our top-notch rental services",
+    description: "Explore a wide range of self-drive cars in Ameerpet with Self Drive Cars Hyderabad. Enjoy quality, convenience, and flexibility with our top-notch rental services",
     ogDescription: 'Explore a wide range of self-drive cars in Ameerpet withSelf Drive Cars Hyderabad. Enjoy quality, convenience, and flexibility with our top-notch rental services',
   },
 
@@ -35,13 +35,13 @@ const metadata = {
 
   },
 
-  ecil:{
-    title:"Top Self Drive Rentals ECIL- No Deposit, Unlimited KM, ",
-    description:'Explore with freedom using Self Drive Cars Hyderabad!, unlimited kilometers, and a wide car range for your perfectjourney around ECIL and beyond',
-    ogDescription:'Explore with freedom using Self Drive Cars Hyderabad!, unlimited kilometers, and a wide car range for your perfectjourney around ECIL and beyond',
+  ecil: {
+    title: "Top Self Drive Rentals ECIL- No Deposit, Unlimited KM, ",
+    description: 'Explore with freedom using Self Drive Cars Hyderabad!, unlimited kilometers, and a wide car range for your perfectjourney around ECIL and beyond',
+    ogDescription: 'Explore with freedom using Self Drive Cars Hyderabad!, unlimited kilometers, and a wide car range for your perfectjourney around ECIL and beyond',
 
   },
-  
+
   kukatpally: {
     title: 'Best Prices on Self Drive Cars in Kukatpally– Book Now',
     description: "Rent self-drive cars in Hyderabad with Self Drive Cars Kukatpally. Enjoy unlimited kms, no deposit , and flexible rental options for a comfortable journey",
@@ -51,9 +51,9 @@ const metadata = {
   madhapur: {
     title: ' Hyderabad Self-Drive Car Rentals Book in Madhapur',
     description: " Explore Hyderabad and Karnataka with Self Drive Cars' wide range of 5-seater and 7-8-seater rentals, featuring excellent service anddiverse model choices. Book now",
-  ogDescription:" Explore Hyderabad and Karnataka with Self Drive Cars' wide range of 5-seater and 7-8-seater rentals, featuring excellent service anddiverse model choices. Book now",
+    ogDescription: " Explore Hyderabad and Karnataka with Self Drive Cars' wide range of 5-seater and 7-8-seater rentals, featuring excellent service anddiverse model choices. Book now",
   },
-  
+
   medipally: {
     title: '  No Deposit | Unlimited Kms - Cheapest Self Drive Cars Near U',
     description: 'Self Drive Car Rentals in Uppal, Medipally',
@@ -64,7 +64,7 @@ const metadata = {
     title: ' Best Self-Drive Car Rentals in Miyapur- Hyderabad',
     description: "Discover reliable self-drive car rentals in Miyapur with Self Drive Cars Hyderabad. Perfect for family outings, shopping trips,and weekend getaways from Hyderabad",
     ogDescription: "Discover reliable self-drive car rentals in Miyapur with Self Drive Cars Hyderabad. Perfect for family outings, shopping trips,and weekend getaways from Hyderabad",
- },
+  },
 
   secunderabad: {
     title: 'Drive Your Way with Budget-Friendly Car Rentals',
@@ -89,21 +89,21 @@ const metadata = {
     title: ' Self Drive Car Rental Hyderabad-  No Deposit , Unlimited Kms',
     description: ' Rent a self-drive car in Hyderabad No Deposit and Unlimited kms. Convenient pick-up in Gachibowli for a hassle-free travel experience',
     ogDescription: ' Rent a self-drive car in Hyderabad No Deposit and Unlimited kms. Convenient pick-up in Gachibowli for a hassle-free travel experience',
-   
+
   },
-  
- 
+
+
   // Add other branches here...
 };
-export async function getServerSideProps(context) { 
+export async function getServerSideProps(context) {
   const { req } = context;
   const { place } = context.params;
   const { title = 'Default Title', description = 'Default Description', ogDescription = '' } = metadata[place.toLowerCase()] || {};
 
   const host = req.headers.host;
   const canonicalUrl = host.includes('.in')
-      ? `https://www.longdrivecars.in/self-drive-car-rental/${place.toLowerCase()}`
-      : `https://www.longdrivecars.com/self-drive-car-rental/${place.toLowerCase()}`;
+    ? `https://www.longdrivecars.in/self-drive-car-rental/${place.toLowerCase()}`
+    : `https://www.longdrivecars.com/self-drive-car-rental/${place.toLowerCase()}`;
 
   return {
     props: {
@@ -128,7 +128,7 @@ function Place({ place, title, description, ogDescription, canonicalUrl }) {  //
   }, [place]);
 
   return (
-    <Layout phoneno={'9000-478-478'} wspno={'9666677405'}>
+    <Layout phoneno={'9000-478-478'} wspno={'9000478478'}>
       <Head>
         <title>{title}</title>
         <meta name="description" content={description} />

@@ -339,7 +339,7 @@ export default function ExploreCars({ loc, phoneno, wspno, branch }) {
                     </div>
                     <div className="lg:grid xl:grid-cols-3 lg:grid-cols-2 gap-x-8 gap-y-8 flex flex-col gap-2 items-center justify-center lg:max-w-7xl py-4">
                         {filteredData?.map((item, index) => (
-                            <CardFragment index={index} item={item} wspno={wspno} phoneno={phoneno} />
+                            <CardFragment loc={loc} index={index} item={item} wspno={wspno} phoneno={phoneno} />
 
                         ))}
                     </div>

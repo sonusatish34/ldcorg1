@@ -4,7 +4,7 @@ import Head from 'next/head'
 function privacypolicyhtml({ canonicalUrl }) {
     return (
         <div className='bg-white'>
-            <Layout phoneno={'9000-478-478'} wspno={'9666677405'}>
+            <Layout phoneno={'9000-478-478'} wspno={'9000478478'}>
                 <Head>
                     <title>No Deposit | Unlimited Kms - Cheapest Self Drive Cars Near U</title>
                     <meta id="meta-desc" name="description" content="1 day Free Car @ New User - Self Drive Cars @ 1488/Day - Check Real Photos & Book - Home Delivery" />
