@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Wayanad",
+    "region": "South India",
+    "image": "/images/wayanad.jpg",
+    "properties": 4,
+    "description": "Curiously nestled amongst tea plantations and misty meadows, Wayanad is a treasure."
+  },
+  {
+    "name": "Andamans",
+    "region": "East India",
+    "image": "/images/andamans.jpg",
+    "properties": 6,
+    "description": "Tropical paradise with turquoise waters, coral reefs, and white sandy beaches."
+  },
+  {
+    "name": "Aurangabad",
+    "region": "West India",
+    "image": "/images/aurangabad.jpg",
+    "properties": 3,
+    "description": "City of gates, home to Ajanta and Ellora Caves."
+  }
+]

@@ -1,8 +1,10 @@
 import React from 'react';
+import { useEffect, useState } from 'react';
 import dynamic from 'next/dynamic';
 import CarProducts from './components/CarProducts';
 import { useInView } from 'react-intersection-observer';
 import TripPlanner from './components/TripPlanner/TripPlanner';
+import SearchFilter from './components/TripPlanner/SearchFilter';
 const DynCallBackForm = dynamic(() => import('./components/CallBackForm/CallBackForm'));
 const DynNearYou = dynamic(() => import('./components/NearYou/NearYou'));
 const DynImageChange = dynamic(() => import('./components/ImageChange/ImageChange'), { ssr: false });
@@ -16,11 +18,28 @@ import Layout from './components/Layout/Layout';
 import PriceList from './components/PriceList/PriceList';
 import Head from 'next/head';
 import PopUp from './components/PopUp';
+import TripPlannerPopup from './components/TripPlannerPopup';
+// import LeafletMap from './components/TripPlanner/LeafletMap';
+const LeafletMap = dynamic(() => import('./components/TripPlanner/LeafletMap'), {
+  ssr: false, // <== THIS IS CRITICAL
+});
 export default function Place({ cars, canonicalUrl }) {
     const { ref: ref1, inView: inView1 } = useInView({ triggerOnce: true, threshold: 0.1 });
     const { ref: ref2, inView: inView2 } = useInView({ triggerOnce: true, threshold: 0.1 });
     const { ref: ref3, inView: inView3 } = useInView({ triggerOnce: true, threshold: 0.1 });
     const { ref: ref4, inView: inView4 } = useInView({ triggerOnce: true, threshold: 0.1 });
+    const { ref: tripRef, inView: tripInView } = useInView({ triggerOnce: true, threshold: 0. });
+    const [animateTrip, setAnimateTrip] = useState(false);
+
+    useEffect(() => {
+
+        if (tripInView) {
+            console.log('TripPlanner is now in view');
+
+            setAnimateTrip(true);
+        }
+    }, [tripInView]);
+    console.log(animateTrip, '0000-888211222');
 
     return (
         <div>
@@ -38,14 +57,21 @@ export default function Place({ cars, canonicalUrl }) {
                     <link rel="canonical" href={canonicalUrl} />
                 </Head>
                 <div className='pt-32 lg:pt-0'>
-                    {/* <TripPlanner /> */}
-                    <CarProducts data={cars} phoneno={'9000478478'} wspno={'9666677405'} count={7} />
+                    {/* <CarProducts data={cars} phoneno={'9000478478'} wspno={'9666677405'} count={7} /> */}
                     <div ref={ref1}>
                         {inView1 && <DynImageChange locname={'hyderabad'} />}
                     </div>
+                    <div ref={tripRef} className={`${animateTrip ? 'rotate-3d' : ''}`}>
+                        <TripPlanner />
+                        {/* <TripPlannerPopup /> */}
+                        {/* <SearchFilter/> */}
+                                            <LeafletMap/>
+
+                    </div>
                     <DynNearByApi />
                     <DynNearYou />
-                    <FeaturedCars data={cars} branch={"hyderabad"} />
+                    {/* <FeaturedCars data=
+                    {cars} branch={"hyderabad"} /> */}
                     <DynCallBackForm />
                     <div ref={ref2}>
                         {inView2 && <DynWhyChooseUs />}
@@ -65,39 +91,13 @@ export default function Place({ cars, canonicalUrl }) {
                     <div ref={ref4}>
                         {inView4 && <PopUp />}
                     </div>
+                    
+                    
                 </div>
             </Layout>
         </div>
     );
 }
 
-export async function getServerSideProps({ req }) {
-    const response = await fetch('https://api.longdrivecars.com/site/cars-info?location=hyderabad');
-    const items = await response.json();
-    const cars = items?.data?.results;
 
-    const filteredCars = cars?.map(car => ({
-        maker_model: car.maker_model,
-        price_24_hours: car.price_24_hours,
-        car_image_front_view: car.car_image_front_view,
-        car_image_back_view: car.car_image_back_view,
-        car_image_car_left_view: car.car_image_car_left_view,
-        car_image_reading_view: car.car_image_reading_view,
-        fuel_type: car.fuel_type,
-        transmission_type: car.transmission_type,
-        seater: car.seater,
-    }));
-
-    const host = req.headers.host;
-    const canonicalUrl = host.includes('.in')
-        ? 'https://www.longdrivecars.in'
-        : 'https://www.longdrivecars.com';
-
-    return {
-        props: {
-            cars: filteredCars,  // Return only the filtered data
-            canonicalUrl,
-        },
-    };
-}
 

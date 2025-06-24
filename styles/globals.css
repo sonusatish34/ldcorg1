@@ -31,9 +31,27 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'interfont'; /* You can name this whatever you like */
+  src: url('/font/PangeaAfrikanTrial-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  letter-spacing: 0.1em;
+}
+
+@font-face {
+  font-family: 'figtree'; /* You can name this whatever you like */
+  src: url('/font/figtree.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* Apply the custom font globally */
 .helvetica-font {
   font-family: 'HVFont', sans-serif;
+}
+.inter-font {
+  font-family: 'interfont', sans-serif;
 }
 
 .georgia-font {
@@ -44,6 +62,9 @@
 }
 .kievitot-font {
   font-family: 'kievitot', sans-serif;
+}
+.figtree-font {
+  font-family: 'figtree', sans-serif;
 }
 body {
   font-family: "Poppins", sans-serif;
@@ -190,4 +211,43 @@ body {
 .animate-gradient {
   background-size: 200% 100%;
   animation: gradient-animation 5s ease infinite;
+}
+
+
+@keyframes rotate3d {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+.rotate-3d {
+  animation: rotate3d 1.5s ease-in-out forwards;  /* Ensure animation runs once */
+  transform-style: preserve-3d;  /* This is important for 3D effects */
+}
+
+/* globals.css */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;             /* Chrome, Safari, Opera */
+}
+
+
+/* Add this to your styles.css or any global stylesheet */
+.react-date-range__selected-range {
+  background-color: #003366 !important; /* Dark blue color for start and end dates */
+}
+
+.react-date-range__selected-range.middle {
+  background-color: #ADD8E6 !important; /* Light blue color for middle dates */
+}
+
+.react-date-range__selected-range.start,
+.react-date-range__selected-range.end {
+  background-color: #003366 !important; /* Dark blue for the start and end of the range */
 }

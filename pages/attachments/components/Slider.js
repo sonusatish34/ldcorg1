@@ -23,7 +23,7 @@ const CarImages = () => {
             alt="Long Drive Cars app"
             width={500}
             height={500}
-            className="px-2 py-2 lg:w-[400px] xl:w-[500px] " />
+            className="px-2 py-2 lg:w-[400px] xl:w-[500px]"/>
 
           <div className="px-2 space-y-2 lg:space-y-6  ">
             <p className="font-bold text-black lg:text-5xl text-xl">Innova Crysta</p>

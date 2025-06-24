@@ -2,7 +2,6 @@
 import { fireDb } from '../../public/firebase';
 import { getDocs, collection, where, query } from 'firebase/firestore';
 import React, { useEffect, useState } from 'react';
-import { useRouter } from 'next/router';
 import { GoDotFill } from "react-icons/go";
 import Loading from '../components/Loading';
 import PostsListing from './blogcomponents/PostsListing';
@@ -10,13 +9,23 @@ import BlogLayout from './blogcomponents/BlogLayout';
 import RandomPosts from './blogcomponents/RandomPosts';
 import Link from 'next/link';
 import { MdExpandMore } from "react-icons/md";
-
+import { Listbox } from '@headlessui/react';
+import { CalendarIcon, ChevronDownIcon, MapPinIcon, ClockIcon } from '@heroicons/react/20/solid';
+import { format } from 'date-fns';
 const ComponentName = (props) => {
 
-  const router = useRouter();
   const [postlist, setPostlist] = useState([]);
   const [sortedPostlist, setSortedPostlist] = useState([]);
   const [isLoading, setIsLoading] = useState(true); // State for loader
+
+
+  const destinations = ['Bali', 'Manali', 'Dubai', 'Thailand', 'Maldives'];
+  const durations = ['1-3 Days', '4-7 Days', '8-10 Days', '10+ Days'];
+
+  const [selectedDestination, setSelectedDestination] = useState(destinations[0]);
+  const [selectedDuration, setSelectedDuration] = useState(durations[0]);
+  const [selectedDate, setSelectedDate] = useState(null);
+
 
   useEffect(() => {
     const fetchPosts = async () => {
@@ -58,6 +67,90 @@ const ComponentName = (props) => {
                 <li><GoDotFill /></li>
                 <li>{postlist?.length} stories</li>
               </ul>
+            </div>
+            <div className="bg-gradient-to-r from-white to-blue-50 p-6 rounded-3xl shadow-xl w-full max-w-6xl mx-auto grid grid-cols-2 lg:flex   items-center gap-4">
+              {/* Destination */}
+              <div className="w-full md:w-1/4">
+                <label className="text-sm text-gray-600 font-medium mb-1 block">Destination</label>
+                <Listbox value={selectedDestination} onChange={setSelectedDestination}>
+                  <div className="relative">
+                    <Listbox.Button className="w-full bg-white border border-gray-200 rounded-xl py-3 pl-10 pr-10 text-left shadow-sm hover:ring-2 hover:ring-blue-400 transition focus:outline-none focus:ring-2 focus:ring-blue-500">
+                      {selectedDestination}
+                      <ChevronDownIcon className="w-5 h-5 absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
+                      <MapPinIcon className="w-5 h-5 absolute left-3 top-1/2 transform -translate-y-1/2 text-blue-400" />
+                    </Listbox.Button>
+                    <Listbox.Options className="absolute z-10 mt-1 w-full bg-white border rounded-xl shadow-lg overflow-hidden">
+                      {destinations.map((destination, idx) => (
+                        <Listbox.Option
+                          key={idx}
+                          value={destination}
+                          className="px-4 py-2 cursor-pointer hover:bg-blue-100"
+                        >
+                          {destination}
+                        </Listbox.Option>
+                      ))}
+                    </Listbox.Options>
+                  </div>
+                </Listbox>
+              </div>
+
+              {/* Duration */}
+              <div className="w-full md:w-1/4">
+                <label className="text-sm text-gray-600 font-medium mb-1 block">Duration</label>
+                <Listbox value={selectedDuration} onChange={setSelectedDuration}>
+                  <div className="relative">
+                    <Listbox.Button className="w-full bg-white border border-gray-200 rounded-xl py-3 pl-10 pr-10 text-left shadow-sm hover:ring-2 hover:ring-blue-400 transition focus:outline-none focus:ring-2 focus:ring-blue-500">
+                      {selectedDuration}
+                      <ChevronDownIcon className="w-5 h-5 absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
+                      <ClockIcon className="w-5 h-5 absolute left-3 top-1/2 transform -translate-y-1/2 text-blue-400" />
+                    </Listbox.Button>
+                    <Listbox.Options className="absolute z-10 mt-1 w-full bg-white border rounded-xl shadow-lg overflow-hidden">
+                      {durations.map((duration, idx) => (
+                        <Listbox.Option
+                          key={idx}
+                          value={duration}
+                          className="px-4 py-2 cursor-pointer hover:bg-blue-100"
+                        >
+                          {duration}
+                        </Listbox.Option>
+                      ))}
+                    </Listbox.Options>
+                  </div>
+                </Listbox>
+              </div>
+
+              {/* Date Picker */}
+              <div className="w-full md:w-1/4">
+                <label className="text-sm text-gray-600 font-medium mb-1 block">Start Date</label>
+                <div className="relative">
+                  <input
+                    type="date"
+                    value={selectedDate || ''}
+                    onChange={(e) => setSelectedDate(e.target.value)}
+                    className="w-full bg-white border border-gray-200 rounded-xl py-3 pl-10 pr-4 shadow-sm hover:ring-2 hover:ring-blue-400 transition focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  />
+                  <CalendarIcon className="w-5 h-5 absolute left-3 top-1/2 transform -translate-y-1/2 text-blue-400" />
+                </div>
+              </div>
+              <div className="w-full md:w-1/4">
+                <label className="text-sm text-gray-600 font-medium mb-1 block">End Date</label>
+                <div className="relative">
+                  <input
+                    type="date"
+                    value={selectedDate || ''}
+                    onChange={(e) => setSelectedDate(e.target.value)}
+                    className="w-full bg-white border border-gray-200 rounded-xl py-3 pl-10 pr-4 shadow-sm hover:ring-2 hover:ring-blue-400 transition focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  />
+                  <CalendarIcon className="w-5 h-5 absolute left-3 top-1/2 transform -translate-y-1/2 text-blue-400" />
+                </div>
+              </div>
+
+              {/* Search Button */}
+            </div>
+            <div className="w-full md:mt-6 flex justify-center pt-4 px-2">
+              <button className="bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white font-semibold px-8 py-3 w-full rounded-xl shadow-lg transition">
+                🔍 Search Packages
+              </button>
             </div>
             <div className='text-center flex justify-center lg:pt-10 pt-4'>
               <PostsListing data={sortedPostlist} />

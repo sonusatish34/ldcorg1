@@ -19,7 +19,7 @@ import { handleStoreRedirect } from '../utils/redirectUtils';
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
+  
 const CarDetails = ({ city, phoneno, wspno }) => {
   const [caritem, setCarItem] = useState(null);
   const [loading, setLoading] = useState(true);

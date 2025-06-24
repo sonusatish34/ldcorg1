@@ -35,27 +35,8 @@ export default function MyApp({ Component, pageProps }) {
         }}
       />
 
-      <Script
-        src="https://www.googletagmanager.com/gtag/js?id=G-8RGJTJSJCW"
-        strategy="lazyOnload"
-      />
-
-      <Script
-        id="gtag-init-ga4"
-        strategy="lazyOnload"
-        dangerouslySetInnerHTML={{
-          __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-8RGJTJSJCW', {
-              page_path: window.location.pathname,
-            });
-          `,
-        }}
-      />
-
-      <Script
+    
+    <Script
         id="gtm-init"
         strategy="lazyOnload"
         dangerouslySetInnerHTML={{

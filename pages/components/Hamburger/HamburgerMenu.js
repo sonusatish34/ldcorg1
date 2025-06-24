@@ -119,17 +119,17 @@ const HamburgerMenu = ({ locname, phoneno }) => {
       >
         <Link href={'/'}>
           <div className='flex gap-3 cursor-pointer items-center pl-4 pb-2'>
-            <Image
+            {/* <Image
               className="w-10 lg:w-48 lg:h-48"
               src={logo2}
               alt="Long Drive Cars app"
               width={192}
               height={192}
               fetchpriority="high"
-            />
-            <div className='w-48 text-black 2xl:w-full lg:w-96 lg:mt-2'>
+            /> */}
+            <div className='text-black 2xl:w-full lg:w-96 lg:mt-2'>
               <p className='text-xl font-bold'>
-                <span className='text-[#0456e8]'>Long Drive Cars</span>
+                <span className='text-[#0456e8]'>Long Drive Cars App</span>
               </p>
             </div>
           </div>

@@ -1,0 +1,14 @@
+/* styles.css or TripPlanner.module.css */
+@keyframes rotate3d {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+.rotate-3d {
+  animation: rotate3d 1.5s ease-in-out forwards; /* Add forwards to ensure it finishes the animation */
+  transform-style: preserve-3d; /* Ensure 3D transformation works */
+}

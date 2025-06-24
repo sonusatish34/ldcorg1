@@ -1,75 +1,111 @@
-import React from "react";
-import Image from "next/image";
-import Link from "next/link";
-// import tripplannerbtn from "../../images/tripplannerbtn.png"; // you can design this or replace with button
-import tripbg from "../../images/tripbg.webp"; // decorative background
-import tripmap from "../../images/tripmap.webp"; // map or planning-related image
+'use client';
+import { useState } from 'react';
+import { motion } from 'framer-motion';
+import TripPlannerPopup from '../TripPlannerPopup';
+import { Search } from 'lucide-react';
 
-function TripPlanner({ city }) {
+export default function TripPlannerHero() {
+  const [isOpen, setIsOpen] = useState(false);
+  const [query, setQuery] = useState('');
+
   return (
-    <div className="pt-10 relative overflow-hidden py-10 px-4 sm:px-6 lg:px-16 xl:px-24 bg-gradient-to-br from-purple-900 via-pink-700 to-indigo-900 rounded-lg shadow-lg">
-      {/* Background Visual */}
-      <div className="absolute inset-0 opacity-20">
-        {/* <Image
-          src={tripbg}
-          layout="fill"
-          objectFit="cover"
-          alt="Trip background"
-        /> */}
+    <div className="relative py-20 bg-gradient-to-r from-indigo-900 via-purple-900 to-pink-900 overflow-hidden">
+      <div className="relative z-10 max-w-4xl mx-auto px-4 mxs:px-6">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.95 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.6, ease: 'easeOut' }}
+          className="rounded-3xl overflow-hidden shadow-2xl relative"
+        >
+          {/* Background Video */}
+          <video
+            className="absolute inset-0 w-full h-full object-cover"
+            src="/kl.mp4"
+            autoPlay
+            loop
+            muted
+          />
+          <div className="absolute inset-0 bg-black/30 backdrop-blur-[2px]" />
+
+          {/* Content */}
+          <div className="relative z-10 py-12 px-6 text-white text-center space-y-6">
+            <motion.h1
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.3 }}
+              className="text-4xl font-extrabold tracking-wide text-[#F3F3E0]"
+            >
+              ✈️ Let Us Plan Your Perfect Trip!
+            </motion.h1>
+
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.5 }}
+              className="text-lg text-[#F3F3E0] opacity-90"
+            >
+              Share your dates & preferences — we’ll handle the rest.
+            </motion.p>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.7 }}
+              className="py-4 px-2 bg-white/10  rounded-xl border  shadow-xl"
+            >
+              <div className="flex items-center border-b border-white/30 pb-2 px-2">
+                <Search className="w-5 h-5 text-white/80" />
+                <input
+                  type="text"
+                  value={query}
+                  onChange={(e) => setQuery(e.target.value)}
+                  placeholder="Places to go, things to do, hotels..."
+                  className="ml-3 w-full bg-transparent outline-none text-white placeholder:text-white/60 focus:ring-0"
+                />
+              </div>
+
+              <ul className="grid grid-cols-2 gap-2 text-xs text-white px-1 pt-4">
+                {['Hyderabad to Goa', 'Hyderabad to Coorg', 'Weekend Getaways', 'Beach Vibes'].map((item, i) => (
+                  <motion.li
+                    key={i}
+                    whileHover={{ scale: 1.05 }}
+                    className="py-2 px-2 rounded-md bg-black/30 hover:bg-white/20 transition-colors"
+                  >
+                    {item}
+                  </motion.li>
+                ))}
+              </ul>
+
+              <button
+                onClick={() => alert(`Searching for: ${query}`)}
+                className="w-full mt-4 py-2 bg-gradient-to-r from-green-400 to-lime-400 hover:brightness-110 text-black font-semibold rounded-full transition-all duration-200"
+              >
+                Search
+              </button>
+            </motion.div>
+
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              transition={{ type: 'spring', stiffness: 300 }}
+              className="bg-orange-500 hover:bg-orange-600 px-6 w-full py-3 rounded-full text-lg font-semibold shadow-lg"
+              onClick={() => setIsOpen(!isOpen)}
+            >
+              Plan a Trip for Me
+            </motion.button>
+          </div>
+        </motion.div>
       </div>
 
-      <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 items-center gap-10">
-        {/* Text Section */}
-        <div className="flex flex-col items-center lg:items-start text-white text-center lg:text-left space-y-5">
-          <h1 className="text-4xl lg:text-5xl font-bold leading-tight drop-shadow-md">
-            Plan Your Next Trip With Us
-          </h1>
-          <p className="text-lg lg:text-2xl opacity-90">
-            Discover routes, estimated time, and exciting travel options from your location!
-          </p>
-
-          <Link
-            href={`${city?.length ? city : ""}/plan-your-trip`}
-            className="relative group"
-          >
-            <span className="inline-block px-8 py-3 rounded-full text-white font-semibold text-lg bg-yellow-400 hover:bg-yellow-500 transition-all duration-300 shadow-lg group-hover:scale-105 animate-pulse">
-              Start Planning
-            </span>
-            <span className="absolute top-0 right-0 w-3 h-3 bg-red-600 rounded-full animate-ping" />
-          </Link>
+      {/* Popup */}
+      {isOpen && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center">
+          <div className="absolute inset-0 bg-black bg-opacity-40 backdrop-blur-sm"></div>
+          <div className="relative z-10 w-full">
+            <TripPlannerPopup onClose={() => setIsOpen(false)} />
+          </div>
         </div>
-
-        {/* Image Section */}
-        <div className="hidden lg:flex justify-center items-center relative">
-          <Link href={`${city?.length ? city : ""}/plan-your-trip`}>
-            {/* <Image
-              src={tripmap}
-              alt="Trip map"
-              width={600}
-              height={400}
-              className="rounded-lg shadow-2xl hover:scale-105 transition-transform duration-300" */}
-            {/* /> */}
-          </Link>
-        </div>
-      </div>
-
-      {/* Bonus Cards or Highlights */}
-      <div className="mt-16 grid sm:grid-cols-2 lg:grid-cols-3 gap-6 text-white">
-        <div className="p-6 bg-white bg-opacity-10 rounded-lg backdrop-blur-md hover:scale-105 transition">
-          <h3 className="text-xl font-semibold mb-2">Smart Route Suggestions</h3>
-          <p className="text-sm">Get intelligent route options based on traffic and weather.</p>
-        </div>
-        <div className="p-6 bg-white bg-opacity-10 rounded-lg backdrop-blur-md hover:scale-105 transition">
-          <h3 className="text-xl font-semibold mb-2">Multiple Destination Support</h3>
-          <p className="text-sm">Plan complex trips with multiple stops with ease.</p>
-        </div>
-        <div className="p-6 bg-white bg-opacity-10 rounded-lg backdrop-blur-md hover:scale-105 transition">
-          <h3 className="text-xl font-semibold mb-2">Budget Estimator</h3>
-          <p className="text-sm">Estimate fuel and toll costs before you even start.</p>
-        </div>
-      </div>
+      )}
     </div>
   );
 }
-
-export default TripPlanner;

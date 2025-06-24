@@ -3,10 +3,10 @@ import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { BiCategory } from "react-icons/bi";
-import { CgProfile } from "react-icons/cg";
 import { FaRegComment } from "react-icons/fa";
 import { GrLike } from "react-icons/gr";
 import StaticData from "@/pages/images/StaticData";
+
 
 const PostsListing = ({ data, catg }) => {
   function ParseP(htmlContent) {
