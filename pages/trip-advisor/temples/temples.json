@@ -1,0 +1,110 @@
+{
+  "sri-durga-malleswara-swamy": [
+    {
+      "id": "kanaka-durga-temple",
+      "name": "Sri Durga Malleswara Swamy",
+      "location": "Vijayawada, Andhra Pradesh",
+      "district": "Eluru, Andhra Pradesh",
+      "highlight": "Mini Tirupati Experience",
+      "image": "/sri-durga-malleswara-swamy.jpg",
+      "templeInfo": "Sri Durga Malleswara Swamyvarla Devasthanam, is a Hindu temple dedicated to Kanaka Durga. The deity in this temple is also popularly referred as Kanaka Durga. The temple is located in Vijayawada, Andhra Pradesh, India on the Indrakeeladri hill on the banks of Krishna River. Kaalika Purana, Durga Sapthashati and other Vedic literature have mentioned about Kanaka Durga on the Indrakeeladri and have described the deity as Swayambhu in Triteeya Kalpa.",
+      "mobileno":"9441820717",
+      "sevas": [
+        {
+          "name": "Athi Seeghra Darshanam",
+          "price": 200
+        },
+        {
+          "name": "Suprabhata Seva",
+          "price": 300
+        }
+      ],
+      "facilities": [
+        "Accommodation",
+        "Cloakrooms",
+        "Medical Aid",
+        "Prasadam Counters",
+        "Free Meals"
+      ],
+      "placesToVisit": [
+        "Bhimavaram Temple",
+        "Kolleru Lake",
+        "Eluru Gaja Vallabha Temple",
+        "Rajahmundry River Cruise"
+      ]
+    }
+  ],
+  "kanaka-durga-temple": [
+    {
+      "id": "kanaka-durga-temple",
+      "name": "Sri Durga Malleswara Swamy",
+      "location": "Vijayawada, Andhra Pradesh",
+      "district": "Eluru, Andhra Pradesh",
+      "highlight": "Mini Tirupati Experience",
+      "image": "/images/kanaka-durga.jpg",
+      "templeInfo": "Sri Durga Malleswara Swamyvarla Devasthanam, is a Hindu temple dedicated to Kanaka Durga. The deity in this temple is also popularly referred as Kanaka Durga. The temple is located in Vijayawada, Andhra Pradesh, India on the Indrakeeladri hill on the banks of Krishna River. Kaalika Purana, Durga Sapthashati and other Vedic literature have mentioned about Kanaka Durga on the Indrakeeladri and have described the deity as Swayambhu (self-manifested) in Triteeya Kalpa.",
+      "sevas": [
+        {
+          "name": "Athi Seeghra Darshanam",
+          "price": 200
+        },
+        {
+          "name": "Suprabhata Seva",
+          "price": 300
+        }
+      ],
+      "facilities": [
+        "Accommodation",
+        "Cloakrooms",
+        "Medical Aid",
+        "Prasadam Counters",
+        "Free Meals"
+      ],
+      "placesToVisit": [
+        "Bhimavaram Temple",
+        "Kolleklru Lake",
+        "Eluru Gaja Vallabha Temple",
+        "Rajahmundry River Cruise"
+      ]
+    }
+  ],
+  "sri-kalahasthi-swamy-temple": [
+    {
+      "id": "sri-kalahasthi-swamy-temple",
+      "name": "sri kalahasthi swamy temple",
+      "location": "Srikalahasti, Andhra Pradesh",
+      "district": "Srikalahasti, Andhra Pradesh",
+      "highlight": "sri kalahasthi swamy temple",
+      "image": "/sri-kalahasti.jpg",
+      "mobileno":"9849005495",
+      "templeInfo": "The Srikalahasti Temple is located in the town of Srikalahasti in Tirupati district in the state of Andhra Pradesh, India. Siva in his aspect as Vayu is worshipped as Kalahasteeswara. The temple is also regarded as Rahu-Ketu kshetra and Dakshina Kailasam. According to regional tradition, it is said to be the site where Kannappa was ready to offer both his eyes to cover blood flowing from the Shivalinga before Shiva stopped him and granted him moksha",
+      "sevas": [
+        {
+          "name": "Seeghra Darsanam",
+          "price": 200
+        },
+        {
+          "name": "Special Entrance",
+          "price": 50
+        },
+        {
+          "name": "అంతరాలయ దర్శనము",
+          "price": 500
+        }
+      ],
+      "facilities": [
+        "Accommodation",
+        "Cloakrooms",
+        "Medical Aid",
+        "Prasadam Counters",
+        "Free Meals"
+      ],
+      "placesToVisit": [
+        "Bhimavaram Temple",
+        "Kolleklru Lake",
+        "Eluru Gaja Vallabha Temple",
+        "Rajahmundry River Cruise"
+      ]
+    }
+  ]
+}

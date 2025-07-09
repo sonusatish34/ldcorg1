@@ -1,7 +1,7 @@
 'use client'
 import { useEffect, useState } from 'react';
 
-const tabs = ['overview', 'details', 'itinerary', 'operator', 'reviews'];
+const tabs = ['overview', 'details',, 'reviews', 'itinerary', 'operator'];
 
 export default function StickyTabs() {
   const [activeTab, setActiveTab] = useState('Overview');
@@ -13,7 +13,7 @@ export default function StickyTabs() {
       return { tab, offset: el?.getBoundingClientRect().top ?? Infinity };
     });
 
-    const visibleSections = offsets.filter(({ offset }) => offset < 100);
+    const visibleSections = offsets.filter(({ offset }) => offset < 50);
     if (visibleSections.length > 0) {
       const current = visibleSections[visibleSections.length - 1];
       setActiveTab(current.tab);

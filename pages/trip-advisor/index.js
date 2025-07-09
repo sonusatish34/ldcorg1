@@ -10,7 +10,8 @@ import GetInspiration from './comps/GetInspiration';
 import PopularTrips from './comps/PopularTrips';
 import JourneySection from './comps/JourneySection';
 import { useEditor } from '@tiptap/react';
-
+import { fireDb } from '../../public/firebase';
+import { getDocs, collection, query, where } from 'firebase/firestore';
 const ComponentName = () => {
 
   const [search, setSearch] = useState('');
@@ -20,6 +21,7 @@ const ComponentName = () => {
   const [isDeleting, setIsDeleting] = useState(false);
   const [showDropdown, setShowDropdown] = useState(false);
   const [isLoading, setIsLoading] = useState(false); // Set to false to show UI
+  const [destList, setDestList] = useState([]); // Set to false to show UI
 
   const destinations = [
     "Alleppey",
@@ -32,11 +34,31 @@ const ComponentName = () => {
     "Goa",
   ];
 
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+
+        const postsQuery = query(collection(fireDb, "trips"));
+        const postsQuerySnapshot = await getDocs(postsQuery);
+        const posts = postsQuerySnapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+        console.log(posts, 'lol');
+        setDestList(posts);
+
+      }
+      catch {
+        // console.error(err); 
+      }
+    };
+
+    fetchData();
+  }, []);
+
+
   const [selectedCheckIn, setSelectedCheckIn] = useState(null);
   const [selectedCheckOut, setSelectedCheckOut] = useState(null);
 
-  const filteredDestinations = destinations.filter((d) =>
-    d.toLowerCase().includes(search.toLowerCase())
+  const filteredDestinations = destList.filter((d) =>
+    d?.title.toLowerCase().includes(search.toLowerCase())
   );
 
   useEffect(() => {
@@ -68,7 +90,7 @@ const ComponentName = () => {
 
   const ThemeCard = ({ title, image }) => (
     <div className=" overflow-hidden rounded-xl cursor-pointer flex flex-col justify-center items-center">
-      <Image src={image} alt={title} width={400} height={300} className="h-20 w-20 object-cover rounded-full" />
+      <Image src={image} alt={title} width={400} height={300} className="h-20 w-20 lg:h-40 lg:w-40 object-cover rounded-full lg:rounded-lg" />
       <h3 className="text-black text-sm pt-2">{title}</h3>
     </div>
   );
@@ -95,10 +117,11 @@ const ComponentName = () => {
       {isLoading ? (
         <Loading />
       ) : (
-        <div className="xl:px-32 lg:px-12 flex flex-col items-center pt-2 ">
+        <div className="xl:px-32 lg:px-12 flex flex-col justify-center pt-2 ">
           <Hamb />
           {/* Filters Section */}
-          <div className="w-full pt-16 flex items-center justify-center p-4">
+          <div className="min-h-sm pt-20 flex items-center justify-center p-4">
+
             <div className="relative w-full rounded-2xl shadow-xl overflow-hidden">
               <video
                 className="absolute inset-0 w-full h-full object-cover"
@@ -156,17 +179,17 @@ const ComponentName = () => {
                   </div>
                   {showDropdown && (
                     <ul className="absolute z-10 w-full bg-white shadow-md rounded-md mt-1 border max-h-48 overflow-y-auto">
-                      {filteredDestinations.length ? (
+                      {filteredDestinations?.length >= 1 ? (
                         filteredDestinations.map((item, idx) => (
                           <li
                             key={idx}
                             className="px-4 py-2 hover:bg-gray-100 cursor-pointer flex gap-x-2 items-center"
                             onClick={() => {
-                              setSearch(item);
+                              setSearch(item?.title);
                               setShowDropdown(false);
                             }}
                           >
-                            <IoLocationSharp color="red" /> {item}
+                            <IoLocationSharp color="red" /> {item.title.slice(0, 30)}
                           </li>
                         ))
                       ) : (
@@ -176,9 +199,9 @@ const ComponentName = () => {
                   )}
                 </div>
 
-                <div className="flex justify-between text-sm text-gray-800 mb-2 font-semibold">
-                  <span>CHECK IN</span>
-                  <span>CHECK OUT</span>
+                <div className="flex justify-between text-sm text-gray-800 mb-2 font-semibold uppercase py-2">
+                  <span>Start Date</span>
+                  <span>End Date</span>
                 </div>
 
                 <div className="flex justify-between mb-4">
@@ -198,6 +221,7 @@ const ComponentName = () => {
                 </button>
               </div>
             </div>
+
           </div>
           <JourneySection />
 
@@ -205,39 +229,15 @@ const ComponentName = () => {
 
           {/* Theme Cards */}
           <div className="w-full px-4 py-5">
-            <p className="text-left pb-5 font-semibold text-base">Match Your Mood to a Destination</p>
+            <p className="text-left pb-5 font-semibold text-base lg:text-4xl">Match Your Mood to a Destination</p>
             <div className="flex gap-x-3 overflow-x-auto snap-x snap-mandatory scrollbar-hide py-2">
-              {['Family', 'Solo', 'Honeymoon', 'Friends', 'Adventure'].map((title, idx) => (
+              {['Family', 'Solo', 'Honeymoon', 'Friends', 'Adventure','Temples'].map((title, idx) => (
                 <div key={idx} className="snap-start shrink-0">
-                  <ThemeCard title={title} image={`/${idx + 1}.webp`} />
+                  <ThemeCard title={title} image={`/${idx + 1}.webp`} link ={'/trip-advisor/temples'} />
                 </div>
               ))}
             </div>
           </div>
-
-          {/* Places */}
-          {/* <div className="px-4 py-4">
-            <p className="font-semibold text-xl">Explore Famous Places</p>
-            <ul className="pt-4 flex justify-between">
-              <li className="p-2 border-2 rounded shadow-sm">North India</li>
-              <li className="p-2 border-2 rounded shadow-sm">South India</li>
-              <li className="p-2 border-2 rounded shadow-sm">East India</li>
-            </ul>
-            <div className="pt-4 flex flex-col gap-y-3">
-              <PlaceCard
-                place="Kerala Tour"
-                imglink="https://www.onthegotours.com/repository/Captivating-Kerala-790251659009921.jpg"
-              />
-              <PlaceCard
-                place="Karnataka Tour"
-                imglink="https://www.tusktravel.com/blog/wp-content/uploads/2023/06/Hampi-in-karnataka-min.jpg"
-              />
-              <PlaceCard
-                place="Goa"
-                imglink="https://s7ap1.scene7.com/is/image/incredibleindia/1-palolem-beach-goa-goa-city-hero?qlt=82&ts=1726735654599"
-              />
-            </div>
-          </div> */}
           <GetInspiration />
         </div>
       )}

@@ -29,9 +29,9 @@ const destinations = [
 export default function DestinationGrid() {
   const [showPrice, setShowPrice] = useState(false);
   return (
-    <div className="w-full px-4 py-4 bg-white rounded-xl">
-      <h2 className="text-xl font-bold mb-4">Plan as per the best destinations in India</h2>
-      <div className="grid grid-cols-2 gap-3">
+    <div className="w-full px-4 py-4 lg:py-10 bg-white rounded-xl">
+      <h2 className="text-xl lg:text-4xl font-bold mb-4 ">Plan as per the best destinations in India</h2>
+      <div className="grid grid-cols-2 gap-3 lg:pt-5">
         {destinations.map((dest, index) => (
           <div
             key={index}

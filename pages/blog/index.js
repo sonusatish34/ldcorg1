@@ -1,6 +1,9 @@
 
 import { fireDb } from '../../public/firebase';
-import { getDocs, collection, where, query } from 'firebase/firestore';
+// import { getDocs, collection, where, query, doc, getDoc, setDoc, updateDoc, increment, serverTimestamp } from "firebase/firestore";
+import { doc, getDoc, setDoc, updateDoc, increment, serverTimestamp } from "firebase/firestore";
+
+
 import React, { useEffect, useState } from 'react';
 import { GoDotFill } from "react-icons/go";
 import Loading from '../components/Loading';
@@ -40,7 +43,7 @@ const ComponentName = (props) => {
         setPostlist(posts);
         setSortedPostlist(sortedPosts);
       } catch (err) {
-        setError('Failed to load data');
+        // setError('Failed to load data');
         console.error(err); // You can also log errors to an external service like Sentry
       } finally {
         setIsLoading(false); // Hide loader after data is fetched or error occurs
@@ -51,6 +54,36 @@ const ComponentName = (props) => {
 
     fetchPosts();
   }, []);
+
+
+
+  useEffect(() => {
+    const trackPageView = async () => {
+      const alreadyTracked = sessionStorage.getItem("blogPageViewed");
+
+      if (alreadyTracked) return; // 👈 Skip if already tracked in this session
+
+      const pageRef = doc(fireDb, "analytics", "blogPage");
+      const docSnap = await getDoc(pageRef);
+
+      if (docSnap.exists()) {
+        await updateDoc(pageRef, {
+          views: increment(1),
+          lastVisited: serverTimestamp(),
+        });
+      } else {
+        await setDoc(pageRef, {
+          views: 1,
+          lastVisited: serverTimestamp(),
+        });
+      }
+
+      sessionStorage.setItem("blogPageViewed", "true"); // 👈 Mark as viewed
+    };
+
+    trackPageView();
+  }, []);
+
 
 
   return (
@@ -71,7 +104,7 @@ const ComponentName = (props) => {
             <div className="bg-gradient-to-r from-white to-blue-50 p-6 rounded-3xl shadow-xl w-full max-w-6xl mx-auto grid grid-cols-2 lg:flex   items-center gap-4">
               {/* Destination */}
               <div className="w-full md:w-1/4">
-                <label className="text-sm text-gray-600 font-medium mb-1 block">Destination</label>
+                <label className="text-sm text-gray-600 font-medium mb-1 block">Destina--tion</label>
                 <Listbox value={selectedDestination} onChange={setSelectedDestination}>
                   <div className="relative">
                     <Listbox.Button className="w-full bg-white border border-gray-200 rounded-xl py-3 pl-10 pr-10 text-left shadow-sm hover:ring-2 hover:ring-blue-400 transition focus:outline-none focus:ring-2 focus:ring-blue-500">

@@ -41,7 +41,7 @@ export default function ImageCarousel({ images }) {
                 <div className="overflow-hidden" ref={emblaRef}>
                     <div className="flex">
                         {images?.map((src, index) => (
-                            <div key={index} className="min-w-full h-fit  flex-shrink-0 relative overflow-hidden">
+                            <div key={index} className="min-w-full h-fit lg:rounded-lg  flex-shrink-0 relative overflow-hidden">
 
                                 <motion.img
                                     src={src}
@@ -49,7 +49,7 @@ export default function ImageCarousel({ images }) {
                                     initial={{ scale: 1 }}
                                     animate={{ scale: 1.1 }}
                                     transition={{ duration: 2 }}
-                                    className="w-full h-64 sm:h-80 md:h-96 object-cover"
+                                    className="w-full h-64 sm:h-80 md:h-96 lg:h-[500px] object-cover"
                                 />
                             </div>
                         ))}

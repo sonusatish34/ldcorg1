@@ -21,7 +21,7 @@ import PopUp from './components/PopUp';
 import TripPlannerPopup from './components/TripPlannerPopup';
 // import LeafletMap from './components/TripPlanner/LeafletMap';
 const LeafletMap = dynamic(() => import('./components/TripPlanner/LeafletMap'), {
-  ssr: false, // <== THIS IS CRITICAL
+    ssr: false, // <== THIS IS CRITICAL
 });
 export default function Place({ cars, canonicalUrl }) {
     const { ref: ref1, inView: inView1 } = useInView({ triggerOnce: true, threshold: 0.1 });
@@ -63,10 +63,7 @@ export default function Place({ cars, canonicalUrl }) {
                     </div>
                     <div ref={tripRef} className={`${animateTrip ? 'rotate-3d' : ''}`}>
                         <TripPlanner />
-                        {/* <TripPlannerPopup /> */}
-                        {/* <SearchFilter/> */}
-                                            <LeafletMap/>
-
+                        <p></p>
                     </div>
                     <DynNearByApi />
                     <DynNearYou />
@@ -91,8 +88,7 @@ export default function Place({ cars, canonicalUrl }) {
                     <div ref={ref4}>
                         {inView4 && <PopUp />}
                     </div>
-                    
-                    
+
                 </div>
             </Layout>
         </div>

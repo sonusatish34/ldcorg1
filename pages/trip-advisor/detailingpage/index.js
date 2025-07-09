@@ -10,7 +10,7 @@ import { FaCloudSun } from "react-icons/fa";
 import StickyTabs from '../comps/StickyTabs'; // Assuming StickyTabs is in the same directory
 import ImageZoomCarousal from '../comps/ImageZoomCarousal';
 import Link from 'next/link';
-import WeatherData from './WeatherData';
+import WeatherData from '../categories/[categoryname]/[blogname]/WeatherData';
 import dynamic from 'next/dynamic';
 // import LeafletMap from '@/pages/components/TripPlanner/LeafletMap';
 const LeafletMap = dynamic(() => import('@/pages/components/TripPlanner/LeafletMap'), {
