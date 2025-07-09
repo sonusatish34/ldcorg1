@@ -57,7 +57,7 @@ export default function Place({ cars, canonicalUrl }) {
                     <link rel="canonical" href={canonicalUrl} />
                 </Head>
                 <div className='pt-32 lg:pt-0'>
-                    {/* <CarProducts data={cars} phoneno={'9000478478'} wspno={'9666677405'} count={7} /> */}
+                    <CarProducts data={cars} phoneno={'9000478478'} wspno={'9666677405'} count={7} />
                     <div ref={ref1}>
                         {inView1 && <DynImageChange locname={'hyderabad'} />}
                     </div>

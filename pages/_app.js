@@ -71,8 +71,6 @@ export default function MyApp({ Component, pageProps }) {
           `,
         }}
       />
-            {loading && <PageLoader />}
-
       <Component {...pageProps} />
     </>
   );
