@@ -290,3 +290,44 @@ body {
 .group-hover\:pause-marquee:hover {
   animation-play-state: paused;
 }
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+/* globals.css */
+
+@keyframes scrollCar {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll-car {
+  animation: scrollCar 10s linear infinite;
+  animation-play-state: running;
+}
+.view-full-button {
+  margin-top: 10px;
+  background-color: #2e8b57;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.full-itinerary {
+  background-color: #f9f9f9;
+  padding: 15px;
+  margin-top: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+

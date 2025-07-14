@@ -1,0 +1,66 @@
+{
+  "travel": {
+    "title": "TRAVEL ISN'T JUST ABOUT GETTING FROM PLACE TO PLACE. BOOKING YOUR OWN JOURNEY OF DISCOVERY IS.",
+    "subtitle": "Sure, you've traveled before. But this time, it's not just about seeing something new…",
+    "description": "This journey is about something deeper—a full immersion into cultures, landscapes, and stories passed down through generations. Travel isn't one-size-fits-all. Whether you're wandering souks in Marrakech or hiking hidden trails in Patagonia.",
+    "trips": [
+      {
+        "title": "Vizag-Coastal-And-Cultural-Tour",
+        "buttonText": "EXPLORE TRIP",
+        "imageAlt": "vizah",
+        "imagelink": "/trips/maincover/vizag.jpg",
+        "link": "hitting-the-vizag-streets"
+      },
+      {
+        "title": "the og hill queen of vijayawada",
+        "buttonText": "EXPLORE TRIP",
+        "imageAlt": "",
+        "imagelink": "/trips/maincover/vijayawada.jpg",
+        "link": "the-og-hill-queen-of-vijayawada"
+      },
+      {
+        "title": "Beachy Beats & Street Treats kakinada",
+        "buttonText": "EXPLORE TRIP",
+        "imageAlt": "",
+        "imagelink": "/trips/maincover/kakinda.jpg",
+        "link": "beachy-beats-&-street-treats-kakinada"
+      },
+      {
+        "title": "From Rayalaseema with Swag Kurnool",
+        "buttonText": "EXPLORE TRIP",
+        "imageAlt": "",
+        "imagelink": "/trips/maincover/kurnool.jpg",
+        "link": "from-rayalaseema-with-swag-kurnool"
+      },
+      {
+        "title": "tirupati beyond chittoors got that juice",
+        "buttonText": "EXPLORE TRIP",
+        "imageAlt": "",
+        "imagelink": "/trips/maincover/chitoor.jpg",
+        "link": "tirupati-beyond-chittoors-got-that-juice"
+      }
+    ]
+  },
+  "food": {
+    "title": "food is bevbjrheirio.",
+    "subtitle": "fjsldjldeop…",
+    "description": "lkdlw",
+    "trips": [
+      {
+        "title": "rop food paves in jyder",
+        "buttonText": "EXPLORE TRIP",
+        "imageAlt": "Family with luggage and airplane illustration"
+      },
+      {
+        "title": "Kisjdks",
+        "buttonText": "EXPLORE TRIP",
+        "imageAlt": "Woman sitting with suitcase under palm tree"
+      },
+      {
+        "title": "food ",
+        "buttonText": "EXPLORE TRIP",
+        "imageAlt": "Woman sitting with suitcase under palm tree"
+      }
+    ]
+  }
+}

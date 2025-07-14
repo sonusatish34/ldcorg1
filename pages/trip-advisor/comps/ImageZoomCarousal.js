@@ -1,11 +1,14 @@
 'use client';
 import useEmblaCarousel from 'embla-carousel-react';
 import Autoplay from 'embla-carousel-autoplay';
-import { ChevronLeft, ChevronRight, X, Album } from 'lucide-react';
+import { ChevronLeft, ChevronRight, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { BiPhotoAlbum } from "react-icons/bi";
+
 export default function ImageCarousel({ images }) {
+    console.log(images, 'imh');
+
     const autoplay = useRef(
         Autoplay({ delay: 3000, stopOnInteraction: false, stopOnMouseEnter: false })
     );
@@ -37,19 +40,21 @@ export default function ImageCarousel({ images }) {
     return (
         <>
             {/* MAIN CAROUSEL */}
-            <div className="relative w-full h-72">
+            <div className="relative w-full h-72 sm:h-80 md:h-96 lg:h-[500px] xl:h-[600px]">
                 <div className="overflow-hidden" ref={emblaRef}>
                     <div className="flex">
                         {images?.map((src, index) => (
-                            <div key={index} className="min-w-full h-fit lg:rounded-lg  flex-shrink-0 relative overflow-hidden">
-
+                            <div
+                                key={index}
+                                className="min-w-full h-fit flex-shrink-0 relative overflow-hidden lg:rounded-xl"
+                            >
                                 <motion.img
                                     src={src}
                                     alt={`Slide ${index + 1}`}
                                     initial={{ scale: 1 }}
                                     animate={{ scale: 1.1 }}
                                     transition={{ duration: 2 }}
-                                    className="w-full h-64 sm:h-80 md:h-96 lg:h-[500px] object-cover"
+                                    className="w-full h-64 sm:h-80 md:h-96 lg:h-[500px] xl:h-[600px] object-contain"
                                 />
                             </div>
                         ))}
@@ -59,17 +64,18 @@ export default function ImageCarousel({ images }) {
                 {/* Arrows */}
                 <button
                     onClick={scrollPrev}
-                    className="absolute top-1/2 left-2 -translate-y-1/2 bg-white/70 p-2 rounded-full shadow z-10"
+                    className="absolute top-1/2 left-2 lg:left-6 -translate-y-1/2 bg-white/70 p-2 lg:p-3 rounded-full shadow z-10"
                 >
-                    <ChevronLeft className="w-5 h-5 text-black" />
+                    <ChevronLeft className="w-5 h-5 lg:w-6 lg:h-6 text-black" />
                 </button>
                 <button
                     onClick={scrollNext}
-                    className="absolute top-1/2 right-2 -translate-y-1/2 bg-white/70 p-2 rounded-full shadow z-10"
+                    className="absolute top-1/2 right-2 lg:right-6 -translate-y-1/2 bg-white/70 p-2 lg:p-3 rounded-full shadow z-10"
                 >
-                    <ChevronRight className="w-5 h-5 text-black" />
+                    <ChevronRight className="w-5 h-5 lg:w-6 lg:h-6 text-black" />
                 </button>
 
+                {/* Dot Indicators */}
                 <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-2 z-10">
                     {images?.map((_, i) => (
                         <button
@@ -80,21 +86,20 @@ export default function ImageCarousel({ images }) {
                         />
                     ))}
                 </div>
-                
-                <div className="text-center mt-3 relative bottom-14 left-4 text-white  bg-black/50 w-fit p-2 rounded-full shadow z-10 ">
+
+                {/* View Gallery Button */}
+                <div className="text-center mt-3 relative bottom-14 left-4 lg:bottom-20 lg:left-6 text-white bg-black/50 w-fit p-2 rounded-full shadow z-10">
                     <button
                         onClick={() => setShowGallery(true)}
                         className="text-sm underline text-white hover:text-blue-800 flex gap-x-2"
                     >
-                        <span><BiPhotoAlbum className="w-5 h-5 " /></span>
+                        <span><BiPhotoAlbum className="w-5 h-5" /></span>
                         <span>{images?.length}</span>
                     </button>
                 </div>
-
-                {/* View Gallery Button */}
-
             </div>
 
+            {/* GALLERY VIEW */}
             <AnimatePresence>
                 {showGallery && (
                     <motion.div
@@ -111,25 +116,26 @@ export default function ImageCarousel({ images }) {
                             <X className="text-white w-6 h-6" />
                         </button>
 
-                        {/* Grid of Images */}
-                        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 mt-10">
+                        {/* Image Grid */}
+                        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4 mt-10">
                             {images?.map((src, index) => (
                                 <motion.img
+                                    key={index}
                                     src={src}
                                     alt={`Slide ${index + 1}`}
                                     animate={selectedIndex === index ? { scale: 1.1 } : { scale: 1 }}
                                     transition={{ duration: 1.5, ease: 'easeInOut' }}
-                                    className="w-full h-64 sm:h-80 md:h-96 object-cover"
+                                    onClick={() => setActiveImage(src)}
+                                    className="w-full h-64 sm:h-80 md:h-96 lg:h-[400px] xl:h-[450px] object-cover rounded cursor-pointer"
                                 />
-
-
                             ))}
+                            <p>kok</p>
                         </div>
                     </motion.div>
                 )}
             </AnimatePresence>
 
-            {/* FULL IMAGE VIEW */}
+            {/* FULL IMAGE MODAL */}
             <AnimatePresence>
                 {activeImage && (
                     <motion.div

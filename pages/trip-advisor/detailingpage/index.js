@@ -7,14 +7,13 @@ import useEmblaCarousel from 'embla-carousel-react';
 import { useCallback } from 'react';
 import { ChevronLeft, ChevronRight, SunDim } from 'lucide-react';
 import { FaCloudSun } from "react-icons/fa";
-import StickyTabs from '../comps/StickyTabs'; // Assuming StickyTabs is in the same directory
+import StickyTabs from '../comps/StickyTabs';
 import ImageZoomCarousal from '../comps/ImageZoomCarousal';
 import Link from 'next/link';
 import WeatherData from '../categories/[categoryname]/[blogname]/WeatherData';
 import dynamic from 'next/dynamic';
-// import LeafletMap from '@/pages/components/TripPlanner/LeafletMap';
 const LeafletMap = dynamic(() => import('@/pages/components/TripPlanner/LeafletMap'), {
-  ssr: false, // <== THIS IS CRITICAL
+    ssr: false, 
 });
 const ComponentName = (props) => {
 
@@ -29,7 +28,7 @@ const ComponentName = (props) => {
     const scrollPrev = useCallback(() => emblaApi && emblaApi.scrollPrev(), [emblaApi]);
     const scrollNext = useCallback(() => emblaApi && emblaApi.scrollNext(), [emblaApi]);
     const [weather, setWeather] = React.useState(null);
-    
+
     useEffect(() => {
         const requestOptions = {
             method: "GET",
@@ -65,9 +64,7 @@ const ComponentName = (props) => {
                 <div className='px-3 pb-4'> <WeatherData /></div>
 
                 <div className="max-w-3xl mx-auto">
-
                     <StickyTabs />
-
                     {/* Content Sections */}
                     <div id="overview" className="py-6 px-4">
                         <h2 className="text-xl font-semibold mb-2">About</h2>
@@ -75,14 +72,10 @@ const ComponentName = (props) => {
                             Birla Mandir is a beautiful and peaceful Temple located in the Naubath Pahad hill. It was built in 1976 which is made up of entirely white marble and is dedicated to Lord Venkateswara. And the temple is a mix of South Indian, Rajasthani and it is looking like a unique And attractive.From the temple visitors can enjoy the stunning Views of the City and it is located nearby the Hussain Sagar, prasad imax lake there are also shrines for other deities like Shiva, Ganesh, and Hanuman. The temple is a quiet place, perfect for prayer and meditation.
                         </p>
                     </div>
-                     <LeafletMap/>
-
+                    <LeafletMap lon={78} lat={17} />
                     <div id="details" className="py-6 px-4">
                         <h2 className="text-xl font-semibold mb-2">Details</h2>
                         <p>Includes transportation, lunch, entry tickets...</p>
-                        {/* <p>
-                            Visiting Birla Mandir is free of charge; there is no entry fee for anyone. The temple is open every day from 7:00 AM to 12:00 PM and again from 3:00 PM to 9:00 PM. Visitors are expected to dress modestly and remove their shoes before entering. It's best to visit during the early morning or evening hours to avoid crowds and enjoy the serene atmosphere.
-                        </p> */}
                         <ul>
                             <li><span>Timings : </span> <span> day from 7:00 AM to 12:00 PM and again from 3:00 PM to 9:00 PM </span></li>
                         </ul>
@@ -93,14 +86,8 @@ const ComponentName = (props) => {
                         <ul className="list-disc pl-5">
                             <li>    Day 1: Arrival in Munnar</li>
                             <li>    Day 2: Sightseeing Tour</li>
-
-
                         </ul>
                     </div>
-                   
-
-
-
                     <div id="reviews" className="py-6 px-4">
                         <h2 className="text-xl font-semibold mb-2">Reviews</h2>
                         <p>⭐⭐⭐⭐⭐ - Great tour!</p>
@@ -115,17 +102,6 @@ const ComponentName = (props) => {
 
                         <p>⭐⭐⭐⭐ - Great tour!</p>
 
-                        <p>⭐⭐⭐⭐⭐ - Great tour!</p>
-
-                        <p>⭐⭐⭐ - Great tour!</p>
-
-                        <p>⭐⭐⭐⭐⭐ - Great tour!</p>
-
-                        <p>⭐⭐⭐⭐ - Great tour!</p>
-
-                        <p>⭐⭐⭐⭐⭐ - Great tour!</p>
-
-                        <p>⭐⭐⭐⭐⭐ - Great tour!</p>
                     </div>
                 </div>
 

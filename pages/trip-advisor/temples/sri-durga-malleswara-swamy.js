@@ -119,8 +119,8 @@ function ItinerarySelector() {
             key={day}
             onClick={() => setSelected(day)}
             className={`px-4 py-2 rounded-full font-medium border transition ${selected === day
-                ? 'bg-[#A94A4A] text-white border-pink-600'
-                : 'text-[#A94A4A] bg-white border-pink-600 hover:bg-[#A94A4A] hover:text-white'
+              ? 'bg-[#A94A4A] text-white border-pink-600'
+              : 'text-[#A94A4A] bg-white border-pink-600 hover:bg-[#A94A4A] hover:text-white'
               }`}
           >
             {day}-Day Plan
@@ -185,7 +185,7 @@ function SevaDarshanam({ name }) {
 
   const handleSubmit = (index) => {
     const seva = sevaList[index];
-    const templename = name || 'Unknown Temple';
+    const templename = name;
     const { adults, children } = quantities[index] || { adults: 0, children: 0 };
     const total = seva.price * (adults + children);
 
@@ -258,7 +258,8 @@ function SevaDarshanam({ name }) {
           </li>
         ))}
       </ul>
-
+{        console.log(checkoutData,'djsk')
+}        
       {checkoutData && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
           <div className="bg-white p-6 rounded-xl w-[90%] max-w-md shadow-xl relative">
@@ -289,31 +290,31 @@ function SevaDarshanam({ name }) {
 
 
 function PlacesToVisit({ name }) {
-    const places = [
-        { label: "🕉️ Kanaka Durga Temple" },
-        { label: "🌉 Prakasam Barrage" },
-        { label: "🕊️ Gandhi Hill" },
-        { label: "🌴 Bhavani Island" }
-    ];
+  const places = [
+    { label: "🕉️ Kanaka Durga Temple" },
+    { label: "🌉 Prakasam Barrage" },
+    { label: "🕊️ Gandhi Hill" },
+    { label: "🌴 Bhavani Island" }
+  ];
 
-    return (
-      <div className="pt-4">
-            <div className="space-y-4 py-6 px-5 bg-gradient-to-br from-white to-gray-100 shadow-lg rounded-xl">
-                <h3 className="text-2xl font-bold text-[#A94A4A] border-b pb-2">Nearby Attractions</h3>
-                <ul className="space-y-3">
-                    {places.map((place, i) => (
-                        <li
-                            key={i}
-                            className="flex items-center text-lg text-gray-800 hover:text-[#A94A4A] transition-all duration-200"
-                        >
-                            <span className="mr-2">📍</span>
-                            {place.label}
-                        </li>
-                    ))}
-                </ul>
-            </div>
-        </div>
-    );
+  return (
+    <div className="pt-4">
+      <div className="space-y-4 py-6 px-5 bg-gradient-to-br from-white to-gray-100 shadow-lg rounded-xl">
+        <h3 className="text-2xl font-bold text-[#A94A4A] border-b pb-2">Nearby Attractions</h3>
+        <ul className="space-y-3">
+          {places.map((place, i) => (
+            <li
+              key={i}
+              className="flex items-center text-lg text-gray-800 hover:text-[#A94A4A] transition-all duration-200"
+            >
+              <span className="mr-2">📍</span>
+              {place.label}
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  );
 }
 
 
@@ -408,10 +409,11 @@ export default function TempleDetailPage() {
     'Srikalahasti', 'Annavaram', 'Ahobilam'
   ];
 
-  const templateName = router?.query?.templename;
-  const templeDataArray = templateName && td?.[templateName];
-  const templeData = Array.isArray(templeDataArray) ? templeDataArray[0] : null;
-
+  const templateName = "Sri Durga Malleswara Swamy";
+  
+  if (!templateName) {
+    return <p className="p-8 text-center text-gray-600">Loading temple details...</p>;
+  }
   return (
     <div className="helvetica-font">
       <header className="bg-white shadow sticky top-0 z-50">
@@ -473,8 +475,8 @@ export default function TempleDetailPage() {
             </div>
 
             <div className="w-full lg:w-2/3 bg-white rounded-lg shadow p-6">
-              <TempleInfo />
-              <SevaDarshanam />
+              <TempleInfo name={templateName} />
+              <SevaDarshanam name={templateName} />
               <ItinerarySelector />
               <FAQ />
             </div>

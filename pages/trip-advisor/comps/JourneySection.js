@@ -4,9 +4,9 @@ const tabs = ["BY TRAVELLER", "MOST POPULAR", "BY MONTH", "IN THE SPOTLIGHT"];
 
 const data = {
   "BY TRAVELLER": [
-    { title: "Food", link: '/trip-advisor/categories/food', image: "https://www.tripointholidays.com/images/incentivetour/main/goa-main1.jpg" },
-    { title: "Explore", image: "https://media1.thrillophilia.com/filestore/jezkw1hz3yrpmiqlbobdguc5f54m_shutterstock_1938178192.jpg?w=400&dpr=2" },
-    { title: "COUPLES", image: "https://tripoventure.com/wp-content/uploads/2022/08/Untitled-design-76.png" },
+    { title: "Travel", link: '/trip-advisor/categories/travel', image: "https://www.tripointholidays.com/images/incentivetour/main/goa-main1.jpg" },
+    { title: "heritage and culture", image: "https://media1.thrillophilia.com/filestore/jezkw1hz3yrpmiqlbobdguc5f54m_shutterstock_1938178192.jpg?w=400&dpr=2" },
+    { title: "Tourism", image: "https://tripoventure.com/wp-content/uploads/2022/08/Untitled-design-76.png" },
   ],
   "MOST POPULAR": [
     { title: "Bali", image: "https://tripoventure.com/wp-content/uploads/2022/08/Untitled-design-76.png" },
@@ -43,7 +43,7 @@ export default function JourneySection() {
   const [activeTab, setActiveTab] = useState("BY TRAVELLER");
 
   return (
-    <div className="max-w-4xl lg:max-w-full  px-4 ">
+    <div className="max-w-4xl lg:max-w-full  px-4 py-10 ">
       <p className="text-3xl uppercase text-center py-4 lg:text-5xl">Start your journey</p>
       <div className="flex justify-center gap-6 lg:gap-x-10 text-sm font-medium mb-8">
         {tabs.map((tab) => (

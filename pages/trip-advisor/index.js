@@ -38,12 +38,11 @@ const ComponentName = () => {
     const fetchData = async () => {
       try {
 
-        const postsQuery = query(collection(fireDb, "trips"));
+        const postsQuery = query(collection(fireDb, "blogPost"));
         const postsQuerySnapshot = await getDocs(postsQuery);
         const posts = postsQuerySnapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
         console.log(posts, 'lol');
         setDestList(posts);
-
       }
       catch {
         // console.error(err); 
@@ -95,22 +94,6 @@ const ComponentName = () => {
     </div>
   );
 
-  const PlaceCard = ({ place, imglink }) => (
-    <div className="border-2 flex justify-between relative rounded-l-md">
-      <div className="relative w-[60%] h-full rounded-md overflow-hidden shadow-lg">
-        <img src={imglink} alt={place} className="object-cover h-60 w-full" />
-        <div className="absolute inset-0 bg-black bg-opacity-20 flex items-center justify-center">
-          <p className="text-white text-lg font-bold text-center px-4">{place}</p>
-        </div>
-      </div>
-      <ul className="px-3 py-2 w-[40%] flex flex-col gap-y-3 justify-between">
-        <li className="rounded border-2 p-1 shadow-sm">1-2 days</li>
-        <li className="rounded border-2 p-1 shadow-sm">3-4 days</li>
-        <li className="rounded border-2 p-1 shadow-sm">5-7 days</li>
-        <li className="rounded border-2 p-1 shadow-sm">8+ days</li>
-      </ul>
-    </div>
-  );
 
   return (
     <div className='inter-font'>
@@ -168,6 +151,8 @@ const ComponentName = () => {
                         className="w-full bg-transparent focus:outline-none text-gray-800 placeholder-transparent"
                         placeholder="eg. Goa, Dandeli, Hyderabad"
                       />
+
+                      <p>knlkl</p>
 
                       {/* Animated Placeholder */}
                       {search === '' && (

@@ -1,0 +1,22 @@
+{
+  "title": "TRAVEL ISN'T JUST ABOUT GETTING FROM PLACE TO PLACE. BOOKING YOUR OWN JOURNEY OF DISCOVERY IS.",
+  "subtitle": "Sure, you've traveled before. But this time, it's not just about seeing something new…",
+  "description": "This journey is about something deeper—a full immersion into cultures, landscapes, and stories passed down through generations. Travel isn't one-size-fits-all. Whether you're wandering souks in Marrakech or hiking hidden trails in Patagonia.",
+  "trips": [
+    {
+      "title": "Vizag-Coastal-And-Cultural-Tour",
+      "buttonText": "EXPLORE TRIP",
+      "imageAlt": "Family with luggage and airplane illustration"
+    },
+    {
+      "title": "Kisjdks",
+      "buttonText": "EXPLORE TRIP",
+      "imageAlt": "Woman sitting with suitcase under palm tree"
+    },
+    {
+      "title": "Kisjdks",
+      "buttonText": "EXPLORE TRIP",
+      "imageAlt": "Woman sitting with suitcase under palm tree"
+    }
+  ]
+}

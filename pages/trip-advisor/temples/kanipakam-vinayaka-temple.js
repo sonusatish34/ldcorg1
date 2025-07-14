@@ -1,3 +1,4 @@
+'use client';
 // components/TempleDetailsTabs/TempleInfo.jsx
 import { IoArrowForwardCircleOutline } from "react-icons/io5";
 import ReactMarkdown from 'react-markdown';
@@ -14,7 +15,22 @@ import UserDropdown from "./detailing-page/comp/UserDropDown";
 import ImageSwiper from "./detailing-page/comp/ImageSwiper";
 import { CalendarDays, MapPin, Utensils, Mountain } from 'lucide-react'
 import { ChevronDownIcon } from "@heroicons/react/24/solid";
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Autoplay } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/autoplay'; // Optional: autoplay styles
+import 'swiper/css/navigation';
+
+const images = [
+    '/temples/1.jpg',
+    '/temples/kanipakam.jpg',
+    '/temples/5.jpg',
+    '/temples/kanipakam.jpg',
+];
 
 function TempleInfo({ name }) {
     return (
@@ -29,8 +45,8 @@ function TempleInfo({ name }) {
                     <p>Kanipakam Vinayaka Temple</p>
                 </div>
                 <div className="p-4 bg-[#A94A4A] rounded text-white shadow">
-                    <h4 className="font-semibold">Chittor, Andhra Pradesh</h4>
-                    <p>{'N/A'}</p>
+                    <h4 className="font-semibold">District</h4>
+                    <p>Chittor, Andhra Pradesh</p>
                 </div>
             </div>
         </div>
@@ -147,8 +163,8 @@ function ItinerarySelector() {
                         key={day}
                         onClick={() => setSelected(day)}
                         className={`px-4 py-2 rounded-full font-medium border transition ${selected === day
-                                ? 'bg-[#A94A4A] text-white border-pink-600'
-                                : 'text-[#A94A4A] bg-white border-pink-600 hover:bg-[#A94A4A] hover:text-white'
+                            ? 'bg-[#A94A4A] text-white border-pink-600'
+                            : 'text-[#A94A4A] bg-white border-pink-600 hover:bg-[#A94A4A] hover:text-white'
                             }`}
                     >
                         {day}-Day Plan
@@ -317,33 +333,33 @@ function SevaDarshanam({ name }) {
 
 
 function PlacesToVisit() {
-  const places = [
-    "🙏 Sri Varasidhi Vinayaka Temple",
-    "⛩️ Sri Manikanta Swamy Temple",
-    "🕉️ Sri Varadaraja Swamy Temple",
-    "💧 Kaigal (Dumukurallu) Waterfalls"
-  ];
+    const places = [
+        "🙏 Sri Varasidhi Vinayaka Temple",
+        "⛩️ Sri Manikanta Swamy Temple",
+        "🕉️ Sri Varadaraja Swamy Temple",
+        "💧 Kaigal (Dumukurallu) Waterfalls"
+    ];
 
-  return (
-    <div className="pt-4">
-      <div className="space-y-4 py-6 px-6 bg-gradient-to-br from-white to-blue-50 shadow-xl rounded-2xl">
-        <h3 className="text-2xl font-bold text-indigo-600 border-b pb-2">
-          Nearby Attractions
-        </h3>
-        <ul className="space-y-3">
-          {places.map((place, i) => (
-            <li
-              key={i}
-              className="flex items-center text-lg text-gray-800 hover:text-indigo-600 transition-colors duration-200"
-            >
-              <span className="mr-3">📍</span>
-              {place}
-            </li>
-          ))}
-        </ul>
-      </div>
-    </div>
-  );
+    return (
+        <div className="pt-4">
+            <div className="space-y-4 py-6 px-6 bg-gradient-to-br from-white to-blue-50 shadow-xl rounded-2xl">
+                <h3 className="text-2xl font-bold text-indigo-600 border-b pb-2">
+                    Nearby Attractions
+                </h3>
+                <ul className="space-y-3">
+                    {places.map((place, i) => (
+                        <li
+                            key={i}
+                            className="flex items-center text-lg text-gray-800 hover:text-indigo-600 transition-colors duration-200"
+                        >
+                            <span className="mr-3">📍</span>
+                            {place}
+                        </li>
+                    ))}
+                </ul>
+            </div>
+        </div>
+    );
 }
 
 
@@ -481,13 +497,33 @@ export default function TempleDetailPage() {
                 <main className="flex lg:px-20 p-6">
                     <div className="flex flex-col lg:flex-row gap-6 items-start">
                         <div className="w-full lg:w-1/3">
-                            <Image
-                                src={'/temples/kanipakam.jpg'}
-                                alt="Temple"
-                                width={400}
-                                height={400}
-                                className="rounded"
-                            />
+                            <div className="w-[390px] h-[440px]">
+                                <Swiper
+                                    modules={[Navigation, Autoplay]}
+                                    navigation
+                                    autoplay={{
+                                        delay: 1500,
+                                        disableOnInteraction: false,
+                                    }}
+                                    loop={true}
+                                    spaceBetween={1}
+                                    slidesPerView="1"
+                                    style={{ padding: '10px 0' }}
+                                >
+                                    {images.map((src, index) => (
+                                        <SwiperSlide
+                                            key={index}
+                                            style={{
+                                                width: '400px', // fixed width
+                                                flexShrink: 0,
+                                            }}
+                                            className="rounded overflow-hidden shadow"
+                                        >
+                                            <img src={src} alt={`Slide ${index}`} className="w-[400px] object-cover h-[421px]" />
+                                        </SwiperSlide>
+                                    ))}
+                                </Swiper>
+                            </div>
                             <div className="mt-4 flex flex-col gap-y-1 pb-4">
                                 <h1 className="text-2xl font-bold text-gray-800 capitalize">
                                     KANIPAKAM VINAYAKA TEMPLE

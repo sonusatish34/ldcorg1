@@ -44,8 +44,8 @@ export default function LeafletMap({ lat, lon, area }) {
     <div
       id="map"
       ref={mapRef}
-      style={{ width: '100%', height: '300px', borderRadius: '12px' }}
-      className="z-0"
+      style={{ width: '100%', borderRadius: '12px' }}
+      className="z-0 lg:h-[500px] h-[400px]"
     />
   );
 }

@@ -1,0 +1,993 @@
+{
+    "vizag-coastal-and-cultural-tour": [
+        {
+            "title": "Vizag Coastal & Cultural Tour",
+            "coverimages": [
+                "/trips/vizag/4.jpg",
+                "/trips/vizag/5.jpg",
+                "/trips/vizag/6.jpg"
+            ],
+            "latitude": 17.6868,
+            "longitude": 83.2185,
+            "populartags": [
+                "vizag",
+                "beach-tour",
+                "temples"
+            ],
+            "content": "Vizag is a port city on the southeast coast of India known for its beaches, scenic hills, and rich cultural heritage. This travel guide covers the must-see places and experiences in Visakhapatnam, including historical landmarks, religious sites, natural beauty, and local cuisine.",
+            "besttime": "Best time to visit Vizag is between October and March when the weather is pleasant.",
+            "itineraryData": {
+                "title": "Vishakapatnam Travel Itinerary",
+                "summary": "Explore Vizag’s pristine beaches, ancient temples, scenic hills, and tribal culture through our curated 1, 3, and 5-day travel itineraries including meals, transport, and budget details.",
+                "coverImage": "/trips/vizag/vizagcover.jpg",
+                "plans": [
+                    {
+                        "type": "1-Day Plan",
+                        "price": "₹1,100",
+                        "duration": "1 Day",
+                        "highlights": [
+                            "RK Beach & Submarine Museum",
+                            "Dolphin’s Nose Viewpoint",
+                            "Kailasagiri Ropeway",
+                            "Yarada Beach Sunset",
+                            "Dinner at Zeeshan or Sheraton"
+                        ],
+                        "note": "Ideal for short city break and coastal views."
+                    },
+                    {
+                        "type": "3-Day Plan",
+                        "price": "₹4,366",
+                        "duration": "3 Days",
+                        "highlights": [
+                            "Museums, Beaches, and Kailasagiri",
+                            "Simhachalam Temple & Zoo Park",
+                            "Full-day Araku Valley Excursion",
+                            "Tribal Museum, Coffee Estates & Borra Caves",
+                            "Stay at 4★ Hotel + All meals"
+                        ],
+                        "note": "Balanced mix of nature, culture, and cuisine."
+                    },
+                    {
+                        "type": "5-Day Plan",
+                        "price": "₹12,000 – ₹15,000",
+                        "duration": "5 Days",
+                        "highlights": [
+                            "Beach road & Submarine Museum",
+                            "Temple Visits + Dolphin’s Nose",
+                            "2-Day Araku Valley stay",
+                            "Borra Caves, Tribal Museum, Coffee Tour",
+                            "Shopping at Jagadamba & Local Farewell Dinner"
+                        ],
+                        "note": "Complete family vacation with leisure and local experiences."
+                    }
+                ]
+            }
+        }
+    ],
+    "the-og-hill-queen-of-vijayawada": [
+        {
+            "title": "Vijayawada Cultural & Riverfront Tour",
+            "coverimages": [
+                "/trips/vijayawada/1.jpg",
+                "/trips/vijayawada/2.jpg",
+                "/trips/vijayawada/3.jpg"
+            ],
+            "latitude": 16.5062,
+            "longitude": 80.6480,
+            "populartags": [
+                "vijayawada",
+                "temples",
+                "river-tour",
+                "cultural-heritage"
+            ],
+            "content": "Vijayawada, nestled on the banks of the Krishna River in Andhra Pradesh, is a vibrant city known for its spiritual landmarks, ancient rock-cut caves, river islands, and traditional Andhra cuisine. This guide offers a journey through its religious, historical, and leisure attractions.",
+            "besttime": "Best time to visit Vijayawada is between October and February when the weather is cooler and suitable for sightseeing.",
+            "itineraryData": {
+                "title": "Vijayawada Travel Itinerary",
+                "summary": "Discover the cultural charm and riverfront beauty of Vijayawada through detailed 1-day and 3-day travel plans. Explore ancient temples, enjoy boat rides, and sample authentic Andhra food with accommodation and budget options.",
+                "coverImage": "/trips/vijayawada/1.jpg",
+                "plans": [
+                    {
+                        "type": "1-Day Plan",
+                        "price": "₹5,500 – ₹7,500",
+                        "duration": "1 Day",
+                        "highlights": [
+                            "Kanaka Durga Temple visit",
+                            "Boat ride to Bhavani Island",
+                            "Undavalli Caves exploration",
+                            "Victoria Jubilee Museum tour",
+                            "Kondapalli Fort sunset",
+                            "Dinner & shopping at Besant Road"
+                        ],
+                        "note": "Perfect for a quick spiritual and cultural dive into the city."
+                    },
+                    {
+                        "type": "3-Day Plan",
+                        "price": "₹27,500 – ₹30,000 (for 5 people)",
+                        "duration": "3 Days",
+                        "highlights": [
+                            "Day 1: Kanaka Durga Temple, Bhavani Island, Museum, Undavalli Caves",
+                            "Day 2: Kondapalli Fort, Prakasam Barrage, Haailand Theme Park",
+                            "Day 3: Mangalagiri Temple, Handloom shopping, Rajiv Gandhi Park, INOX & Rooftop Dining",
+                            "Tastes of authentic Andhra cuisine across local favorites",
+                            "Comfortable 3★–4★ hotel stays"
+                        ],
+                        "note": "Ideal for families and groups seeking a mix of heritage, fun, and leisure."
+                    }
+                ]
+            }
+        }
+    ],
+    "beachy-beats-&-street-treats-kakinada": [
+        {
+            "title": "Kakinada Coastal & Cultural Tour",
+            "coverimages": [
+                "/trips/kakinada/1.jpg",
+                "/trips/kakinada/2.jpg",
+                "/trips/kakinada/3.jpg",
+                "/trips/kakinada/4.jpg",
+                "/trips/kakinada/5.jpg",
+                "/trips/kakinada/6.jpg",
+                "/trips/kakinada/7.jpg"
+            ],
+            "latitude": 16.9890,
+            "longitude": 82.2426,
+            "populartags": [
+                "kakinada",
+                "beach-tour",
+                "temples",
+                "wildlife",
+                "andhra-cuisine"
+            ],
+            "content": "Kakinada, a coastal city in Andhra Pradesh, offers an exquisite blend of nature, culture, and history. From pristine beaches and wildlife sanctuaries to rich temple heritage and flavorful Andhra cuisine, Kakinada promises an unforgettable experience for all travelers.",
+            "besttime": "Best time to visit Kakinada is from October to March, when the weather is cool and perfect for sightseeing and beach activities.",
+            "itineraryData": {
+                "title": "Kakinada Travel Itinerary",
+                "summary": "Explore Kakinada's pristine beaches, cultural landmarks, and natural wonders with our curated 1, 3, and 5-day travel itineraries, including meals, transport, and budget details.",
+                "coverImage": "/trips/kakinada/1.jpg",
+                "plans": [
+                    {
+                        "type": "1-Day Plan",
+                        "price": "₹4,000",
+                        "duration": "1 Day",
+                        "highlights": [
+                            "Hope Island Boat Ride",
+                            "Coringa Wildlife Sanctuary",
+                            "Kakinada Beach & Lighthouse",
+                            "Kothapeta Market / Fishing Harbor",
+                            "Dinner at Subbayya Gari Hotel"
+                        ],
+                        "note": "Perfect for a short coastal and cultural getaway."
+                    },
+                    {
+                        "type": "3-Day Plan",
+                        "price": "₹12,000",
+                        "duration": "3 Days",
+                        "highlights": [
+                            "Day 1: Culture & Coast (Temples, Beaches, Hope Island, and Subbayya Gari Hotel)",
+                            "Day 2: Nature & Wildlife (Coringa Sanctuary, Boat Rides, and Local Eateries)",
+                            "Day 3: Temples & Local Delights (Kukkuteswara Swamy Temple, Kakinada Kaja, and Local Markets)"
+                        ],
+                        "note": "A balanced mix of nature, culture, and cuisine, perfect for families and culture lovers."
+                    },
+                    {
+                        "type": "5-Day Plan",
+                        "price": "₹20,000 – ₹25,000",
+                        "duration": "5 Days",
+                        "highlights": [
+                            "Day 1: Arrival, Kakinada Beach, Harbor, and Seafood Lunch",
+                            "Day 2: Coringa Wildlife Sanctuary, Hope Island, and Local Markets",
+                            "Day 3: Temple Visits (Bhavanarayana Swamy Temple, Kukkuteswara Swamy Temple, Local Sweets)",
+                            "Day 4: Day Trip to Sri Veera Venkata Sathyanarayana Temple and Kodandarama Temple",
+                            "Day 5: Leisure Day with Shopping and Farewell Dinner"
+                        ],
+                        "note": "Ideal for those looking for a comprehensive, relaxing experience, including nature, temples, beaches, and local shopping."
+                    }
+                ]
+            }
+        }
+    ],
+    "from-rayalaseema-with-swag-kurnool": [
+        {
+            "title": "Kurnool Coastal & Cultural Tour",
+            "coverimages": [
+                "/trips/kurnool/1.jpg",
+                "/trips/kurnool/2.jpg",
+                "/trips/kurnool/3.jpg"
+            ],
+            "latitude": 15.8280,
+            "longitude": 78.0390,
+            "populartags": [
+                "kurnool",
+                "historical-sites",
+                "temples",
+                "nature",
+                "wildlife"
+            ],
+            "content": "Kurnool, a city in Andhra Pradesh, is rich in history, religious sites, and natural wonders. This city offers an immersive experience with ancient temples, rock formations, caves, and wildlife sanctuaries. The diverse landscape, combined with unique cultural experiences, makes Kurnool a must-visit destination for history buffs, nature lovers, and spiritual travelers alike.",
+            "besttime": "Best time to visit Kurnool is from October to March, as the weather is cooler and perfect for sightseeing and outdoor activities.",
+            "itineraryData": {
+                "title": "Kurnool Travel Itinerary",
+                "summary": "Explore Kurnool's ancient temples, wildlife, caves, and historical landmarks through our curated 3, 5-day travel itineraries, including meals, transport, and budget details.",
+                "coverImage": "/trips/kurnool/1.jpg",
+                "plans": [
+                    {
+                        "type": "3-Day Plan",
+                        "price": "₹12,000",
+                        "duration": "3 Days",
+                        "highlights": [
+                            "Day 1: Kurnool City Exploration (Konda Reddy Fort, Oravakallu Rock Garden, Kurnool Museum)",
+                            "Day 2: Belum Caves & Yaganti Temple Visit",
+                            "Day 3: Ahobilam Temple, Mahanandi Temple, and Local Heritage"
+                        ],
+                        "note": "Perfect for a historical and cultural exploration of Kurnool with a mix of nature, temples, and heritage."
+                    },
+                    {
+                        "type": "5-Day Plan",
+                        "price": "₹20,000",
+                        "duration": "5 Days",
+                        "highlights": [
+                            "Day 1: Kurnool City Exploration (Konda Reddy Fort, Rock Garden, Local Markets)",
+                            "Day 2: Belum Caves, Oravakallu Rock Garden, and Local Dhabas",
+                            "Day 3: Yaganti Temple, Jwala Narasimha Temple (Ahobilam), and evening snacks",
+                            "Day 4: Nallamala Forest, Rollapadu Sanctuary, and Kurnool Museum Visit",
+                            "Day 5: Mahanandeeshwara Swamy Temple and Local Heritage Walks"
+                        ],
+                        "note": "An extensive tour of Kurnool that covers historical, spiritual, and nature-filled experiences across five days."
+                    }
+                ]
+            },
+            "detailedItinerary": {
+                "Day 1": {
+                    "title": "Arrival & Exploring Kurnool City",
+                    "highlights": [
+                        "Stay: Hotel DVR Mansion (3-star, ₹2,500–₹3,000/night)",
+                        "Breakfast: Hotel Suraj Grand Restaurant (₹400–₹500 for 5)",
+                        "Konda Reddy Fort: Explore historical monument (Free Entry)",
+                        "Oravakallu Rock Garden: Rock formations, boating (₹20 entry, ₹150 for boating)",
+                        "Kurnool Museum: Archaeological displays (₹10 entry)",
+                        "Dinner: Silver Spoon Multi-Cuisine (₹1,200–₹1,500 for 5)"
+                    ]
+                },
+                "Day 2": {
+                    "title": "Day Trip to Belum Caves & Yaganti",
+                    "highlights": [
+                        "Breakfast: Subbayya Gari Hotel (₹400–₹500)",
+                        "Belum Caves: 2nd largest caves in India (₹65/adult, ₹45/child)",
+                        "Lunch: Haritha Hotel Belum (₹800–₹1,000)",
+                        "Yaganti Temple & Caves: Historical temple and caves (Free Entry)",
+                        "Tea Break: Local tea stall near temple (₹150)",
+                        "Dinner: Spice Inn Restaurant (₹1,200–₹1,500)"
+                    ]
+                },
+                "Day 3": {
+                    "title": "Historical & Nature Day",
+                    "highlights": [
+                        "Breakfast: Sri Krishna Bhavan (₹400–₹500)",
+                        "Ahobilam Temple: Trekking, 9 shrines of Lord Narasimha (Free Entry)",
+                        "Lunch: Haritha Ahobilam Restaurant (₹800–₹1,000)",
+                        "Mahanandi Temple: Serene atmosphere, natural spring pool (Free Entry)",
+                        "Dinner: RR Family Dhaba (₹1,200–₹1,500)"
+                    ]
+                },
+                "Day 4": {
+                    "title": "Wildlife & Nature – Nallamala Forest & Rollapadu Sanctuary",
+                    "highlights": [
+                        "Breakfast: Hotel",
+                        "Nallamala Forest Safari (₹50 entry per head)",
+                        "Lunch: Local garden resort (₹150/head)",
+                        "Kurnool Museum: Learn about the history of the region (₹20 entry)",
+                        "Dinner: Hotel or nearby restaurant (₹300/head)"
+                    ]
+                },
+                "Day 5": {
+                    "title": "Local Heritage & Departure",
+                    "highlights": [
+                        "Breakfast: Hotel",
+                        "Sri Mahanandeeshwara Swamy Devasthanam: Explore the heritage site (₹50 offering)",
+                        "Lunch: Final Andhra meal (₹300/head)",
+                        "Evening snacks/tea: Local snacks (₹200)",
+                        "Dinner: En route or at hotel (₹300/head)"
+                    ]
+                }
+            }
+        }
+    ],
+    "tirupati-beyond-chittoors-got-that-juice": [
+        {
+            "title": "Tirupati + Beyond: Chittoor's Got That Juice",
+            "coverimages": [
+                "/trips/chittoor/1.jpg",
+                "/trips/chittoor/2.jpg",
+                "/trips/chittoor/3.jpg",
+                "/trips/chittoor/4.jpg",
+                "/trips/chittoor/5.jpg",
+                "/trips/chittoor/6.jpg"
+            ],
+            "latitude": 13.2131,
+            "longitude": 79.1015,
+            "populartags": [
+                "chittoor",
+                "temples",
+                "waterfalls",
+                "hill-stations",
+                "wildlife"
+            ],
+            "content": "Chittoor, a city in Andhra Pradesh, is known for its rich cultural heritage, historical temples, and natural beauty. This travel guide takes you through the must-visit spots in Chittoor and nearby regions, including sacred temples, scenic hill stations, magnificent waterfalls, and diverse wildlife.",
+            "besttime": "Best time to visit Chittoor is between October and March, when the weather is pleasant and ideal for temple visits, nature treks, and exploring the region’s rich cultural offerings.",
+            "itineraryData": {
+                "title": "Chittoor Travel Itinerary",
+                "summary": "Explore Chittoor's temples, hill stations, wildlife, and waterfalls with curated 3 and 5-day travel itineraries, complete with accommodation, meals, and budget details.",
+                "coverImage": "/trips/chittoor/1.jpg",
+                "plans": [
+                    {
+                        "type": "3-Day Plan",
+                        "price": "₹11,500",
+                        "duration": "3 Days",
+                        "highlights": [
+                            "Day 1: Kanipakam Vinayaka Temple, Kaundinya Waterfalls, and Chittoor City Exploration",
+                            "Day 2: Nagalapuram Falls, Horsley Hills, and Scenic Hill Station Escape",
+                            "Day 3: Srikalahasti Temple, Talakona Waterfalls, and Rural Temples"
+                        ],
+                        "note": "This 3-day plan covers a variety of spiritual, natural, and cultural experiences, including temples, hill stations, and wildlife exploration."
+                    },
+                    {
+                        "type": "5-Day Plan",
+                        "price": "₹18,500",
+                        "duration": "5 Days",
+                        "highlights": [
+                            "Day 1: Local temples in Chittoor, Swami Pushkarini Lake, and Pandava Theertham",
+                            "Day 2: Kanipakam Vinayaka Temple, Gurramkonda Fort, and Kanipakam Biryani",
+                            "Day 3: Excursion to Horsley Hills for trekking and hill station retreat",
+                            "Day 4: Talakona Waterfalls, Siddheswara Swamy Temple, and countryside exploration",
+                            "Day 5: Palamaner Temples, Konetirayala Temple, and Chittoor Bazaar"
+                        ],
+                        "note": "A complete 5-day experience covering temples, wildlife, waterfalls, and hill stations with a focus on both history and nature."
+                    }
+                ]
+            },
+            "detailedItinerary": {
+                "Day 1": {
+                    "title": "Temples & Nature near Chittoor",
+                    "highlights": [
+                        "Breakfast: Sri Vishnu Bhavan (₹100 per person, ₹500 for 5)",
+                        "Kanipakam Vinayaka Temple: Legendary 11th-century Ganesha Temple (₹20–₹40 donation)",
+                        "Lunch: Hotel Manu Sri (₹150 per person, ₹750 for 5)",
+                        "Kaundinya (Kaigal) Waterfalls: Elephant reserve & scenic waterfalls (₹50–₹100 entry)",
+                        "Dinner: Local South Indian restaurant in Chittoor (₹200 per person, ₹1,000 for 5)",
+                        "Stay: Prabhaa Grand Inn (₹2,400+tax per night)"
+                    ]
+                },
+                "Day 2": {
+                    "title": "Waterfalls & Hill Station Escape",
+                    "highlights": [
+                        "Breakfast: Hotel or local cafe (₹100 per person, ₹500 for 5)",
+                        "Nagalapuram Falls: Scenic waterfall trek (₹50–₹100 entry)",
+                        "Lunch: Simple packed meal or roadside meal (₹150 per person, ₹750 for 5)",
+                        "Horsley Hills: Hill station retreat, viewpoints, and trekking paths (₹6,000 total stay cost)",
+                        "Dinner: Local restaurant or hill-side resort (₹200 per person, ₹1,000 for 5)"
+                    ]
+                },
+                "Day 3": {
+                    "title": "Cultural Heritage & Wildlife",
+                    "highlights": [
+                        "Breakfast: Hotel (₹100 per person, ₹500 for 5)",
+                        "Srikalahasti Temple: Historic temple with spiritual legacy (Free entry)",
+                        "Lunch: Local vegetarian restaurant (₹150 per person, ₹750 for 5)",
+                        "Talakona Waterfalls: Forest trek and wildlife trails (₹50 entry)",
+                        "Optional: Gurramkonda Fort exploration (small entry fee)",
+                        "Evening Snacks: Street snacks (₹50 per person, ₹250 total)",
+                        "Dinner: Mid-range dining in Chittoor (₹200 per person, ₹1,000 for 5)"
+                    ]
+                },
+                "Day 4": {
+                    "title": "Wildlife / Waterfalls & Rural Temples",
+                    "highlights": [
+                        "Breakfast: Hotel (₹100 per person, ₹500 for 5)",
+                        "Talakona Waterfalls: Trekking and Siddheswara Swamy Temple (₹50 entry)",
+                        "Lunch: Picnic style near waterfall (₹150 per person, ₹750 for 5)",
+                        "Afternoon: Return via countryside roads",
+                        "Evening Snacks: Local sweets and tea (₹80 per person, ₹400 for 5)",
+                        "Dinner: Local rice-based meal in Kanipakam or Chittoor (₹200 per person, ₹1,000 for 5)"
+                    ]
+                },
+                "Day 5": {
+                    "title": "Temples of Palamaner / Keelapatla area, Departure",
+                    "highlights": [
+                        "Breakfast: Hotel or local cafe (₹120 per person, ₹600 for 5)",
+                        "Konetirayala Temple: Ancient Venkateswara temple in Palamaner (₹50 donation)",
+                        "Lunch: Local vegetarian set meal (₹150 per person, ₹750 for 5)",
+                        "Afternoon: Last-minute shopping or temple visits",
+                        "Evening Snacks: Street chaat or juice (₹50 per person, ₹250 total)",
+                        "Dinner: Final group meal in Chittoor (₹200 per person, ₹1,000 for 5)"
+                    ]
+                }
+            }
+        }
+    ],
+    "bangalore": [
+        {
+            "title": "Bangalore Self-Drive Family Tour",
+            "coverimages": [
+                "/trips/bangalore/1.jpg",
+                "/trips/bangalore/2.jpg",
+                "/trips/bangalore/3.jpg"
+            ],
+            "latitude": 12.9716,
+            "longitude": 77.5946,
+            "populartags": [
+                "bangalore",
+                "gardens",
+                "palaces",
+                "science",
+                "wildlife",
+                "amusement-parks"
+            ],
+            "content": "Bangalore, the vibrant capital of Karnataka, blends heritage, nature, and innovation. Known as the Garden City, it boasts historical palaces, botanical gardens, world-class museums, wildlife parks, and modern lifestyle hubs. This self-drive itinerary is tailored for families seeking a balance of culture, nature, fun, and food across 1, 3, or 5-day options.",
+            "besttime": "Best time to visit Bangalore is from October to February when the weather is pleasant, ideal for both sightseeing and outdoor adventures.",
+            "itineraryData": {
+                "title": "Bangalore Travel Itinerary",
+                "summary": "Discover Bangalore through self-drive family itineraries spanning 1, 3, or 5 days. Includes major attractions, cost estimates, meals, and flexible sightseeing plans.",
+                "coverImage": "/trips/bangalore/bangalorecover.jpg",
+                "plans": [
+                    {
+                        "type": "1-Day Plan",
+                        "price": "₹3,700",
+                        "duration": "1 Day",
+                        "highlights": [
+                            "Morning: Lalbagh Botanical Garden, Tipu Sultan's Palace, or Bangalore Palace",
+                            "Afternoon: Visvesvaraya Museum or Aquarium & Cubbon Park walk",
+                            "Evening: ISKCON Temple visit & Dinner at UB City"
+                        ],
+                        "note": "Ideal for a day packed with history, science, greenery, and spiritual calm."
+                    },
+                    {
+                        "type": "3-Day Plan",
+                        "price": "₹11,000–₹15,600",
+                        "duration": "3 Days",
+                        "highlights": [
+                            "Day 1: Palace, Lalbagh Garden, Aquarium, and Local Cuisine",
+                            "Day 2: Museum Visit, ISKCON Temple & UB City shopping",
+                            "Day 3: Bannerghatta Safari or Wonderla Amusement Park"
+                        ],
+                        "note": "Perfect short family vacation mixing history, science, wildlife, and amusement fun."
+                    },
+                    {
+                        "type": "5-Day Plan",
+                        "price": "₹23,300",
+                        "duration": "5 Days",
+                        "highlights": [
+                            "Day 1: Bangalore Palace, Lalbagh, Tipu's Palace, Cubbon Park",
+                            "Day 2: Museum visit, ISKCON Temple, UB City outing",
+                            "Day 3: Safari at Bannerghatta & Butterfly Park",
+                            "Day 4: Day trip to Nandi Hills & hillside dining",
+                            "Day 5: Full day at Wonderla Amusement Park"
+                        ],
+                        "note": "Comprehensive city and outskirts exploration for families who want a bit of everything."
+                    }
+                ]
+            },
+            "detailedItinerary": {
+                "Day 1": {
+                    "title": "Historic & Garden City Highlights",
+                    "highlights": [
+                        "Bangalore Palace (₹480/adult, ₹240/child)",
+                        "Lalbagh Botanical Garden (₹25/adult + ₹60 camera)",
+                        "Lunch: Local South Indian near Basavanagudi (~₹400/person)",
+                        "Tipu Sultan’s Palace (₹20/adult)",
+                        "Cubbon Park + Government Aquarium (₹150/adult, ₹70/child)",
+                        "Dinner: Local restaurant (~₹500/person)"
+                    ]
+                },
+                "Day 2": {
+                    "title": "Culture & Science Day",
+                    "highlights": [
+                        "Breakfast: Brahmin’s Coffee Bar or MTR (~₹250–₹400)",
+                        "Visvesvaraya Museum (₹95/adult, ₹70/child)",
+                        "Lunch: Local spot (~₹500/person)",
+                        "ISKCON Temple (donation-based, free prasadam)",
+                        "Evening at UB City or short shopping walk",
+                        "Dinner: UB City or Lido Mall (~₹1,000/person)"
+                    ]
+                },
+                "Day 3": {
+                    "title": "Wildlife & Adventure",
+                    "highlights": [
+                        "Drive to Bannerghatta Biological Park (~1 hr)",
+                        "Safari & Zoo (₹480/adult, ₹360/child)",
+                        "Lunch at park cafeteria (~₹400/person)",
+                        "Visit Butterfly Park",
+                        "Dinner: Local casual restaurant (~₹500/person)"
+                    ]
+                },
+                "Day 4": {
+                    "title": "Nandi Hills Day Trip",
+                    "highlights": [
+                        "Early drive to Nandi Hills for sunrise (minor parking fees)",
+                        "Breakfast: Hillside restaurant (~₹400/person)",
+                        "Explore: Tipu’s Drop, gardens, optional cycling/paragliding",
+                        "Lunch: Local restaurant (~₹500/person)",
+                        "Dinner: Return to city (~₹500/person)"
+                    ]
+                },
+                "Day 5": {
+                    "title": "Fun at Wonderla Amusement Park",
+                    "highlights": [
+                        "Wonderla Entry: ₹1,150/adult, ₹1,050/child",
+                        "Water rides, coasters, family activities",
+                        "Lunch inside the park (~₹500/person)",
+                        "Dinner post-visit (~₹500/person)"
+                    ]
+                }
+            }
+        }
+    ],
+    "nellore": [
+        {
+            "title": "Nellore Spiritual & Coastal Tour",
+            "coverimages": [
+                "/trips/nellore/1.jpg",
+                "/trips/nellore/2.jpg",
+                "/trips/nellore/3.jpg"
+            ],
+            "latitude": 14.4426,
+            "longitude": 79.9865,
+            "populartags": [
+                "nellore",
+                "temples",
+                "bird-sanctuary",
+                "beaches",
+                "forts",
+                "markets"
+            ],
+            "content": "Nellore, a city nestled in coastal Andhra Pradesh, blends spirituality, nature, and history in perfect harmony. From sacred temples and ancient forts to serene beaches and rich birdlife, Nellore is a hidden gem for families seeking peaceful getaways and cultural immersion.",
+            "besttime": "Best time to visit Nellore is between October and February when the weather is cooler, especially for outdoor visits to temples, beaches, and bird sanctuaries.",
+            "itineraryData": {
+                "title": "Nellore Travel Itinerary",
+                "summary": "Experience Nellore across 1, 3, or 5 days with self-drive itineraries covering temples, beaches, bird sanctuaries, forts, and local food stops. Includes meals, timings, and cost estimates for families.",
+                "coverImage": "/trips/nellore/nellorecover.jpg",
+                "plans": [
+                    {
+                        "type": "1-Day Plan",
+                        "price": "₹1,500–₹1,600",
+                        "duration": "1 Day",
+                        "highlights": [
+                            "Morning: Talpagiri Temple & Kodandarama Temple",
+                            "Afternoon: Mypadu Beach & Barah Shaheed Dargah",
+                            "Evening: Lakeside boating & dinner at Spicy Box"
+                        ],
+                        "note": "A relaxed one-day trip through Nellore’s spiritual sites and coastal charm."
+                    },
+                    {
+                        "type": "3-Day Plan",
+                        "price": "₹5,700",
+                        "duration": "3 Days",
+                        "highlights": [
+                            "Day 1: Temples & Dargah with evening at Vanam Park",
+                            "Day 2: Narasimhakonda & Penchalakona Temple trek",
+                            "Day 3: Mypadu Beach & Nelapattu Bird Sanctuary"
+                        ],
+                        "note": "Compact yet diverse itinerary with religious, natural, and recreational experiences."
+                    },
+                    {
+                        "type": "5-Day Plan",
+                        "price": "₹14,500",
+                        "duration": "5 Days",
+                        "highlights": [
+                            "Day 1: Talpagiri Temple, Jonnawada, and local markets",
+                            "Day 2: Nelapattu Bird Sanctuary & Pulicat Lake",
+                            "Day 3: Mypadu Beach & Venkatagiri Fort",
+                            "Day 4: Penchalakona Temple trek & Narasimhakonda Hill",
+                            "Day 5: Udayagiri Fort, Nellore Art Gallery & Street Shopping"
+                        ],
+                        "note": "Comprehensive 5-day Nellore circuit with culture, birding, beaches, heritage, and temple visits."
+                    }
+                ]
+            },
+            "detailedItinerary": {
+                "Day 1": {
+                    "title": "Spiritual & City Heritage",
+                    "highlights": [
+                        "Sri Talpagiri Ranganathaswamy Temple (Free Entry)",
+                        "Jonnawada Mallikarjuna-Kamakshi Temple (Free Entry)",
+                        "Lunch: Local vegetarian meals (~₹400/person)",
+                        "Evening stroll: Stonehousepet Market for snacks (~₹200/person)",
+                        "Dinner: Popular local eatery (~₹500/person)"
+                    ]
+                },
+                "Day 2": {
+                    "title": "Nature, Birds & Lake Views",
+                    "highlights": [
+                        "Nelapattu Bird Sanctuary (Free Entry, 9 AM–5 PM)",
+                        "Lunch en route (~₹400/person)",
+                        "Evening stop: Pulicat Lake for scenic views (Free Entry)",
+                        "Dinner in Nellore (~₹500/person)"
+                    ]
+                },
+                "Day 3": {
+                    "title": "Beach Day & Fort Views",
+                    "highlights": [
+                        "Morning at Mypadu Beach (Free Entry, optional water sports ~₹200)",
+                        "Lunch: Beachside or in city (~₹400/person)",
+                        "Afternoon: Venkatagiri Fort (Free Entry, optional guided tour ₹100/person)",
+                        "Dinner in Venkatagiri (~₹400/person), return to Nellore"
+                    ]
+                },
+                "Day 4": {
+                    "title": "Temples & Hillside Views",
+                    "highlights": [
+                        "Drive to Penchalakona Temple (Free Entry, trekking surroundings)",
+                        "Lunch nearby (~₹400/person)",
+                        "Visit Narasimhakonda Hill Temple (Free Entry)",
+                        "Dinner in Nellore (~₹500/person)"
+                    ]
+                },
+                "Day 5": {
+                    "title": "History, Culture & Markets",
+                    "highlights": [
+                        "Morning at Udayagiri Fort (Free Entry, ~2 hours)",
+                        "Lunch on return (~₹400/person)",
+                        "Visit Nellore Art Gallery (Free/Nominal Entry)",
+                        "Evening shopping: Stonehousepet Market or Patu Ru Saree diversion",
+                        "Dinner (~₹500/person)"
+                    ]
+                }
+            }
+        }
+    ],
+    "chirala": [
+        {
+            "title": "Chirala & Bapatla Coastal Escape",
+            "coverimages": [
+                "/trips/chirala/1.jpg",
+                "/trips/chirala/2.jpg",
+                "/trips/chirala/3.jpg"
+            ],
+            "latitude": 15.8245,
+            "longitude": 80.3522,
+            "populartags": [
+                "chirala",
+                "bapatla",
+                "beaches",
+                "handlooms",
+                "temples",
+                "streetfood"
+            ],
+            "content": "Chirala and Bapatla offer a serene getaway on the Andhra coast, known for their soft beaches, vibrant handloom culture, traditional temples, and mouthwatering local cuisine. From water sports and textile markets to scenic coastal views and pink cashew drinks, this trip is perfect for family road travelers.",
+            "besttime": "Best time to visit Chirala and Bapatla is from November to February when the weather is pleasant for beaches and sightseeing.",
+            "itineraryData": {
+                "title": "Chirala & Bapatla Travel Itinerary",
+                "summary": "Enjoy a handcrafted 1, 3, or 5-day coastal escape itinerary through Chirala and Bapatla covering beaches, handlooms, temples, street food, and water activities, all optimized for families and self-drivers.",
+                "coverImage": "/trips/chirala/chiralacover.jpg",
+                "plans": [
+                    {
+                        "type": "1-Day Plan",
+                        "price": "₹3,200",
+                        "duration": "1 Day",
+                        "highlights": [
+                            "Morning: Chirala/Vodarevu Beach & Handloom Market",
+                            "Afternoon: Bhavanarayana Temple & Suryalanka Beach",
+                            "Evening: Clock Tower Market walk and dinner in Bapatla"
+                        ],
+                        "note": "One-day coastal and cultural highlights of Chirala and Bapatla."
+                    },
+                    {
+                        "type": "3-Day Plan",
+                        "price": "₹12,400–₹13,400",
+                        "duration": "3 Days",
+                        "highlights": [
+                            "Day 1: Vodarevu & Ramapuram Beach, Church visit, Handloom shopping",
+                            "Day 2: Water sports at beach & artisan village in Pedaganjam",
+                            "Day 3: Bhavanarayana Temple, Suryalanka Beach & Bapatla Market"
+                        ],
+                        "note": "A balanced itinerary with beaches, culture, food, and tradition-filled exploration."
+                    },
+                    {
+                        "type": "5-Day Plan",
+                        "price": "₹16,400",
+                        "duration": "5 Days",
+                        "highlights": [
+                            "Day 1: Vodarevu Beach, Handloom Market & Local Church",
+                            "Day 2: Water sports and Pedaganjam craft village",
+                            "Day 3: Bhavanarayana Temple, Suryalanka Beach & Bapatla Town",
+                            "Day 4: Temple trail & cashew shopping in Chirala",
+                            "Day 5: Relaxation, local souvenirs & final beach meditation"
+                        ],
+                        "note": "Perfect for slow-paced travelers and families wanting to deeply explore the coastal charm of Andhra Pradesh."
+                    }
+                ]
+            },
+            "detailedItinerary": {
+                "Day 1": {
+                    "title": "Discover Chirala’s Beaches & Local Culture",
+                    "highlights": [
+                        "Vodarevu Beach & sunrise walk (Free Entry)",
+                        "Pullayya Bajji at Kotla Bazaar (~₹50/person)",
+                        "St. Mark’s Lutheran Church & Handloom Market visit (Free Entry)",
+                        "Lunch: Daawat or Abhiruchi (~₹400–₹500/person)",
+                        "Ramapuram Beach stroll (Free Entry)",
+                        "Dinner: Local seafood shack (~₹500/person)"
+                    ]
+                },
+                "Day 2": {
+                    "title": "Water Sports & Village Crafts",
+                    "highlights": [
+                        "Vodarevu Beach: Banana Boat (₹300), Parasailing (₹800)",
+                        "Lunch: Beachside shack or town restaurant (~₹500/person)",
+                        "Pedaganjam Handloom Village Visit (~Free Entry)",
+                        "Evening snack: Muntha Drink & Punugulu (~₹250)",
+                        "Dinner: Missamma Restaurant (~₹500/person)"
+                    ]
+                },
+                "Day 3": {
+                    "title": "Bapatla Exploration & Beach Time",
+                    "highlights": [
+                        "Bhavanarayana Swamy Temple (Free Entry)",
+                        "Walk through Agricultural College Gardens (Free Entry)",
+                        "Lunch: Local vegetarian/fish thali (~₹400/person)",
+                        "Relax at Suryalanka Beach (Free Entry, Optional seating: ₹100/hr)",
+                        "Evening street snacks and Clock Tower Market walk (~₹200/person)",
+                        "Dinner: Local seafood or Andhra meal (~₹500/person)"
+                    ]
+                },
+                "Day 4": {
+                    "title": "Return to Coastal Beauty & Temple Trails",
+                    "highlights": [
+                        "Morning stroll at Chirala Beach (Free Entry)",
+                        "Muntha Drink stop (~₹50/person)",
+                        "Lunch at Chirala town (~₹400/person)",
+                        "Visit: Sri Veera Raghavaswamy Temple (~Free Entry)",
+                        "Shop for cashews/textiles (~₹500)",
+                        "Dinner: Abhiruchi or Veg Delight (~₹500/person)"
+                    ]
+                },
+                "Day 5": {
+                    "title": "Relaxation & Local Delights",
+                    "highlights": [
+                        "Beach meditation or yoga session (~Free)",
+                        "Return to Ramapuram Beach (~Free Entry)",
+                        "Lunch at beach shack or restaurant (~₹400/person)",
+                        "Evening snacks: Punugulu, bajji, street foods (~₹300)",
+                        "Dinner: Final meal at Missamma or Daawat (~₹500/person)"
+                    ]
+                }
+            }
+        }
+    ],
+    "warangal": [
+        {
+            "title": "Warangal Heritage & Nature Getaway",
+            "coverimages": [
+                "/trips/warangal/1.jpg",
+                "/trips/warangal/2.jpg",
+                "/trips/warangal/3.jpg"
+            ],
+            "latitude": 17.9784,
+            "longitude": 79.5941,
+            "populartags": [
+                "warangal",
+                "forts",
+                "temples",
+                "lakes",
+                "nature",
+                "kakatiya"
+            ],
+            "content": "Warangal, once the glorious capital of the Kakatiya dynasty, is today a blend of ancient temples, lush lakes, and serene sanctuaries. A perfect self-drive getaway for families, history buffs, and nature lovers alike. Dive into centuries-old ruins, relax by lakesides, and experience rural Telangana’s rich flavor.",
+            "besttime": "Visit between October and February for pleasant weather and scenic outdoor views around lakes and historical sites.",
+            "itineraryData": {
+                "title": "Warangal Travel Itinerary",
+                "summary": "Discover Warangal’s heritage forts, UNESCO temples, scenic lakes, wildlife sanctuaries, and traditional Telangana cuisine over 1, 3, or 5-day road trip options for families.",
+                "coverImage": "/trips/warangal/warangalcover.jpg",
+                "plans": [
+                    {
+                        "type": "1-Day Plan",
+                        "price": "₹2,500",
+                        "duration": "1 Day",
+                        "highlights": [
+                            "Warangal Fort & Thousand Pillar Temple",
+                            "Bhadrakali Temple & Lake",
+                            "Kakatiya Musical Garden",
+                            "Dinner at Green Park or Skyla"
+                        ],
+                        "note": "A full-day heritage and lakeside highlights loop in Warangal city."
+                    },
+                    {
+                        "type": "3-Day Plan",
+                        "price": "₹11,250",
+                        "duration": "3 Days",
+                        "highlights": [
+                            "Day 1: Warangal Fort, Khush Mahal, Thousand Pillar Temple",
+                            "Day 2: Bhadrakali Temple, Pakhal Lake, Kakatiya Garden",
+                            "Day 3: Ramappa & Laknavaram Lakes"
+                        ],
+                        "note": "A cultural and eco-tourism combo with forts, lakes, and temples."
+                    },
+                    {
+                        "type": "5-Day Plan",
+                        "price": "₹13,240",
+                        "duration": "5 Days",
+                        "highlights": [
+                            "Day 1: Warangal Fort, Thousand Pillar Temple, Bhadrakali Lake",
+                            "Day 2: Pakhal Lake, Ghanpur Temples & Laknavaram Lake",
+                            "Day 3: UNESCO-listed Ramappa Temple & Lake",
+                            "Day 4: Eturnagaram Wildlife Sanctuary & Bheemuni Paadam Waterfalls",
+                            "Day 5: Warangal Museum, local shopping & lake promenade"
+                        ],
+                        "note": "Best suited for deep cultural explorers and slow-paced heritage travel."
+                    }
+                ]
+            },
+            "detailedItinerary": {
+                "Day 1": {
+                    "title": "Heritage Trail in Warangal City",
+                    "highlights": [
+                        "Warangal Fort (₹15/adult, 9 AM–7 PM)",
+                        "Thousand Pillar Temple (₹10/adult, 6 AM–8 PM)",
+                        "Bhadrakali Temple & Lake (Free entry)",
+                        "Lunch: Sri Geetha Bhavan or Rayyan’s (~₹300/person)",
+                        "Evening walk at Kakatiya Musical Garden (₹10)",
+                        "Dinner at Green Park or Skyla (~₹500/person)"
+                    ]
+                },
+                "Day 2": {
+                    "title": "Nature & Wildlife Outside the City",
+                    "highlights": [
+                        "Pakhal Lake & Wildlife Sanctuary (Free entry, boating optional)",
+                        "Lunch at roadside dhabas (~₹400/person)",
+                        "Ghanpur Group of Temples (Kota Gullu) – free",
+                        "Laknavaram Lake (₹50 entry/adult; boating optional)",
+                        "Dinner en route back to Warangal (~₹450/person)"
+                    ]
+                },
+                "Day 3": {
+                    "title": "Ramappa Temple & Eco Parks",
+                    "highlights": [
+                        "UNESCO-listed Ramappa Temple (Free entry)",
+                        "Ramappa Lake & gardens nearby",
+                        "Lunch at village dhaba (~₹400/person)",
+                        "Evening stroll at Musical Garden / Lake Park",
+                        "Dinner: President Dhaba or Krushheed Biryani (~₹450/person)"
+                    ]
+                },
+                "Day 4": {
+                    "title": "Wildlife & Sanctuary Adventure",
+                    "highlights": [
+                        "Eturnagaram Wildlife Sanctuary (₹10/adult)",
+                        "Lunch at jungle resort cafeteria (~₹400/person)",
+                        "Bheemuni Paadam Waterfalls (Free entry)",
+                        "Dinner back in Warangal (~₹450/person)"
+                    ]
+                },
+                "Day 5": {
+                    "title": "City Leisure & Local Culture",
+                    "highlights": [
+                        "Warangal ASI Museum (Free entry)",
+                        "Bhadrakali Lake promenade & garden stroll",
+                        "Lunch: Manu Restaurant or Suprabha Hotel (~₹150/person)",
+                        "Handloom Bazaar shopping (~₹500/family)",
+                        "Dinner at Hotel Ashoka (~₹450/person)"
+                    ]
+                }
+            }
+        }
+    ],
+    "karimnagar": [
+        {
+            "title": "Karimnagar Forts & Temples Escape",
+            "coverimages": [
+                "/trips/karimnagar/1.jpg",
+                "/trips/karimnagar/2.jpg",
+                "/trips/karimnagar/3.jpg"
+            ],
+            "latitude": 18.4386,
+            "longitude": 79.1288,
+            "populartags": [
+                "karimnagar",
+                "forts",
+                "temples",
+                "lakes",
+                "heritage",
+                "cable bridge"
+            ],
+            "content": "Karimnagar is a lesser-known gem of Telangana, perfect for a self-drive heritage getaway. From mighty forts and ancient Jain temples to serene dams and vibrant local crafts, this town is where historical charm meets laid-back exploration.",
+            "besttime": "Best visited from November to February for cool weather ideal for fort climbs and lake picnics.",
+            "itineraryData": {
+                "title": "Karimnagar Travel Itinerary",
+                "summary": "Explore forts, Kakatiya temples, riverfront bridges, wildlife, and unique Jain and silver handicraft heritage in this relaxed, family-friendly town.",
+                "coverImage": "/trips/karimnagar/karimnagarcover.jpg",
+                "plans": [
+                    {
+                        "type": "1-Day Plan",
+                        "price": "₹3,300",
+                        "duration": "1 Day",
+                        "highlights": [
+                            "Elgandal Fort & Lower Manair Dam",
+                            "Nagunur Temples or Bommalagutta",
+                            "Karimnagar Cable Bridge",
+                            "Dinner at Rayyan or Hotel Ashoka"
+                        ],
+                        "note": "Compact day plan mixing history, views, and evening riverfront vibes."
+                    },
+                    {
+                        "type": "3-Day Plan",
+                        "price": "₹13,000",
+                        "duration": "3 Days",
+                        "highlights": [
+                            "Day 1: Elgandal Fort, Lower Manair Dam, Deer Park",
+                            "Day 2: Kondagattu & Vemulawada Temples, Cable Bridge",
+                            "Day 3: Nagunur Fort, Bommalagutta & Filigree Shopping"
+                        ],
+                        "note": "Balanced mix of sightseeing, temples, and local markets."
+                    },
+                    {
+                        "type": "5-Day Plan",
+                        "price": "₹17,250",
+                        "duration": "5 Days",
+                        "highlights": [
+                            "Day 1: Elgandal Fort, Dam & Ujwala Park",
+                            "Day 2: Kondagattu & Vemulawada Temples + Cable Bridge",
+                            "Day 3: Nagunur Fort, Jain heritage & Shopping",
+                            "Day 4: Ramagiri Fort & Sivaram Wildlife Sanctuary",
+                            "Day 5: Kotilingala, Kaleshwaram Triveni Sangam"
+                        ],
+                        "note": "Covers deep heritage and longer excursions ideal for slow travelers."
+                    }
+                ]
+            },
+            "detailedItinerary": {
+                "Day 1": {
+                    "title": "Forts, Dam & Park Leisure",
+                    "highlights": [
+                        "Elgandal Fort visit (₹15/adult)",
+                        "Lunch at Green Park Restaurant (~₹500/person)",
+                        "Boating & walk at Lower Manair Dam (free entry)",
+                        "Ujwala Park + Rajiv Gandhi Deer Park (free)",
+                        "Dinner at Hotel Ashoka (~₹400/person)"
+                    ]
+                },
+                "Day 2": {
+                    "title": "Temple Trail & Cable Bridge",
+                    "highlights": [
+                        "Kondagattu Anjaneya Temple visit (free)",
+                        "Vemulawada Rajarajeshwara Temple (free)",
+                        "Lunch near temples (~₹400/person)",
+                        "Karimnagar Cable Bridge walk & views (free)",
+                        "Dinner at Rayyan Hotel or Khursheed Biryani (~₹450/person)"
+                    ]
+                },
+                "Day 3": {
+                    "title": "Heritage Temples & Local Shopping",
+                    "highlights": [
+                        "Nagunur Temples & Fort (free entry)",
+                        "Bommalagutta Jain rock reliefs (free)",
+                        "Lunch in city (~₹350/person)",
+                        "Lakshmi Narasimha Temple (free)",
+                        "Filigree & jaggery shopping (~₹500/family)",
+                        "Dinner at Suprabha Hotel (~₹400/person)"
+                    ]
+                },
+                "Day 4": {
+                    "title": "Ramagiri Fort & Wildlife",
+                    "highlights": [
+                        "Morning at scenic Ramagiri Fort (free)",
+                        "Sivaram Wildlife Sanctuary (free)",
+                        "Lunch at local dhaba (~₹350/person)",
+                        "Relax at Lower Manair Dam or Ujwala Park again",
+                        "Dinner at President Dhaba (~₹400/person)"
+                    ]
+                },
+                "Day 5": {
+                    "title": "Kotilingala & Kaleshwaram Pilgrimage",
+                    "highlights": [
+                        "Early visit to Kotilingala Shiva Temple (free)",
+                        "Drive to Kaleshwaram Triveni Sangam (~125 km)",
+                        "Holy dip and temple darshan (free)",
+                        "Lunch at temple canteen (~₹300/person)",
+                        "Evening return with scenic stops by Godavari",
+                        "Dinner at a city favorite (~₹400/person)"
+                    ]
+                }
+            }
+        }
+    ]
+}

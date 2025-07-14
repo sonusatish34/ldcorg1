@@ -3,12 +3,33 @@
     {
       "id": "kanaka-durga-temple",
       "name": "Sri Durga Malleswara Swamy",
-      "location": "Vijayawada, Andhra Pradesh",
-      "district": "Eluru, Andhra Pradesh",
-      "highlight": "Mini Tirupati Experience",
-      "image": "/sri-durga-malleswara-swamy.jpg",
+      "district": "Krishna, Andhra Pradesh",
+      "highlight": "Indrakeeladri Hill",
+      "faq": [
+        {
+          "question": "What is the best time to visit Kanaka Durga Temple?",
+          "answer": "The temple is open throughout the year, but the best time to visit is during the Dasara Navaratri festival, usually in September or October, when grand celebrations take place."
+        },
+        {
+          "question": "What are the temple timings?",
+          "answer": "The temple usually opens from 4:00 AM to 9:00 PM every day. However, timings may change during festivals or special pujas."
+        },
+        {
+          "question": "Is there any dress code to visit the temple?",
+          "answer": "Yes, visitors are advised to wear traditional and modest clothing. Men should wear dhoti or pants with a shirt, and women should wear saree, salwar kameez, or long skirts."
+        },
+        {
+          "question": "How can I reach the temple?",
+          "answer": "The temple is easily accessible. It is about 2 km from Vijayawada Railway Station and around 20 km from the airport. Autos, buses, and cabs are available."
+        }
+      ],
+      "images": [
+        "/temples/kanaka-durga1.webp",
+        "/temples/kanaka-durga2.jpg",
+        "/temples/kanaka-durga3.jpg"
+      ],
       "templeInfo": "Sri Durga Malleswara Swamyvarla Devasthanam, is a Hindu temple dedicated to Kanaka Durga. The deity in this temple is also popularly referred as Kanaka Durga. The temple is located in Vijayawada, Andhra Pradesh, India on the Indrakeeladri hill on the banks of Krishna River. Kaalika Purana, Durga Sapthashati and other Vedic literature have mentioned about Kanaka Durga on the Indrakeeladri and have described the deity as Swayambhu in Triteeya Kalpa.",
-      "mobileno":"9441820717",
+      "mobileno": "9441820717",
       "sevas": [
         {
           "name": "Athi Seeghra Darshanam",
@@ -26,31 +47,187 @@
         "Prasadam Counters",
         "Free Meals"
       ],
+      "itienary": {
+        "1": {
+          "title": "1‑Day Express Trip",
+          "subtitle": "Hyderabad → Vijayawada",
+          "days": [
+            {
+              "title": "Full Day Plan",
+              "steps": [
+                {
+                  "type": "food",
+                  "text": "Early breakfast in Hyderabad: Hot masala dosas & filter coffee."
+                },
+                {
+                  "type": "travel",
+                  "text": "Drive to Vijayawada (~5 hrs, 275 km via NH 65)."
+                },
+                {
+                  "type": "temple",
+                  "text": "Visit Yadagirigutta: Sri Lakshmi Narasimha Swamy Temple."
+                },
+                {
+                  "type": "food",
+                  "text": "Lunch at Suruchi Restaurant: Andhra biryani and curries."
+                },
+                {
+                  "type": "temple",
+                  "text": "Visit Kanaka Durga Temple on Indrakeeladri hill."
+                },
+                {
+                  "type": "explore",
+                  "text": "Explore Undavalli Caves – rock-cut marvel with reclining Vishnu."
+                },
+                {
+                  "type": "explore",
+                  "text": "Evening at Prakasam Barrage & Krishnaveni Mandapam."
+                },
+                {
+                  "type": "travel",
+                  "text": "Return to Hyderabad or optional overnight stay."
+                }
+              ]
+            }
+          ]
+        },
+        "3": {
+          "title": "3‑Day Leisure Trip",
+          "subtitle": "Hyderabad → Mangala Giri → Vijayawada",
+          "days": [
+            {
+              "title": "Day 1: Hyderabad → Mangala Giri → Vijayawada",
+              "steps": [
+                {
+                  "type": "food",
+                  "text": "Breakfast in Hyderabad with idly, vada, and coffee."
+                },
+                {
+                  "type": "temple",
+                  "text": "Stop at Yadagirigutta Temple (~1 hr)."
+                },
+                {
+                  "type": "temple",
+                  "text": "Visit Panakala Narasimha Temple in Mangala Giri."
+                },
+                {
+                  "type": "food",
+                  "text": "Lunch at local eatery. Arrive Vijayawada, check-in."
+                },
+                {
+                  "type": "temple",
+                  "text": "Evening Kanaka Durga Temple darshan & walk on Prakasam Barrage."
+                }
+              ]
+            },
+            {
+              "title": "Day 2: Vijayawada Local Sightseeing",
+              "steps": [
+                {
+                  "type": "food",
+                  "text": "Breakfast at hotel or local café."
+                },
+                {
+                  "type": "explore",
+                  "text": "Undavalli Caves & Mogalrajapuram or Akkanna-Madanna Caves."
+                },
+                {
+                  "type": "food",
+                  "text": "Lunch at Suruchi Restaurant."
+                },
+                {
+                  "type": "explore",
+                  "text": "Victoria Jubilee Museum & Bhavani Island boat ride."
+                },
+                {
+                  "type": "explore",
+                  "text": "Kondapalli Fort trek. Dinner at river-front restaurant."
+                }
+              ]
+            },
+            {
+              "title": "Day 3: Vijayawada → Nagarjuna Sagar or Return",
+              "steps": [
+                {
+                  "type": "food",
+                  "text": "Breakfast, then drive (~2 hrs) to Nagarjuna Sagar Dam."
+                },
+                {
+                  "type": "explore",
+                  "text": "Scenic waterfall visit & lunch near dam."
+                },
+                {
+                  "type": "travel",
+                  "text": "Drive back to Hyderabad with tea/snack stops."
+                },
+                {
+                  "type": "food",
+                  "text": "Dinner in Hyderabad."
+                }
+              ]
+            }
+          ]
+        }
+      },
       "placesToVisit": [
-        "Bhimavaram Temple",
-        "Kolleru Lake",
-        "Eluru Gaja Vallabha Temple",
-        "Rajahmundry River Cruise"
+        {
+          "label": "🕉️ Kanaka Durga Temple"
+        },
+        {
+          "label": "🌉 Prakasam Barrage"
+        },
+        {
+          "label": "🕊️ Gandhi Hill"
+        },
+        {
+          "label": "🌴 Bhavani Island"
+        }
       ]
     }
   ],
-  "kanaka-durga-temple": [
+  "kanipakam-vinayaka-temple": [
     {
-      "id": "kanaka-durga-temple",
-      "name": "Sri Durga Malleswara Swamy",
-      "location": "Vijayawada, Andhra Pradesh",
-      "district": "Eluru, Andhra Pradesh",
-      "highlight": "Mini Tirupati Experience",
-      "image": "/images/kanaka-durga.jpg",
-      "templeInfo": "Sri Durga Malleswara Swamyvarla Devasthanam, is a Hindu temple dedicated to Kanaka Durga. The deity in this temple is also popularly referred as Kanaka Durga. The temple is located in Vijayawada, Andhra Pradesh, India on the Indrakeeladri hill on the banks of Krishna River. Kaalika Purana, Durga Sapthashati and other Vedic literature have mentioned about Kanaka Durga on the Indrakeeladri and have described the deity as Swayambhu (self-manifested) in Triteeya Kalpa.",
-      "sevas": [
+      "id": "Kanipakam Vinayaka Temple",
+      "name": "Kanipakam Vinayaka Temple",
+      "district": "Chittor, Andhra Pradesh",
+      "highlight": "Kanipakam Vinayaka Temple",
+      "faq": [
         {
-          "name": "Athi Seeghra Darshanam",
-          "price": 200
+          "question": "What is special about Kanipakam Vinayaka Temple?",
+          "answer": "The idol of Lord Ganesha here is believed to be swayambhu (self-manifested) and is said to grow in size over time, making it a very powerful and sacred place for devotees."
         },
         {
-          "name": "Suprabhata Seva",
-          "price": 300
+          "question": "What are the temple timings?",
+          "answer": "The temple is usually open from 4:00 AM to 9:30 PM. Timings may vary on special days and festivals."
+        },
+        {
+          "question": "Is there any dress code to visit the temple?",
+          "answer": "Yes, traditional Indian attire is preferred. Avoid wearing shorts, sleeveless tops, or western outfits."
+        },
+        {
+          "question": "When is the best time to visit the temple?",
+          "answer": "The best time to visit is during Vinayaka Chavithi (Ganesh Chaturthi) when grand celebrations take place, or between September and March when the weather is pleasant."
+        }
+      ],
+      "images": [
+        "/temples/kanipakam.jpg",
+        "/temples/kanipakam2.jpg",
+        "/temples/kanipakam3.jpg"
+      ],
+      "templeInfo": "Kanipakam Vinayaka Temple is a famous and sacred temple located in Chittoor district of Andhra Pradesh. It is dedicated to Lord Ganesha, also known as Sri Varasidhi Vinayaka. The idol of Ganesha is believed to be self-manifested (Swayambhu) and growing in size over time. Many devotees visit this temple to seek blessings and remove obstacles in their lives. The temple has a peaceful atmosphere and is surrounded by water. People believe that prayers here bring good luck and success. Special poojas and festivals, especially during Vinayaka Chavithi, are celebrated with great devotion and joy.",
+      "mobileno": "9849005495",
+      "sevas": [
+        {
+          "name": "Athi Seegra Darshanam",
+          "price": 150
+        },
+        {
+          "name": "Seegra Darshanam",
+          "price": 100
+        },
+        {
+          "name": "Nijaroopa Darsanam",
+          "price": 100
         }
       ],
       "facilities": [
@@ -60,35 +237,721 @@
         "Prasadam Counters",
         "Free Meals"
       ],
+      "itienary": {
+        "3": {
+          "title": "3‑Day Temple Circuit",
+          "subtitle": "Hyderabad → Kanipakam via Kadapa & Tirupati",
+          "days": [
+            {
+              "title": "Day 1: Hyderabad → Kadapa (via Kurnool)",
+              "steps": [
+                {
+                  "type": "travel",
+                  "text": "Start from Hyderabad around 6:00 AM."
+                },
+                {
+                  "type": "food",
+                  "text": "Breakfast at Hotel Suraj Grand, Kurnool – South Indian tiffin."
+                },
+                {
+                  "type": "explore",
+                  "text": "Scenic break at Oravakallu Rock Garden near Kurnool."
+                },
+                {
+                  "type": "food",
+                  "text": "Lunch at Blue Moon Restaurant, Nandyal."
+                },
+                {
+                  "type": "travel",
+                  "text": "Continue journey to Kadapa; arrive by evening."
+                },
+                {
+                  "type": "travel",
+                  "text": "Check-in at Zibe by GRT Hotels, Kadapa."
+                },
+                {
+                  "type": "food",
+                  "text": "Dinner at Masala House, Kadapa."
+                }
+              ]
+            },
+            {
+              "title": "Day 2: Kadapa → Kanipakam (via Tirupati)",
+              "steps": [
+                {
+                  "type": "food",
+                  "text": "Breakfast at hotel; start by 7:00 AM."
+                },
+                {
+                  "type": "explore",
+                  "text": "Stop at Chandragiri Fort for a quick visit."
+                },
+                {
+                  "type": "food",
+                  "text": "Lunch at Hotel Bliss, Tirupati."
+                },
+                {
+                  "type": "temple",
+                  "text": "Visit Sri Govindarajan Swamy Temple, Tirupati."
+                },
+                {
+                  "type": "travel",
+                  "text": "Drive to Kanipakam and check-in at local guesthouse."
+                },
+                {
+                  "type": "temple",
+                  "text": "Evening darshan at Kanipakam Vinayaka Temple."
+                },
+                {
+                  "type": "food",
+                  "text": "Dinner at nearby veg restaurant."
+                }
+              ]
+            },
+            {
+              "title": "Day 3: Kanipakam → Hyderabad",
+              "steps": [
+                {
+                  "type": "temple",
+                  "text": "Optional morning darshan at Kanipakam Temple."
+                },
+                {
+                  "type": "food",
+                  "text": "Breakfast at Hotel Sindhura near temple."
+                },
+                {
+                  "type": "travel",
+                  "text": "Begin return journey to Hyderabad."
+                },
+                {
+                  "type": "food",
+                  "text": "Lunch at Haritha Hotel, Anantapur."
+                },
+                {
+                  "type": "explore",
+                  "text": "Photo break at Lepakshi Temple."
+                },
+                {
+                  "type": "travel",
+                  "text": "Reach Hyderabad by night."
+                },
+                {
+                  "type": "food",
+                  "text": "Dinner at Hill Park or nearby restaurant."
+                }
+              ]
+            }
+          ]
+        },
+        "5": {
+          "title": "5‑Day Pilgrimage Adventure",
+          "subtitle": "Hyderabad → Kanipakam via Kurnool, Ahobilam & Tirupati",
+          "days": [
+            {
+              "title": "Day 1: Hyderabad → Kurnool",
+              "steps": [
+                {
+                  "type": "travel",
+                  "text": "Leave Hyderabad by 6:00 AM."
+                },
+                {
+                  "type": "food",
+                  "text": "Breakfast at Hill Park Restaurant near Jadcherla."
+                },
+                {
+                  "type": "temple",
+                  "text": "Visit Jogulamba Temple at Alampur – a Shakti Peetha."
+                },
+                {
+                  "type": "food",
+                  "text": "Lunch at Suraj Grand, Kurnool."
+                },
+                {
+                  "type": "explore",
+                  "text": "Evening visit to Konda Reddy Fort."
+                },
+                {
+                  "type": "travel",
+                  "text": "Check-in at Mourya Inn, Kurnool."
+                },
+                {
+                  "type": "food",
+                  "text": "Dinner at hotel restaurant."
+                }
+              ]
+            },
+            {
+              "title": "Day 2: Kurnool → Kadapa (via Ahobilam)",
+              "steps": [
+                {
+                  "type": "food",
+                  "text": "Early breakfast at hotel."
+                },
+                {
+                  "type": "temple",
+                  "text": "Visit Lower & Upper Ahobilam Narasimha Temples."
+                },
+                {
+                  "type": "food",
+                  "text": "Lunch at a local dhaba in Ahobilam."
+                },
+                {
+                  "type": "travel",
+                  "text": "Drive to Kadapa and check in."
+                },
+                {
+                  "type": "temple",
+                  "text": "Visit Ameen Peer Dargah (Pedda Dargah), Kadapa."
+                },
+                {
+                  "type": "food",
+                  "text": "Dinner at KFC or Southern Grand Hotel."
+                }
+              ]
+            },
+            {
+              "title": "Day 3: Kadapa → Tirupati",
+              "steps": [
+                {
+                  "type": "food",
+                  "text": "Breakfast at hotel and leave early."
+                },
+                {
+                  "type": "temple",
+                  "text": "Visit Vontimitta Kodanda Rama Swamy Temple."
+                },
+                {
+                  "type": "travel",
+                  "text": "Reach Tirupati by noon and check-in at Fortune Select."
+                },
+                {
+                  "type": "food",
+                  "text": "Lunch at Hotel Minerva Grand, Tirupati."
+                },
+                {
+                  "type": "temple",
+                  "text": "Visit Kapila Theertham and ISKCON Temple in the evening."
+                },
+                {
+                  "type": "food",
+                  "text": "Dinner at Bhimas Paradise."
+                }
+              ]
+            }
+          ]
+        }
+      },
       "placesToVisit": [
-        "Bhimavaram Temple",
-        "Kolleklru Lake",
-        "Eluru Gaja Vallabha Temple",
-        "Rajahmundry River Cruise"
+        {
+          "label": "⛰️ Sri Boyakonda Gangamma Temple (11.5 km)"
+        },
+        {
+          "label": "💧 Kailasakona Waterfalls (≈86 km)"
+        },
+        {
+          "label": "🏞️ Nagari Hills  (≈20 km)"
+        },
+        {
+          "label": "🕉️ Sri Ardhagiri Veeranjaneya Swamy Temple (13 km)"
+        }
       ]
     }
   ],
   "sri-kalahasthi-swamy-temple": [
     {
       "id": "sri-kalahasthi-swamy-temple",
-      "name": "sri kalahasthi swamy temple",
-      "location": "Srikalahasti, Andhra Pradesh",
-      "district": "Srikalahasti, Andhra Pradesh",
-      "highlight": "sri kalahasthi swamy temple",
-      "image": "/sri-kalahasti.jpg",
-      "mobileno":"9849005495",
-      "templeInfo": "The Srikalahasti Temple is located in the town of Srikalahasti in Tirupati district in the state of Andhra Pradesh, India. Siva in his aspect as Vayu is worshipped as Kalahasteeswara. The temple is also regarded as Rahu-Ketu kshetra and Dakshina Kailasam. According to regional tradition, it is said to be the site where Kannappa was ready to offer both his eyes to cover blood flowing from the Shivalinga before Shiva stopped him and granted him moksha",
+      "name": "Sri Kalahasthi Swamy Temple",
+      "district": "Chittoor ,Andhra Pradesh",
+      "highlight": "Sri Kalahasthi Swamy Temple",
+      "faq": [
+        {
+          "question": "What is Sri Kalahasthi Temple famous for?",
+          "answer": "Sri Kalahasthi is famous for its Vayu Linga (Air element) and for performing Rahu-Ketu Pooja, which helps reduce the effects of doshas related to planets in one's horoscope."
+        },
+        {
+          "question": "What are the temple timings?",
+          "answer": "The temple is usually open from 5:30 AM to 9:00 PM every day, with special poojas and aarti performed at regular intervals."
+        },
+        {
+          "question": "Do I need to book Rahu-Ketu Pooja in advance?",
+          "answer": "No advance booking is needed. You can buy tickets at the temple premises. Multiple ticket options are available based on seating and pooja type."
+        },
+        {
+          "question": "Is there any dress code for entering the temple?",
+          "answer": "Yes, traditional Indian wear is preferred. Men are advised to wear dhoti or pants with a shirt, and women should wear saree or salwar kameez."
+        }
+      ],
+      "images": [
+        "/temples/srikalahasti1.jpg",
+        "/temples/srikalahasti2.jpg",
+        "/temples/sri-kalahasti.jpg"
+       
+      ],
+      "itienary": {
+        "3": {
+          "title": "3‑Day Spiritual Journey",
+          "subtitle": "Hyderabad → Sri Kalahasti via Tirupati",
+          "days": [
+            {
+              "title": "Day 1: Hyderabad → Tirupati",
+              "steps": [
+                {
+                  "type": "travel",
+                  "text": "Start early by 5:00 AM from Hyderabad."
+                },
+                {
+                  "type": "food",
+                  "text": "Breakfast at Hotel Suraj Grand, Nandyal (~9:00 AM)."
+                },
+                {
+                  "type": "food",
+                  "text": "Lunch at Annapurna Restaurant, Kadapa (~1:00 PM)."
+                },
+                {
+                  "type": "travel",
+                  "text": "Drive to Tirupati and check-in to hotel (by 5:00 PM)."
+                },
+                {
+                  "type": "temple",
+                  "text": "Evening visit to Kapila Theertham and ISKCON Temple."
+                },
+                {
+                  "type": "food",
+                  "text": "Dinner at Minerva Coffee Shop, Tirupati."
+                }
+              ]
+            },
+            {
+              "title": "Day 2: Tirupati → Sri Kalahasti",
+              "steps": [
+                {
+                  "type": "food",
+                  "text": "Breakfast at hotel; leave by 7:30 AM."
+                },
+                {
+                  "type": "temple",
+                  "text": "Darshan and Rahu-Ketu Pooja at Sri Kalahasti Temple (38 km)."
+                },
+                {
+                  "type": "temple",
+                  "text": "Visit Bharadwaja Theertham & Pathala Vinayaka Temple nearby."
+                },
+                {
+                  "type": "food",
+                  "text": "Lunch at Sri Sai Saravana Bhavan, near the temple."
+                },
+                {
+                  "type": "explore",
+                  "text": "Return to Tirupati and relax or visit Chandragiri Fort."
+                },
+                {
+                  "type": "food",
+                  "text": "Dinner at Andhra Spice Restaurant, Tirupati."
+                }
+              ]
+            },
+            {
+              "title": "Day 3: Tirupati → Hyderabad",
+              "steps": [
+                {
+                  "type": "food",
+                  "text": "Breakfast at hotel and check out by 8:00 AM."
+                },
+                {
+                  "type": "food",
+                  "text": "Lunch at Subbayya Gari Hotel, Mydukur or Kurnool."
+                },
+                {
+                  "type": "travel",
+                  "text": "Return drive to Hyderabad by night (~8:00 PM)."
+                },
+                {
+                  "type": "food",
+                  "text": "Dinner en route or at home."
+                }
+              ]
+            }
+          ]
+        },
+        "5": {
+          "title": "5‑Day Devotional Tour",
+          "subtitle": "Hyderabad → Sri Kalahasti via Nandyal, Tirumala",
+          "days": [
+            {
+              "title": "Day 1: Hyderabad → Nandyal",
+              "steps": [
+                {
+                  "type": "travel",
+                  "text": "Begin journey by 6:00 AM."
+                },
+                {
+                  "type": "food",
+                  "text": "Breakfast at Hotel 7 Food Court, Jadcherla."
+                },
+                {
+                  "type": "temple",
+                  "text": "Darshan at Ahobilam Temple near Allagadda."
+                },
+                {
+                  "type": "food",
+                  "text": "Lunch at Allagadda or Hotel Sasya Pride, Nandyal."
+                },
+                {
+                  "type": "temple",
+                  "text": "Visit Mahanandi Temple in the evening."
+                },
+                {
+                  "type": "food",
+                  "text": "Dinner at hotel and overnight stay in Nandyal."
+                }
+              ]
+            },
+            {
+              "title": "Day 2: Nandyal → Tirupati",
+              "steps": [
+                {
+                  "type": "food",
+                  "text": "Breakfast at hotel; leave by 7:30 AM."
+                },
+                {
+                  "type": "food",
+                  "text": "Lunch at Hotel Blue Diamond, Kadapa."
+                },
+                {
+                  "type": "travel",
+                  "text": "Arrive in Tirupati by evening and check-in."
+                },
+                {
+                  "type": "temple",
+                  "text": "Visit Govindaraja Swamy Temple, Tirupati."
+                },
+                {
+                  "type": "food",
+                  "text": "Dinner at Hotel Bhimas Paradise and overnight stay."
+                }
+              ]
+            },
+            {
+              "title": "Day 3: Tirupati → Sri Kalahasti",
+              "steps": [
+                {
+                  "type": "food",
+                  "text": "Breakfast at hotel and depart for Sri Kalahasti."
+                },
+                {
+                  "type": "temple",
+                  "text": "Darshan at Sri Kalahasti Temple and nearby temples."
+                },
+                {
+                  "type": "explore",
+                  "text": "Visit Veyilingala Kona Waterfalls."
+                },
+                {
+                  "type": "food",
+                  "text": "Lunch at Sri Sai Teja Hotel."
+                },
+                {
+                  "type": "travel",
+                  "text": "Return to Tirupati."
+                },
+                {
+                  "type": "explore",
+                  "text": "Evening shopping at local bazaar."
+                },
+                {
+                  "type": "food",
+                  "text": "Dinner and overnight stay in Tirupati."
+                }
+              ]
+            },
+            {
+              "title": "Day 4: Tirumala Darshan",
+              "steps": [
+                {
+                  "type": "temple",
+                  "text": "Early morning darshan at Tirumala (Venkateswara Temple)."
+                },
+                {
+                  "type": "food",
+                  "text": "Breakfast at Annaprasadam in Tirumala."
+                },
+                {
+                  "type": "temple",
+                  "text": "Visit Papavinasam Theertham, Akasa Ganga, Silathoranam."
+                },
+                {
+                  "type": "travel",
+                  "text": "Return to Tirupati by evening."
+                },
+                {
+                  "type": "food",
+                  "text": "Dinner at Ramee Guestline Restaurant and overnight stay."
+                }
+              ]
+            },
+            {
+              "title": "Day 5: Return to Hyderabad",
+              "steps": [
+                {
+                  "type": "food",
+                  "text": "Breakfast at hotel and leave by 7:00 AM."
+                },
+                {
+                  "type": "food",
+                  "text": "Lunch at Hotel Rajdhani or Minerva, Mydukur/Kurnool."
+                },
+                {
+                  "type": "travel",
+                  "text": "Reach Hyderabad by 7:00–8:00 PM."
+                },
+                {
+                  "type": "food",
+                  "text": "Dinner at home or on the route if needed."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "templeInfo": "Sri Kalahasthi Swamy Temple is a famous Shiva temple in Andhra Pradesh, known as the 'Kashi of the South.' It is dedicated to Lord Shiva, worshipped here as Vayu Linga (Air Element). The temple is also known for Rahu-Ketu poojas, which many people perform to remove bad effects in life. Built near the Swarnamukhi river, it has beautiful carvings and peaceful surroundings. The temple’s main attraction is its powerful spiritual energy and deep connection to the five elements of nature. Devotees believe visiting this temple brings blessings, peace, and protection from negative forces.",
+      "mobileno": "+91-9849005495",
       "sevas": [
         {
-          "name": "Seeghra Darsanam",
-          "price": 200
+          "name": "Athi Seegra Darshanam",
+          "price": 150
         },
         {
-          "name": "Special Entrance",
-          "price": 50
+          "name": "Seegra Darshanam",
+          "price": 100
         },
         {
-          "name": "అంతరాలయ దర్శనము",
+          "name": "Nijaroopa Darsanam",
+          "price": 100
+        }
+      ],
+      "facilities": [
+        "Accommodation",
+        "Cloakrooms",
+        "Medical Aid",
+        "Prasadam Counters",
+        "Free Meals"
+      ],
+      "placesToVisit": [
+        {
+          "label": "🌊 Veyilingala Kona Waterfalls (≈8 km)"
+        },
+        {
+          "label": "🏞️ Ubbalamadugu (Tada) Falls (≈45 km)"
+        },
+        {
+          "label": "🕉️ Sahasra Linga Temple (≈8 km)"
+        },
+        {
+          "label": "🛕 Gudimallam Parasurameshwara Temple (≈37 km)"
+        }
+      ]
+    }
+  ],
+  "sri-mallikarjuna-swamy-srisailam": [
+    {
+      "id": "sri-mallikarjuna-swamy-srisailam",
+      "name": "Sri Mallikarjuna Swamy Temple Srisailam",
+      "district": "Kurnool ,Andhra Pradesh",
+      "highlight": "Patala Ganaga",
+      "images": [
+        "/temples/srisailam1.jpg",
+        "/temples/srisailam2.jpg",
+        "/temples/srisailam3.webp"
+      ],
+      "faq": [
+        {
+          "question": "What is special about Sri Mallikarjuna Swamy Temple?",
+          "answer": "This temple is one of the 12 Jyotirlingas of Lord Shiva and one of the 18 Shakti Peethas, making it a very powerful and sacred place for Hindus."
+        },
+        {
+          "question": "What are the temple timings for darshan?",
+          "answer": "The temple is usually open from 4:30 AM to 10:00 PM, with specific timings for Suprabhata Seva, Archana, and evening Aarti. It's best to check the official website or local updates before visiting."
+        },
+        {
+          "question": "How can I reach Srisailam Temple?",
+          "answer": "You can reach Srisailam by road from Hyderabad (around 215 km). Buses and private vehicles are available. The nearest railway station is Markapur Road, and the nearest airport is in Hyderabad."
+        },
+        {
+          "question": "Is there any online booking for darshan or accommodation?",
+          "answer": "Yes, online booking is available for darshan tickets and rooms through the official temple website: www.srisailadevasthanam.org."
+        }
+      ],
+      "templeInfo": "Sri Mallikarjuna Swamy Temple in Srisailam is a very famous and holy temple in Andhra Pradesh. It is one of the 12 Jyotirlingas of Lord Shiva and also one of the 18 Shakti Peethas. The temple is located on a hill and surrounded by beautiful forests. Lord Shiva is worshipped here as Mallikarjuna and Goddess Parvati as Bhramaramba. Many people visit this temple for blessings, peace, and spiritual power. The temple has ancient carvings, a big courtyard, and a peaceful atmosphere. It is a great place for both pilgrims and nature lovers. Srisailam is also known for its ropeway, dam, and boating in the Krishna River.",
+      "itienary": {
+        "1": {
+          "title": "1‑Day Srisailam Darshan Plan",
+          "subtitle": "Hyderabad → Srisailam (Same Day Return)",
+          "days": [
+            {
+              "title": "1‑Day Itinerary: Hyderabad → Srisailam → Hyderabad",
+              "steps": [
+                {
+                  "type": "travel",
+                  "text": "Start early from Hyderabad around 5:00 AM."
+                },
+                {
+                  "type": "food",
+                  "text": "Breakfast at Hill Park Restaurant, Kalwakurthy (around 7:00 AM)."
+                },
+                {
+                  "type": "temple",
+                  "text": "Darshan at Sri Mallikarjuna Swamy and Bhramar Amba Devi temples (by 10:30 AM)."
+                },
+                {
+                  "type": "food",
+                  "text": "Lunch at Haritha Hotel, Srisailam (1:00 PM)."
+                },
+                {
+                  "type": "explore",
+                  "text": "Visit Pathala Ganga via ropeway or steps."
+                },
+                {
+                  "type": "explore",
+                  "text": "Optional: Short visit to Sikharam viewpoint."
+                },
+                {
+                  "type": "travel",
+                  "text": "Begin return journey by 4:30 PM."
+                },
+                {
+                  "type": "food",
+                  "text": "Snack break at Forest Checkpost Cafe, Domal Penta."
+                },
+                {
+                  "type": "food",
+                  "text": "Dinner at Hotel Abhiruchi, Kalwakurthy (around 8:00 PM)."
+                },
+                {
+                  "type": "travel",
+                  "text": "Reach Hyderabad by 10:30 PM."
+                }
+              ]
+            }
+          ]
+        },
+        "3": {
+          "title": "3‑Day Srisailam Nature & Temple Tour",
+          "subtitle": "Hyderabad → Srisailam (Trek, Safari & Caves)",
+          "days": [
+            {
+              "title": "Day 1: Hyderabad → Srisailam",
+              "steps": [
+                {
+                  "type": "travel",
+                  "text": "Depart from Hyderabad by 6:00 AM."
+                },
+                {
+                  "type": "food",
+                  "text": "Breakfast at 7 Food Court, Kalwakurthy (8:00 AM)."
+                },
+                {
+                  "type": "explore",
+                  "text": "Scenic ghat road drive; stop at Octopus Viewpoint."
+                },
+                {
+                  "type": "travel",
+                  "text": "Reach Srisailam by 12:30 PM; check-in at Haritha Resort."
+                },
+                {
+                  "type": "food",
+                  "text": "Lunch at Haritha Restaurant."
+                },
+                {
+                  "type": "temple",
+                  "text": "Evening darshan at Sri Mallikarjuna & Bhramaramba Devi Temples."
+                },
+                {
+                  "type": "explore",
+                  "text": "Sunset trek to Sikharam (around 2 km)."
+                },
+                {
+                  "type": "food",
+                  "text": "Dinner at Sri Sai Mess or resort restaurant."
+                }
+              ]
+            },
+            {
+              "title": "Day 2: Forest Safari + Akkamahadevi Caves",
+              "steps": [
+                {
+                  "type": "food",
+                  "text": "Early breakfast by 7:30 AM."
+                },
+                {
+                  "type": "explore",
+                  "text": "Safari at Srisailam Tiger Reserve (9:00 AM – 11:00 AM)."
+                },
+                {
+                  "type": "food",
+                  "text": "Lunch at Forest View Restaurant."
+                },
+                {
+                  "type": "explore",
+                  "text": "Pathala Ganga Ropeway + boat + trek to Akkamahadevi Caves."
+                },
+                {
+                  "type": "food",
+                  "text": "Evening snacks near ropeway station."
+                },
+                {
+                  "type": "food",
+                  "text": "Dinner at Shivam Dhaba or resort."
+                }
+              ]
+            },
+            {
+              "title": "Day 3: Nature Spots & Return",
+              "steps": [
+                {
+                  "type": "explore",
+                  "text": "Morning trek to Phaladhara Panchadhara springs."
+                },
+                {
+                  "type": "food",
+                  "text": "Breakfast at stay (9:30 AM)."
+                },
+                {
+                  "type": "explore",
+                  "text": "Visit Akkamahadevi Caves again (optional)."
+                },
+                {
+                  "type": "explore",
+                  "text": "Visit Mallela Theertham Waterfalls (short forest hike)."
+                },
+                {
+                  "type": "food",
+                  "text": "Lunch at Hotel Surya Grand, Kalwakurthy (2:00 PM)."
+                },
+                {
+                  "type": "food",
+                  "text": "Evening tea at Hill Park on NH765."
+                },
+                {
+                  "type": "travel",
+                  "text": "Arrive in Hyderabad by 6:30 PM."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "mobileno": "+91 - 9849005496",
+      "sevas": [
+        {
+          "name": "Athiseeghra Darshan (Only Alankara Darshan )",
+          "price": 300
+        },
+        {
+          "name": "Seeghra Darshanam",
+          "price": 150
+        },
+        {
+          "name": "Sparsha Darshanam ( Single Person Only)",
           "price": 500
         }
       ],
@@ -100,11 +963,1806 @@
         "Free Meals"
       ],
       "placesToVisit": [
-        "Bhimavaram Temple",
-        "Kolleklru Lake",
-        "Eluru Gaja Vallabha Temple",
-        "Rajahmundry River Cruise"
+        {
+          "label": "🛶 Akkamahadevi Caves"
+        },
+        {
+          "label": "🐅 Srisailam Tiger Reserve"
+        },
+        {
+          "label": "⛴️ Pathala Ganga"
+        },
+        {
+          "label": "🌄 Srisailam Dam Viewpoint"
+        }
+      ]
+    }
+  ],
+  "mahanandi-swamy-temple": [
+    {
+      "id": "mahanandi-swamy-temple",
+      "name": "Maha Nandi Swamy Temple",
+      "district": "Kurnool ,Andhra Pradesh",
+      "highlight": "Maha Nandi Swamy Temple",
+      "faq": [
+        {
+          "question": "What is special about Maha Nandi Swamy Temple?",
+          "answer": "Maha Nandi Swamy Temple is known for its natural water spring that flows near the Shiva Linga. The water is cool, clear, and considered sacred."
+        },
+        {
+          "question": "What are the temple timings?",
+          "answer": "The temple is usually open from 5:00 AM to 9:00 PM every day. Timings may vary on special days or festivals."
+        },
+        {
+          "question": "Is there any entry fee to visit the temple?",
+          "answer": "No, there is no entry fee to visit Maha Nandi Swamy Temple. It is open to all devotees."
+        },
+        {
+          "question": "Is there any online booking for darshan or accommodation?",
+          "answer": "Yes, online booking is available for darshan tickets and rooms through the official temple website: www.srisailadevasthanam.org."
+        }
+      ],
+      "images": [
+        "/temples/mahanandi1.jpg",
+        "/temples/mahanandi2.jpeg",
+        "/temples/mahanandi3.jpg"
+      ],
+      "templeInfo": "Maha Nandi Swamy Temple is a famous and peaceful Shiva temple located in Nandyala, Andhra Pradesh. It is one of the nine Nandi temples known as Nava Nandis. The main attraction here is the clear, cool water spring inside the temple that flows near the Shiva Linga all the time. Devotees believe this water is holy and healing. The temple is surrounded by green forests and hills, making it a very calm and spiritual place to visit. Many people come here to pray, take a dip in the sacred pool, and enjoy the natural beauty. It is a perfect spot for both devotion and relaxation.",
+      "mobileno": "+91 - 9849005497",
+      "sevas": [
+        {
+          "name": "Athi Seeghra Darshanam",
+          "price": 100
+        },
+        {
+          "name": "Ekantha Seva Darshanam",
+          "price": 100
+        },
+        {
+          "name": "Seegra Darshanam",
+          "price": 50
+        }
+      ],
+      "itienary": {
+        "3": {
+          "title": "3-Day Hyderabad to Mahanandi Temple Trip",
+          "subtitle": "Hyderabad → Nandyal → Mahanandi",
+          "days": [
+            {
+              "title": "Day 1: Hyderabad to Nandyal via Kurnool",
+              "steps": [
+                {
+                  "type": "travel",
+                  "text": "Start early from Hyderabad around 6:00 AM by car."
+                },
+                {
+                  "type": "food",
+                  "text": "Breakfast at Hill Park Restaurant, Jadcherla (8:00 AM)."
+                },
+                {
+                  "type": "food",
+                  "text": "Lunch at Suraj Grand Hotel, Kurnool (1:00 PM)."
+                },
+                {
+                  "type": "explore",
+                  "text": "Visit Orvakal Rock Garden for photography and a scenic break."
+                },
+                {
+                  "type": "travel",
+                  "text": "Reach Nandyal by 4:30 PM and check into a hotel like RRR Grand or Haritha Hotel."
+                },
+                {
+                  "type": "food",
+                  "text": "Dinner at Hotel Sree Mahathi, Nandyal with Andhra-style meals."
+                }
+              ]
+            },
+            {
+              "title": "Day 2: Mahanandi Temple & Local Sightseeing",
+              "steps": [
+                {
+                  "type": "food",
+                  "text": "Breakfast at your hotel."
+                },
+                {
+                  "type": "temple",
+                  "text": "Visit Mahanandi Swamy Temple by 8:30 AM; take a holy dip and explore the temple complex."
+                },
+                {
+                  "type": "temple",
+                  "text": "Visit Navanandis nearby – Shivanandi, Prathamanandi, Garudanandi, etc."
+                },
+                {
+                  "type": "food",
+                  "text": "Lunch at local temple-side eateries serving veg meals."
+                },
+                {
+                  "type": "temple",
+                  "text": "Evening visit to Yaganti Temple (1.5 hrs drive) if time permits."
+                },
+                {
+                  "type": "food",
+                  "text": "Return to Nandyal for dinner and rest."
+                }
+              ]
+            },
+            {
+              "title": "Day 3: Return to Hyderabad",
+              "steps": [
+                {
+                  "type": "travel",
+                  "text": "Start early around 7:00 AM after a light breakfast."
+                },
+                {
+                  "type": "food",
+                  "text": "Lunch at Hotel DVR Mansion, Kurnool (12:30 PM)."
+                },
+                {
+                  "type": "temple",
+                  "text": "Visit Alampur Jogulamba Temple en route for a spiritual stop."
+                },
+                {
+                  "type": "food",
+                  "text": "Tea break at Drive-In 7, Jadcherla."
+                },
+                {
+                  "type": "travel",
+                  "text": "Reach Hyderabad by 6:30 PM."
+                }
+              ]
+            }
+          ]
+        },
+        "5": {
+          "title": "5-Day Extended Temple and Nature Trip",
+          "subtitle": "Hyderabad → Nandyal → Belum Caves → Yaganti → Srisailam",
+          "days": [
+            {
+              "title": "Day 1: Hyderabad to Nandyal",
+              "steps": [
+                {
+                  "type": "travel",
+                  "text": "Start early from Hyderabad around 6:00 AM by car."
+                },
+                {
+                  "type": "food",
+                  "text": "Breakfast at Hill Park Restaurant, Jadcherla."
+                },
+                {
+                  "type": "food",
+                  "text": "Lunch at Suraj Grand Hotel, Kurnool."
+                },
+                {
+                  "type": "explore",
+                  "text": "Visit Orvakal Rock Garden for photography and scenic break."
+                },
+                {
+                  "type": "travel",
+                  "text": "Reach Nandyal by evening and check-in."
+                },
+                {
+                  "type": "food",
+                  "text": "Dinner and rest."
+                }
+              ]
+            },
+            {
+              "title": "Day 2: Mahanandi Temple & Navanandi Visit",
+              "steps": [
+                {
+                  "type": "temple",
+                  "text": "Visit Mahanandi Temple, perform pujas and explore sacred ponds."
+                },
+                {
+                  "type": "temple",
+                  "text": "After lunch, visit nearby Navanandi temples."
+                },
+                {
+                  "type": "explore",
+                  "text": "Evening stroll or rest in local market."
+                },
+                {
+                  "type": "food",
+                  "text": "Dinner at Hotel Suraj Grand or similar."
+                }
+              ]
+            },
+            {
+              "title": "Day 3: Day Trip to Belum Caves & Yaganti Temple",
+              "steps": [
+                {
+                  "type": "travel",
+                  "text": "Leave around 7:30 AM for Belum Caves (90 km)."
+                },
+                {
+                  "type": "explore",
+                  "text": "Explore Belum Caves till noon."
+                },
+                {
+                  "type": "temple",
+                  "text": "Proceed to Yaganti Temple."
+                },
+                {
+                  "type": "food",
+                  "text": "Lunch en route (Dhaba or packed meal)."
+                },
+                {
+                  "type": "travel",
+                  "text": "Return to Nandyal by evening."
+                },
+                {
+                  "type": "food",
+                  "text": "Dinner and rest."
+                }
+              ]
+            },
+            {
+              "title": "Day 4: Srisailam Detour (Optional)",
+              "steps": [
+                {
+                  "type": "travel",
+                  "text": "Early start to Srisailam (about 5 hrs)."
+                },
+                {
+                  "type": "temple",
+                  "text": "Visit Mallikarjuna Swamy Temple and Srisailam Dam Viewpoint."
+                },
+                {
+                  "type": "food",
+                  "text": "Lunch at Haritha Srisailam Restaurant."
+                },
+                {
+                  "type": "travel",
+                  "text": "Return part-way and stay at Kurnool or Midthur overnight."
+                },
+                {
+                  "type": "food",
+                  "text": "Dinner en route."
+                }
+              ]
+            },
+            {
+              "title": "Day 5: Return to Hyderabad",
+              "steps": [
+                {
+                  "type": "food",
+                  "text": "Breakfast at hotel or roadside tiffin center."
+                },
+                {
+                  "type": "temple",
+                  "text": "Visit Alampur Temple if missed earlier."
+                },
+                {
+                  "type": "food",
+                  "text": "Lunch at Drive-In Dhaba, Jadcherla or Kurnool."
+                },
+                {
+                  "type": "travel",
+                  "text": "Reach Hyderabad by evening."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "facilities": [
+        "Accommodation",
+        "Cloakrooms",
+        "Medical Aid",
+        "Prasadam Counters",
+        "Free Meals"
+      ],
+      "placesToVisit": [
+        {
+          "label": "🐅 Srisailam Tiger Reserve (≈100 km)"
+        },
+        {
+          "label": "🕉️ Ahobilam Narasimha Swamy Temple (≈62 km)"
+        },
+        {
+          "label": "🌄 Yaganti Uma Maheswara Temple (≈65 km)"
+        },
+        {
+          "label": "🕯️ Nava Nandulu Temples Circuit (≈15 km)"
+        }
+      ]
+    }
+  ],
+  "kasapuram-nettikanti-anjaneya-swamy-temple": [
+    {
+      "id": "kasapuram-nettikanti-anjaneya-swamy-temple",
+      "name": "Kasapuram Nettikanti Anjaneya Swamy Temple",
+      "district": "Guntakal, Andhra Pradesh",
+      "highlight": "Kasapuram Nettikanti Anjaneya Swamy Temple",
+      "faq": [
+        {
+          "question": "Where is Kasapuram Nettikanti Anjaneya Swamy Temple located?",
+          "answer": "The temple is located in Kasapuram village, near Guntakal town in Anantapur district, Andhra Pradesh."
+        },
+        {
+          "question": "What is the best time to visit the temple?",
+          "answer": "Saturdays are considered very auspicious, and many devotees visit on this day. The Hanuman Jayanti festival is also celebrated grandly here."
+        },
+        {
+          "question": "Are there any special poojas or rituals at the temple?",
+          "answer": "Yes, special poojas, abhishekams, and sevas are performed regularly. Devotees also offer coconuts and perform pradakshinas (circumambulations)."
+        },
+        {
+          "question": "Is accommodation available near the temple?",
+          "answer": "Yes, there are a few lodges and guest houses in Guntakal, which is just a few kilometres away from the temple."
+        }
+      ],
+      "images": [
+        "/temples/kasapuram1.jpeg",
+        "/temples/kasapuram2.jpg",
+        "/temples/kasapuram3.jpg"
+      ],
+      "templeInfo": "Kasapuram Nettikanti Anjaneya Swamy Temple is a famous and powerful Hanuman temple located near Guntakal in Andhra Pradesh. Devotees believe that Lord Hanuman here listens to their prayers and removes problems from their lives. The temple is known for its special poojas and vibrant Saturdays, when many people visit to seek blessings. It has a peaceful and spiritual vibe, and the idol of Lord Hanuman is said to be very old and full of divine energy. Many devotees walk barefoot to the temple to show their devotion. It's a must-visit place for Hanuman followers.",
+      "mobileno": "+91 - 98490 05497",
+      "sevas": [
+        {
+          "name": "Athi Sheegra Darshanam (అతి శీఘ్ర దర్శనం)",
+          "price": 100
+        },
+        {
+          "name": "Mukhamandapa Darshanam (ముఖమండప దర్శనం)",
+          "price": 100
+        },
+        {
+          "name": "Nijaroopa Darshanam (నిజరూప దర్శనం)",
+          "price": 50
+        },
+        {
+          "name": "Sheegra Darshanam (శీఘ్ర దర్శనం)",
+          "price": 50
+        }
+      ],
+      "itienary": {
+        "1": {
+          "title": "1‑Day Temple Road Trip",
+          "subtitle": "Hyderabad → Kasapuram",
+          "days": [
+            {
+              "title": "Same Day Return Plan",
+              "steps": [
+                {
+                  "type": "travel",
+                  "text": "Start from Hyderabad at 5:00 AM by car."
+                },
+                {
+                  "type": "food",
+                  "text": "Breakfast stop at Food Pyramid, Kurnool by 7:30 AM."
+                },
+                {
+                  "type": "explore",
+                  "text": "Visit Gooty Fort and explore till 10:30 AM."
+                },
+                {
+                  "type": "temple",
+                  "text": "Reach Kasapuram Netti Kanti Anjaneya Swamy Temple by 12:30 PM."
+                },
+                {
+                  "type": "food",
+                  "text": "Lunch at Masala Udupi, Guntakal around 2:00 PM."
+                },
+                {
+                  "type": "travel",
+                  "text": "Start return journey by 4:00 PM."
+                },
+                {
+                  "type": "food",
+                  "text": "Dinner stop at Blue Moon Dhaba near Kurnool by 7:30 PM."
+                },
+                {
+                  "type": "travel",
+                  "text": "Reach Hyderabad by 10:30 PM."
+                }
+              ]
+            }
+          ]
+        },
+        "3": {
+          "title": "3‑Day Leisure Trip",
+          "subtitle": "Hyderabad → Kasapuram via Kurnool",
+          "days": [
+            {
+              "title": "Day 1: Hyderabad → Kurnool",
+              "steps": [
+                {
+                  "type": "travel",
+                  "text": "Leave Hyderabad at 7:00 AM."
+                },
+                {
+                  "type": "food",
+                  "text": "Breakfast at 7 Food Court near Jadcherla by 8:30 AM."
+                },
+                {
+                  "type": "explore",
+                  "text": "Explore Oravakallu Rock Garden near Kurnool by 11:00 AM."
+                },
+                {
+                  "type": "food",
+                  "text": "Lunch at Suruchi Restaurant, Kurnool by 1:00 PM."
+                },
+                {
+                  "type": "travel",
+                  "text": "Check-in to hotel and rest."
+                },
+                {
+                  "type": "explore",
+                  "text": "Evening visit to Konda Reddy Fort and dinner at RR Family Restaurant."
+                }
+              ]
+            },
+            {
+              "title": "Day 2: Kurnool → Kasapuram → Gooty",
+              "steps": [
+                {
+                  "type": "food",
+                  "text": "Early breakfast at hotel and leave by 7:30 AM."
+                },
+                {
+                  "type": "temple",
+                  "text": "Darshan at Kasapuram Temple by 10:00 AM."
+                },
+                {
+                  "type": "explore",
+                  "text": "Explore Gooty Fort till 2:00 PM."
+                },
+                {
+                  "type": "food",
+                  "text": "Lunch at Sri Sai Hotel, Guntakal around 2:30 PM."
+                },
+                {
+                  "type": "travel",
+                  "text": "Drive back to Kurnool, dinner at Green Leaf Restaurant."
+                }
+              ]
+            },
+            {
+              "title": "Day 3: Return to Hyderabad",
+              "steps": [
+                {
+                  "type": "food",
+                  "text": "Breakfast at 7:30 AM and checkout."
+                },
+                {
+                  "type": "explore",
+                  "text": "Optional stop at Belum Caves by 10:30 AM."
+                },
+                {
+                  "type": "food",
+                  "text": "Lunch at Haritha Hotel, Orvakal around 1:30 PM."
+                },
+                {
+                  "type": "travel",
+                  "text": "Short tea break at Hill View Dhaba and reach Hyderabad by 6:00 PM."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "facilities": [
+        "Accommodation",
+        "Cloakrooms",
+        "Medical Aid",
+        "Prasadam Counters",
+        "Free Meals"
+      ],
+      "placesToVisit": [
+        {
+          "label": "🕍 Sangala Sri Bugga Sangameswara Swamy Temple"
+        },
+        {
+          "label": "🏞️ Orvakal Rock Garden"
+        },
+        {
+          "label": "🛕 Pennaahobilam Narasimha Swamy Temple"
+        },
+        {
+          "label": "🏛️ Tadipatri Temples"
+        }
+      ]
+    }
+  ],
+  "dwaraka-tirumala-temple": [
+    {
+      "id": "dwaraka-tirumala-temple",
+      "name": "Dwaraka Tirumala Temple",
+      "district": "Eluru ,Andhra Pradesh",
+      "highlight": "Dwaraka Tirumala",
+      "faq": [
+        {
+          "question": "What is Dwaraka Tirumala famous for?",
+          "answer": "Dwaraka Tirumala is famous for the temple of Lord Venkateswara, also known as Chinna Tirupati. It is a popular pilgrimage site in Andhra Pradesh."
+        },
+        {
+          "question": "What are the temple timings of Dwaraka Tirumala?",
+          "answer": "The temple is usually open from 4:00 AM to 9:00 PM. However, timings may vary during festivals and special events."
+        },
+        {
+          "question": "How to reach Dwaraka Tirumala?",
+          "answer": "Dwaraka Tirumala is well-connected by road. It is about 40 km from Eluru and can be reached easily by bus, taxi, or private car."
+        },
+        {
+          "question": "Is there any dress code to enter the temple?",
+          "answer": "Yes, visitors are advised to wear traditional and modest clothes while visiting the temple to maintain the sacred atmosphere."
+        }
+      ],
+      "images": [
+        "/temples/dwarakatirumala1.jpg",
+        "/temples/dwarakatirumala2.jpg",
+        "/temples/dwarakatirumala3.jpg"
+      ],
+      "templeInfo": "Dwaraka Tirumala is a famous temple town in Andhra Pradesh, known for the shrine of Lord Venkateswara, also called Chinna Tirupati. It is a peaceful place where thousands of devotees come to pray and seek blessings. The temple is located on a small hill and surrounded by greenery, making it a beautiful and spiritual place. Many people visit this temple during festivals and special occasions. The place is well-connected by road and is a great destination for a short spiritual trip with family or friends.",
+      "mobileno": "9849005496",
+      "sevas": [
+        {
+          "name": "Athi Seegra Darshanam",
+          "price": 200
+        },
+        {
+          "name": "Seegra Darshanam",
+          "price": 100
+        }
+      ],
+      "itienary": {
+        "1": {
+          "title": "1‑Day Dwaraka Tirumala Darshan Plan",
+          "subtitle": "Hyderabad → Dwaraka Tirumala (Same Day / Overnight)",
+          "days": [
+            {
+              "title": "1‑Day Itinerary: Hyderabad → Dwaraka Tirumala → Eluru/Hyderabad",
+              "steps": [
+                {
+                  "type": "travel",
+                  "text": "Start early from Hyderabad around 5:00 AM."
+                },
+                {
+                  "type": "food",
+                  "text": "Breakfast at N Grill Restaurant, Suryapet (7:30 AM)."
+                },
+                {
+                  "type": "travel",
+                  "text": "Continue the drive towards Eluru enjoying the scenic highway."
+                },
+                {
+                  "type": "food",
+                  "text": "Lunch at Hotel Abhiruchi, Eluru (12:30 PM)."
+                },
+                {
+                  "type": "travel",
+                  "text": "Drive from Eluru to Dwaraka Tirumala (approx 45 mins)."
+                },
+                {
+                  "type": "temple",
+                  "text": "Darshan at Lord Venkateswara Temple (Chinna Tirupati) at 2:00 PM."
+                },
+                {
+                  "type": "explore",
+                  "text": "Explore prasadam counters and temple surroundings."
+                },
+                {
+                  "type": "travel",
+                  "text": "Leave for Eluru around 6:00 PM."
+                },
+                {
+                  "type": "food",
+                  "text": "Dinner at Rama Vilas Veg Restaurant, Eluru."
+                },
+                {
+                  "type": "travel",
+                  "text": "Optionally stay overnight in Eluru or return to Hyderabad based on energy."
+                }
+              ]
+            }
+          ]
+        },
+        "3": {
+          "title": "3‑Day Dwaraka Tirumala Leisure Tour",
+          "subtitle": "Hyderabad → Eluru → Dwaraka Tirumala (With Sightseeing)",
+          "days": [
+            {
+              "title": "Day 1: Hyderabad → Eluru",
+              "steps": [
+                {
+                  "type": "travel",
+                  "text": "Start from Hyderabad at 6:00 AM."
+                },
+                {
+                  "type": "food",
+                  "text": "Breakfast at 7 Food Court, Nalgonda Highway (around 8:00 AM)."
+                },
+                {
+                  "type": "travel",
+                  "text": "Drive towards Eluru, arriving by 1:00 PM."
+                },
+                {
+                  "type": "food",
+                  "text": "Lunch at Kinnera Grand, Eluru."
+                },
+                {
+                  "type": "travel",
+                  "text": "Check-in at hotel in Eluru (e.g., Hotel Grand Arya)."
+                },
+                {
+                  "type": "explore",
+                  "text": "Visit Eluru Ashram or Mini Tank Bund by evening."
+                },
+                {
+                  "type": "food",
+                  "text": "Dinner at Babai Hotel, Eluru (famous for Andhra meals)."
+                }
+              ]
+            },
+            {
+              "title": "Day 2: Eluru → Dwaraka Tirumala → Eluru",
+              "steps": [
+                {
+                  "type": "food",
+                  "text": "Breakfast at hotel in Eluru."
+                },
+                {
+                  "type": "travel",
+                  "text": "Depart for Dwaraka Tirumala around 8:00 AM (1 hr drive)."
+                },
+                {
+                  "type": "temple",
+                  "text": "Darshan at Dwaraka Tirumala Temple (9:00 AM)."
+                },
+                {
+                  "type": "explore",
+                  "text": "Visit temple gopuram, surroundings and relax."
+                },
+                {
+                  "type": "food",
+                  "text": "Lunch at Temple Annadanam or prasadam counters."
+                },
+                {
+                  "type": "explore",
+                  "text": "Optional visit to Godavari riverbank or relax at temple cottages."
+                },
+                {
+                  "type": "explore",
+                  "text": "Evening visit to Kotilingala Revu (quiet scenic spot)."
+                },
+                {
+                  "type": "travel",
+                  "text": "Return to Eluru by 6:30 PM."
+                },
+                {
+                  "type": "food",
+                  "text": "Dinner at Aromas Restaurant, Eluru."
+                }
+              ]
+            },
+            {
+              "title": "Day 3: Eluru → Hyderabad (With Nature Stop)",
+              "steps": [
+                {
+                  "type": "food",
+                  "text": "Breakfast at hotel and check out."
+                },
+                {
+                  "type": "explore",
+                  "text": "Visit Kolleru Lake Viewpoint (birdwatching, 30 min drive)."
+                },
+                {
+                  "type": "food",
+                  "text": "Lunch at Highway Grand, Nandigama (on return route)."
+                },
+                {
+                  "type": "travel",
+                  "text": "Drive back towards Hyderabad via Vijayawada highway."
+                },
+                {
+                  "type": "food",
+                  "text": "Evening tea/snacks at Gourmet Tiffins, Suryapet."
+                },
+                {
+                  "type": "travel",
+                  "text": "Reach Hyderabad by 7:00 PM."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "facilities": [
+        "Accommodation",
+        "Cloakrooms",
+        "Medical Aid",
+        "Prasadam Counters",
+        "Free Meals"
+      ],
+      "placesToVisit": [
+        {
+          "label": "🦢 Kolleru Lake"
+        },
+        {
+          "label": "🐦 Kolleru Bird Sanctuary"
+        },
+        {
+          "label": "🏛️ Guntupalli Caves"
+        },
+        {
+          "label": "🕍 Somaramam Temple"
+        }
+      ]
+    }
+  ],
+  "annavaram-satya-narayana-swamy": [
+    {
+      "id": "annavaram-temple",
+      "name": "Annavaram Temple",
+      "district": "East Godavari ,Andhra Pradesh",
+      "highlight": "Annavaram",
+      "faq": [
+        {
+          "question": "What is Annavaram Temple famous for?",
+          "answer": "Annavaram Temple is famous for the temple of Lord Sri Veera Venkata Satyanarayana Swamy, which is a prominent pilgrimage site in Andhra Pradesh."
+        },
+        {
+          "question": "What are the temple timings of Annavaram?",
+          "answer": "The temple is generally open from 4:00 AM to 9:00 PM. Timings may vary during festivals or special events."
+        },
+        {
+          "question": "How to reach Annavaram?",
+          "answer": "Annavaram is well-connected by road. It is around 45 km from Kakinada and can be easily reached by bus, taxi, or private car."
+        },
+        {
+          "question": "Is there any dress code to enter the temple?",
+          "answer": "Yes, visitors are requested to wear traditional and modest clothes while visiting the temple."
+        }
+      ],
+      "images": [
+        "/temples/annavaram1.jpg",
+        "/temples/annavaram2.jpg",
+        "/temples/annavaram3.jpeg"
+      ],
+      "templeInfo": "Annavaram is known for the grand temple of Lord Sri Veera Venkata Satyanarayana Swamy. The temple is situated on a hilltop offering a serene and peaceful environment, attracting thousands of devotees for blessings. It is a highly revered site and an important place of worship in the region.",
+      "mobileno": "9849005496",
+      "sevas": [
+        {
+          "name": "Athi Seegra Darshanam",
+          "price": 200
+        },
+        {
+          "name": "Seegra Darshanam",
+          "price": 100
+        }
+      ],
+      "itienary": {
+        "1": {
+          "title": "1‑Day Annavaram Darshan Plan",
+          "subtitle": "Hyderabad → Annavaram (Same Day / Overnight)",
+          "days": [
+            {
+              "title": "1‑Day Itinerary: Hyderabad → Annavaram → Kakinada/Hyderabad",
+              "steps": [
+                {
+                  "type": "travel",
+                  "text": "Start early from Hyderabad around 5:00 AM."
+                },
+                {
+                  "type": "food",
+                  "text": "Breakfast at N Grill Restaurant, Suryapet (7:30 AM)."
+                },
+                {
+                  "type": "travel",
+                  "text": "Continue the drive towards Kakinada, enjoying the scenic route."
+                },
+                {
+                  "type": "food",
+                  "text": "Lunch at Hotel Abhiruchi, Kakinada (12:30 PM)."
+                },
+                {
+                  "type": "travel",
+                  "text": "Drive from Kakinada to Annavaram (approx 45 mins)."
+                },
+                {
+                  "type": "temple",
+                  "text": "Darshan at Lord Venkateswara Swamy Temple at 2:00 PM."
+                },
+                {
+                  "type": "explore",
+                  "text": "Explore prasadam counters and temple surroundings."
+                },
+                {
+                  "type": "travel",
+                  "text": "Leave for Kakinada around 6:00 PM."
+                },
+                {
+                  "type": "food",
+                  "text": "Dinner at Rama Vilas Veg Restaurant, Kakinada."
+                },
+                {
+                  "type": "travel",
+                  "text": "Optionally stay overnight in Kakinada or return to Hyderabad based on convenience."
+                }
+              ]
+            }
+          ]
+        },
+        "3": {
+          "title": "3‑Day Annavaram Leisure Tour",
+          "subtitle": "Hyderabad → Kakinada → Annavaram (With Sightseeing)",
+          "days": [
+            {
+              "title": "Day 1: Hyderabad → Kakinada",
+              "steps": [
+                {
+                  "type": "travel",
+                  "text": "Start from Hyderabad at 6:00 AM."
+                },
+                {
+                  "type": "food",
+                  "text": "Breakfast at 7 Food Court, Nalgonda Highway (around 8:00 AM)."
+                },
+                {
+                  "type": "travel",
+                  "text": "Drive towards Kakinada, arriving by 1:00 PM."
+                },
+                {
+                  "type": "food",
+                  "text": "Lunch at Kinnera Grand, Kakinada."
+                },
+                {
+                  "type": "travel",
+                  "text": "Check-in at hotel in Kakinada (e.g., Hotel Grand Arya)."
+                },
+                {
+                  "type": "explore",
+                  "text": "Visit Kakinada Beach or nearby attractions by evening."
+                },
+                {
+                  "type": "food",
+                  "text": "Dinner at Babai Hotel, Kakinada (famous for Andhra meals)."
+                }
+              ]
+            },
+            {
+              "title": "Day 2: Kakinada → Annavaram → Kakinada",
+              "steps": [
+                {
+                  "type": "food",
+                  "text": "Breakfast at hotel in Kakinada."
+                },
+                {
+                  "type": "travel",
+                  "text": "Depart for Annavaram around 8:00 AM (1 hr drive)."
+                },
+                {
+                  "type": "temple",
+                  "text": "Darshan at Annavaram Temple (9:00 AM)."
+                },
+                {
+                  "type": "explore",
+                  "text": "Explore the temple gopuram, surroundings, and relax."
+                },
+                {
+                  "type": "food",
+                  "text": "Lunch at Temple Annadanam or prasadam counters."
+                },
+                {
+                  "type": "explore",
+                  "text": "Optional visit to local scenic spots or relax at temple cottages."
+                },
+                {
+                  "type": "travel",
+                  "text": "Return to Kakinada by 6:30 PM."
+                },
+                {
+                  "type": "food",
+                  "text": "Dinner at Aromas Restaurant, Kakinada."
+                }
+              ]
+            },
+            {
+              "title": "Day 3: Kakinada → Hyderabad (With Nature Stop)",
+              "steps": [
+                {
+                  "type": "food",
+                  "text": "Breakfast at hotel and check out."
+                },
+                {
+                  "type": "explore",
+                  "text": "Visit Kakinada Beach or nearby scenic spots."
+                },
+                {
+                  "type": "food",
+                  "text": "Lunch at Highway Grand, Nandigama (on return route)."
+                },
+                {
+                  "type": "travel",
+                  "text": "Drive back towards Hyderabad via Vijayawada highway."
+                },
+                {
+                  "type": "food",
+                  "text": "Evening tea/snacks at Gourmet Tiffins, Suryapet."
+                },
+                {
+                  "type": "travel",
+                  "text": "Reach Hyderabad by 7:00 PM."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "facilities": [
+        "Accommodation",
+        "Cloakrooms",
+        "Medical Aid",
+        "Prasadam Counters",
+        "Free Meals"
+      ],
+      "placesToVisit": [
+        {
+          "label": "🌊 Kakinada Beach"
+        },
+        {
+          "label": "🏖️ Kakinada Port"
+        },
+        {
+          "label": "🏞️ Coringa Wildlife Sanctuary"
+        }
+      ]
+    }
+  ],
+  "simhachalam-varaha-laxminarasimha-swami-temple": [
+    {
+      "id": "simhachalam-temple",
+      "name": "Simhachalam Varaha Lakshmi Narasimha Swamy Temple",
+      "district": "Simhachalam, Andhra Pradesh",
+      "highlight": "Simhachalam Temple",
+      "faq": [
+        {
+          "question": "What is Simhachalam Temple famous for?",
+          "answer": "Simhachalam Temple is famous for the rare idol of Lord Narasimha that combines the forms of both Varaha (boar) and Narasimha (lion-man)."
+        },
+        {
+          "question": "What are the temple timings of Simhachalam?",
+          "answer": "The temple is generally open from 4:00 AM to 9:00 PM. The idol is covered in sandalwood paste and revealed once a year during Chandanotsavam."
+        },
+        {
+          "question": "How to reach Simhachalam?",
+          "answer": "Simhachalam Temple is located around 20 km from Visakhapatnam and can be accessed by taxi, bus, or private car."
+        },
+        {
+          "question": "Is there any dress code to enter the temple?",
+          "answer": "Yes, visitors are requested to wear traditional and modest clothes while visiting the temple."
+        }
+      ],
+      "images": [
+        "/temples/simhachalam1.jpg",
+        "/temples/simhachalam2.jpg",
+        "/temples/simhachalam3.jpg"
+      ],
+      "templeInfo": "Simhachalam Temple is one of the most prominent temples in Andhra Pradesh, dedicated to Lord Narasimha, an avatar of Lord Vishnu. The temple is situated on a hill and attracts thousands of devotees throughout the year.",
+      "mobileno": "0891-2875467",
+      "sevas": [
+        {
+          "name": "Prasadam Seva",
+          "price": 100
+        },
+        {
+          "name": "Archana Seva",
+          "price": 200
+        },
+        {
+          "name": "Kalyanotsavam Seva",
+          "price": 500
+        }
+      ],
+      "itienary": {
+        "3": {
+          "title": "3‑Day Simhachalam Trip",
+          "subtitle": "Hyderabad → Vijayawada → Vizag → Simhachalam",
+          "days": [
+            {
+              "title": "Day 1: Hyderabad → Vijayawada",
+              "steps": [
+                {
+                  "type": "travel",
+                  "text": "Start early from Hyderabad by car."
+                },
+                {
+                  "type": "food",
+                  "text": "Breakfast at Nellore Mess, Suryapet (South Indian tiffins)."
+                },
+                {
+                  "type": "travel",
+                  "text": "Arrive at Vijayawada by noon."
+                },
+                {
+                  "type": "food",
+                  "text": "Lunch at Sweet Magic near Benz Circle."
+                },
+                {
+                  "type": "temple",
+                  "text": "Visit Kanaka Durga Temple."
+                },
+                {
+                  "type": "food",
+                  "text": "Dinner at TFL – The Food Lounge, Vijayawada."
+                },
+                {
+                  "type": "travel",
+                  "text": "Stay overnight at a hotel in Vijayawada."
+                }
+              ]
+            },
+            {
+              "title": "Day 2: Vijayawada → Vizag",
+              "steps": [
+                {
+                  "type": "food",
+                  "text": "Breakfast at hotel in Vijayawada."
+                },
+                {
+                  "type": "travel",
+                  "text": "Drive towards Vizag with a lunch stop at Hotel Vihar, Rajahmundry."
+                },
+                {
+                  "type": "travel",
+                  "text": "Arrive in Vizag and check in to the hotel."
+                },
+                {
+                  "type": "explore",
+                  "text": "Evening walk along RK Beach."
+                },
+                {
+                  "type": "food",
+                  "text": "Dinner at Venkatadri Vantillu (Andhra cuisine)."
+                }
+              ]
+            },
+            {
+              "title": "Day 3: Simhachalam Temple Visit + Return",
+              "steps": [
+                {
+                  "type": "food",
+                  "text": "Breakfast at hotel in Vizag."
+                },
+                {
+                  "type": "temple",
+                  "text": "Morning visit to Simhachalam Varaha Lakshmi Narasimha Swamy Temple."
+                },
+                {
+                  "type": "food",
+                  "text": "Lunch at Raju’s Kitchen near the temple."
+                },
+                {
+                  "type": "travel",
+                  "text": "Begin return journey to Hyderabad or stay overnight in Vizag."
+                }
+              ]
+            }
+          ]
+        },
+        "5": {
+          "title": "5‑Day Simhachalam Spiritual & Scenic Tour",
+          "subtitle": "Hyderabad → Vijayawada → Rajahmundry → Vizag → Simhachalam",
+          "days": [
+            {
+              "title": "Day 1: Hyderabad → Vijayawada",
+              "steps": [
+                {
+                  "type": "travel",
+                  "text": "Early departure from Hyderabad."
+                },
+                {
+                  "type": "food",
+                  "text": "Breakfast at 7 Food Court, Nalgonda."
+                },
+                {
+                  "type": "travel",
+                  "text": "Arrive at Vijayawada by noon."
+                },
+                {
+                  "type": "food",
+                  "text": "Lunch at RR Durbar."
+                },
+                {
+                  "type": "temple",
+                  "text": "Visit Kanaka Durga Temple."
+                },
+                {
+                  "type": "food",
+                  "text": "Dinner at Minerva Grand."
+                }
+              ]
+            },
+            {
+              "title": "Day 2: Vijayawada → Rajahmundry",
+              "steps": [
+                {
+                  "type": "food",
+                  "text": "Breakfast at hotel in Vijayawada."
+                },
+                {
+                  "type": "travel",
+                  "text": "Stop for darshan at Annavaram Temple."
+                },
+                {
+                  "type": "food",
+                  "text": "Lunch at Subbayya Gari Hotel, Rajahmundry."
+                },
+                {
+                  "type": "explore",
+                  "text": "Evening Godavari river cruise."
+                },
+                {
+                  "type": "food",
+                  "text": "Dinner at hotel in Rajahmundry."
+                }
+              ]
+            },
+            {
+              "title": "Day 3: Rajahmundry → Vizag",
+              "steps": [
+                {
+                  "type": "food",
+                  "text": "Breakfast at hotel."
+                },
+                {
+                  "type": "travel",
+                  "text": "Drive to Vizag."
+                },
+                {
+                  "type": "explore",
+                  "text": "Visit Kailasagiri Hill Park."
+                },
+                {
+                  "type": "food",
+                  "text": "Dinner at FSM or Dharani."
+                }
+              ]
+            },
+            {
+              "title": "Day 4: Simhachalam Temple + Vizag Sites",
+              "steps": [
+                {
+                  "type": "temple",
+                  "text": "Morning darshan at Simhachalam Temple."
+                },
+                {
+                  "type": "food",
+                  "text": "Lunch at Dakshin."
+                },
+                {
+                  "type": "explore",
+                  "text": "Visit Kailasagiri, Rushikonda Beach."
+                },
+                {
+                  "type": "food",
+                  "text": "Dinner at Vista – The Park Hotel."
+                }
+              ]
+            },
+            {
+              "title": "Day 5: Return to Hyderabad",
+              "steps": [
+                {
+                  "type": "food",
+                  "text": "Breakfast at hotel."
+                },
+                {
+                  "type": "food",
+                  "text": "Lunch at Srikanya Comforts."
+                },
+                {
+                  "type": "travel",
+                  "text": "Return to Hyderabad."
+                }
+              ]
+            }
+          ]
+        },
+        "7": {
+          "title": "7‑Day Simhachalam Pilgrimage + Coastal Retreat",
+          "subtitle": "Hyderabad → Vijayawada → Rajahmundry → Vizag → Simhachalam + Araku",
+          "days": [
+            {
+              "title": "Day 1: Hyderabad → Vijayawada",
+              "steps": [
+                {
+                  "type": "travel",
+                  "text": "Start early from Hyderabad."
+                },
+                {
+                  "type": "food",
+                  "text": "Breakfast at Gowri Shankar Tiffins, Suryapet."
+                },
+                {
+                  "type": "food",
+                  "text": "Lunch at Babai Hotel, Vijayawada."
+                },
+                {
+                  "type": "temple",
+                  "text": "Visit Kanaka Durga Temple and Prakasam Barrage."
+                },
+                {
+                  "type": "food",
+                  "text": "Dinner at Barbeque Nation."
+                }
+              ]
+            },
+            {
+              "title": "Day 2: Vijayawada → Rajahmundry",
+              "steps": [
+                {
+                  "type": "temple",
+                  "text": "Darshan at Annavaram Temple with prasadam lunch en route."
+                },
+                {
+                  "type": "travel",
+                  "text": "Continue to Rajahmundry and check in."
+                },
+                {
+                  "type": "explore",
+                  "text": "Evening walk at Godavari Bridge."
+                },
+                {
+                  "type": "food",
+                  "text": "Dinner at Hotel River Bay."
+                }
+              ]
+            },
+            {
+              "title": "Day 3: Rajahmundry Local Exploration",
+              "steps": [
+                {
+                  "type": "temple",
+                  "text": "Visit ISKCON Temple and Pushkar Ghat."
+                },
+                {
+                  "type": "explore",
+                  "text": "Take cultural boat ride with onboard lunch or at Sitara Grand."
+                },
+                {
+                  "type": "explore",
+                  "text": "Evening stop at Papi Hills viewpoint."
+                },
+                {
+                  "type": "food",
+                  "text": "Dinner at hotel."
+                }
+              ]
+            },
+            {
+              "title": "Day 4: Rajahmundry → Vizag via Tuni",
+              "steps": [
+                {
+                  "type": "food",
+                  "text": "Breakfast en route, optional revisit to Annavaram."
+                },
+                {
+                  "type": "food",
+                  "text": "Lunch at Sri Kanya Comforts, Tuni."
+                },
+                {
+                  "type": "explore",
+                  "text": "Evening beach walk at RK Beach."
+                },
+                {
+                  "type": "food",
+                  "text": "Dinner at The Fisherman’s Wharf, Vizag."
+                }
+              ]
+            },
+            {
+              "title": "Day 5: Simhachalam Temple + Vizag Sites",
+              "steps": [
+                {
+                  "type": "temple",
+                  "text": "Visit Simhachalam Temple in the morning."
+                },
+                {
+                  "type": "food",
+                  "text": "Lunch at Dakshin (Andhra meals)."
+                },
+                {
+                  "type": "explore",
+                  "text": "Visit Kailasagiri, Rushikonda Beach, and VUDA Park."
+                },
+                {
+                  "type": "food",
+                  "text": "Dinner at Ming Garden (Chinese cuisine)."
+                }
+              ]
+            },
+            {
+              "title": "Day 6: Optional Araku Valley Day Trip",
+              "steps": [
+                {
+                  "type": "travel",
+                  "text": "Early departure for Araku Valley."
+                },
+                {
+                  "type": "explore",
+                  "text": "Visit Borra Caves, Coffee Museum, and Padmapuram Gardens."
+                },
+                {
+                  "type": "food",
+                  "text": "Lunch at Haritha Resort, Araku."
+                },
+                {
+                  "type": "travel",
+                  "text": "Return to Vizag by evening."
+                },
+                {
+                  "type": "food",
+                  "text": "Dinner and overnight stay in Vizag."
+                }
+              ]
+            },
+            {
+              "title": "Day 7: Return to Hyderabad",
+              "steps": [
+                {
+                  "type": "food",
+                  "text": "Breakfast at hotel."
+                },
+                {
+                  "type": "travel",
+                  "text": "Begin return via road or take train/flight from Vizag."
+                },
+                {
+                  "type": "food",
+                  "text": "Brunch at Tuni or Annavaram, lunch at Rajahmundry, and dinner near Vijayawada."
+                },
+                {
+                  "type": "travel",
+                  "text": "Reach Hyderabad by late night."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "facilities": [
+        "Accommodation",
+        "Cloakrooms",
+        "Medical Aid",
+        "Prasadam Counters",
+        "Free Meals"
+      ],
+      "placesToVisit": [
+        {
+          "label": "🌊 RK Beach"
+        },
+        {
+          "label": "🏖️ Kailasagiri"
+        },
+        {
+          "label": "🏞️ Rushikonda Beach"
+        }
+      ]
+    }
+  ],
+  "kanaka-mahalakshmi-temple": [
+    {
+      "id": "kanaka-mahalakshmi-temple",
+      "name": "Kanaka Mahalakshmi Temple",
+      "district": "Visakhapatnam, Andhra Pradesh",
+      "highlight": "Goddess Lakshmi",
+      "faq": [
+        {
+          "question": "What is the best time to visit Kanaka Mahalakshmi Temple?",
+          "answer": "The best time to visit is during the festival of Diwali and other special occasions, as the temple is beautifully decorated and celebrations are grand."
+        },
+        {
+          "question": "What are the temple timings?",
+          "answer": "The temple opens from 5:00 AM to 12:00 PM in the morning and from 4:00 PM to 9:00 PM in the evening. Timings may vary during festivals."
+        },
+        {
+          "question": "Is there any dress code to visit the temple?",
+          "answer": "Yes, visitors are advised to wear modest and traditional clothing. Men should wear dhoti or pants, and women should wear sarees, salwar kameez, or long skirts."
+        },
+        {
+          "question": "How can I reach the temple?",
+          "answer": "The temple is located in the heart of Visakhapatnam and is easily accessible by auto, bus, or taxi. The nearest railway station is Visakhapatnam Railway Station, around 6 km away."
+        }
+      ],
+      "images": [
+        "/temples/kanakamahalakmi1.webp",
+        "/temples/kanakamahalakmi1.webp",
+        "/temples/kanakamahalakmi1.webp",
+        "/temples/kanakamahalakmi1.webp"
+      ],
+      "templeInfo": "Kanaka Mahalakshmi Temple is dedicated to Goddess Lakshmi, located in Visakhapatnam, Andhra Pradesh. The temple is known for its peaceful ambiance, attracting devotees seeking blessings for wealth, prosperity, and good fortune. It is one of the prominent temples in the region, known for its grandeur and spiritual significance.",
+      "mobileno": "9849005495",
+      "sevas": [
+        {
+          "name": "Mahalakshmi Darshan",
+          "price": 100
+        },
+        {
+          "name": "Kalyana Utsavam",
+          "price": 500
+        }
+      ],
+      "facilities": [
+        "Accommodation",
+        "Cloakrooms",
+        "Medical Aid",
+        "Prasadam Counters"
+      ],
+      "itienary": {
+        "1": {
+          "title": "1-Day Trip",
+          "subtitle": "Visakhapatnam",
+          "days": [
+            {
+              "title": "Full Day Plan",
+              "steps": [
+                {
+                  "type": "food",
+                  "text": "Breakfast at a local restaurant: Traditional Andhra breakfast with idli and sambar."
+                },
+                {
+                  "type": "travel",
+                  "text": "Visit the Kanaka Mahalakshmi Temple for morning darshan."
+                },
+                {
+                  "type": "explore",
+                  "text": "Explore the nearby attractions like Kailasagiri Hill and Rishikonda Beach."
+                },
+                {
+                  "type": "food",
+                  "text": "Lunch at a local restaurant: Andhra thali with rice, curry, and pickles."
+                },
+                {
+                  "type": "explore",
+                  "text": "Visit the Visakhapatnam War Memorial and the Submarine Museum."
+                },
+                {
+                  "type": "travel",
+                  "text": "Evening visit to the beach and enjoy the sunset at Rishikonda."
+                }
+              ]
+            }
+          ]
+        },
+        "3": {
+          "title": "3-Day Leisure Trip",
+          "subtitle": "Visakhapatnam → Araku Valley → Bheemunipatnam",
+          "days": [
+            {
+              "title": "Day 1: Visakhapatnam",
+              "steps": [
+                {
+                  "type": "food",
+                  "text": "Breakfast in Visakhapatnam: South Indian specialities."
+                },
+                {
+                  "type": "temple",
+                  "text": "Visit the Kanaka Mahalakshmi Temple for darshan."
+                },
+                {
+                  "type": "explore",
+                  "text": "Visit Kailasagiri Hill and enjoy the panoramic view of the city."
+                },
+                {
+                  "type": "food",
+                  "text": "Lunch at a local restaurant."
+                },
+                {
+                  "type": "explore",
+                  "text": "Explore the beaches like Rishikonda and Bheemili Beach."
+                }
+              ]
+            },
+            {
+              "title": "Day 2: Araku Valley",
+              "steps": [
+                {
+                  "type": "food",
+                  "text": "Breakfast in Visakhapatnam."
+                },
+                {
+                  "type": "travel",
+                  "text": "Drive to Araku Valley (~2.5 hrs)."
+                },
+                {
+                  "type": "explore",
+                  "text": "Explore the coffee plantations and scenic landscapes."
+                },
+                {
+                  "type": "food",
+                  "text": "Lunch at a local restaurant in Araku Valley."
+                },
+                {
+                  "type": "explore",
+                  "text": "Visit the Tribal Museum and enjoy the local culture."
+                }
+              ]
+            },
+            {
+              "title": "Day 3: Bheemunipatnam",
+              "steps": [
+                {
+                  "type": "food",
+                  "text": "Breakfast in Visakhapatnam."
+                },
+                {
+                  "type": "travel",
+                  "text": "Drive to Bheemunipatnam (~30 minutes)."
+                },
+                {
+                  "type": "explore",
+                  "text": "Relax at the beautiful Bheemunipatnam Beach."
+                },
+                {
+                  "type": "food",
+                  "text": "Lunch at a local beachside restaurant."
+                },
+                {
+                  "type": "explore",
+                  "text": "Visit the historical Bheemunipatnam Fort and lighthouse."
+                },
+                {
+                  "type": "travel",
+                  "text": "Return to Visakhapatnam."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "placesToVisit": [
+        {
+          "label": "🕉️ Kanaka Mahalakshmi Temple"
+        },
+        {
+          "label": "🌊 Rishikonda Beach"
+        },
+        {
+          "label": "⛰️ Kailasagiri Hill"
+        },
+        {
+          "label": "🏰 Bheemunipatnam Fort"
+        }
+      ]
+    }
+  ],
+  "lakshmi-narasimha-swamy-temple-mangalagiri": [
+    {
+      "id": "lakshmi-narasimha-swamy-temple",
+      "name": "Lakshmi Narasimha Swamy Temple",
+      "district": "Mangalagiri, Andhra Pradesh",
+      "highlight": "Hilltop view with divine atmosphere",
+      "faq": [
+        {
+          "question": "What is special about Lakshmi Narasimha Swamy Temple in Mangalagiri?",
+          "answer": "The temple is usually open from 7:00 AM to 1:00 PM and again from 4:00 PM to 8:30 PM, but timings may vary on festival days."
+        },
+        {
+          "question": "What are the temple timings?",
+          "answer": "The temple is usually open from 5:00 AM to 9:00 PM every day. Timings may vary on special days or festivals."
+        },
+        {
+          "question": "Is there any dress code to visit the temple?",
+          "answer": "Visitors are expected to wear modest and traditional clothes as a mark of respect while entering the temple."
+        },
+        {
+          "question": "How can I reach Mangalagiri temple?",
+          "answer": "Mangalagiri is well connected by road and is located between Vijayawada and Guntur, making it easy to reach by bus, car, or train."
+        }
+      ],
+      "images": [
+        "/temples/lakshminarmang.webp",
+        "/temples/lakshminarmang.webp",
+        "/temples/lakshminarmang.webp",
+        "/temples/lakshminarmang.webp"
+      ],
+      "templeInfo": "Lakshmi Narasimha Swamy Temple in Mangalagiri is dedicated to Lord Narasimha, an avatar of Lord Vishnu. The temple is known for its serene atmosphere and unique ritual of offering jaggery water to the deity. It is one of the eight sacred places of Lord Vishnu, and the temple offers a peaceful hilltop view of the surrounding area.",
+      "mobileno": "9849005496",
+      "sevas": [
+        {
+          "name": "Thirumanjanam (Abhishekam)",
+          "price": 1116
+        },
+        {
+          "name": "Abhisheka Darshanam",
+          "price": 50
+        },
+        {
+          "name": "Laksha Kumkum Archana",
+          "price": 10116
+        },
+        {
+          "name": "Pushparchana",
+          "price": 10116
+        },
+        {
+          "name": "Tulasi Archana",
+          "price": 10116
+        },
+        {
+          "name": "Lakshmi Narasimha Sudarshana Homams",
+          "price": 3500
+        },
+        {
+          "name": "Santhi Kalyanam",
+          "price": 1116
+        }
+      ],
+      "facilities": [
+        "Accommodation",
+        "Cloakrooms",
+        "Medical Aid",
+        "Prasadam Counters",
+        "Free Meals"
+      ],
+      "itienary": {
+        "1": {
+          "title": "Hyderabad to Mangalagiri (Same-Day Return)",
+          "subtitle": "Hyderabad → Mangalagiri → Hyderabad",
+          "days": [
+            {
+              "title": "Day 1: One-Day Temple Trip",
+              "steps": [
+                {
+                  "type": "travel",
+                  "text": "Start your day early from Hyderabad around 5:00 AM by car."
+                },
+                {
+                  "type": "food",
+                  "text": "Stop for breakfast at N Grill in Nalgonda or 7 Food Court near Choutuppal by 7:30 AM."
+                },
+                {
+                  "type": "travel",
+                  "text": "Continue your drive via NH65, enjoying scenic views and smooth roads."
+                },
+                {
+                  "type": "temple",
+                  "text": "Reach Mangalagiri by 11:30 AM and visit Lakshmi Narasimha Swamy Temple and Panakala Narasimha shrine."
+                },
+                {
+                  "type": "food",
+                  "text": "Lunch at Hotel Minerva Grand Vijayawada or RR Durbar."
+                },
+                {
+                  "type": "explore",
+                  "text": "Visit Undavalli Caves, about 25 minutes away."
+                },
+                {
+                  "type": "travel",
+                  "text": "Leave around 4:30 PM for return journey."
+                },
+                {
+                  "type": "food",
+                  "text": "Stop for evening snacks or tea at Highway Grand, Narketpally."
+                },
+                {
+                  "type": "food",
+                  "text": "Reach Hyderabad by 9:30 PM and have dinner at home or Paradise Restaurant, Punjagutta."
+                }
+              ]
+            }
+          ]
+        },
+        "3": {
+          "title": "3-Day Mangalagiri & Vijayawada Temple Tour",
+          "subtitle": "Hyderabad → Vijayawada → Amaravati → Hyderabad",
+          "days": [
+            {
+              "title": "Day 1: Hyderabad to Vijayawada (via Mangalagiri)",
+              "steps": [
+                {
+                  "type": "travel",
+                  "text": "Leave Hyderabad at 6:00 AM by car."
+                },
+                {
+                  "type": "food",
+                  "text": "Breakfast at Sri Krishna Grand, Choutuppal (8:00 AM)."
+                },
+                {
+                  "type": "temple",
+                  "text": "Reach Lakshmi Narasimha Swamy Temple, Mangalagiri by 12:00 PM."
+                },
+                {
+                  "type": "food",
+                  "text": "Lunch at Hotel Apsara or Minerva Grand Vijayawada."
+                },
+                {
+                  "type": "travel",
+                  "text": "Check into hotel in Vijayawada (Gateway Hotel or Lemon Tree Premier)."
+                },
+                {
+                  "type": "temple",
+                  "text": "Evening visit to Kanaka Durga Temple on Indrakeeladri Hill."
+                },
+                {
+                  "type": "food",
+                  "text": "Dinner at Sweet Magic or Babai Hotel."
+                }
+              ]
+            },
+            {
+              "title": "Day 2: Local Temple Tour Near Vijayawada",
+              "steps": [
+                {
+                  "type": "food",
+                  "text": "Breakfast at the hotel."
+                },
+                {
+                  "type": "temple",
+                  "text": "Visit Amaravati Temple (Amararama), about 40 minutes away."
+                },
+                {
+                  "type": "explore",
+                  "text": "Relax at Dhyana Buddha Park nearby."
+                },
+                {
+                  "type": "temple",
+                  "text": "Visit Hinkar Thirtha Jain Temple."
+                },
+                {
+                  "type": "food",
+                  "text": "Lunch at Hotel Vivera or Andhra Spice Restaurant."
+                },
+                {
+                  "type": "explore",
+                  "text": "Evening walk and relaxation at Bhavani Island on Krishna River."
+                },
+                {
+                  "type": "food",
+                  "text": "Dinner at Barbeque Pride or TFL restaurant."
+                }
+              ]
+            },
+            {
+              "title": "Day 3: Return to Hyderabad",
+              "steps": [
+                {
+                  "type": "travel",
+                  "text": "After breakfast, check out and begin journey around 9:00 AM."
+                },
+                {
+                  "type": "temple",
+                  "text": "Stop at Kolanupaka Jain Temple for a spiritual break."
+                },
+                {
+                  "type": "food",
+                  "text": "Lunch at 7 Food Court or Highway Grand near Chityal."
+                },
+                {
+                  "type": "explore",
+                  "text": "Optional: Rachakonda Fort or Bhuvanagiri Fort sightseeing."
+                },
+                {
+                  "type": "travel",
+                  "text": "Reach Hyderabad by 6:30–7:00 PM."
+                },
+                {
+                  "type": "food",
+                  "text": "Dinner at Chutneys or Bawarchi."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "placesToVisit": [
+        {
+          "label": "🕍 Undavalli Caves"
+        },
+        {
+          "label": "🏰 Kondapalli Fort"
+        },
+        {
+          "label": "🌊 Bhavani Island"
+        },
+        {
+          "label": "🏛️ Amaravati Museum"
+        }
       ]
     }
   ]
 }
+

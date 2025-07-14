@@ -362,7 +362,7 @@ function PlacesToVisit() {
               <span className="mr-3">📍</span>
               {place}
             </li>
-          ))}revie
+          ))}
         </ul>
       </div>
     </div>
@@ -467,7 +467,7 @@ export default function TempleDetailPage() {
         'Srikalahasti', 'Annavaram', 'Ahobilam'
     ];
 
-    const templateName = router?.query?.templename;
+    const templateName = "Annavaram";
     const templeDataArray = templateName && td?.[templateName];
     const templeData = Array.isArray(templeDataArray) ? templeDataArray[0] : null;
 
@@ -530,8 +530,8 @@ export default function TempleDetailPage() {
                         </div>
 
                         <div className="w-full lg:w-2/3 bg-white rounded-lg shadow p-6">
-                            <TempleInfo />
-                            <SevaDarshanam />
+                            <TempleInfo name={templateName} />
+                            <SevaDarshanam name={templateName} />
                             <ItinerarySelector />
                             <FAQ />
                         </div>
