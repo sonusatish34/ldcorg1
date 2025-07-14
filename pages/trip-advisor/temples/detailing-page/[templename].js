@@ -425,6 +425,8 @@ export default function TempleDetailPage() {
                   navigation={true}
                   autoplay={{
                     delay: 1500,
+                    disableOnInteraction: false,
+                    pauseOnMouseEnter: false, // Ensure it doesn’t pause on hover
                   }}
                   loop={true}
                   spaceBetween={1}

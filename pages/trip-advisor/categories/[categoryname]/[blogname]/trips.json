@@ -989,5 +989,59 @@
                 }
             }
         }
-    ]
+    ],
+    "goa-beach-getaway": [
+  {
+    "title": "Hyderabad to Goa Road Trip Plans",
+    "coverimages": [
+      "/trips/goa/1.jpg",
+      "/trips/goa/2.jpg",
+      "/trips/goa/3.jpg"
+    ],
+    "latitude": 15.2993,
+    "longitude": 74.1240,
+    "populartags": [
+      "goa",
+      "roadtrip",
+      "beaches",
+      "forts",
+      "watersports",
+      "sunset-cruise"
+    ],
+    "content": "Plan your perfect beachside break with two flexible road-trip itineraries from Hyderabad to Goa. Whether you're looking for a quick escape or a relaxed exploration, these 3-day and 5-day plans cover the best of Goa’s beaches, forts, water sports, shopping, food, and cultural sites.",
+    "besttime": "Best time to visit Goa is from November to February when the weather is pleasant, ideal for beach and outdoor activities.",
+    "itineraryData": {
+      "title": "Hyderabad to Goa Itinerary (3-Day & 5-Day Options)",
+      "summary": "Two exciting options to explore Goa by road from Hyderabad. Choose between a power-packed 3-day getaway or a leisurely 5-day coastal adventure. Both include scenic drives, beach time, forts, local cuisine, and budget-friendly planning.",
+      "coverImage": "/trips/goa/1.jpg",
+      "plans": [
+        {
+          "type": "3-Day Plan",
+          "price": "₹20,500 – ₹30,000 total (₹10,250 – ₹15,000 per person, twin share)",
+          "duration": "3 Days",
+          "highlights": [
+            "Day 1: Start drive at 5 AM, reach Goa by 7–8 PM. Lunch at Baga/Anjuna shack (₹600–₹1,000), check-in at North Goa hotel (₹1,500–₹3,000)",
+            "Day 2: Water sports at Baga (₹1,000–₹2,000 for two), lunch at Calamari/Fisherman’s Wharf (₹800–₹1,000), Chapora Fort sunset & Anjuna market, seafood dinner (₹500–₹800)",
+            "Day 3: Morning trip to Palolem/Colva, lunch at Martin’s Corner (₹1,500–₹2,000), return drive to Hyderabad by 2 PM"
+          ],
+          "note": "Ideal for couples or friends on a quick, energetic beach vacation with a balance of fun and relaxation."
+        },
+        {
+          "type": "5-Day Plan",
+          "price": "₹32,800 – ₹45,700 total (₹8,200 – ₹11,500 per person, for 4 people)",
+          "duration": "5 Days",
+          "highlights": [
+            "Day 1: Depart 5 AM → arrive Goa by evening → check-in → sunset at Baga Beach → dinner at Britto’s or Fat Fish (₹1,200–₹1,600 for 4)",
+            "Day 2: Visit Fort Aguada, Candolim → water sports at Baga (₹2,000–₹3,200 for 4), sunset at Chapora Fort, Anjuna flea market, stay in North Goa",
+            "Day 3: Day trip to South Goa – Palolem, Cabo de Rama, Butterfly Beach, lunch and swim. Optional overnight stay in South Goa (₹2,000–₹3,000)",
+            "Day 4: Explore Old Goa – Basilica of Bom Jesus, Se Cathedral, Fontainhas, Dona Paula. Mandovi sunset cruise (₹1,600–₹2,400), dinner at Fisherman’s Wharf",
+            "Day 5: Morning shopping at Mapusa or beach stalls → breakfast → return to Hyderabad"
+          ],
+          "note": "Perfect for families or groups who want a full coastal experience with time for sightseeing, beach chilling, and cultural exploration."
+        }
+      ]
+    }
+  }
+]
+
 }

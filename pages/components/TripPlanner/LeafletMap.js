@@ -21,7 +21,7 @@ export default function LeafletMap({ lat, lon, area }) {
       });
 
       if (mapRef.current && !mapRef.current._leaflet_id) {
-        const map = L.map(mapRef.current).setView([lat, lon], 13);
+        const map = L.map(mapRef.current, { scrollWheelZoom: false }).setView([lat, lon], 13);
 
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
           attribution:

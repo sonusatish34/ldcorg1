@@ -36,11 +36,11 @@ function ItineraryComponent({ data }) {
   return data.itineraryData && (
     <>
       {/* Buttons to select itinerary type */}
-      
+
 
       {/* Itinerary Section */}
       <div id="itinerary" className="lg:pt-6">
-        <div className="px-4">
+        <div className="px-4 lg:hidden">
           <h1 className="text-3xl font-bold mb-4">{data.itineraryData.title}</h1>
           <p className="mb-4 text-gray-600">{data.itineraryData.summary}</p>
           <Image
@@ -51,19 +51,19 @@ function ItineraryComponent({ data }) {
             className="rounded-xl mb-6"
           />
           <div className="flex overflow-x-auto space-x-4 px-4 py-4">
-        {uniqueTypes.map((type) => (
-          <button
-            key={type}
-            onClick={() => setSelectedType(type)}
-            className={`whitespace-nowrap px-4 py-2 rounded-full border transition
+            {uniqueTypes.map((type) => (
+              <button
+                key={type}
+                onClick={() => setSelectedType(type)}
+                className={`whitespace-nowrap px-4 py-2 rounded-full border transition
               ${selectedType === type
-                ? 'bg-green-600 text-white border-green-600'
-                : 'bg-white text-black border-gray-300 hover:bg-green-600 hover:text-white'}`}
-          >
-            {type}
-          </button>
-        ))}
-      </div>
+                    ? 'bg-green-600 text-white border-green-600'
+                    : 'bg-white text-black border-gray-300 hover:bg-green-600 hover:text-white'}`}
+              >
+                {type}
+              </button>
+            ))}
+          </div>
           {/* Show selected itinerary only */}
           {selectedType && (
             <div id={selectedType.replace(/\s+/g, '').toLowerCase()} className="mb-10">
@@ -73,12 +73,14 @@ function ItineraryComponent({ data }) {
                   .filter(plan => plan.type === selectedType)
                   .map((plan, idx) => (
                     <div key={idx} className="border p-4 rounded-2xl shadow-md bg-white">
+                      <p></p>
                       <h2 className="text-xl font-semibold mb-2">{plan.type}</h2>
                       <p className="text-2xl font-bold text-green-600 mb-1">{plan.price}</p>
                       <p className="text-sm text-gray-500 mb-3">{plan.duration}</p>
                       <ul className="list-disc pl-5 text-sm mb-3">
                         {plan.highlights.map((item, i) => (
                           <li key={i}>{item}</li>
+
                         ))}
                       </ul>
                       <p className="text-xs text-gray-500 italic">{plan.note}</p>
@@ -88,6 +90,33 @@ function ItineraryComponent({ data }) {
             </div>
           )}
         </div>
+      </div>
+      <p>kjioj</p>
+      <div className='hidden lg:grid grid-cols-3 gap-10 '>
+        {uniqueTypes.map((selectedType, index) => (
+          <div id={selectedType.replace(/\s+/g, '').toLowerCase()} className="mb-10">
+            <h2 className="text-2xl font-semibold mb-4">{selectedType} Itinerary</h2>
+            <div className="">
+              {data.itineraryData.plans
+                .filter(plan => plan.type === selectedType)
+                .map((plan, idx) => (
+                  <div key={idx} className="border p-4 rounded-2xl shadow-md bg-white">
+                    <p></p>
+                    <h2 className="text-xl font-semibold mb-2">{plan.type}</h2>
+                    <p className="text-2xl font-bold text-green-600 mb-1">{plan.price}</p>
+                    <p className="text-sm text-gray-500 mb-3">{plan.duration}</p>
+                    <ul className="list-disc pl-5 text-sm mb-3">
+                      {plan.highlights.map((item, i) => (
+                        <li key={i}>{item}</li>
+
+                      ))}
+                    </ul>
+                    <p className="text-xs text-gray-500 italic">{plan.note}</p>
+                  </div>
+                ))}
+            </div>
+          </div>
+        ))}
       </div>
     </>
   );
@@ -180,7 +209,7 @@ const VizagTrip = () => {
           </div>
 
           {/* Safe rendering of itineraryData */}
-         <ItineraryComponent data={data}/>
+          <ItineraryComponent data={data} />
 
 
           <div id="reviews" className="px-4">
