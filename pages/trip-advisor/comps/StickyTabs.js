@@ -37,12 +37,12 @@ export default function StickyTabs() {
 
   return (
     <div className="sticky top-0 z-50 bg-white shadow-sm border-b">
-      <div className="flex overflow-x-auto scrollbar-hide text-sm sm:text-base">
+      <div className="flex overflow-x-auto scrollbar-hide text-sm lg:text-xl font-bold sm:text-base">
         {tabs.map(tab => (
           <button
             key={tab}
             onClick={() => scrollToSection(tab)}
-            className={`flex-1 text-center py-3 px-4 font-medium capitalize ${
+            className={`flex-1 text-center py-3 px-4 capitalize ${
               activeTab === tab ? 'border-b-2 border-black text-black' : 'text-gray-500'
             }`}
           >

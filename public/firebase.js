@@ -31,13 +31,12 @@ const NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID= "72839760896"
 const NEXT_PUBLIC_FIREBASE_APP_ID= "1:72839760896:web:946803b8efd18b83581ce5"
 
 const firebaseConfig = {
-  
-  apiKey: NEXT_PUBLIC_FIREBASE_API_KEY,
-  authDomain: NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
-  projectId: NEXT_PUBLIC_FIREBASE_PROJECT_ID,
-  storageBucket: NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
-  messagingSenderId: NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
-  appId: NEXT_PUBLIC_FIREBASE_APP_ID
+  apiKey: "AIzaSyDcyVasMykMUUKdh-vB19Wjk2Op5rVOqsE",
+  authDomain: "seoblog-30557.firebaseapp.com",
+  projectId: "seoblog-30557",
+  storageBucket: "seoblog-30557.firebasestorage.app",
+  messagingSenderId: "37436496345",
+  appId: "1:37436496345:web:b3916839656826ec7d21c8"
 };
 
 

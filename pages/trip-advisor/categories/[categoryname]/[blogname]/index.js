@@ -43,14 +43,38 @@ function ItineraryComponent({ data }) {
         <div className="px-4 lg:hidden">
           <h1 className="text-3xl font-bold mb-4">{data.itineraryData.title}</h1>
           <p className="mb-4 text-gray-600">{data.itineraryData.summary}</p>
-          <Image
-            src={data.itineraryData.coverImage}
-            alt="Itinerary Cover"
-            width={1200}
-            height={600}
-            className="rounded-xl mb-6"
-          />
-          <div className="flex overflow-x-auto space-x-4 px-4 py-4">
+          <div className='grid grid-cols-2 gap-2'>
+
+            <Image
+              src={data.coverimages[1]}
+              alt="Itinerary Cover"
+              width={1200}
+              height={600}
+              className="rounded-xl"
+            />
+            <Image
+              src={data.coverimages[2]}
+              alt="Itinerary Cover"
+              width={1200}
+              height={600}
+              className="rounded-xl"
+            />
+            <Image
+              src={data.coverimages[3]}
+              alt="Itinerary Cover"
+              width={1200}
+              height={600}
+              className="rounded-xl"
+            />
+            <Image
+              src={data.coverimages[4]}
+              alt="Itinerary Cover"
+              width={1200}
+              height={600}
+              className="rounded-xl"
+            />
+          </div>
+          <div className="flex overflow-x-auto no-scrollbar space-x-4 px-4 py-4">
             {uniqueTypes.map((type) => (
               <button
                 key={type}
@@ -91,7 +115,6 @@ function ItineraryComponent({ data }) {
           )}
         </div>
       </div>
-      <p>kjioj</p>
       <div className='hidden lg:grid grid-cols-3 gap-10 '>
         {uniqueTypes.map((selectedType, index) => (
           <div id={selectedType.replace(/\s+/g, '').toLowerCase()} className="mb-10">
@@ -180,7 +203,7 @@ const VizagTrip = () => {
           </div>
         </div>
 
-        <p className="text-2xl py-2 font-bold flex px-3 capitalize items-center gap-2">
+        <p className="text-2xl lg:text-5xl py-2 font-bold flex px-3 lg:py-6 capitalize items-center gap-2">
           <span>{data?.title || 'Untitled Trip'}</span>
           <FaShareAltSquare color="blue" size={30} />
         </p>
@@ -189,7 +212,7 @@ const VizagTrip = () => {
           <ImageZoomCarousal images={data.coverimages} />
         </div>
 
-        <div className="px-3 pb-4 lg:pt-64">
+        <div className="px-3 pb-4 lg:py-10">
           <WeatherData />
         </div>
 

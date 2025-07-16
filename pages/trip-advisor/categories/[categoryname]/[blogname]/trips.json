@@ -1,5 +1,5 @@
 {
-    "vizag-coastal-and-cultural-tour": [
+    "hitting-the-vizag-streets-full-swag": [
         {
             "title": "Vizag Coastal & Cultural Tour",
             "coverimages": [
@@ -122,7 +122,6 @@
         {
             "title": "Kakinada Coastal & Cultural Tour",
             "coverimages": [
-                "/trips/kakinada/1.jpg",
                 "/trips/kakinada/2.jpg",
                 "/trips/kakinada/3.jpg",
                 "/trips/kakinada/4.jpg",
@@ -133,11 +132,9 @@
             "latitude": 16.9890,
             "longitude": 82.2426,
             "populartags": [
-                "kakinada",
-                "beach-tour",
-                "temples",
-                "wildlife",
-                "andhra-cuisine"
+                "travel",
+                "tourism",
+                "culture and heritaga"
             ],
             "content": "Kakinada, a coastal city in Andhra Pradesh, offers an exquisite blend of nature, culture, and history. From pristine beaches and wildlife sanctuaries to rich temple heritage and flavorful Andhra cuisine, Kakinada promises an unforgettable experience for all travelers.",
             "besttime": "Best time to visit Kakinada is from October to March, when the weather is cool and perfect for sightseeing and beach activities.",
@@ -193,7 +190,10 @@
             "coverimages": [
                 "/trips/kurnool/1.jpg",
                 "/trips/kurnool/2.jpg",
-                "/trips/kurnool/3.jpg"
+                "/trips/kurnool/3.jpg",
+                "/trips/kurnool/4.jpg",
+                "/trips/kurnool/5.jpg",
+                "/trips/kurnool/6.jpg"
             ],
             "latitude": 15.8280,
             "longitude": 78.0390,
@@ -405,13 +405,15 @@
             }
         }
     ],
-    "bangalore": [
+    "filter-coffee-mornings-&-namma-party-nights-bangalore": [
         {
             "title": "Bangalore Self-Drive Family Tour",
             "coverimages": [
                 "/trips/bangalore/1.jpg",
                 "/trips/bangalore/2.jpg",
-                "/trips/bangalore/3.jpg"
+                "/trips/bangalore/3.jpg",
+                "/trips/bangalore/4.jpg",
+                "/trips/bangalore/5.jpg"
             ],
             "latitude": 12.9716,
             "longitude": 77.5946,
@@ -522,7 +524,7 @@
             }
         }
     ],
-    "nellore": [
+    "beach-biriyani-bindaas-nellore": [
         {
             "title": "Nellore Spiritual & Coastal Tour",
             "coverimages": [
@@ -635,9 +637,9 @@
             }
         }
     ],
-    "chirala": [
+    "no-goa?-no-problem-chiralas-got-you": [
         {
-            "title": "Chirala & Bapatla Coastal Escape",
+            "title": " No Goa? No Problem, Chirala’s Got You!",
             "coverimages": [
                 "/trips/chirala/1.jpg",
                 "/trips/chirala/2.jpg",
@@ -754,9 +756,9 @@
             }
         }
     ],
-    "warangal": [
+    "history-meets-hip-hop-in-warangal-streets!": [
         {
-            "title": "Warangal Heritage & Nature Getaway",
+            "title": "History Meets Hip-Hop in Warangal Streets!",
             "coverimages": [
                 "/trips/warangal/1.jpg",
                 "/trips/warangal/2.jpg",
@@ -871,7 +873,7 @@
             }
         }
     ],
-    "karimnagar": [
+    "cable-bridge-temple-trips-&-tandoori-nights-karimnagar": [
         {
             "title": "Karimnagar Forts & Temples Escape",
             "coverimages": [
@@ -990,58 +992,286 @@
             }
         }
     ],
-    "goa-beach-getaway": [
-  {
-    "title": "Hyderabad to Goa Road Trip Plans",
-    "coverimages": [
-      "/trips/goa/1.jpg",
-      "/trips/goa/2.jpg",
-      "/trips/goa/3.jpg"
-    ],
-    "latitude": 15.2993,
-    "longitude": 74.1240,
-    "populartags": [
-      "goa",
-      "roadtrip",
-      "beaches",
-      "forts",
-      "watersports",
-      "sunset-cruise"
-    ],
-    "content": "Plan your perfect beachside break with two flexible road-trip itineraries from Hyderabad to Goa. Whether you're looking for a quick escape or a relaxed exploration, these 3-day and 5-day plans cover the best of Goa’s beaches, forts, water sports, shopping, food, and cultural sites.",
-    "besttime": "Best time to visit Goa is from November to February when the weather is pleasant, ideal for beach and outdoor activities.",
-    "itineraryData": {
-      "title": "Hyderabad to Goa Itinerary (3-Day & 5-Day Options)",
-      "summary": "Two exciting options to explore Goa by road from Hyderabad. Choose between a power-packed 3-day getaway or a leisurely 5-day coastal adventure. Both include scenic drives, beach time, forts, local cuisine, and budget-friendly planning.",
-      "coverImage": "/trips/goa/1.jpg",
-      "plans": [
+    "goa-coastal-vibes-&-street-life": [
         {
-          "type": "3-Day Plan",
-          "price": "₹20,500 – ₹30,000 total (₹10,250 – ₹15,000 per person, twin share)",
-          "duration": "3 Days",
-          "highlights": [
-            "Day 1: Start drive at 5 AM, reach Goa by 7–8 PM. Lunch at Baga/Anjuna shack (₹600–₹1,000), check-in at North Goa hotel (₹1,500–₹3,000)",
-            "Day 2: Water sports at Baga (₹1,000–₹2,000 for two), lunch at Calamari/Fisherman’s Wharf (₹800–₹1,000), Chapora Fort sunset & Anjuna market, seafood dinner (₹500–₹800)",
-            "Day 3: Morning trip to Palolem/Colva, lunch at Martin’s Corner (₹1,500–₹2,000), return drive to Hyderabad by 2 PM"
-          ],
-          "note": "Ideal for couples or friends on a quick, energetic beach vacation with a balance of fun and relaxation."
-        },
-        {
-          "type": "5-Day Plan",
-          "price": "₹32,800 – ₹45,700 total (₹8,200 – ₹11,500 per person, for 4 people)",
-          "duration": "5 Days",
-          "highlights": [
-            "Day 1: Depart 5 AM → arrive Goa by evening → check-in → sunset at Baga Beach → dinner at Britto’s or Fat Fish (₹1,200–₹1,600 for 4)",
-            "Day 2: Visit Fort Aguada, Candolim → water sports at Baga (₹2,000–₹3,200 for 4), sunset at Chapora Fort, Anjuna flea market, stay in North Goa",
-            "Day 3: Day trip to South Goa – Palolem, Cabo de Rama, Butterfly Beach, lunch and swim. Optional overnight stay in South Goa (₹2,000–₹3,000)",
-            "Day 4: Explore Old Goa – Basilica of Bom Jesus, Se Cathedral, Fontainhas, Dona Paula. Mandovi sunset cruise (₹1,600–₹2,400), dinner at Fisherman’s Wharf",
-            "Day 5: Morning shopping at Mapusa or beach stalls → breakfast → return to Hyderabad"
-          ],
-          "note": "Perfect for families or groups who want a full coastal experience with time for sightseeing, beach chilling, and cultural exploration."
+            "title": "From City Streets to Coastal Beats - Goa Tour",
+            "coverimages": [
+                "/trips/goa/cover1.jpg",
+                "/trips/goa/2.jpg",
+                "/trips/goa/3.jpg",
+                "/trips/goa/4.jpg",
+                "/trips/goa/5.jpg",
+                "/trips/goa/6.jpg",
+                "/trips/goa/7.jpg"
+            ],
+            "latitude": 15.2993,
+            "longitude": 74.1240,
+            "populartags": [
+                "beaches",
+                "culture",
+                "roadtrip",
+                "nightlife",
+                "water sports"
+            ],
+            "content": "Goa is India's most loved beach destination, famous for its golden sands, lively nightlife, Portuguese heritage, and laid-back vibe. From beach shacks and flea markets in North Goa to serene coastal escapes in the South, Goa is perfect for every kind of traveler.",
+            "besttime": "Best time to visit Goa is from November to February when the weather is pleasant, making it ideal for beach activities, sightseeing, and nightlife.",
+            "itineraryData": {
+                "title": "Goa Travel Itinerary",
+                "summary": "Unwind in Goa with our curated 3 and 5-day itineraries – explore beaches, forts, flea markets, and indulge in water sports and coastal cuisine.",
+                "coverImage": "/trips/goa/cover1.jpg",
+                "plans": [
+                    {
+                        "type": "3-Day Plan",
+                        "price": "₹20,500 – ₹30,000 (For 2 people)",
+                        "duration": "3 Days",
+                        "highlights": [
+                            "Day 1: Drive from Hyderabad to Goa, check-in at North Goa hotel, Baga beach walk, dinner at Titos Lane",
+                            "Day 2: Water sports at Baga, lunch at Fisherman’s Wharf, sunset at Chapora Fort, Anjuna flea market",
+                            "Day 3: Morning visit to Palolem/Colva Beach, lunch at Martin’s Corner, drive back to Hyderabad"
+                        ],
+                        "note": "Perfect for a quick beach escape with a blend of adventure, relaxation, and vibrant Goan experiences."
+                    },
+                    {
+                        "type": "5-Day Plan",
+                        "price": "₹32,800 – ₹45,700 (For 4 people)",
+                        "duration": "5 Days",
+                        "highlights": [
+                            "Day 1: Road trip from Hyderabad, check-in and relax at Baga/Calangute, dinner at Britto’s",
+                            "Day 2: Visit Fort Aguada, water sports at Candolim/Baga, Chapora sunset, Anjuna market shopping",
+                            "Day 3: South Goa day trip – Cabo de Rama Fort, Butterfly Beach, lunch by the sea, optional overnight stay",
+                            "Day 4: Explore Old Goa churches, Fontainhas, Dona Paula, Mandovi cruise and dinner",
+                            "Day 5: Souvenir shopping at Mapusa Market, start return journey to Hyderabad"
+                        ],
+                        "note": "An extended and relaxed itinerary for groups or families wanting to explore both North and South Goa in depth."
+                    }
+                ]
+            }
         }
-      ]
-    }
-  }
-]
-
+    ],
+    "hit-the-heights-of-karnataka": [
+        {
+            "title": "Hit the Heights of Karnataka",
+            "coverimages": [
+                "/trips/karnataka/cover1.jpg",
+                "/trips/karnataka/2.jpg",
+                "/trips/karnataka/3.jpg",
+                "/trips/karnataka/4.jpg",
+                "/trips/karnataka/5.jpg",
+                "/trips/karnataka/6.jpg",
+                "/trips/karnataka/7.jpg"
+            ],
+            "latitude": 13.3161,
+            "longitude": 75.7721,
+            "populartags": [
+                "mountains",
+                "coffee",
+                "nature",
+                "waterfalls",
+                "roadtrip"
+            ],
+            "content": "Explore Karnataka's Western Ghats, from the coffee-scented hills of Chikmagalur to the spiritual calm of Sringeri and the misty trails of Coorg. Ideal for nature lovers and adventure seekers, this trip offers treks, temples, waterfalls, and authentic filter coffee.",
+            "besttime": "Best time to visit Chikmagalur and Coorg is from September to March, when the weather is pleasant and the landscapes are lush and green.",
+            "itineraryData": {
+                "title": "Karnataka Travel Itinerary",
+                "summary": "Experience the serene hills and spiritual vibes of Karnataka with our 3-day and 5-day curated itineraries packed with treks, coffee plantations, and scenic drives.",
+                "coverImage": "/trips/karnataka/cover1.jpg",
+                "plans": [
+                    {
+                        "type": "3-Day Plan",
+                        "price": "₹31,600 – ₹38,100 (For 4 people)",
+                        "duration": "3 Days",
+                        "highlights": [
+                            "Day 1: Arrive at Chikmagalur, visit Mullayanagiri, Baba Budangiri, and Hirekolale Lake, stay in a local homestay",
+                            "Day 2: Road trip to Sringeri and Agumbe – explore temples, waterfalls, and sunset points, stay at nature camp",
+                            "Day 3: Visit Kemmanagundi – Z Point trek, Hebbe Falls (jeep ride), Kalhatti Falls, return to Hyderabad by evening"
+                        ],
+                        "note": "A compact but rich getaway into Karnataka’s misty mountains, perfect for groups looking for nature and culture in 3 days."
+                    },
+                    {
+                        "type": "5-Day Plan",
+                        "price": "₹39,000 – ₹47,200 (For 4 people)",
+                        "duration": "5 Days",
+                        "highlights": [
+                            "Day 1: Drive from Hyderabad to Chikmagalur, check-in and unwind in a coffee estate stay",
+                            "Day 2: Visit Mullayanagiri, Baba Budangiri, Coffee Museum, optional jeep ride to Jhari Falls",
+                            "Day 3: Drive to Coorg via Dubare Elephant Camp, evening walk near Abbey Falls or local cafes",
+                            "Day 4: Explore Coorg – Raja’s Seat, Mandalpatti (optional jeep ride), Madikeri Fort, plantation walk",
+                            "Day 5: Return to Hyderabad with breakfast and lunch stops on the way"
+                        ],
+                        "note": "Perfect for travelers seeking an immersive mountain and plantation trail across two of Karnataka’s most scenic regions – Chikmagalur and Coorg."
+                    }
+                ]
+            }
+        }
+    ],
+    "squad-goals-met-on-the-shores-of-udupi": [
+        {
+            "title": "Squad Goals Met on the Shores of Udupi",
+            "coverimages": [
+                "/trips/udupi/cover1.jpg",
+                "/trips/udupi/2.jpg",
+                "/trips/udupi/3.jpg",
+                "/trips/udupi/4.jpg",
+                "/trips/udupi/5.jpg",
+                "/trips/udupi/6.jpg",
+                "/trips/udupi/7.jpg"
+            ],
+            "latitude": 13.3409,
+            "longitude": 74.7421,
+            "populartags": [
+                "beaches",
+                "temples",
+                "roadtrip",
+                "coastal culture",
+                "adventure"
+            ],
+            "content": "Udupi, nestled on Karnataka’s Konkan coast, offers a unique fusion of pristine beaches, rich temple heritage, and laid-back coastal life. From ferry rides to St. Mary’s Island to exploring ancient temples and enjoying seafood at beach shacks, Udupi is perfect for both soul-searchers and beach bums.",
+            "besttime": "Best time to visit Udupi is between October and March, when the coastal climate is cooler and perfect for outdoor exploration.",
+            "itineraryData": {
+                "title": "Udupi Travel Itinerary",
+                "summary": "Uncover the charm of Udupi through its beaches, temples, coastal cuisine, and hill getaways. Choose from a 3-day highlights trip or a more immersive 5-day journey.",
+                "coverImage": "/trips/udupi/cover1.jpg",
+                "plans": [
+                    {
+                        "type": "3-Day Plan",
+                        "price": "₹18,000 – ₹20,000 (For 4 people)",
+                        "duration": "3 Days",
+                        "highlights": [
+                            "Day 1: Long road trip from Hyderabad to Udupi (14–15 hrs), visit Malpe Beach, ferry to St. Mary’s Island, overnight stay in Udupi",
+                            "Day 2: Visit Sri Krishna Temple, Manipal Anatomy Museum, Kaup Lighthouse; enjoy adventure sports like parasailing at Malpe",
+                            "Day 3: Nature trip to Agumbe – Sunset Point, Kundadri Hill, Onake Abbi Falls; return journey in evening or overnight stay optional"
+                        ],
+                        "note": "Ideal for a quick beach + heritage getaway with friends or family. Mixes temples, sea, and Western Ghats scenery."
+                    },
+                    {
+                        "type": "5-Day Plan",
+                        "price": "₹39,000 – ₹46,500 (For 4 people)",
+                        "duration": "5 Days",
+                        "highlights": [
+                            "Day 1: Early morning start from Hyderabad, arrive in Udupi by night and rest at a budget hotel",
+                            "Day 2: Visit Sri Krishna Matha and Anantheshwara Temple, relax at Malpe Beach, optional boat trip to St. Mary’s Island",
+                            "Day 3: Day trip to Agumbe – Barkana Falls, Sunset Point, Rainforest Research Station, return by evening",
+                            "Day 4: Explore Manipal End Point Park, Museum of Anatomy, and Kodi Bengre backwaters/beach for sunset and seafood",
+                            "Day 5: Return drive to Hyderabad with breakfast and lunch en route"
+                        ],
+                        "note": "Perfect for those wanting a deeper dive into Udupi's culture, nature, and coastline over an extended road trip."
+                    }
+                ]
+            }
+        }
+    ],
+    "heritage-runs-deep-in-tamil-nadu": [
+        {
+            "title": "Heritage Runs Deep in Tamil Nadu",
+            "coverimages": [
+                "/trips/tamilnadu/cover1.jpg",
+                "/trips/tamilnadu/2.jpg",
+                "/trips/tamilnadu/3.jpg",
+                "/trips/tamilnadu/4.jpg",
+                "/trips/tamilnadu/5.jpg",
+                "/trips/tamilnadu/6.jpg",
+                "/trips/tamilnadu/7.jpg"
+            ],
+            "latitude": 13.0827,
+            "longitude": 80.2707,
+            "populartags": [
+                "heritage",
+                "temples",
+                "roadtrip",
+                "culture",
+                "coastal town"
+            ],
+            "content": "Tamil Nadu is a cultural treasure trove blending ancient temples, colonial towns, and serene beaches. From Chennai’s urban charm to Mahabalipuram’s rock-cut wonders, Pondicherry’s French vibes, and Thanjavur’s majestic temples, the state is perfect for a heritage-packed road trip.",
+            "besttime": "Best time to explore Tamil Nadu is from November to March when the weather is cooler and ideal for sightseeing.",
+            "itineraryData": {
+                "title": "Tamil Nadu Travel Itinerary",
+                "summary": "Immerse in Tamil Nadu’s rich culture with our 4-day and 6-day curated road trip itineraries that cover temples, coastal towns, and UNESCO heritage sites.",
+                "coverImage": "/trips/tamilnadu/cover1.jpg",
+                "plans": [
+                    {
+                        "type": "4-Day Plan",
+                        "price": "₹32,400 – ₹39,700 (For 4 people)",
+                        "duration": "4 Days",
+                        "highlights": [
+                            "Day 1: Hyderabad → Chennai (11–12 hrs), evening visit to Marina Beach, Kapaleeshwarar Temple, Santhome Basilica, and Vivekananda House",
+                            "Day 2: Chennai → Mahabalipuram → Pondicherry; visit Shore Temple, Arjuna’s Penance, French Quarter, Promenade Beach, Aurobindo Ashram",
+                            "Day 3: Pondicherry → Thanjavur; explore Brihadeeswarar Temple, Royal Palace, Saraswathi Mahal Library, Chola bronzes",
+                            "Day 4: Return to Hyderabad; optional visit to Trichy’s Rockfort Temple or Samayapuram Temple en route"
+                        ],
+                        "note": "A compact cultural road trip with coastal charm and historic temple towns – ideal for families or history lovers."
+                    },
+                    {
+                        "type": "6-Day Plan",
+                        "price": "₹39,000 – ₹47,700 (For 4 people)",
+                        "duration": "6 Days",
+                        "highlights": [
+                            "Day 1: Hyderabad → Chennai; evening tour of Marina Beach, temples, and churches",
+                            "Day 2: Drive to Mahabalipuram; visit Shore Temple, Five Rathas, Krishna’s Butter Ball",
+                            "Day 3: Mahabalipuram → Pondicherry; explore French Colony, Sacred Heart Basilica, dinner by the beach",
+                            "Day 4: Pondicherry leisure day; Rock Beach walk, Paradise Beach visit, Mission Street shopping",
+                            "Day 5: Pondicherry → Thanjavur; visit Brihadeeswarar Temple, Art Gallery, Saraswathi Mahal Library",
+                            "Day 6: Thanjavur → Trichy (optional visit), then return to Hyderabad"
+                        ],
+                        "note": "A well-paced itinerary blending culture, beach time, and UNESCO World Heritage sites. Perfect for those seeking both spiritual depth and scenic relaxation."
+                    }
+                ]
+            }
+        }
+    ],
+    "drive-drift-discover-ooty": [
+        {
+            "title": "Drive. Drift. Discover Ooty",
+            "coverimages": [
+                "/trips/ooty/cover1.jpg",
+                "/trips/ooty/2.jpg",
+                "/trips/ooty/3.jpg",
+                "/trips/ooty/4.jpg",
+                "/trips/ooty/5.jpg",
+                "/trips/ooty/6.jpg",
+                "/trips/ooty/7.jpg"
+            ],
+            "latitude": 11.4064,
+            "longitude": 76.6932,
+            "populartags": [
+                "hill station",
+                "nature",
+                "toy train",
+                "roadtrip",
+                "botanical gardens"
+            ],
+            "content": "Ooty, known as the Queen of Hills, is nestled in the Nilgiris and offers a mix of scenic landscapes, tea estates, colonial architecture, and cool climate. From boating on Ooty Lake to riding the Nilgiri Mountain Railway and tea tasting in Coonoor, this road trip delivers classic hill station charm.",
+            "besttime": "Best time to visit Ooty is from October to May, when the weather is crisp and the landscape is lush green with blooming flowers.",
+            "itineraryData": {
+                "title": "Ooty Travel Itinerary",
+                "summary": "Explore Ooty and its surroundings through a 3-day nature and culture trip or extend into a 5-day hill station escape with tea estates, toy trains, and local shopping.",
+                "coverImage": "/trips/ooty/cover1.jpg",
+                "plans": [
+                    {
+                        "type": "3-Day Plan",
+                        "price": "₹33,500 – ₹40,100 (For 4 people)",
+                        "duration": "3 Days",
+                        "highlights": [
+                            "Day 1: Arrival in Ooty after 14–15 hr drive; visit Botanical Gardens, Ooty Lake (boating), Rose Garden, Tibetan Market",
+                            "Day 2: Day trip to Coonoor – Sim's Park, Dolphin’s Nose, Lamb’s Rock, Tea Factory; optional Toy Train ride",
+                            "Day 3: Local shopping at Tibetan Market, visit Chocolate Factory, Nilgiri Railway Station; return journey to Hyderabad"
+                        ],
+                        "note": "Perfect for a short nature break and toy train experience. Ideal for small groups or couples."
+                    },
+                    {
+                        "type": "5-Day Plan",
+                        "price": "₹39,500 – ₹47,500 (For 4 people)",
+                        "duration": "5 Days",
+                        "highlights": [
+                            "Day 1: Hyderabad → Ooty (long drive), check-in and evening relaxation",
+                            "Day 2: Full Ooty tour – Botanical Garden, Rose Garden, Ooty Lake, Tibetan Market; optional Toy Train ride",
+                            "Day 3: Coonoor trip – Dolphin’s Nose, Sim’s Park, Lamb’s Rock, Tea Factory visit",
+                            "Day 4: Doddabetta Peak, Chocolate Factory, Stone House, local café time and shopping",
+                            "Day 5: Return to Hyderabad after breakfast; lunch en route"
+                        ],
+                        "note": "A relaxed hill station vacation with time for tea estates, scenic viewpoints, and heritage markets."
+                    }
+                ]
+            }
+        }
+    ]
 }

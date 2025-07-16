@@ -20,11 +20,12 @@ import 'swiper/css/navigation';
 
 function TempleInfo({ name }) {
   const templeData = Array.isArray(td?.[name]) ? td[name][0] : {};
-
+  console.log(templeData,'kkkk');
+  
   return (
     <div className="space-y-4">
-      <p className="font-bold text-2xl">Temple Information</p>
-      <p className="text-lg text-gray-800 leading-relaxed">
+      <p className="font-bold text-2xl text-[#A94A4A]">Temple Information</p>
+      <p className="mxs:text-base text-sm text-gray-800 leading-relaxed">
         {templeData?.templeInfo || 'Information not available.'}
       </p>
       <div className="flex gap-4 pt-">
@@ -67,15 +68,15 @@ function ItinerarySelector({ name }) {
 
   if (!selected || !temple[selected]) {
     return (
-      <div className="max-w-5xl mx-auto px-4 py-8 text-center text-gray-500">
+      <div className="w-full px-4 py-8 text-center text-gray-500">
         Loading itinerary...
       </div>
     );
   }
 
   return (
-    <div className="max-w-5xl mx-auto px-4 py-8">
-      <h1 className="text-4xl font-bold text-center text-[#A94A4A] mb-4">
+    <div className="w-full px-4 py-8">
+      <h1 className="text-3xl lg:text-4xl font-bold text-center text-[#A94A4A] mb-4">
         {templeData?.name || 'Itinerary Unavailable'}
       </h1>
 
@@ -94,17 +95,17 @@ function ItinerarySelector({ name }) {
         ))}
       </div>
 
-      <div className="bg-white shadow rounded-xl p-6 space-y-6">
-        <h2 className="text-2xl font-semibold text-[#A94A4A]">
+      <div className="bg-white text-lg lg:text-xl shadow rounded-xl px-3 py-4 space-y-6">
+        <h2 className=" font-semibold text-[#A94A4A]">
           {temple[selected]?.title || 'Title Unavailable'}
-          <span className="text-gray-600 pl-3 text-xl">
+          <span className="text-gray-600 pl-3 ">
             ({temple[selected]?.subtitle || 'Subtitle Unavailable'})
           </span>
         </h2>
 
         {temple[selected]?.days?.map((day, idx) => (
           <div key={idx} className="bg-gray-50 rounded-xl p-4 border border-gray-200">
-            <h3 className="text-lg font-bold mb-3 text-gray-800">
+            <h3 className=" font-bold mb-3 text-gray-800">
               {day.title || 'Day Title Unavailable'}
             </h3>
             <ul className="space-y-3">
@@ -174,10 +175,10 @@ function SevaDarshanam({ name }) {
 
   return (
     <div className="space-y-3 relative py-10">
-      <h3 className="text-2xl font-semibold text-[#A94A4A]">Sevas & Darshanam</h3>
-      <ul className="flex flex-wrap gap-8">
+      <h3 className="text-2xl font-semibold text-[#A94A4A] text-center py-4">Sevas & Darshanam</h3>
+      <ul className="flex flex-wrap items-center justify-center gap-8">
         {sevaList.map((seva, index) => (
-          <li key={index} className="border-2 border-gray-100 shadow-md rounded-lg p-4 w-fit">
+          <li key={index} className="border-2 border-gray-100 shadow-md rounded-lg p-2 py-4 w-fit">
             <div className="flex flex-col items-center gap-y-4 w-[280px]">
               <span className="text-md font-medium">{seva.name || 'Seva Name Unavailable'}</span>
               <span>₹ {seva.price?.toFixed(2) || 'Price Unavailable'}</span>
@@ -467,7 +468,7 @@ export default function TempleDetailPage() {
               <PlacesToVisit name={templeName} />
             </div>
 
-            <div className="w-full lg:w-2/3 bg-white rounded-lg shadow p-4">
+            <div className="w-full lg:w-2/3 bg-white rounded-lg shadow px-4 py-6">
               <TempleInfo name={templeName} />
               <SevaDarshanam name={templeName} />
               <ItinerarySelector name={templeName} />

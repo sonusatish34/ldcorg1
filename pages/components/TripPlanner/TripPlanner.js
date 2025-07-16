@@ -55,8 +55,8 @@ export default function TripPlannerHero() {
           <div className="text-center text-white mb-4 font-semibold text-lg">
             How many days do you want to plan?
           </div>
-          <div className="overflow-x-auto no-scrollbar mb-4 flex items-center justify-center">
-            <div className="flex items-center justify-center gap-3 w-max px-2">
+          <div className="overflow-x-auto no-scrollbar mb-4 flex lg:items-center lg:justify-center">
+            <div className="flex lg:items-center lg:justify-center gap-3 w-max px-2">
               {[1, 2, 3, 4].map((day) => (
                 <button
                   key={day}

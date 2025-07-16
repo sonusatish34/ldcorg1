@@ -41,7 +41,7 @@ const ComponentName = () => {
         const postsQuery = query(collection(fireDb, "blogPost"));
         const postsQuerySnapshot = await getDocs(postsQuery);
         const posts = postsQuerySnapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
-        console.log(posts, 'lol');
+        console.log(posts, 'lol---');
         setDestList(posts);
       }
       catch {
@@ -108,7 +108,7 @@ const ComponentName = () => {
             <div className="relative w-full rounded-2xl shadow-xl overflow-hidden">
               <video
                 className="absolute inset-0 w-full h-full object-cover"
-                src="/wave.mp4"
+                src="/123.mp4"
                 autoPlay
                 loop
                 muted
@@ -151,9 +151,6 @@ const ComponentName = () => {
                         className="w-full bg-transparent focus:outline-none text-gray-800 placeholder-transparent"
                         placeholder="eg. Goa, Dandeli, Hyderabad"
                       />
-
-                      <p>knlkl</p>
-
                       {/* Animated Placeholder */}
                       {search === '' && (
                         <div className="absolute left-12 top-1/2 transform -translate-y-1/2 text-gray-400 pointer-events-none">
@@ -184,7 +181,7 @@ const ComponentName = () => {
                   )}
                 </div>
 
-                <div className="flex justify-between text-sm text-gray-800 mb-2 font-semibold uppercase py-2">
+                <div className="flex justify-between text-white text-sm  mb-2 font-semibold uppercase py-2">
                   <span>Start Date</span>
                   <span>End Date</span>
                 </div>
@@ -216,17 +213,17 @@ const ComponentName = () => {
           <div className="w-full px-4 py-5">
             <p className="text-left pb-5 font-semibold text-base lg:text-4xl">Match Your Mood to a Destination</p>
             <div className="flex gap-x-3 overflow-x-auto snap-x snap-mandatory scrollbar-hide py-2">
-              {['Family', 'Solo', 'Honeymoon', 'Friends', 'Adventure','Temples'].map((title, idx) => (
+              {['Family', 'Solo', 'Honeymoon', 'Friends', 'Adventure', 'Temples'].map((title, idx) => (
                 <div key={idx} className="snap-start shrink-0">
-                  <ThemeCard title={title} image={`/${idx + 1}.webp`} link ={'/trip-advisor/temples'} />
+                  <ThemeCard title={title} image={`/${idx + 1}.webp`} link={'/trip-advisor/temples'} />
                 </div>
               ))}
             </div>
           </div>
           <GetInspiration />
+          <PopularTrips />
         </div>
       )}
-      <PopularTrips />
     </div>
   );
 };

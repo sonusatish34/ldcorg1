@@ -1,12 +1,13 @@
 // components/ReviewCard.tsx
 import { FaThumbsUp, FaThumbsDown } from "react-icons/fa";
 import { HiDotsHorizontal } from "react-icons/hi";
+import { CgProfile } from "react-icons/cg";
 
 export default function ReviewCard({ review }) {
   return (
     <div className="bg-white rounded-xl shadow p-4 space-y-2 border mb-6">
       <div className="flex items-center gap-3">
-        <div className="w-10 h-10 rounded-full bg-gray-200" />
+        <div className=""><CgProfile size={30}/></div>
         <div className="flex-1">
           <h3 className="font-semibold">{review?.name}</h3>
           <p className="text-sm text-gray-500">{review?.location}</p>
@@ -18,13 +19,8 @@ export default function ReviewCard({ review }) {
         {'★'.repeat(review?.rating)}{'☆'.repeat(5 - review?.rating)}
       </div>
 
-      <div>
-        <p className="font-medium">{review?.title}</p>
-        <p className="text-sm text-gray-700">{review?.date} · {review?.type}</p>
-      </div>
-
       <p className="text-gray-700 text-sm whitespace-pre-line">
-        {review?.description}
+        {review?.comment}
       </p>
 
       {review?.images?.length > 0 && (

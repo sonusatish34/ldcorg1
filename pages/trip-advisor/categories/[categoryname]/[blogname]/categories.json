@@ -3,6 +3,7 @@
     "title": "TRAVEL ISN'T JUST ABOUT GETTING FROM PLACE TO PLACE. BOOKING YOUR OWN JOURNEY OF DISCOVERY IS.",
     "subtitle": "Sure, you've traveled before. But this time, it's not just about seeing something new…",
     "description": "This journey is about something deeper—a full immersion into cultures, landscapes, and stories passed down through generations. Travel isn't one-size-fits-all. Whether you're wandering souks in Marrakech or hiking hidden trails in Patagonia.",
+    "imagelink": "/travel.jpg",
     "trips": [
       {
         "title": "Vizag-Coastal-And-Cultural-Tour",
@@ -41,25 +42,104 @@
       }
     ]
   },
-  "food": {
-    "title": "food is bevbjrheirio.",
-    "subtitle": "fjsldjldeop…",
-    "description": "lkdlw",
+  "cities": {
+    "title": "CITY TRAVEL ISN'T JUST ABOUT SEEING THE SIGHTS. IT'S ABOUT LIVING THE STORY.",
+    "subtitle": "Sure, you've explored cities before. But this time, it’s more than just ticking off attractions…",
+    "description": "This journey is about diving headfirst into the pulse of urban life—where culture, history, and everyday moments collide. City travel isn’t one-size-fits-all. Whether you're getting lost in the historic quarters of Lisbon or uncovering cutting-edge art in Tokyo, every city offers its own rhythm, its own story, and a chance to see the world through a new lens.",
+    "imagelink": "https://imagecdn.99acres.com/microsite/wp-content/blogs.dir/6161/files/2023/11/2.jpg",
     "trips": [
       {
-        "title": "rop food paves in jyder",
+        "title": "Vizag-Coastal-And-Cultural-Tour",
         "buttonText": "EXPLORE TRIP",
-        "imageAlt": "Family with luggage and airplane illustration"
+        "imageAlt": "vizah",
+        "imagelink": "/trips/maincover/vizag.jpg",
+        "link": "hitting-the-vizag-streets"
       },
       {
-        "title": "Kisjdks",
+        "title": "Hit the Heights of Karnataka",
         "buttonText": "EXPLORE TRIP",
-        "imageAlt": "Woman sitting with suitcase under palm tree"
+        "imageAlt": "karnamata",
+        "imagelink": "/trips/maincover/karnataka.jpg",
+        "link": "hitting-the-vizag-streets"
       },
       {
-        "title": "food ",
+        "title": "Heritage Runs Deep in Tamil Nadu",
         "buttonText": "EXPLORE TRIP",
-        "imageAlt": "Woman sitting with suitcase under palm tree"
+        "imageAlt": "vizah",
+        "imagelink": "/trips/maincover/tamilnadu.jpg",
+        "link": "hitting-the-vizag-streets"
+      },
+      {
+        "title": "Squad Goals Met on the Shores of Udupi",
+        "buttonText": "EXPLORE TRIP",
+        "imageAlt": "vizah",
+        "imagelink": "/trips/maincover/udupi.jpg",
+        "link": "hitting-the-vizag-streets"
+      }
+    ]
+  },
+  "culture-and-heritage": {
+    "title": "EXPERIENCE CULTURE AND HERITAGE THROUGH TRAVEL",
+    "subtitle": "Explore destinations shaped by history, tradition, and identity.",
+    "description": "Culture and heritage travel focuses on understanding the customs, history, and way of life of different communities. It includes visiting historical landmarks, engaging with local traditions, and learning about the cultural practices that define a region. From architectural wonders and ancient ruins to festivals, crafts, and cuisine, this type of travel offers a meaningful way to connect with the roots of a place and its people.",
+    "imagelink": "https://en-media.thebetterindia.com/uploads/2015/05/Screenshot-from-2015-05-28-142833.png",
+    "trips": [
+      {
+        "title": "Hit the Heights of Karnataka",
+        "buttonText": "EXPLORE TRIP",
+        "imageAlt": "karnamata",
+        "imagelink": "/trips/maincover/karnataka.jpg",
+        "link": "hitting-the-vizag-streets"
+      },
+      {
+        "title": "Heritage Runs Deep in Tamil Nadu",
+        "buttonText": "EXPLORE TRIP",
+        "imageAlt": "vizah",
+        "imagelink": "/trips/maincover/tamilnadu.jpg",
+        "link": "hitting-the-vizag-streets"
+      },
+      {
+        "title": "Squad Goals Met on the Shores of Udupi",
+        "buttonText": "EXPLORE TRIP",
+        "imageAlt": "vizah",
+        "imagelink": "/trips/maincover/udupi.jpg",
+        "link": "hitting-the-vizag-streets"
+      }
+    ]
+  },
+  "ussss": {
+    "title": "CITY TRAVEL ISN'T JUST ABOUT SEEING THE SIGHTS. IT'S ABOUT LIVING THE STORY.",
+    "subtitle": "Sure, you've explored cities before. But this time, it’s more than just ticking off attractions…",
+    "description": "This journey is about diving headfirst into the pulse of urban life—where culture, history, and everyday moments collide. City travel isn’t one-size-fits-all. Whether you're getting lost in the historic quarters of Lisbon or uncovering cutting-edge art in Tokyo, every city offers its own rhythm, its own story, and a chance to see the world through a new lens.",
+    "imagelink": "https://imagecdn.99acres.com/microsite/wp-content/blogs.dir/6161/files/2023/11/2.jpg",
+    "trips": [
+      {
+        "title": "beach biriyani bindaas nellore",
+        "buttonText": "EXPLORE TRIP",
+        "imageAlt": "vizah",
+        "imagelink": "/trips/maincover/nellore.jpg",
+        "link": "beach-biriyani-bindaas-nellore"
+      },
+      {
+        "title": "no goa? no problem chiralas got you",
+        "buttonText": "EXPLORE TRIP",
+        "imageAlt": "karnamata",
+        "imagelink": "/trips/maincover/chirala.jpg",
+        "link": "no-goa?-no-problem-chiralas-got-you"
+      },
+      {
+        "title": "history meets hip hop in warangal streets!",
+        "buttonText": "EXPLORE TRIP",
+        "imageAlt": "vizah",
+        "imagelink": "/trips/maincover/warangal.jpg",
+        "link": "history-meets-hip-hop-in-warangal-streets!"
+      },
+      {
+        "title": "cable bridge temple trips & tandoori nights karimnagar",
+        "buttonText": "EXPLORE TRIP",
+        "imageAlt": "vizah",
+        "imagelink": "/trips/maincover/karimnagar.jpg",
+        "link": "cable-bridge-temple-trips-&-tandoori-nights-karimnagar"
       }
     ]
   }

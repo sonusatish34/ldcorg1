@@ -2,54 +2,57 @@
 
 import Image from 'next/image';
 import { useState } from 'react';
+
 const destinations = [
   {
-    name: 'Jammu & Kashmir',
+    name: 'Vizag',
     price: '₹11,295',
-    image: '/images/jammu.jpg',
+    image: 'https://vsez.gov.in/wp-content/uploads/2025/05/VIZAG.jpg',
     highlight: true,
   },
   {
-    name: 'Ladakh',
+    name: 'Goa',
     price: '₹6,133',
-    image: '/images/ladakh.jpg',
+    image: 'https://opinionexpress.in/assets/images/article/goa-is-back-to-its-peak.jpg',
   },
   {
-    name: 'Kerala',
+    name: 'Bangalore',
     price: '₹6,551',
-    image: '/images/kerala.jpg',
+    image: 'https://kots.s3.amazonaws.com/uploads/kots/blogs/full/17055520726163Bengaluru-s-Real-Estate-Renaissance-A-Glimpse-into-2023.jpg',
   },
   {
-    name: 'Rajasthan',
+    name: 'Vijayawada',
     price: '₹6,916',
-    image: '/images/rajasthan.jpg',
+    image: '/trips/vijayawada/4.jpg',
   },
 ];
 
 export default function DestinationGrid() {
-  const [showPrice, setShowPrice] = useState(false);
+  const [hoveredIndex, setHoveredIndex] = useState(null);
+
   return (
     <div className="w-full px-4 py-4 lg:py-10 bg-white rounded-xl">
-      <h2 className="text-xl lg:text-4xl font-bold mb-4 ">Plan as per the best destinations in India</h2>
-      <div className="grid grid-cols-2 gap-3 lg:pt-5">
+      <h2 className="text-xl lg:text-4xl font-bold mb-4">Plan as per the best destinations in India</h2>
+
+      <div className="grid lg:grid-cols-2 gap-3 lg:pt-5">
         {destinations.map((dest, index) => (
           <div
             key={index}
             className="rounded-xl overflow-hidden relative"
-            onMouseEnter={() => setShowPrice(true)}
-            onMouseLeave={() => setShowPrice(false)}
+            onMouseEnter={() => setHoveredIndex(index)}
+            onMouseLeave={() => setHoveredIndex(null)}
           >
-            <Image
-              src={'/keralashot.jpg'}
+            <img
+              src={dest.image}
               alt={dest.name}
               width={300}
               height={200}
-              className="h-[140px] object-cover w-full"
+              className="h-[280px] object-cover w-full"
             />
             <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent text-white p-3 text-sm">
               <h3 className="font-semibold">{dest.name}</h3>
               <p className="text-[13px]">From <strong>{dest.price}</strong> /- per day</p>
-              {showPrice && (
+              {hoveredIndex === index && (
                 <button className="mt-2 bg-yellow-400 text-black font-bold px-3 py-1 text-sm rounded">
                   Plan a trip
                 </button>

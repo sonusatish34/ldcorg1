@@ -179,7 +179,7 @@ export default function TemplesPage() {
                 <div className="z-10 relative">
                     <h1 className="text-4xl font-bold mb-2">Temples in Andhra Pradesh</h1>
                     <p className="text-lg">Explore famous temples and book your tickets online</p>
-                    <div className="mt-6 flex justify-center items-center max-w-md mx-auto">
+                    <div className="mt-6 flex justify-center items-center lg:px-72 px-10">
                         <input
                             type="text"
                             placeholder="Search by temple name"
@@ -203,7 +203,7 @@ export default function TemplesPage() {
                     >
                         <div className="h-72 w-full relative">
                             {/* Temple Image Slider */}
-                            <div className="">
+                            <Link href={temple.link}>
                                 <Swiper
                                     modules={[Autoplay]}
                                     autoplay={{
@@ -228,7 +228,7 @@ export default function TemplesPage() {
                                     ))}
                                 </Swiper>
 
-                            </div>
+                            </Link>
 
                         </div>
                         <div className="p-4 flex flex-col gap-y-1 justify-between h-40">
@@ -242,7 +242,7 @@ export default function TemplesPage() {
                                     ))
                                 }</p>
                             </div>
-                            <Link href={temple?.map ? temple.map : '/'} className='flex gap-x-2 py-2 items-center border w-fit p-2 rounded-md shadow'><span><SiGooglemaps color='red' /></span><span>Location</span></Link>
+                            <Link href={temple?.maplink ? temple.maplink : '/'} className='flex gap-x-2 py-2 items-center border w-fit p-2 rounded-md shadow'><span><SiGooglemaps color='red' /></span><span>Location</span></Link>
                             <Link href={temple.link} className="mt-4 inline-block text-center bg-[#537D8D] hover:bg-[#41606c] transition text-white py-2 rounded-lg">
                                 Book Tickets
                             </Link>

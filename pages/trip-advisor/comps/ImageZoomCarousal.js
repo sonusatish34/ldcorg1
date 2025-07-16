@@ -54,7 +54,7 @@ export default function ImageCarousel({ images }) {
                                     initial={{ scale: 1 }}
                                     animate={{ scale: 1.1 }}
                                     transition={{ duration: 2 }}
-                                    className="w-full h-64 sm:h-80 md:h-96 lg:h-[500px] xl:h-[600px] object-contain"
+                                    className="w-full h-64 sm:h-80 md:h-96 lg:h-[500px] xl:h-[600px] object-cover"
                                 />
                             </div>
                         ))}
@@ -116,7 +116,6 @@ export default function ImageCarousel({ images }) {
                             <X className="text-white w-6 h-6" />
                         </button>
 
-                        {/* Image Grid */}
                         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4 mt-10">
                             {images?.map((src, index) => (
                                 <motion.img
@@ -126,10 +125,9 @@ export default function ImageCarousel({ images }) {
                                     animate={selectedIndex === index ? { scale: 1.1 } : { scale: 1 }}
                                     transition={{ duration: 1.5, ease: 'easeInOut' }}
                                     onClick={() => setActiveImage(src)}
-                                    className="w-full h-64 sm:h-80 md:h-96 lg:h-[400px] xl:h-[450px] object-cover rounded cursor-pointer"
+                                    className="w-full h-64 sm:h-80 md:h-96 lg:h-[400px] xl:h-[450px] object-contain rounded cursor-pointer"
                                 />
                             ))}
-                            <p>kok</p>
                         </div>
                     </motion.div>
                 )}

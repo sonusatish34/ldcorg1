@@ -126,13 +126,13 @@ export default function Home() {
   }
 
   const categoryData = dmsl[categoryname];
-  const { title, subtitle, description, trips } = categoryData;
+  const { title, subtitle, description, trips,imagelink } = categoryData;
 
   return (
     <div>
       <div className="relative h-screen w-full overflow-hidden">
         <img
-          src="/travel.jpg"
+          src={imagelink}
           alt="Beach"
           className="absolute inset-0 h-full w-full object-cover z-0"
         />
