@@ -26,7 +26,7 @@ export default function TripPlannerHero() {
 
   const carRates = [
     { name: 'Swift', rate: 2500, image: 'https://ldcars.blr1.cdn.digitaloceanspaces.com/ldcars_nextjs_images/cars/20000/Swift.webp', color: 'Red' },
-    { name: 'Baleno', rate: 3500, image: 'https://ldcars.blr1.cdn.digitaloceanspaces.com/ldcars_nextjs_images/cars/20000/Baleno.webp', color: 'White' },
+    { name: 'Breeza', rate: 3500, image: 'https://ldcars.blr1.cdn.digitaloceanspaces.com/ldcars_nextjs_images/cars/20000/breeaza.webp', color: 'White' },
     { name: 'Innova', rate: 4500, image: 'https://ldcars.blr1.cdn.digitaloceanspaces.com/ldcars_nextjs_images/cars/60000/InnovaCrysta.webp', description: 'Innova-Hycross', color: 'Silver' },
     { name: 'Ertiga', rate: 2800, image: 'https://ldcars.blr1.cdn.digitaloceanspaces.com/ldcars_nextjs_images/cars/30000/ERTIGA_RED.webp', color: 'Blue' },
   ];
@@ -141,58 +141,23 @@ export default function TripPlannerHero() {
 
           {/* Category Tabs */}
           <div className="flex justify-center gap-4 mb-6">
-            <button
-              onClick={() => {
-                setShowTourism(true);
-                setShowTemples(false);
-              }}
+            <Link
+              href={'/trip-advisor'}
               className={`py-2 px-4 font-semibold rounded-lg transition-all ${showTourism ? 'bg-white text-black' : 'bg-white/10 text-white hover:bg-white/20'
                 }`}
             >
               Tourism
-            </button>
-            <button
-              onClick={() => {
-                setShowTemples(true);
-                setShowTourism(false);
-              }}
+            </Link>
+            <Link 
+            href={'/trip-advisor/temples'}
               className={`py-2 px-4 font-semibold rounded-lg transition-all ${showTemples ? 'bg-white text-black' : 'bg-white/10 text-white hover:bg-white/20'
                 }`}
             >
               Temples
-            </button>
+            </Link>
           </div>
 
-          {/* Tourism Regions */}
-          {showTourism && (
-            <ul className="grid grid-cols-3 gap-4 text-sm text-white mb-8">
-              {['Vizag', 'Bangalore', 'Goa'].map((place) => (
-                <li
-                  key={place}
-                  className="py-2 px-2 text-center rounded-lg bg-black/30 hover:bg-white/30 hover:text-black font-semibold cursor-pointer"
-                >
-                  <Link href="/trip-advisor">{place}</Link>
-                </li>
-              ))}
-            </ul>
-          )}
 
-          {/* Temple List */}
-          {showTemples && (
-            <ul className="grid grid-cols-2 gap-4 text-sm text-white mb-8">
-              {[
-                { name: 'Sri Durga Malleswara Swamy', href: '/trip-advisor/temples' },
-                { name: 'Kanipakam Vinayaka Temple', href: '/trip-advisor/temples' },
-              ].map((temple) => (
-                <li
-                  key={temple.name}
-                  className="py-2 px-4 text-center rounded-lg bg-black/30 hover:bg-white/30 hover:text-black font-semibold cursor-pointer"
-                >
-                  <Link href={temple.href}>{temple.name}</Link>
-                </li>
-              ))}
-            </ul>
-          )}
 
           {/* CTA Button */}
           <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>

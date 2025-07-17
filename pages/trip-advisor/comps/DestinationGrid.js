@@ -21,9 +21,9 @@ const destinations = [
     image: 'https://kots.s3.amazonaws.com/uploads/kots/blogs/full/17055520726163Bengaluru-s-Real-Estate-Renaissance-A-Glimpse-into-2023.jpg',
   },
   {
-    name: 'Vijayawada',
+    name: 'Tamilnadu',
     price: '₹6,916',
-    image: '/trips/vijayawada/4.jpg',
+    image: 'https://media.assettype.com/theceo/2024-05/daa15412-aa3e-4e3a-bcec-d4506286a716/TAMIL_nadu_ceo.jpg?w=1200&h=675&auto=format%2Ccompress&fit=max&enlarge=true',
   },
 ];
 
@@ -34,7 +34,7 @@ export default function DestinationGrid() {
     <div className="w-full px-4 py-4 lg:py-10 bg-white rounded-xl">
       <h2 className="text-xl lg:text-4xl font-bold mb-4">Plan as per the best destinations in India</h2>
 
-      <div className="grid lg:grid-cols-2 gap-3 lg:pt-5">
+      <div className="grid lg:grid-cols-2 gap-3 lg:gap-6 lg:pt-5">
         {destinations.map((dest, index) => (
           <div
             key={index}
@@ -47,7 +47,7 @@ export default function DestinationGrid() {
               alt={dest.name}
               width={300}
               height={200}
-              className="h-[280px] object-cover w-full"
+              className="h-[320px] object-cover w-full"
             />
             <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent text-white p-3 text-sm">
               <h3 className="font-semibold">{dest.name}</h3>

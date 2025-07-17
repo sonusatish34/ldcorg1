@@ -996,7 +996,7 @@
         {
             "title": "From City Streets to Coastal Beats - Goa Tour",
             "coverimages": [
-                "/trips/goa/cover1.jpg",
+                "/trips/goa/1.jpg",
                 "/trips/goa/2.jpg",
                 "/trips/goa/3.jpg",
                 "/trips/goa/4.jpg",
@@ -1018,7 +1018,7 @@
             "itineraryData": {
                 "title": "Goa Travel Itinerary",
                 "summary": "Unwind in Goa with our curated 3 and 5-day itineraries – explore beaches, forts, flea markets, and indulge in water sports and coastal cuisine.",
-                "coverImage": "/trips/goa/cover1.jpg",
+                "coverImage": "/trips/goa/1.jpg",
                 "plans": [
                     {
                         "type": "3-Day Plan",
@@ -1052,7 +1052,7 @@
         {
             "title": "Hit the Heights of Karnataka",
             "coverimages": [
-                "/trips/karnataka/cover1.jpg",
+                "/trips/karnataka/1.jpg",
                 "/trips/karnataka/2.jpg",
                 "/trips/karnataka/3.jpg",
                 "/trips/karnataka/4.jpg",
@@ -1074,7 +1074,7 @@
             "itineraryData": {
                 "title": "Karnataka Travel Itinerary",
                 "summary": "Experience the serene hills and spiritual vibes of Karnataka with our 3-day and 5-day curated itineraries packed with treks, coffee plantations, and scenic drives.",
-                "coverImage": "/trips/karnataka/cover1.jpg",
+                "coverImage": "/trips/karnataka/1.jpg",
                 "plans": [
                     {
                         "type": "3-Day Plan",
@@ -1108,7 +1108,7 @@
         {
             "title": "Squad Goals Met on the Shores of Udupi",
             "coverimages": [
-                "/trips/udupi/cover1.jpg",
+                "/trips/udupi/1.jpg",
                 "/trips/udupi/2.jpg",
                 "/trips/udupi/3.jpg",
                 "/trips/udupi/4.jpg",
@@ -1130,7 +1130,7 @@
             "itineraryData": {
                 "title": "Udupi Travel Itinerary",
                 "summary": "Uncover the charm of Udupi through its beaches, temples, coastal cuisine, and hill getaways. Choose from a 3-day highlights trip or a more immersive 5-day journey.",
-                "coverImage": "/trips/udupi/cover1.jpg",
+                "coverImage": "/trips/udupi/1.jpg",
                 "plans": [
                     {
                         "type": "3-Day Plan",
@@ -1164,7 +1164,7 @@
         {
             "title": "Heritage Runs Deep in Tamil Nadu",
             "coverimages": [
-                "/trips/tamilnadu/cover1.jpg",
+                "/trips/tamilnadu/1.jpg",
                 "/trips/tamilnadu/2.jpg",
                 "/trips/tamilnadu/3.jpg",
                 "/trips/tamilnadu/4.jpg",
@@ -1186,7 +1186,7 @@
             "itineraryData": {
                 "title": "Tamil Nadu Travel Itinerary",
                 "summary": "Immerse in Tamil Nadu’s rich culture with our 4-day and 6-day curated road trip itineraries that cover temples, coastal towns, and UNESCO heritage sites.",
-                "coverImage": "/trips/tamilnadu/cover1.jpg",
+                "coverImage": "/trips/tamilnadu/1.jpg",
                 "plans": [
                     {
                         "type": "4-Day Plan",
@@ -1222,7 +1222,7 @@
         {
             "title": "Drive. Drift. Discover Ooty",
             "coverimages": [
-                "/trips/ooty/cover1.jpg",
+                "/trips/ooty/1.jpg",
                 "/trips/ooty/2.jpg",
                 "/trips/ooty/3.jpg",
                 "/trips/ooty/4.jpg",
@@ -1244,7 +1244,7 @@
             "itineraryData": {
                 "title": "Ooty Travel Itinerary",
                 "summary": "Explore Ooty and its surroundings through a 3-day nature and culture trip or extend into a 5-day hill station escape with tea estates, toy trains, and local shopping.",
-                "coverImage": "/trips/ooty/cover1.jpg",
+                "coverImage": "/trips/ooty/1.jpg",
                 "plans": [
                     {
                         "type": "3-Day Plan",
