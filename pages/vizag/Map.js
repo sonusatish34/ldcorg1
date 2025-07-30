@@ -12,7 +12,8 @@ export default function CarMap({ carList = [] }) {
 
     const map = new maplibregl.Map({
       container: mapContainerRef.current,
-      style: 'https://tiles.stadiamaps.com/styles/alidade_smooth.json',
+      style: 'https://basemaps.cartocdn.com/gl/positron-gl-style/style.json',
+      
       center: [78.4744, 17.3753], // fallback center
       zoom: 10,
     });
