@@ -10,7 +10,7 @@ function contact({ canonicalUrl }) {
   useEffect(() => {
     async function fetchCarDetails() {
       try {
-        const response = await fetch(`https://dev.longdrivecars.com/site/home-cars?limit=20&offset=0`);
+        const response = await fetch(`https://dev.longdrivecars.com/site/home-cars?limit=2000&offset=0`);
         const items = await response.json();
         const cars = items?.results;
         console.log(cars, 'Fetched car list');
