@@ -35,8 +35,15 @@ export default function CarMap({ carList = [] }) {
       if (isValidCoord) {
         validMarkerCount++;
 
-        // Add marker
-        new maplibregl.Marker()
+        // Create image element for car icon
+        const el = document.createElement('img');
+        el.src = '/pointer.png'; // must exist in public folder
+        el.alt = 'car icon';
+        el.style.width = '34px';
+        el.style.height = '34px';
+        el.style.objectFit = 'contain';
+
+        new maplibregl.Marker({ element: el })
           .setLngLat([lng, lat])
           .setPopup(
             new maplibregl.Popup().setText(
@@ -45,21 +52,19 @@ export default function CarMap({ carList = [] }) {
           )
           .addTo(map);
 
-        // Extend bounds
         bounds.extend([lng, lat]);
       }
     });
 
-    // Fit bounds only if there is at least 1 valid marker
     if (validMarkerCount > 0 && !bounds.isEmpty()) {
       map.fitBounds(bounds, {
-        padding: 10,
-        duration: 1000, // Smooth zoom
+        padding: 20,
+        duration: 1000,
       });
     }
 
     return () => map.remove();
   }, [carList]);
 
-  return <div ref={mapContainerRef} className="w-full h-full" />;
+  return <div ref={mapContainerRef} className="w-full h-full min-h-[300px]" />;
 }

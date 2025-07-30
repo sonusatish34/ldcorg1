@@ -15,6 +15,9 @@ import Script from 'next/script';
 import '../styles/globals.css'; // or your CSS
 import { useState,useEffect } from 'react';
 import { useRouter } from 'next/router';
+// pages/_app.js or app/layout.js
+import 'maplibre-gl/dist/maplibre-gl.css';
+
 export default function MyApp({ Component, pageProps }) {
   const [loading, setLoading] = useState(false);
   const router = useRouter();
