@@ -1,11 +1,12 @@
 'use client';
 
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import maplibregl from 'maplibre-gl';
 import 'maplibre-gl/dist/maplibre-gl.css';
 
 export default function CarMap({ carList = [] }) {
   const mapContainerRef = useRef(null);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     if (!mapContainerRef.current || !carList.length) return;
@@ -13,12 +14,11 @@ export default function CarMap({ carList = [] }) {
     const map = new maplibregl.Map({
       container: mapContainerRef.current,
       style: 'https://basemaps.cartocdn.com/gl/positron-gl-style/style.json',
-      
-      center: [78.4744, 17.3753], // fallback center
+      center: [78.4744, 17.3753],
       zoom: 10,
     });
 
-    map.scrollZoom.disable(); // Disable scroll zoom
+    map.scrollZoom.disable();
 
     const bounds = new maplibregl.LngLatBounds();
     let validMarkerCount = 0;
@@ -28,24 +28,18 @@ export default function CarMap({ carList = [] }) {
       const lat = parseFloat(car.latitude);
 
       const isValidCoord =
-        !isNaN(lng) &&
-        !isNaN(lat) &&
+        !isNaN(lng) && !isNaN(lat) &&
         Math.abs(lng) <= 180 &&
         Math.abs(lat) <= 90;
 
       if (isValidCoord) {
         validMarkerCount++;
 
-        // Create image element for car icon
-        const el = document.createElement('img');
-        el.src = '/pointer.png'; // must exist in public folder
-        el.alt = 'car icon';
-        el.style.width = '34px';
-        el.style.height = '34px';
-        el.style.objectFit = 'contain';
+        const latOffset = (Math.random() - 0.5) * 0.002;
+        const lngOffset = (Math.random() - 0.5) * 0.002;
 
-        new maplibregl.Marker({ element: el })
-          .setLngLat([lng, lat])
+        new maplibregl.Marker()
+          .setLngLat([lng + lngOffset, lat + latOffset])
           .setPopup(
             new maplibregl.Popup().setText(
               `${car.maker_model || 'Car'} - ${car.location || ''}`
@@ -53,7 +47,7 @@ export default function CarMap({ carList = [] }) {
           )
           .addTo(map);
 
-        bounds.extend([lng, lat]);
+        bounds.extend([lng + lngOffset, lat + latOffset]);
       }
     });
 
@@ -64,8 +58,21 @@ export default function CarMap({ carList = [] }) {
       });
     }
 
+    map.on('load', () => {
+      setLoading(false);
+    });
+
     return () => map.remove();
   }, [carList]);
 
-  return <div ref={mapContainerRef} className="w-full h-full min-h-[300px]" />;
+  return (
+    <div className="relative w-full h-full min-h-[300px]">
+      {loading && (
+        <div className="absolute inset-0 z-10 flex items-center justify-center bg-white bg-opacity-80 text-black font-medium text-lg">
+          Please wait while the map loads...
+        </div>
+      )}
+      <div ref={mapContainerRef} className="w-full h-full rounded-lg overflow-hidden" />
+    </div>
+  );
 }
