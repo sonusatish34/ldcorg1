@@ -142,7 +142,7 @@ export default function JourneySection() {
           <div
             className="relative h-64 rounded-lg overflow-hidden shadow-lg"
             style={{
-              backgroundImage: `url(https://www.transindiatravels.com/wp-content/uploads/charminar-2.jpg)`,
+              backgroundImage: `url(https://www.ibef.org/assets/images/states/Telangana-2.jpg)`,
               backgroundSize: "cover",
               backgroundPosition: "center",
             }}

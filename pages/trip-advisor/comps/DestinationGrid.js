@@ -47,7 +47,7 @@ export default function DestinationGrid() {
               alt={dest.name}
               width={300}
               height={200}
-              className="h-[320px] object-cover w-full"
+              className="h-[220px] mxs:h-[320px] object-cover w-full"
             />
             <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent text-white p-3 text-sm">
               <h3 className="font-semibold">{dest.name}</h3>

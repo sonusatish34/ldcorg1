@@ -12,7 +12,9 @@ import JourneySection from './comps/JourneySection';
 import { useEditor } from '@tiptap/react';
 import { fireDb } from '../../public/firebase';
 import { getDocs, collection, query, where } from 'firebase/firestore';
+import trisoml from '@/public/trips2.json'
 const ComponentName = () => {
+  // console.log(trisoml, "trisoml");
 
   const [search, setSearch] = useState('');
   const [typedText, setTypedText] = useState('');
@@ -56,8 +58,11 @@ const ComponentName = () => {
   const [selectedCheckIn, setSelectedCheckIn] = useState(null);
   const [selectedCheckOut, setSelectedCheckOut] = useState(null);
 
-  const filteredDestinations = destList.filter((d) =>
-    d?.title.toLowerCase().includes(search.toLowerCase())
+  // const filteredDestinations = trisoml.filter((d) =>
+  //   d.key.toLowerCase().includes(search.toLowerCase())
+  // );
+  const filteredDestinations = Object.keys(trisoml).filter((key) =>
+    key.toLowerCase().includes(search.toLowerCase())
   );
 
   useEffect(() => {
@@ -119,7 +124,6 @@ const ComponentName = () => {
               <div className="relative px-8 py-12 z-10 bg-re">
 
                 <div className="relative mb-4">
-
                   <div className="w-full mt-10 relative">
                     <div className="flex items-center px-4 py-3 rounded-full bg-white shadow-md relative">
                       {/* Icon */}
@@ -161,17 +165,17 @@ const ComponentName = () => {
                   </div>
                   {showDropdown && (
                     <ul className="absolute z-10 w-full bg-white shadow-md rounded-md mt-1 border max-h-48 overflow-y-auto">
-                      {filteredDestinations?.length >= 1 ? (
+                      {filteredDestinations.length >= 1 ? (
                         filteredDestinations.map((item, idx) => (
                           <li
                             key={idx}
-                            className="px-4 py-2 hover:bg-gray-100 cursor-pointer flex gap-x-2 items-center"
+                            className="px-4 py-2 capitalize hover:bg-gray-100 cursor-pointer flex gap-x-2 items-center"
                             onClick={() => {
-                              setSearch(item?.title);
-                              setShowDropdown(false);
+                              setSearch(item); // Set selected key as search
+                              setShowDropdown(false); // Hide dropdown after selection
                             }}
                           >
-                            <IoLocationSharp color="red" /> {item.title.slice(0, 30)}
+                            <IoLocationSharp color="red" /> {item.replaceAll('-', ' ')}
                           </li>
                         ))
                       ) : (
@@ -222,6 +226,16 @@ const ComponentName = () => {
           </div>
           <GetInspiration />
           <PopularTrips />
+          <p>joooo</p>
+          {/* {trisoml?.map((item,indx)=>(
+            <p>{item}</p>
+          ))} */}
+          {Object.keys(trisoml).map((key) => (
+            <div key={key} className="mb-2">
+              <h3 className="text-xl font-semibold text-blue-600 capitalize">{key.replaceAll('-', ' ')}</h3>
+            </div>
+          ))}
+          <p>{trisoml[1]}</p>
         </div>
       )}
     </div>
