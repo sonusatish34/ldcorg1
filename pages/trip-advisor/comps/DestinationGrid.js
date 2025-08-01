@@ -9,6 +9,7 @@ const destinations = [
     price: '₹11,295',
     image: 'https://vsez.gov.in/wp-content/uploads/2025/05/VIZAG.jpg',
     highlight: true,
+    link:''
   },
   {
     name: 'Goa',

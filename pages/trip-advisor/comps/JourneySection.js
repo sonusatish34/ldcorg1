@@ -88,6 +88,20 @@ export default function JourneySection() {
               <h2 className="text-white text-2xl font-semibold">Cities</h2>
             </div>
           </Link>
+          <Link
+            href="/trip-advisor/temples"
+            target="_blank"
+            className="relative h-64 rounded-lg overflow-hidden shadow-lg"
+            style={{
+              backgroundImage: `url(https://d1di04ifehjy6m.cloudfront.net/media/filer_public/6a/ca/6aca5ab2-5d4c-4be2-aa41-7d707ec98c50/5_fastest_growing_cities_in_india.png)`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
+          >
+            <div className="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
+              <h2 className="text-white text-2xl font-semibold">Temples</h2>
+            </div>
+          </Link>
 
           {/* Tourism */}
           <div

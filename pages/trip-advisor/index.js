@@ -26,14 +26,13 @@ const ComponentName = () => {
   const [destList, setDestList] = useState([]); // Set to false to show UI
 
   const destinations = [
-    "Alleppey",
-    "Andamans",
-    "Aurangabad",
+    "Vizag",
     "Bangalore",
-    "Jodhpur",
-    "Manali",
-    "Jaipur",
-    "Goa",
+    "goa",
+    "Hyderabad",
+    "Dandeli",
+    "Ooty",
+    "Kodaikanal",
   ];
 
   useEffect(() => {
@@ -226,15 +225,15 @@ const ComponentName = () => {
           </div>
           <GetInspiration />
           <PopularTrips />
-          <p>joooo</p>
+          {/* <p>joooo</p> */}
           {/* {trisoml?.map((item,indx)=>(
             <p>{item}</p>
           ))} */}
-          {Object.keys(trisoml).map((key) => (
+          {/* {Object.keys(trisoml).map((key) => (
             <div key={key} className="mb-2">
               <h3 className="text-xl font-semibold text-blue-600 capitalize">{key.replaceAll('-', ' ')}</h3>
             </div>
-          ))}
+          ))} */}
           <p>{trisoml[1]}</p>
         </div>
       )}

@@ -18,7 +18,7 @@ const GetInspiration = (props) => {
                 console.log(sortedPosts, 'sortedPosts');
 
 
-                const q = query(collection(fireDb, "blogPost"), where("subcat", "array-contains", 'temples'));
+                const q = query(collection(fireDb, "blogPost"), where("subcat", "array-contains", 'city sightseeing'));
                 const querySnapshot = await getDocs(q);
                 const postgot = querySnapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }))
                 console.log(postgot, 'got it');

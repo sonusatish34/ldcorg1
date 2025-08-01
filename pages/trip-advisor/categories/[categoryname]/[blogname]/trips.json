@@ -1273,5 +1273,49 @@
                 ]
             }
         }
+    ],
+    "the-heritage-heart-of-hyderabad": [
+        {
+            "title": "Hyderabad Heritage Trail – Charminar & More",
+            "coverimages": [
+                "/trips/ooty/1.jpg",
+                "/trips/ooty/2.jpg",
+                "/trips/ooty/3.jpg",
+                "/trips/ooty/4.jpg",
+                "/trips/ooty/5.jpg",
+                "/trips/ooty/6.jpg",
+                "/trips/ooty/7.jpg"
+            ],
+            "latitude": 17.36163,
+            "longitude": 78.47467,
+            "populartags": [
+                "charminar",
+                "monument",
+                "shopping",
+                "hyderabad"
+            ],
+            "content": "Charminar is the iconic 16th-century monument located in the heart of Hyderabad’s old city. With its Indo-Islamic architecture and surrounding vibrant markets like Laad Bazaar, it's a hotspot for history, culture, and shopping.",
+            "besttime": "Best time to visit is between October and February when the weather is cool and pleasant.",
+            "itineraryData": {
+                "title": "Charminar Day Experience",
+                "summary": "Uncover the culture, food, and heritage around Charminar in this curated day plan, ideal for history lovers and explorers.",
+                "coverImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Charminar_Street.jpg/800px-Charminar_Street.jpg",
+                "plans": [
+                    {
+                        "type": "1-Day Plan",
+                        "price": "₹500 – ₹1,000",
+                        "duration": "1 Day",
+                        "highlights": [
+                            "Visit Charminar & climb minarets",
+                            "Explore Laad Bazaar (bangles & pearls)",
+                            "Try Hyderabadi Biryani at Shadab Hotel",
+                            "Visit Mecca Masjid nearby",
+                            "Sunset view from Chowmahalla Palace"
+                        ],
+                        "note": "Perfect for history buffs and street market lovers."
+                    }
+                ]
+            }
+        }
     ]
 }
