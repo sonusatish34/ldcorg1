@@ -1,7 +1,7 @@
 'use client'
 import { useEffect, useState } from 'react';
 
-const tabs = ['overview', 'details',, 'itinerary', 'reviews', 'operator'];
+const tabs = ['overview', 'details',, 'itinerary', 'reviews'];
 
 export default function StickyTabs() {
   const [activeTab, setActiveTab] = useState('Overview');

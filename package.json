@@ -30,6 +30,7 @@
     "next-auth": "^4.24.11",
     "openai": "^4.103.0",
     "react": "^18",
+    "react-calendar": "^6.0.0",
     "react-date-range": "^2.0.1",
     "react-dom": "^18",
     "react-fast-marquee": "^1.6.5",

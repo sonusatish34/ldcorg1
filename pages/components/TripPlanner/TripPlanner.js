@@ -128,7 +128,7 @@ export default function TripPlannerHero() {
                 {carRates.map(({ name, rate, image, color }) => (
                   <SwiperSlide key={name}>
                     <div className="bg-black/30 rounded-xl overflow-hidden shadow-md text-center flex flex-col items-center">
-                      <Image height={500} width={500} src={image} alt={name} className=" h-32 w-40" />
+                      <Image height={500} width={500} src={image} alt={name} className=" h-28 w-40" />
                       <div className="p-3">
                         <div className="text-lg font-bold">{name}</div>
                       </div>

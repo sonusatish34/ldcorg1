@@ -15,21 +15,14 @@ const GetInspiration = (props) => {
                 const postsQuerySnapshot = await getDocs(postsQuery);
                 const posts = postsQuerySnapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
                 const sortedPosts = posts.sort((a, b) => new Date(a.createdAt) - new Date(b.createdAt));
-                console.log(sortedPosts, 'sortedPosts');
-
-
                 const q = query(collection(fireDb, "blogPost"), where("subcat", "array-contains", 'city sightseeing'));
                 const querySnapshot = await getDocs(q);
                 const postgot = querySnapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }))
-                console.log(postgot, 'got it');
                 setSortedPostlist(postgot);
                 if ((Array.isArray())) {
                     console.log('hurray');
 
                 }
-
-
-                console.log(sortedPostsList, 'sortedPostsList');
 
 
 

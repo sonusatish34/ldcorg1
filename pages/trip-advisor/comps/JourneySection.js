@@ -93,7 +93,7 @@ export default function JourneySection() {
             target="_blank"
             className="relative h-64 rounded-lg overflow-hidden shadow-lg"
             style={{
-              backgroundImage: `url(https://d1di04ifehjy6m.cloudfront.net/media/filer_public/6a/ca/6aca5ab2-5d4c-4be2-aa41-7d707ec98c50/5_fastest_growing_cities_in_india.png)`,
+              backgroundImage: `url(https://www.tourmyindia.com/blog//wp-content/uploads/2024/02/Must-Visit-Temples-in-South-India.jpg)`,
               backgroundSize: "cover",
               backgroundPosition: "center",
             }}

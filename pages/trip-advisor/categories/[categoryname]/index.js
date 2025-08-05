@@ -126,7 +126,7 @@ export default function Home() {
   }
 
   const categoryData = dmsl[categoryname];
-  const { title, subtitle, description, trips,imagelink } = categoryData;
+  const { title, subtitle, description, trips, imagelink } = categoryData;
 
   return (
     <div>
@@ -136,7 +136,6 @@ export default function Home() {
           alt="Beach"
           className="absolute inset-0 h-full w-full object-cover z-0"
         />
-
         <div className="relative z-10">
           <Hamb />
           <div className="flex items-center justify-center h-screen px-4 text-center">

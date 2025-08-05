@@ -9,7 +9,7 @@ const destinations = [
     price: '₹11,295',
     image: 'https://vsez.gov.in/wp-content/uploads/2025/05/VIZAG.jpg',
     highlight: true,
-    link:''
+    link:'hitting-the-vizag-streets-full-swag'
   },
   {
     name: 'Goa',
@@ -33,8 +33,7 @@ export default function DestinationGrid() {
 
   return (
     <div className="w-full px-4 py-4 lg:py-10 bg-white rounded-xl">
-      <h2 className="text-xl lg:text-4xl font-bold mb-4">Plan as per the best destinations in India</h2>
-
+      <h2 className="text-2xl lg:text-4xl font-bold mb-4">Plan as per the best destinations in India</h2>
       <div className="grid lg:grid-cols-2 gap-3 lg:gap-6 lg:pt-5">
         {destinations.map((dest, index) => (
           <div
@@ -48,15 +47,14 @@ export default function DestinationGrid() {
               alt={dest.name}
               width={300}
               height={200}
-              className="h-[220px] mxs:h-[320px] object-cover w-full"
+              className="h-[190px] mxs:h-[240px] lg:h-[300px] object-cover w-full"
             />
             <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent text-white p-3 text-sm">
               <h3 className="font-semibold">{dest.name}</h3>
               <p className="text-[13px]">From <strong>{dest.price}</strong> /- per day</p>
               {hoveredIndex === index && (
                 <button className="mt-2 bg-yellow-400 text-black font-bold px-3 py-1 text-sm rounded">
-                  Plan a trip
-                </button>
+                  Plan a trip                </button>
               )}
             </div>
           </div>

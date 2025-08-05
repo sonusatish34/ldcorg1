@@ -12,18 +12,18 @@ import JourneySection from './comps/JourneySection';
 import { useEditor } from '@tiptap/react';
 import { fireDb } from '../../public/firebase';
 import { getDocs, collection, query, where } from 'firebase/firestore';
-import trisoml from '@/public/trips2.json'
-const ComponentName = () => {
-  // console.log(trisoml, "trisoml");
+import trisoml from '@/public/trips2.json';
+import Calendar from 'react-calendar';  // Import the calendar component
 
+const ComponentName = () => {
   const [search, setSearch] = useState('');
   const [typedText, setTypedText] = useState('');
   const [destinationIndex, setDestinationIndex] = useState(0);
   const [charIndex, setCharIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [showDropdown, setShowDropdown] = useState(false);
-  const [isLoading, setIsLoading] = useState(false); // Set to false to show UI
-  const [destList, setDestList] = useState([]); // Set to false to show UI
+  const [isLoading, setIsLoading] = useState(false);
+  const [destList, setDestList] = useState([]);
 
   const destinations = [
     "Vizag",
@@ -35,31 +35,55 @@ const ComponentName = () => {
     "Kodaikanal",
   ];
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
+  const [showCalendar, setShowCalendar] = useState(false);
+  const [showEndCalendar, setShowEndCalendar] = useState(false);
 
-        const postsQuery = query(collection(fireDb, "blogPost"));
-        const postsQuerySnapshot = await getDocs(postsQuery);
-        const posts = postsQuerySnapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
-        console.log(posts, 'lol---');
-        setDestList(posts);
+  const handleStartDateClick = () => {
+    setShowCalendar(true);
+    setShowEndCalendar(false);  
+  };
+
+  const handleEndDateClick = () => {
+    setShowEndCalendar(true);
+    setShowCalendar(false);  
+  };
+
+  const handleDateChange = (date, isStartDate) => {
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);  // Set today's time to 00:00:00 for comparison
+
+    // Check if the selected date is at least 1 day after today
+    if (date <= today) {
+      alert("Please select a date that is at least one day after today.");
+      return;
+    }
+
+    // Handle Start Date
+    if (isStartDate) {
+      setSelectedCheckIn(date);
+
+      // If selected start date is set, ensure end date is later than start date
+      if (selectedCheckOut && date >= selectedCheckOut) {
+        alert("End date should be after the start date.");
+        setSelectedCheckOut(null);  // Clear end date if it's invalid
       }
-      catch {
-        // console.error(err); 
+    } else {  // Handle End Date
+      // Ensure end date is later than start date
+      if (date <= selectedCheckIn) {
+        alert("End date should be after the start date.");
+        return;
       }
-    };
+      setSelectedCheckOut(date);
+    }
 
-    fetchData();
-  }, []);
-
+    // Close calendar after selection
+    setShowCalendar(false);
+    setShowEndCalendar(false);
+  };
 
   const [selectedCheckIn, setSelectedCheckIn] = useState(null);
   const [selectedCheckOut, setSelectedCheckOut] = useState(null);
 
-  // const filteredDestinations = trisoml.filter((d) =>
-  //   d.key.toLowerCase().includes(search.toLowerCase())
-  // );
   const filteredDestinations = Object.keys(trisoml).filter((key) =>
     key.toLowerCase().includes(search.toLowerCase())
   );
@@ -90,17 +114,24 @@ const ComponentName = () => {
     return () => clearTimeout(timeout);
   }, [charIndex, isDeleting, destinationIndex]);
 
-
   const ThemeCard = ({ title, image }) => (
-    <div className=" overflow-hidden rounded-xl cursor-pointer flex flex-col justify-center items-center">
-      <Image src={image} alt={title} width={400} height={300} className="h-20 w-20 lg:h-40 lg:w-40 object-cover rounded-full lg:rounded-lg" />
+    <div className="overflow-hidden rounded-xl cursor-pointer flex flex-col justify-center items-center">
+      <Image
+        src={image}
+        alt={title}
+        width={400}
+        height={300}
+        className="h-20 w-20 lg:h-40 lg:w-40 object-cover rounded-full lg:rounded-lg"
+        loading="eager"  // Ensures images load immediately
+        blurDataURL={image} // Placeholder for blurred image
+        placeholder="blur"  // LQIP (Low-Quality Image Placeholder)
+      />
       <h3 className="text-black text-sm pt-2">{title}</h3>
     </div>
   );
 
-
   return (
-    <div className='inter-font'>
+    <div className="inter-font">
       {isLoading ? (
         <Loading />
       ) : (
@@ -108,7 +139,6 @@ const ComponentName = () => {
           <Hamb />
           {/* Filters Section */}
           <div className="min-h-sm pt-20 flex items-center justify-center p-4">
-
             <div className="relative w-full rounded-2xl shadow-xl overflow-hidden">
               <video
                 className="absolute inset-0 w-full h-full object-cover"
@@ -116,31 +146,13 @@ const ComponentName = () => {
                 autoPlay
                 loop
                 muted
+                playsInline  // Ensures smooth playback on mobile devices
               />
-
               <div className="absolute inset-0 bg-red-100/1 backdrop-blur-[1px]"></div>
-
               <div className="relative px-8 py-12 z-10 bg-re">
-
                 <div className="relative mb-4">
                   <div className="w-full mt-10 relative">
                     <div className="flex items-center px-4 py-3 rounded-full bg-white shadow-md relative">
-                      {/* Icon */}
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="h-5 w-5 text-gray-500 mr-2"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M21 21l-4.35-4.35M17 11a6 6 0 11-12 0 6 6 0 0112 0z"
-                        />
-                      </svg>
-
                       {/* Input Field */}
                       <input
                         type="text"
@@ -174,7 +186,7 @@ const ComponentName = () => {
                               setShowDropdown(false); // Hide dropdown after selection
                             }}
                           >
-                            <IoLocationSharp color="red" /> {item.replaceAll('-', ' ')}
+                            <IoLocationSharp color="red" /> {item?.replaceAll('-', ' ')}
                           </li>
                         ))
                       ) : (
@@ -184,56 +196,61 @@ const ComponentName = () => {
                   )}
                 </div>
 
-                <div className="flex justify-between text-white text-sm  mb-2 font-semibold uppercase py-2">
+                <div className="flex justify-between text-white text-sm mb-2 font-semibold uppercase py-2">
                   <span>Start Date</span>
                   <span>End Date</span>
                 </div>
 
-                <div className="flex justify-between mb-4">
-                  <input
-                    type="date"
-                    onChange={(e) => setSelectedCheckIn(new Date(e.target.value))}
-                    className="w-[48%] px-3 py-2 border rounded-md text-sm"
-                  />
-                  <input
-                    type="date"
-                    onChange={(e) => setSelectedCheckOut(new Date(e.target.value))}
-                    className="w-[48%] px-3 py-2 border rounded-md text-sm"
-                  />
+                <div className="flex justify-between mb-4 text-white">
+                  <div className="w-[48%]">
+                    <button onClick={handleStartDateClick} className="w-full px-3 py-2 border rounded-md text-sm">
+                      {selectedCheckIn ? selectedCheckIn.toDateString() : 'Select Start Date'}
+                    </button>
+
+                    {showCalendar && (
+                      <Calendar
+                        onChange={(date) => handleDateChange(date, true)}
+                        value={selectedCheckIn}
+                        selectRange={false}
+                      />
+                    )}
+                  </div>
+
+                  <div className="w-[48%]">
+                    <button onClick={handleEndDateClick} className="w-full px-3 py-2 border rounded-md text-sm">
+                      {selectedCheckOut ? selectedCheckOut.toDateString() : 'Select End Date'}
+                    </button>
+
+                    {showEndCalendar && (
+                      <Calendar
+                        onChange={(date) => handleDateChange(date, false)}
+                        value={selectedCheckOut}
+                        selectRange={false}
+                      />
+                    )}
+                  </div>
                 </div>
+
                 <button className="w-full bg-blue-400 hover:bg-orange-600 text-white font-semibold py-3 rounded-xl">
                   Search
                 </button>
               </div>
             </div>
-
           </div>
           <JourneySection />
-
           <DestinationGrid />
-
-          {/* Theme Cards */}
           <div className="w-full px-4 py-5">
             <p className="text-left pb-5 font-semibold text-base lg:text-4xl">Match Your Mood to a Destination</p>
             <div className="flex gap-x-3 overflow-x-auto snap-x snap-mandatory scrollbar-hide py-2">
               {['Family', 'Solo', 'Honeymoon', 'Friends', 'Adventure', 'Temples'].map((title, idx) => (
                 <div key={idx} className="snap-start shrink-0">
-                  <ThemeCard title={title} image={`/${idx + 1}.webp`} link={'/trip-advisor/temples'} />
+                  <ThemeCard title={title} image={`/${idx + 1}.webp`} />
                 </div>
               ))}
             </div>
           </div>
           <GetInspiration />
           <PopularTrips />
-          {/* <p>joooo</p> */}
-          {/* {trisoml?.map((item,indx)=>(
-            <p>{item}</p>
-          ))} */}
-          {/* {Object.keys(trisoml).map((key) => (
-            <div key={key} className="mb-2">
-              <h3 className="text-xl font-semibold text-blue-600 capitalize">{key.replaceAll('-', ' ')}</h3>
-            </div>
-          ))} */}
           <p>{trisoml[1]}</p>
         </div>
       )}

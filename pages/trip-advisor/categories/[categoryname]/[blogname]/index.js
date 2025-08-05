@@ -64,10 +64,10 @@ function ItineraryComponent({ data }) {
               alt="Itinerary Cover"
               width={1200}
               height={600}
-              className="rounded-xl"
+              className="rounded-xl object-cover w-full h-full"
             />
             <Image
-              src={data.coverimages[4]}
+              src={data.coverimages[0]}
               alt="Itinerary Cover"
               width={1200}
               height={600}

@@ -5,7 +5,7 @@ import { ChevronLeft, ChevronRight, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { BiPhotoAlbum } from "react-icons/bi";
-
+import Image from 'next/image';
 export default function ImageCarousel({ images }) {
     console.log(images, 'imh');
 
@@ -143,7 +143,7 @@ export default function ImageCarousel({ images }) {
                         onClick={() => setActiveImage(null)}
                         className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4"
                     >
-                        <img
+                        <Image
                             src={activeImage}
                             alt="Full view"
                             className="max-w-full max-h-full rounded-lg"
