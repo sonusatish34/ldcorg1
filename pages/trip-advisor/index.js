@@ -113,21 +113,25 @@ const ComponentName = () => {
 
     return () => clearTimeout(timeout);
   }, [charIndex, isDeleting, destinationIndex]);
+const [loaded, setLoaded] = useState(false);
 
+const handleLoad = () => {
+  setLoaded(true);
+};
   const ThemeCard = ({ title, image }) => (
     <div className="overflow-hidden rounded-xl cursor-pointer flex flex-col justify-center items-center">
-      <Image
-        src={image}
-        alt={title}
-        width={400}
-        height={300}
-        className="h-20 w-20 lg:h-40 lg:w-40 object-cover rounded-full lg:rounded-lg"
-        loading="eager"  // Ensures images load immediately
-        blurDataURL={image} // Placeholder for blurred image
-        placeholder="blur"  // LQIP (Low-Quality Image Placeholder)
-      />
-      <h3 className="text-black text-sm pt-2">{title}</h3>
-    </div>
+    <Image
+  src={image}
+  alt={title}
+  width={400}
+  height={300}
+  className="h-20 w-20 lg:h-40 lg:w-40 object-cover rounded-full lg:rounded-lg"
+  blurDataURL={image}
+  placeholder="blur"
+/>
+
+    <h3 className="text-black text-sm pt-2">{title}</h3>
+  </div>
   );
 
   return (

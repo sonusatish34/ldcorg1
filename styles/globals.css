@@ -298,6 +298,14 @@ body {
   scrollbar-width: none;
 }
 /* globals.css */
+.image-fade {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.image-fade.loaded {
+  opacity: 1;
+}
 
 @keyframes scrollCar {
   0% {
