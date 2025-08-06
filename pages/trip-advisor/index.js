@@ -208,7 +208,7 @@ const handleLoad = () => {
                 <div className="flex justify-between mb-4 text-white">
                   <div className="w-[48%]">
                     <button onClick={handleStartDateClick} className="w-full px-3 py-2 border rounded-md text-sm">
-                      {selectedCheckIn ? selectedCheckIn.toDateString() : 'Select Start Date'}
+                      {selectedCheckIn ? selectedCheckIn.toDateString() : 'Select Date'}
                     </button>
 
                     {showCalendar && (
@@ -222,7 +222,7 @@ const handleLoad = () => {
 
                   <div className="w-[48%]">
                     <button onClick={handleEndDateClick} className="w-full px-3 py-2 border rounded-md text-sm">
-                      {selectedCheckOut ? selectedCheckOut.toDateString() : 'Select End Date'}
+                      {selectedCheckOut ? selectedCheckOut.toDateString() : 'Select Date'}
                     </button>
 
                     {showEndCalendar && (

@@ -1,0 +1,198 @@
+{
+  "plans": [
+    {
+      "type": "1-Day Plan",
+      "price": "₹5,500 – ₹7,500 (for 5 people)",
+      "duration": "1 Day",
+      "schedule": [
+        {
+          "time": "07:00 AM",
+          "title": "Simhachalam Temple",
+          "description": "Start from Jagadamba (~20 km, ~45 min drive). Reach by 7:45 AM. ₹100 special darshan. Less crowd early morning.",
+          "cost": "₹100/person"
+        },
+        {
+          "time": "09:15 AM",
+          "title": "Breakfast near Simhachalam",
+          "description": "South Indian tiffin: idli, dosa, sambhar, filter coffee.",
+          "cost": "₹300–₹400 (for 5)"
+        },
+        {
+          "time": "10:00 AM",
+          "title": "Sri Kanaka Mahalakshmi Temple",
+          "description": "Backtrack ~20 km (~45 min). Sevas like Ksheerabhishekam (Fri only), Panchamruthabhishekam, Samuhika Ashtothara.",
+          "cost": "₹20–₹516/person"
+        },
+        {
+          "time": "11:00 AM",
+          "title": "Snacks at Jagadamba",
+          "description": "Try vada, upma, or mini biryani in Jagadamba Centre.",
+          "cost": "₹300–₹400 (for 5)"
+        },
+        {
+          "time": "12:00 PM",
+          "title": "Kailasagiri Park & Ropeway",
+          "description": "Hilltop ropeway ride, views, Shiva-Parvati statue. Toy train optional.",
+          "cost": "₹90–₹120 (ropeway) + ₹30–₹100 (rides)"
+        },
+        {
+          "time": "01:30 PM",
+          "title": "Lunch @ Kailasagiri",
+          "description": "Eat at hilltop cafe with sea view.",
+          "cost": "₹1,000–₹1,500 (for 5)"
+        },
+        {
+          "time": "02:30 PM",
+          "title": "INS Submarine Museum + RK Beach",
+          "description": "Visit India’s only submarine museum and walk on RK Beach.",
+          "cost": "₹80–₹120 (museum), Free (beach)"
+        },
+        {
+          "time": "04:30 PM",
+          "title": "Evening Temple Visit",
+          "description": "Choose Sampath Vinayagar or Venkateswara Temple (near Waltair/Asilmetta).",
+          "cost": "Free or ₹30–₹50"
+        },
+        {
+          "time": "06:00 PM",
+          "title": "Dinner at Jagadamba / Suryabagh",
+          "description": "Andhra meals or seafood at popular restaurants.",
+          "cost": "₹1,500–₹2,000 (for 5)"
+        }
+      ],
+      "note": "Ideal for a car-based day trip from Jagadamba Centre covering iconic temples, beach, and city views."
+    },
+    {
+      "type": "3-Day Plan",
+      "price": "₹27,500 – ₹30,000 (for 5 people)",
+      "duration": "3 Days",
+      "days": [
+        {
+          "title": "Day 1: Temples, Parks & Beach",
+          "schedule": [
+            {
+              "time": "07:00 AM",
+              "title": "Simhachalam Temple",
+              "description": "Start from Jagadamba (~20 km, ~45 min drive). Reach by 7:45 AM. ₹100 special darshan. Less crowd early morning.",
+              "cost": "₹100/person"
+            },
+            {
+              "time": "09:15 AM",
+              "title": "Breakfast at Simhachalam",
+              "description": "Idli, dosa, sambhar, coffee near temple area.",
+              "cost": "₹400"
+            },
+            {
+              "time": "10:00 AM",
+              "title": "Sri Kanaka Mahalakshmi Temple",
+              "description": "Backtrack ~20 km (~45 min). Minimal queues. Optional sevas ₹20–₹200.",
+              "cost": "₹20–₹516/person"
+            },
+            {
+              "time": "11:15 AM",
+              "title": "Snack Break in Jagadamba",
+              "description": "Light snack near city center.",
+              "cost": "₹300"
+            },
+            {
+              "time": "12:00 PM",
+              "title": "Kailasagiri Ropeway & Park",
+              "description": "Ropeway ride, hilltop park, Shiva-Parvati statue, lunch.",
+              "cost": "₹120 ropeway + ₹300 lunch"
+            },
+            {
+              "time": "02:00 PM",
+              "title": "INS Submarine Museum + RK Beach",
+              "description": "From Kailasagiri, ~12 km (~25 min). Explore museum & stroll on beach.",
+              "cost": "₹100 museum, Free beach"
+            },
+            {
+              "time": "04:30 PM",
+              "title": "Evening Temple",
+              "description": "Nearby temples in Waltair (~2–3 km). Sampath Vinayagar or Venkateswara.",
+              "cost": "Free or ₹30–₹50"
+            },
+            {
+              "time": "06:00 PM",
+              "title": "Dinner",
+              "description": "Andhra thali / seafood at Jagadamba or Suryabagh.",
+              "cost": "₹1,500"
+            }
+          ]
+        },
+        {
+          "title": "Day 2: Culture & Coastal Vibes",
+          "schedule": [
+            {
+              "time": "09:00 AM",
+              "title": "Visakha Museum",
+              "description": "Located on RK Beach Road (~4 km from Jagadamba). Maritime and heritage exhibits.",
+              "cost": "₹20–₹50"
+            },
+            {
+              "time": "10:30 AM",
+              "title": "Tenneti Park",
+              "description": "Coastal green park with sea view (~3.5 km).",
+              "cost": "Free"
+            },
+            {
+              "time": "01:00 PM",
+              "title": "Lunch @ RK Beach",
+              "description": "Restaurants nearby. Andhra meals / seafood.",
+              "cost": "₹1,500"
+            },
+            {
+              "time": "02:30 PM",
+              "title": "Matsyadarshini Aquarium",
+              "description": "Air-conditioned marine display. ~4 km from Jagadamba.",
+              "cost": "₹30–₹50"
+            },
+            {
+              "time": "06:00 PM",
+              "title": "Dinner at Jagadamba",
+              "description": "Try Andhra-style thali / snacks.",
+              "cost": "₹1,000"
+            }
+          ]
+        },
+        {
+          "title": "Day 3: Nature & Wildlife",
+          "schedule": [
+            {
+              "time": "07:00 AM",
+              "title": "Kambalakonda Wildlife Sanctuary",
+              "description": "Drive ~16 km. Birdwatching and nature walk.",
+              "cost": "₹100–₹200"
+            },
+            {
+              "time": "11:00 AM",
+              "title": "Lunch Stop",
+              "description": "Snacks or meals near sanctuary or return route.",
+              "cost": "₹1,000"
+            },
+            {
+              "time": "01:00 PM",
+              "title": "Biodiversity Park",
+              "description": "Botanical garden with butterflies & bird zone.",
+              "cost": "Free or nominal"
+            },
+            {
+              "time": "04:00 PM",
+              "title": "Return to City",
+              "description": "Drive back to Jagadamba. Evening rest.",
+              "cost": "–"
+            },
+            {
+              "time": "06:30 PM",
+              "title": "Dinner @ Beach Road",
+              "description": "Seafood or regional Andhra cuisine.",
+              "cost": "₹1,500"
+            }
+          ]
+        }
+      ],
+      "note": "Designed for car rental users to explore Vizag with comfort and flexibility across temples, beaches, and nature spots."
+    }
+]
+}
+   

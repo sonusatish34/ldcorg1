@@ -2,14 +2,14 @@
 
 import Image from 'next/image';
 import { useState } from 'react';
-
+import Link from 'next/link';
 const destinations = [
   {
     name: 'Vizag',
     price: '₹11,295',
     image: 'https://vsez.gov.in/wp-content/uploads/2025/05/VIZAG.jpg',
     highlight: true,
-    link:'hitting-the-vizag-streets-full-swag'
+    link:'http://localhost:3000/trip-advisor/categories/travel/hitting-the-vizag-streets-full-swag'
   },
   {
     name: 'Goa',
@@ -53,8 +53,8 @@ export default function DestinationGrid() {
               <h3 className="font-semibold">{dest.name}</h3>
               <p className="text-[13px]">From <strong>{dest.price}</strong> /- per day</p>
               {hoveredIndex === index && (
-                <button className="mt-2 bg-yellow-400 text-black font-bold px-3 py-1 text-sm rounded">
-                  Plan a trip                </button>
+                <Link href={'/trip-advisor/categories/travel/hitting-the-vizag-streets-full-swag'} className="mt-2 bg-yellow-400 text-black font-bold px-3 py-1 text-sm rounded">
+                  Plan a trip                </Link>
               )}
             </div>
           </div>

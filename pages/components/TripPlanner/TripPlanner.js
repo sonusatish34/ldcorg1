@@ -38,20 +38,19 @@ export default function TripPlannerHero() {
   return (
     <div className="relative py-20 bg-gradient-to-r from-indigo-300 via-purple-500 to-pink-900 overflow-hidden">
       <video className="absolute inset-0 w-full h-full object-cover z-0" src="/green.mp4" autoPlay loop muted />
-      <div className="absolute inset-0 bg-black/40 backdrop-blur-[0px] z-0" />
+      <div className="absolute inset-0 bg-black/10 backdrop-blursm z-0" />
 
       <div className="relative z-10 max-w-4xl mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6 }}
-          className="rounded-3xl overflow-hidden shadow-2xl bg-white/10 backdrop-blur-[1px] border border-white/10 py-8 px-3"
+          className="rounded-3xl overflow-hidden shadow-2xl bg-white/10 backdrop-blur-[1px] border border-white/10 py-10 px-6 text-white"
         >
-          <h1 className="text-3xl lg:text-4xl font-extrabold text-[#F3F3E0] text-center mb-6">
-            ✈️ Let's Plan Your Perfect Trip!
+          <h1 className="text-4xl font-extrabold text-center mb-4">
+            ✈️ <span className="text-white">Let's <span className="text-[#FFC300]">Plan</span> Your <span className="text-blue-400">Perfect</span> Trip!</span>
           </h1>
 
-          {/* Day Selector */}
           <div className="text-center text-white mb-4 font-semibold text-lg">
             How many days do you want to plan?
           </div>
@@ -76,23 +75,21 @@ export default function TripPlannerHero() {
             </div>
           </div>
 
-          {/* Calendar Toggle */}
           {tripDays && (
             <div className="text-center mb-6">
               <button
                 onClick={() => setCalendarVisible(true)}
-                className="text-white bg-blue-500 hover:bg-blue-600 px-5 py-2 rounded-full font-semibold"
+                className="text-white bg-gradient-to-r from-blue-500 to-blue-700 hover:brightness-110 px-6 py-2 rounded-full font-semibold shadow-md"
               >
-                Select Dates in Calendar
+                📅 Select Dates in Calendar
               </button>
             </div>
           )}
 
-          {/* Calendar UI */}
           {calendarVisible && (
             <div className="flex justify-center mb-6">
               <DateRange
-                editableDateInputs={true}
+                editableDateInputs
                 onChange={(item) => {
                   setDateRange([item.selection]);
                   const days = Math.max(
@@ -104,11 +101,12 @@ export default function TripPlannerHero() {
                 moveRangeOnFirstSelection={false}
                 ranges={dateRange}
                 minDate={new Date()}
-                rangeColors={['#3b82f6']}
+                rangeColors={['#6366f1']}
               />
             </div>
           )}
 
+          {/* 🚗 Car Section remains unchanged */}
           {totalDays > 0 && tripDays && (
             <div className="bg-white/20 rounded-xl p-4 mb-6 text-white">
               <h3 className="text-lg font-semibold mb-4 text-center">
@@ -139,36 +137,31 @@ export default function TripPlannerHero() {
             </div>
           )}
 
-          {/* Category Tabs */}
+          {/* 🔱 Focus Buttons */}
           <div className="flex justify-center gap-4 mb-6">
-            <Link
-              href={'/trip-advisor'}
-              className={`py-2 px-4 font-semibold rounded-lg transition-all ${showTourism ? 'bg-white text-black' : 'bg-white/10 text-white hover:bg-white/20'
-                }`}
-            >
-              Tourism
+            <Link href="/trip-advisor">
+              <button className="flex items-center gap-2 px-5 py-2 bg-gradient-to-r from-green-400 to-green-600 hover:brightness-110 text-white rounded-full shadow-md font-semibold">
+                🏞️ Tourism
+              </button>
             </Link>
-            <Link 
-            href={'/trip-advisor/temples'}
-              className={`py-2 px-4 font-semibold rounded-lg transition-all ${showTemples ? 'bg-white text-black' : 'bg-white/10 text-white hover:bg-white/20'
-                }`}
-            >
-              Temples
+            <Link href="/trip-advisor/temples">
+              <button className="flex items-center gap-2 px-5 py-2 bg-gradient-to-r from-yellow-300 to-orange-500 hover:brightness-110 text-black rounded-full shadow-md font-semibold">
+                🛕Temples
+              </button>
             </Link>
           </div>
 
-
-
-          {/* CTA Button */}
+          {/* CTA */}
           <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
             <Link href="/trip-advisor">
-              <button className="w-full py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold text-lg rounded-full shadow-lg">
-                Plan a Trip for Me
+              <button className="w-full py-3 bg-gradient-to-r from-blue-600 to-blue-800 hover:brightness-110 text-white font-semibold text-lg rounded-full shadow-xl">
+                ✨ Plan a Trip for Me
               </button>
             </Link>
           </motion.div>
         </motion.div>
       </div>
     </div>
+
   );
 }

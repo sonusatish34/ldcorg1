@@ -18,11 +18,7 @@ import Layout from './components/Layout/Layout';
 import PriceList from './components/PriceList/PriceList';
 import Head from 'next/head';
 import PopUp from './components/PopUp';
-import TripPlannerPopup from './components/TripPlannerPopup';
-// import LeafletMap from './components/TripPlanner/LeafletMap';
-const LeafletMap = dynamic(() => import('./components/TripPlanner/LeafletMap'), {
-    ssr: false, // <== THIS IS CRITICAL
-});
+
 export default function Place({ cars, canonicalUrl }) {
     const { ref: ref1, inView: inView1 } = useInView({ triggerOnce: true, threshold: 0.1 });
     const { ref: ref2, inView: inView2 } = useInView({ triggerOnce: true, threshold: 0.1 });
@@ -61,7 +57,7 @@ export default function Place({ cars, canonicalUrl }) {
                     <div ref={ref1}>
                         {inView1 && <DynImageChange locname={'hyderabad'} />}
                     </div>
-                    <div ref={tripRef} className={`${animateTrip ? 'rotate-3d' : ''}`}>
+                    <div ref={tripRef} className={''}>
                         <TripPlanner />
                         <p></p>
                     </div>

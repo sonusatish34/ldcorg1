@@ -2,7 +2,6 @@ import React, { useState, useCallback } from 'react';
 import Hamb from '../../../comps/Hamb';
 import { FaShareAltSquare, FaCircle } from 'react-icons/fa';
 import { BsPencilSquare } from 'react-icons/bs';
-import useEmblaCarousel from 'embla-carousel-react';
 import StickyTabs from '../../../comps/StickyTabs';
 import ImageZoomCarousal from '../../../comps/ImageZoomCarousal';
 import ReviewPopup from './ReviewPopup';
@@ -12,6 +11,8 @@ import WeatherData from './WeatherData';
 import Image from 'next/image';
 import staticPostData from './trips.json';
 import { useRouter } from 'next/router';
+import { IoMdArrowRoundBack } from "react-icons/io";
+import { FaChevronDown , FaChevronUp} from "react-icons/fa";
 
 const mockBlog = {
   reviews: [
@@ -29,118 +30,99 @@ const mockBlog = {
 };
 
 function ItineraryComponent({ data }) {
+  // const uniqueTypes = [...new Set(data.itineraryData.plans.map(plan => plan.type))];
+  // const [selectedType, setSelectedType] = useState(uniqueTypes[0]);
   const uniqueTypes = [...new Set(data.itineraryData.plans.map(plan => plan.type))];
   const [selectedType, setSelectedType] = useState(uniqueTypes[0]);
+  const [expandedDays, setExpandedDays] = useState({});
 
-
+  const toggleDay = (dayKey) => {
+    setExpandedDays((prev) => ({ ...prev, [dayKey]: !prev[dayKey] }));
+  };
+   const renderScheduleItem = (item, index, countOffset = 1) => (
+    <div key={index} className="relative border-l-2 border-dotted border-blue-500 pl-6 pb-">
+      <div className="absolute -left-3 top-1 w-6 h-6 rounded-full bg-blue-600 text-white flex items-center justify-center text-sm font-bold">
+        {index + countOffset}
+      </div>
+      <div className="">
+        <h4 className="font-semibold text-lg text-blue-700">{item.title}</h4>
+        <p className="text-sm text-gray-600">{item.time} – {item.description}</p>
+        <p className="text-xs text-gray-500 italic">{item.cost}</p>
+      </div>
+    </div>
+  );
   return data.itineraryData && (
     <>
-      {/* Buttons to select itinerary type */}
-
-
-      {/* Itinerary Section */}
-      <div id="itinerary" className="lg:pt-6">
-        <div className="px-4 lg:hidden">
-          <h1 className="text-3xl font-bold mb-4">{data.itineraryData.title}</h1>
-          <p className="mb-4 text-gray-600">{data.itineraryData.summary}</p>
-          <div className='grid grid-cols-2 gap-2'>
-
-            <Image
-              src={data.coverimages[1]}
-              alt="Itinerary Cover"
-              width={1200}
-              height={600}
-              className="rounded-xl"
-            />
-            <Image
-              src={data.coverimages[2]}
-              alt="Itinerary Cover"
-              width={1200}
-              height={600}
-              className="rounded-xl"
-            />
-            <Image
-              src={data.coverimages[3]}
-              alt="Itinerary Cover"
-              width={1200}
-              height={600}
-              className="rounded-xl object-cover w-full h-full"
-            />
-            <Image
-              src={data.coverimages[0]}
-              alt="Itinerary Cover"
-              width={1200}
-              height={600}
-              className="rounded-xl"
-            />
-          </div>
-          <div className="flex overflow-x-auto no-scrollbar space-x-4 px-4 py-4">
-            {uniqueTypes.map((type) => (
-              <button
-                key={type}
-                onClick={() => setSelectedType(type)}
-                className={`whitespace-nowrap px-4 py-2 rounded-full border transition
-              ${selectedType === type
-                    ? 'bg-green-600 text-white border-green-600'
-                    : 'bg-white text-black border-gray-300 hover:bg-green-600 hover:text-white'}`}
-              >
-                {type}
-              </button>
-            ))}
-          </div>
-          {/* Show selected itinerary only */}
-          {selectedType && (
-            <div id={selectedType.replace(/\s+/g, '').toLowerCase()} className="mb-10">
-              <h2 className="text-2xl font-semibold mb-4">{selectedType} Itinerary</h2>
-              <div className="grid md:grid-cols-3 gap-6">
-                {data.itineraryData.plans
-                  .filter(plan => plan.type === selectedType)
-                  .map((plan, idx) => (
-                    <div key={idx} className="border p-4 rounded-2xl shadow-md bg-white">
-                      <p></p>
-                      <h2 className="text-xl font-semibold mb-2">{plan.type}</h2>
-                      <p className="text-2xl font-bold text-green-600 mb-1">{plan.price}</p>
-                      <p className="text-sm text-gray-500 mb-3">{plan.duration}</p>
-                      <ul className="list-disc pl-5 text-sm mb-3">
-                        {plan.highlights.map((item, i) => (
-                          <li key={i}>{item}</li>
-
-                        ))}
-                      </ul>
-                      <p className="text-xs text-gray-500 italic">{plan.note}</p>
-                    </div>
-                  ))}
-              </div>
-            </div>
-          )}
-        </div>
-      </div>
-      <div className='hidden lg:grid grid-cols-3 gap-10 '>
-        {uniqueTypes.map((selectedType, index) => (
-          <div id={selectedType.replace(/\s+/g, '').toLowerCase()} className="mb-10">
-            <h2 className="text-2xl font-semibold mb-4">{selectedType} Itinerary</h2>
-            <div className="">
-              {data.itineraryData.plans
-                .filter(plan => plan.type === selectedType)
-                .map((plan, idx) => (
-                  <div key={idx} className="border p-4 rounded-2xl shadow-md bg-white">
-                    <p></p>
-                    <h2 className="text-xl font-semibold mb-2">{plan.type}</h2>
-                    <p className="text-2xl font-bold text-green-600 mb-1">{plan.price}</p>
-                    <p className="text-sm text-gray-500 mb-3">{plan.duration}</p>
-                    <ul className="list-disc pl-5 text-sm mb-3">
-                      {plan.highlights.map((item, i) => (
-                        <li key={i}>{item}</li>
-
-                      ))}
-                    </ul>
-                    <p className="text-xs text-gray-500 italic">{plan.note}</p>
-                  </div>
-                ))}
-            </div>
-          </div>
+     <div className="px-4 py-6">
+      <h1 className="text-3xl font-bold mb-2 text-blue-700">{data.itineraryData.title}</h1>
+      <p className="mb-4 text-gray-600">{data.itineraryData.summary}</p>
+      <div className="grid grid-cols-2 gap-2 mb-6">
+        {data.coverimages.map((src, idx) => (
+          <Image
+            key={idx}
+            src={src}
+            alt={`Cover ${idx}`}
+            width={600}
+            height={400}
+            className="rounded-xl object-cover w-full lg:h-[400px] h-[150px]"
+          />
         ))}
       </div>
+
+      <div className="flex overflow-x-auto no-scrollbar space-x-4 pb-6">
+        {uniqueTypes.map((type) => (
+          <button
+            key={type}
+            onClick={() => setSelectedType(type)}
+            className={`whitespace-nowrap px-4 py-2 rounded-full border text-sm font-medium transition
+              ${selectedType === type
+              ? 'bg-blue-600 text-white border-blue-600'
+              : 'bg-white text-black border-gray-300 hover:bg-blue-600 hover:text-white'}`}
+          >
+            {type}
+          </button>
+        ))}
+      </div>
+
+      {data.itineraryData.plans
+        .filter(plan => plan.type === selectedType)
+        .map((plan, idx) => (
+          <div key={idx} className="bg-white rounded-2xl shadow-md p-6 mb-8">
+            <h2 className="text-2xl font-bold text-blue-700 mb-2">{plan.type}</h2>
+            <p className="text-lg text-blue-600 font-semibold mb-1">{plan.price}</p>
+            <p className="text-sm text-gray-500 mb-4">Duration: {plan.duration}</p>
+
+            {plan.schedule && (
+              <div className="space-y-6">
+                {plan.schedule.map((item, i) => renderScheduleItem(item, i))}
+              </div>
+            )}
+
+            {plan.days && plan.days.map((day, dIdx) => {
+              const key = `${idx}-${dIdx}`;
+              return (
+                <div key={key} className="mb-6">
+                  <div
+                    className="flex items-center justify-between cursor-pointer text-blue-700 font-bold text-lg mb-2"
+                    onClick={() => toggleDay(key)}
+                  >
+                    <span>{day.title}</span>
+                    {expandedDays[key] ? <FaChevronUp size={20} /> : <FaChevronDown size={20} />}
+                  </div>
+                  {expandedDays[key] && (
+                    <div className="space-y-6">
+                      {day.schedule.map((item, i) => renderScheduleItem(item, i))}
+                    </div>
+                  )}
+                </div>
+              );
+            })}
+
+            <p className="text-xs text-gray-500 italic mt-4">{plan.note}</p>
+          </div>
+        ))}
+    </div>
+
     </>
   );
 }
@@ -149,14 +131,10 @@ function ItineraryComponent({ data }) {
 const VizagTrip = () => {
   const router = useRouter();
   const [showReviewPopup, setShowReviewPopup] = useState(false);
-  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
-
-  const scrollPrev = useCallback(() => emblaApi && emblaApi.scrollPrev(), [emblaApi]);
-  const scrollNext = useCallback(() => emblaApi && emblaApi.scrollNext(), [emblaApi]);
 
   const blogname = router.query.blogname;
   const data = staticPostData[blogname]?.[0] || {};
-
+  
   if (!router.isReady || !data.title) {
     return <div className="p-10 text-xl">Loading trip details...</div>;
   }
@@ -165,7 +143,7 @@ const VizagTrip = () => {
     <div className="helvetica-font lg:px-32">
       <Hamb />
       <div className="pt-20">
-        <p className="px-3 lg:text-3xl capitalize">
+        <p className="px-3 pt-4 lg:text-3xl capitalize">
           See more in{' '}
           {data.populartags?.map((item, idx) => (
             <strong key={idx}>
@@ -212,7 +190,7 @@ const VizagTrip = () => {
           <ImageZoomCarousal images={data.coverimages} />
         </div>
 
-        <div className="px-3 pb-4 lg:py-10">
+        <div className="p-3 pb-4 lg:py-10">
           <WeatherData />
         </div>
 
@@ -220,7 +198,7 @@ const VizagTrip = () => {
           <StickyTabs />
 
           <div id="overview" className="py-6 px-4">
-            <h2 className="text-xl font-semibold mb-2">About</h2>
+            <h2 className="text-3xl font-semibold mb-2">About</h2>
             <p>{data.content}</p>
           </div>
 
@@ -231,9 +209,7 @@ const VizagTrip = () => {
             <p className="pt-4">{data.besttime}</p>
           </div>
 
-          {/* Safe rendering of itineraryData */}
           <ItineraryComponent data={data} />
-
 
           <div id="reviews" className="px-4">
             <h2 className="text-xl font-semibold mb-4">Traveler Reviews</h2>

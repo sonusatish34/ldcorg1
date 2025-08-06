@@ -2,8 +2,6 @@
 import { fireDb } from '../../public/firebase';
 // import { getDocs, collection, where, query, doc, getDoc, setDoc, updateDoc, increment, serverTimestamp } from "firebase/firestore";
 import { doc, getDoc, setDoc, updateDoc, increment, serverTimestamp } from "firebase/firestore";
-
-
 import React, { useEffect, useState } from 'react';
 import { GoDotFill } from "react-icons/go";
 import Loading from '../components/Loading';
@@ -22,7 +20,7 @@ const ComponentName = (props) => {
   const [isLoading, setIsLoading] = useState(true); // State for loader
 
 
-  const destinations = ['Bali', 'Manali', 'Dubai', 'Thailand', 'Maldives'];
+  const destinations = ['Bali', 'Manali', 'Dubai', 'Tailand', 'Maldives'];
   const durations = ['1-3 Days', '4-7 Days', '8-10 Days', '10+ Days'];
 
   const [selectedDestination, setSelectedDestination] = useState(destinations[0]);
@@ -166,7 +164,7 @@ const ComponentName = (props) => {
 
               {/* Duration */}
               <div className="w-full md:w-1/4">
-                <label className="text-sm text-gray-600 font-medium mb-1 block">Duration</label>
+                <label className="text-sm text-gray-600 font-medium mb-1 block">Dur00ation</label>
                 <Listbox value={selectedDuration} onChange={setSelectedDuration}>
                   <div className="relative">
                     <Listbox.Button className="w-full bg-white border border-gray-200 rounded-xl py-3 pl-10 pr-10 text-left shadow-sm hover:ring-2 hover:ring-blue-400 transition focus:outline-none focus:ring-2 focus:ring-blue-500">
@@ -181,7 +179,7 @@ const ComponentName = (props) => {
                           value={duration}
                           className="px-4 py-2 cursor-pointer hover:bg-blue-100"
                         >
-                          {duration}
+                          {duration}00
                         </Listbox.Option>
                       ))}
                     </Listbox.Options>

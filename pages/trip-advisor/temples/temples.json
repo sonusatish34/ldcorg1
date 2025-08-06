@@ -2343,7 +2343,7 @@
       ]
     }
   ],
-  "kanaka-mahalakshmi-temple": [
+  "kanaka-mahalakshmi": [
     {
       "id": "kanaka-mahalakshmi-temple",
       "name": "Kanaka Mahalakshmi Temple",
@@ -2369,9 +2369,9 @@
       ],
       "images": [
         "/temples/kanakamahalakmi1.webp",
-        "/temples/kanakamahalakmi1.webp",
-        "/temples/kanakamahalakmi1.webp",
-        "/temples/kanakamahalakmi1.webp"
+        "/temples/kanakamahalakmi2.webp",
+        "/temples/kanakamahalakmi3.webp",
+        "/temples/kanakamahalakmi4.webp"
       ],
       "templeInfo": "Kanaka Mahalakshmi Temple is dedicated to Goddess Lakshmi, located in Visakhapatnam, Andhra Pradesh. The temple is known for its peaceful ambiance, attracting devotees seeking blessings for wealth, prosperity, and good fortune. It is one of the prominent temples in the region, known for its grandeur and spiritual significance.",
       "mobileno": "9849005495",

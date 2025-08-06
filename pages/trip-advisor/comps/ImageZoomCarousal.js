@@ -1,162 +1,176 @@
 'use client';
-import useEmblaCarousel from 'embla-carousel-react';
-import Autoplay from 'embla-carousel-autoplay';
+
+import { useState } from 'react';
 import { ChevronLeft, ChevronRight, X } from 'lucide-react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { useCallback, useEffect, useRef, useState } from 'react';
-import { BiPhotoAlbum } from "react-icons/bi";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination } from 'swiper/modules';
 import Image from 'next/image';
-export default function ImageCarousel({ images }) {
-    console.log(images, 'imh');
 
-    const autoplay = useRef(
-        Autoplay({ delay: 3000, stopOnInteraction: false, stopOnMouseEnter: false })
-    );
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
-    const [emblaRef, emblaApi] = useEmblaCarousel(
-        { loop: true, skipSnaps: false },
-        [autoplay.current]
-    );
+export default function ImageGallery({ images }) {
+    const [lightboxOpen, setLightboxOpen] = useState(false);
+    const [currentIndex, setCurrentIndex] = useState(0);
 
-    const [selectedIndex, setSelectedIndex] = useState(0);
-    const [showGallery, setShowGallery] = useState(false);
-    const [activeImage, setActiveImage] = useState(null);
+    const openLightbox = (index) => {
+        setCurrentIndex(index);
+        setLightboxOpen(true);
+    };
 
-    const scrollPrev = useCallback(() => emblaApi?.scrollPrev(), [emblaApi]);
-    const scrollNext = useCallback(() => emblaApi?.scrollNext(), [emblaApi]);
+    const closeLightbox = () => setLightboxOpen(false);
+    const showPrev = () => setCurrentIndex((prev) => (prev - 1 + images.length) % images.length);
+    const showNext = () => setCurrentIndex((prev) => (prev + 1) % images.length);
 
-    const onSelect = useCallback(() => {
-        if (!emblaApi) return;
-        setSelectedIndex(emblaApi.selectedScrollSnap());
-    }, [emblaApi]);
-
-    useEffect(() => {
-        if (!emblaApi) return;
-        emblaApi.on('select', onSelect);
-        emblaApi.on('reInit', onSelect);
-        onSelect();
-    }, [emblaApi, onSelect]);
+    if (!images || images.length === 0) return null;
 
     return (
         <>
-            {/* MAIN CAROUSEL */}
-            <div className="relative w-full h-72 sm:h-80 md:h-96 lg:h-[500px] xl:h-[600px]">
-                <div className="overflow-hidden" ref={emblaRef}>
-                    <div className="flex">
-                        {images?.map((src, index) => (
+            {/* ✅ MOBILE VIEW - SWIPER CAROUSEL */}
+            {/* MOBILE VIEW - SWIPER CAROUSEL */}
+            <div className="lg:hidden relative">
+                <Swiper
+                    modules={[Navigation, Pagination]}
+                    slidesPerView={1}
+                    spaceBetween={10}
+                    pagination={{ clickable: true }}
+                    navigation={{
+                        prevEl: '.custom-swiper-prev',
+                        nextEl: '.custom-swiper-next',
+                    }}
+                    onSlideChange={(swiper) => setCurrentIndex(swiper.activeIndex)}
+                    loop={true}
+                >
+                    {images.map((src, index) => (
+                        <SwiperSlide key={index}>
                             <div
-                                key={index}
-                                className="min-w-full h-fit flex-shrink-0 relative overflow-hidden lg:rounded-xl"
+                                onClick={() => openLightbox(index)}
+                                className="w-full cursor-pointer relative overflow-hidden"
                             >
-                                <motion.img
+                                <Image
                                     src={src}
-                                    alt={`Slide ${index + 1}`}
-                                    initial={{ scale: 1 }}
-                                    animate={{ scale: 1.1 }}
-                                    transition={{ duration: 2 }}
-                                    className="w-full h-64 sm:h-80 md:h-96 lg:h-[500px] xl:h-[600px] object-cover"
+                                    alt={`Image ${index + 1}`}
+                                    className="w-full h-72 object-cover"
+                                    width={500}
+                                    height={500}
                                 />
                             </div>
-                        ))}
-                    </div>
-                </div>
-
-                {/* Arrows */}
-                <button
-                    onClick={scrollPrev}
-                    className="absolute top-1/2 left-2 lg:left-6 -translate-y-1/2 bg-white/70 p-2 lg:p-3 rounded-full shadow z-10"
-                >
-                    <ChevronLeft className="w-5 h-5 lg:w-6 lg:h-6 text-black" />
-                </button>
-                <button
-                    onClick={scrollNext}
-                    className="absolute top-1/2 right-2 lg:right-6 -translate-y-1/2 bg-white/70 p-2 lg:p-3 rounded-full shadow z-10"
-                >
-                    <ChevronRight className="w-5 h-5 lg:w-6 lg:h-6 text-black" />
-                </button>
-
-                {/* Dot Indicators */}
-                <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-2 z-10">
-                    {images?.map((_, i) => (
-                        <button
-                            key={i}
-                            onClick={() => emblaApi?.scrollTo(i)}
-                            className={`h-2 rounded-full transition-all duration-300 ${selectedIndex === i ? 'w-4 bg-white' : 'w-2 bg-white/50'
-                                }`}
-                        />
+                        </SwiperSlide>
                     ))}
+                </Swiper>
+
+                {/* Custom Navigation Buttons */}
+                <button
+                    className="custom-swiper-prev absolute left-2 top-1/2 -translate-y-1/2 z-10 bg-black/40 text-white p-2 rounded-full focus:outline-none"
+                    aria-label="Previous slide"
+                >
+                    <ChevronLeft />
+                </button>
+                <button
+                    className="custom-swiper-next absolute right-2 top-1/2 -translate-y-1/2 z-10 bg-black/40 text-white p-2 rounded-full focus:outline-none"
+                    aria-label="Next slide"
+                >
+                    <ChevronRight />
+                </button>
+
+                <style jsx>{`
+    /* Hide default swiper navigation buttons */
+    :global(.swiper-button-prev),
+    :global(.swiper-button-next) {
+      display: none;
+    }
+
+    /* Remove blue focus outline */
+    .custom-swiper-prev:focus,
+    .custom-swiper-next:focus {
+      outline: none;
+      box-shadow: none;
+    }
+  `}</style>
+            </div>
+
+
+            {/* ✅ DESKTOP VIEW - IMAGE GRID */}
+            <div className="hidden md:grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
+                {/* First large image */}
+                <div
+                    className="md:col-span-2 h-72 md:h-[500px] relative cursor-pointer"
+                    onClick={() => openLightbox(0)}
+                >
+                    <img
+                        src={images[0]}
+                        alt="Main"
+                        className="w-full h-full object-cover rounded-lg"
+                    />
                 </div>
 
-                {/* View Gallery Button */}
-                <div className="text-center mt-3 relative bottom-14 left-4 lg:bottom-20 lg:left-6 text-white bg-black/50 w-fit p-2 rounded-full shadow z-10">
-                    <button
-                        onClick={() => setShowGallery(true)}
-                        className="text-sm underline text-white hover:text-blue-800 flex gap-x-2"
-                    >
-                        <span><BiPhotoAlbum className="w-5 h-5" /></span>
-                        <span>{images?.length}</span>
-                    </button>
+                {/* Next 2 images */}
+                <div className="flex flex-col gap-4">
+                    {images.slice(1, 3).map((src, index) => (
+                        <div
+                            key={index + 1}
+                            className="h-36 md:h-[245px] relative cursor-pointer"
+                            onClick={() => openLightbox(index + 1)}
+                        >
+                            <img
+                                src={src}
+                                alt={`Thumbnail ${index + 1}`}
+                                className="w-full h-full object-cover rounded-lg"
+                            />
+                        </div>
+                    ))}
                 </div>
             </div>
 
-            {/* GALLERY VIEW */}
-            <AnimatePresence>
-                {showGallery && (
-                    <motion.div
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        exit={{ opacity: 0 }}
-                        className="fixed inset-0 bg-black/80 z-50 p-4 overflow-auto"
-                    >
-                        {/* Close Button */}
-                        <button
-                            onClick={() => setShowGallery(false)}
-                            className="absolute top-4 right-4 bg-white/20 hover:bg-white/40 p-2 rounded-full"
-                        >
-                            <X className="text-white w-6 h-6" />
-                        </button>
-
-                        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4 mt-10">
-                            {images?.map((src, index) => (
-                                <motion.img
-                                    key={index}
-                                    src={src}
-                                    alt={`Slide ${index + 1}`}
-                                    animate={selectedIndex === index ? { scale: 1.1 } : { scale: 1 }}
-                                    transition={{ duration: 1.5, ease: 'easeInOut' }}
-                                    onClick={() => setActiveImage(src)}
-                                    className="w-full h-64 sm:h-80 md:h-96 lg:h-[400px] xl:h-[450px] object-contain rounded cursor-pointer"
-                                />
-                            ))}
-                        </div>
-                    </motion.div>
-                )}
-            </AnimatePresence>
-
-            {/* FULL IMAGE MODAL */}
-            <AnimatePresence>
-                {activeImage && (
-                    <motion.div
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        exit={{ opacity: 0 }}
-                        onClick={() => setActiveImage(null)}
-                        className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4"
-                    >
-                        <Image
-                            src={activeImage}
-                            alt="Full view"
-                            className="max-w-full max-h-full rounded-lg"
+            {/* ✅ Remaining images (desktop only) */}
+            {images.length > 3 && (
+                <div className="hidden md:grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 mt-4 w-full">
+                    {images.slice(3).map((src, index) => (
+                        <img
+                            key={index + 3}
+                            src={src}
+                            alt={`Image ${index + 3}`}
+                            onClick={() => openLightbox(index + 3)}
+                            className="w-full h-60 object-cover rounded cursor-pointer"
                         />
-                        <button
-                            onClick={() => setActiveImage(null)}
-                            className="absolute top-4 right-4 bg-white/20 hover:bg-white/40 p-2 rounded-full"
-                        >
-                            <X className="text-white w-6 h-6" />
-                        </button>
-                    </motion.div>
-                )}
-            </AnimatePresence>
+                    ))}
+                </div>
+            )}
+
+            {/* ✅ LIGHTBOX FULLSCREEN */}
+            {lightboxOpen && (
+                <div className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4">
+                    <button
+                        onClick={closeLightbox}
+                        className="absolute top-4 right-4 bg-white/20 hover:bg-white/40 p-2 rounded-full"
+                    >
+                        <X className="text-white w-6 h-6" />
+                    </button>
+
+                    <button
+                        onClick={showPrev}
+                        className="absolute left-4 top-1/2 -translate-y-1/2 bg-black/40 p-2 rounded-full"
+                    >
+                        <ChevronLeft className="text-white w-6 h-6" />
+                    </button>
+
+                    <Image
+                        src={images[currentIndex]}
+                        alt={`Image ${currentIndex + 1}`}
+                        width={1200}
+                        height={800}
+                        className="max-w-full max-h-full object-contain rounded"
+                    />
+
+                    <button
+                        onClick={showNext}
+                        className="absolute right-4 top-1/2 -translate-y-1/2 bg-black/40  p-2 rounded-full"
+                    >
+                        <ChevronRight className="text-white w-6 h-6" />
+                    </button>
+                </div>
+            )}
         </>
     );
 }
