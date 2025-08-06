@@ -57,11 +57,45 @@ const ComponentName = (props) => {
 
 
 
+  // useEffect(() => {
+  //   const trackPageView = async () => {
+  //     const alreadyTracked = sessionStorage.getItem("blogPageViewed");
+
+  //     if (alreadyTracked) return; // 👈 Skip if already tracked in this session
+
+  //     const pageRef = doc(fireDb, "analytics", "blogPage");
+  //     const docSnap = await getDoc(pageRef);
+
+  //     if (docSnap.exists()) {
+  //       await updateDoc(pageRef, {
+  //         views: increment(1),
+  //         lastVisited: serverTimestamp(),
+  //       });
+  //     } else {
+  //       await setDoc(pageRef, {
+  //         views: 1,
+  //         lastVisited: serverTimestamp(),
+  //       });
+  //     }
+
+  //     sessionStorage.setItem("blogPageViewed", "true"); // 👈 Mark as viewed
+  //   };
+
+  //   trackPageView();
+  // }, []);
+
   useEffect(() => {
     const trackPageView = async () => {
-      const alreadyTracked = sessionStorage.getItem("blogPageViewed");
+      const ipRes = await fetch("https://api.ipify.org?format=json");
+      const { ip } = await ipRes.json();
 
-      if (alreadyTracked) return; // 👈 Skip if already tracked in this session
+      // const internalIps = ["103.96.17.223", "49.204.11.34"];
+      const internalIps = [""];
+
+      if (internalIps.includes(ip)) return;
+
+      const alreadyTracked = sessionStorage.getItem("blogPageViewed");
+      if (alreadyTracked) return;
 
       const pageRef = doc(fireDb, "analytics", "blogPage");
       const docSnap = await getDoc(pageRef);
@@ -79,10 +113,13 @@ const ComponentName = (props) => {
       }
 
       sessionStorage.setItem("blogPageViewed", "true"); // 👈 Mark as viewed
+
+      // ... your Firestore logic here
     };
 
     trackPageView();
   }, []);
+
 
 
 
