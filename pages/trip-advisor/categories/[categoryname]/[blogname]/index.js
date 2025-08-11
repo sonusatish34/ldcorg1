@@ -12,7 +12,7 @@ import Image from 'next/image';
 import staticPostData from './trips.json';
 import { useRouter } from 'next/router';
 import { IoMdArrowRoundBack } from "react-icons/io";
-import { FaChevronDown , FaChevronUp} from "react-icons/fa";
+import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 
 const mockBlog = {
   reviews: [
@@ -39,89 +39,117 @@ function ItineraryComponent({ data }) {
   const toggleDay = (dayKey) => {
     setExpandedDays((prev) => ({ ...prev, [dayKey]: !prev[dayKey] }));
   };
-   const renderScheduleItem = (item, index, countOffset = 1) => (
-    <div key={index} className="relative border-l-2 border-dotted border-blue-500 pl-6 pb-">
+  const [expandedItem, setExpandedItem] = useState(null);
+
+const toggleItem = (indexKey) => {
+  setExpandedItem(prev => (prev === indexKey ? null : indexKey));
+};
+
+const renderScheduleItem = (item, index, countOffset = 1) => {
+  const key = `${item.title}-${index}`;
+  const isExpanded = expandedItem === key;
+
+  return (
+    <div
+      key={index}
+      className="relative border-l-2 border-dotted border-blue-500 pl-6 pb-4 cursor-pointer"
+      onClick={() => toggleItem(key)}
+    >
       <div className="absolute -left-3 top-1 w-6 h-6 rounded-full bg-blue-600 text-white flex items-center justify-center text-sm font-bold">
-        {index + countOffset}
+        {(index + countOffset) === 1 ? '📍' : index + countOffset}
       </div>
-      <div className="">
-        <h4 className="font-semibold text-lg text-blue-700">{item.title}</h4>
-        <p className="text-sm text-gray-600">{item.time} – {item.description}</p>
-        <p className="text-xs text-gray-500 italic">{item.cost}</p>
+      <div>
+        <div className="flex items-center justify-between">
+          <h4 className="flex flex-col">
+            <span className="font-semibold text-lg text-blue-700">{item.title}</span>
+            <span>Start at {item.time}</span>
+          </h4>
+          {isExpanded ? <FaChevronUp size={16} /> : <FaChevronDown size={16} />}
+        </div>
+        {isExpanded && (
+          <div>
+            <p className="text-sm text-gray-600">{item.description}</p>
+            <p className="text-xs text-gray-500 italic">{item.cost}</p>
+          </div>
+        )}
       </div>
     </div>
   );
+};
+
+
   return data.itineraryData && (
     <>
-     <div className="px-4 py-6">
-      <h1 className="text-3xl font-bold mb-2 text-blue-700">{data.itineraryData.title}</h1>
-      <p className="mb-4 text-gray-600">{data.itineraryData.summary}</p>
-      <div className="grid grid-cols-2 gap-2 mb-6">
-        {data.coverimages.map((src, idx) => (
-          <Image
-            key={idx}
-            src={src}
-            alt={`Cover ${idx}`}
-            width={600}
-            height={400}
-            className="rounded-xl object-cover w-full lg:h-[400px] h-[150px]"
-          />
-        ))}
-      </div>
+      <div id='itinerary' className="px-4 py-6">
+        <h1 className="text-3xl font-bold mb-2 text-blue-700">{data.itineraryData.title}</h1>
+        <p className="mb-4 text-gray-600">{data.itineraryData.summary}</p>
+        {/* <div className="grid grid-cols-2 gap-2 mb-6">
+          {data.coverimages.map((src, idx) => (
+            <Image
+              key={idx}
+              src={src}
+              alt={`Cover ${idx}`}
+              width={600}
+              height={400}
+              className="rounded-xl object-cover w-full lg:h-[400px] h-[150px]"
+            />
+          ))}
+        </div> */}
 
-      <div className="flex overflow-x-auto no-scrollbar space-x-4 pb-6">
-        {uniqueTypes.map((type) => (
-          <button
-            key={type}
-            onClick={() => setSelectedType(type)}
-            className={`whitespace-nowrap px-4 py-2 rounded-full border text-sm font-medium transition
+
+        <div className="flex overflow-x-auto no-scrollbar space-x-4 py-6">
+          {uniqueTypes.map((type) => (
+            <button
+              key={type}
+              onClick={() => setSelectedType(type)}
+              className={`whitespace-nowrap px-4 py-2 rounded-full border text-sm font-medium transition
               ${selectedType === type
-              ? 'bg-blue-600 text-white border-blue-600'
-              : 'bg-white text-black border-gray-300 hover:bg-blue-600 hover:text-white'}`}
-          >
-            {type}
-          </button>
-        ))}
-      </div>
+                  ? 'bg-blue-600 text-white border-blue-600'
+                  : 'bg-white text-black border-gray-300 hover:bg-blue-600 hover:text-white'}`}
+            >
+              {type}
+            </button>
+          ))}
+        </div>
 
-      {data.itineraryData.plans
-        .filter(plan => plan.type === selectedType)
-        .map((plan, idx) => (
-          <div key={idx} className="bg-white rounded-2xl shadow-md p-6 mb-8">
-            <h2 className="text-2xl font-bold text-blue-700 mb-2">{plan.type}</h2>
-            <p className="text-lg text-blue-600 font-semibold mb-1">{plan.price}</p>
-            <p className="text-sm text-gray-500 mb-4">Duration: {plan.duration}</p>
+        {data.itineraryData.plans
+          .filter(plan => plan.type === selectedType)
+          .map((plan, idx) => (
+            <div key={idx} className="bg-white rounded-2xl shadow-md p-6 mb-8">
+              <h2 className="text-2xl font-bold text-blue-700 mb-2">{plan.type}</h2>
+              <p className="text-lg text-blue-600 font-semibold mb-1">{plan.price}</p>
+              <p className="text-sm text-gray-500 mb-4">Duration: {plan.duration}</p>
 
-            {plan.schedule && (
-              <div className="space-y-6">
-                {plan.schedule.map((item, i) => renderScheduleItem(item, i))}
-              </div>
-            )}
-
-            {plan.days && plan.days.map((day, dIdx) => {
-              const key = `${idx}-${dIdx}`;
-              return (
-                <div key={key} className="mb-6">
-                  <div
-                    className="flex items-center justify-between cursor-pointer text-blue-700 font-bold text-lg mb-2"
-                    onClick={() => toggleDay(key)}
-                  >
-                    <span>{day.title}</span>
-                    {expandedDays[key] ? <FaChevronUp size={20} /> : <FaChevronDown size={20} />}
-                  </div>
-                  {expandedDays[key] && (
-                    <div className="space-y-6">
-                      {day.schedule.map((item, i) => renderScheduleItem(item, i))}
-                    </div>
-                  )}
+              {plan.schedule && (
+                <div className="space-y-6">
+                  {plan.schedule.map((item, i) => renderScheduleItem(item, i))}
                 </div>
-              );
-            })}
+              )}
 
-            <p className="text-xs text-gray-500 italic mt-4">{plan.note}</p>
-          </div>
-        ))}
-    </div>
+              {plan.days && plan.days.map((day, dIdx) => {
+                const key = `${idx}-${dIdx}`;
+                return (
+                  <div key={key} className="mb-6">
+                    <div
+                      className="flex items-center justify-between cursor-pointer text-blue-700 font-bold text-lg mb-2"
+                      onClick={() => toggleDay(key)}
+                    >
+                      <span>{day.title}</span>
+                      {expandedDays[key] ? <FaChevronUp size={20} /> : <FaChevronDown size={20} />}
+                    </div>
+                    {expandedDays[key] && (
+                      <div className="space-y-6">
+                        {day.schedule.map((item, i) => renderScheduleItem(item, i))}
+                      </div>
+                    )}
+                  </div>
+                );
+              })}
+
+              <p className="text-xs text-gray-500 italic mt-4">{plan.note}</p>
+            </div>
+          ))}
+      </div>
 
     </>
   );
@@ -134,7 +162,7 @@ const VizagTrip = () => {
 
   const blogname = router.query.blogname;
   const data = staticPostData[blogname]?.[0] || {};
-  
+
   if (!router.isReady || !data.title) {
     return <div className="p-10 text-xl">Loading trip details...</div>;
   }
