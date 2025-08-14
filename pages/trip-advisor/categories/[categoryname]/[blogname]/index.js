@@ -117,8 +117,8 @@ const renderScheduleItem = (item, index, countOffset = 1) => {
           .map((plan, idx) => (
             <div key={idx} className="bg-white rounded-2xl shadow-md p-6 mb-8">
               <h2 className="text-2xl font-bold text-blue-700 mb-2">{plan.type}</h2>
-              <p className="text-lg text-blue-600 font-semibold mb-1">{plan.price}</p>
-              <p className="text-sm text-gray-500 mb-4">Duration: {plan.duration}</p>
+              {/* <p className="text-lg text-blue-600 font-semibold mb-1">{plan.price}</p> */}
+              {/* <p className="text-sm text-gray-500 mb-4">Duration: {plan.duration}</p> */}
 
               {plan.schedule && (
                 <div className="space-y-6">

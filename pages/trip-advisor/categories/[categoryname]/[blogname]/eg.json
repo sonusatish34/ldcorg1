@@ -1,0 +1,166 @@
+{
+  "type": "3-Day Chirala & Bapatla Family Road Trip",
+  "price": "Approx ₹2,000–₹3,500 per person total",
+  "duration": "3 Days",
+  "days": [
+    {
+      "title": "Day 1: Coastal Charm in Chirala",
+      "schedule": [
+        {
+          "time": "9:00–11:00 AM",
+          "title": "Ramapuram & Vodarevu Beaches",
+          "description": "Enjoy soft sands, morning breeze, local fishing boats. Ramapuram for peaceful stroll; Vodarevu for light swimming & photos.",
+          "cost": "Free",
+          "distance": "~6 km from Chirala town centre (10 min)"
+        },
+        {
+          "time": "11:00–11:20 AM",
+          "title": "Mid-Morning Refreshments",
+          "description": "Panipuri, coconut water, oil dosa from street carts.",
+          "cost": "₹50–₹150"
+        },
+        {
+          "time": "11:20 AM–12:20 PM",
+          "title": "Sri Veera Raghava Swamy Temple",
+          "description": "Historic 8th century Pallava Vishnu temple with classic Dravidian architecture.",
+          "cost": "Free",
+          "distance": "~2 km from beach (5 min)",
+          "wait_time": "Possibly 10 min during midday puja"
+        },
+        {
+          "time": "12:30–1:15 PM",
+          "title": "Lunch at Local Andhra Seafood & Veg Cuisine",
+          "description": "Fish fry, prawn curry, punugulu, masala bajji.",
+          "cost": "₹200–₹400 per person"
+        },
+        {
+          "time": "1:15–2:15 PM",
+          "title": "Handloom Market & Cashew Shops",
+          "description": "Shop Chirala cotton sarees and cashews; see weaving process.",
+          "cost": "Free",
+          "distance": "Walking distance within town"
+        },
+        {
+          "time": "2:30–4:30 PM",
+          "title": "Relax at Ramapuram Beach & Sunset Photography",
+          "description": "Capture sunset, relax near Palm Coast Resorts, enjoy quiet ambiance.",
+          "cost": "Free",
+          "distance": "~6 km (10 min back)"
+        },
+        {
+          "time": "4:30–5:30 PM",
+          "title": "Dinner at Popular Local Restaurant",
+          "cost": "₹300–₹500 per person"
+        }
+      ]
+    },
+    {
+      "title": "Day 2: Bapatla & Surroundings",
+      "schedule": [
+        {
+          "time": "9:00–10:15 AM",
+          "title": "Bhavanarayana Swamy Temple, Bapatla",
+          "description": "Ancient Vishnu temple from Chola period; managed by ASI; famous chariot festival.",
+          "cost": "Free",
+          "wait_time": "~10 min if devotees present"
+        },
+        {
+          "time": "10:15–10:30 AM",
+          "title": "Snack Break",
+          "cost": "₹50–₹100"
+        },
+        {
+          "time": "10:30–11:00 AM",
+          "title": "Edward Coronation Memorial Town Hall",
+          "description": "Colonial-era structure built 1905; historic during Andhra linguistic movement.",
+          "cost": "Free",
+          "distance": "~1 km within Bapatla"
+        },
+        {
+          "time": "11:15 AM–1:30 PM",
+          "title": "Suryalanka Beach (Bapatla Beach)",
+          "description": "Swimming, beach strolls, photos; vendors for snacks. Beach open 9 AM to 10 PM.",
+          "cost": "Free",
+          "wait_time": "No wait; water rides may wait ~10 min",
+          "distance": "~9 km from Bapatla (15 min)"
+        },
+        {
+          "time": "1:30–2:15 PM",
+          "title": "Lunch at Beachfront Café or Resort",
+          "cost": "₹200–₹400 per person"
+        },
+        {
+          "time": "2:15–3:00 PM",
+          "title": "Return & Afternoon Rest",
+          "description": "Drive back to Bapatla and relax at hotel."
+        },
+        {
+          "time": "3:30–5:00 PM",
+          "title": "Uppalapadu Bird Sanctuary (Optional)",
+          "description": "Pelicans, painted storks in nesting season; boat rental available.",
+          "cost": "₹50–₹100 entry; boat ₹50–₹100",
+          "distance": "~20 km (30 min from Bapatla)",
+          "wait_time": "Possible 10 min queue for guided areas or boat"
+        },
+        {
+          "time": "5:30–6:30 PM",
+          "title": "Dinner in Bapatla Town",
+          "cost": "₹300–₹500 per person"
+        },
+        {
+          "time": "6:30–7:15 PM",
+          "title": "Drive back to Chirala",
+          "distance": "~40 km, 45 min"
+        }
+      ]
+    },
+    {
+      "title": "Day 3: Heritage & Temples Around Bapatla",
+      "schedule": [
+        {
+          "time": "9:30–11:00 AM",
+          "title": "Chebrolu Village Exploration",
+          "description": "Ancient Buddhist archaeological site with early Brahmi-script urns and Satavahana relics.",
+          "cost": "Free",
+          "distance": "~45 km (1 hour drive) from Chirala"
+        },
+        {
+          "time": "11:00–11:15 AM",
+          "title": "Break",
+          "cost": "₹50"
+        },
+        {
+          "time": "11:45 AM–1:00 PM",
+          "title": "Singarakonda Hill Temple (Prasannanjaneya Swamy)",
+          "description": "Hilltop Lord Hanuman temple with panoramic views; built 14th century.",
+          "cost": "Free",
+          "distance": "~25 km from Chebrolu (30 min)",
+          "wait_time": "Minor queue (~5–10 min)"
+        },
+        {
+          "time": "1:00–1:45 PM",
+          "title": "Lunch Nearby",
+          "description": "Andhra staples: rice, curries, snacks.",
+          "cost": "₹150–₹300 per person"
+        },
+        {
+          "time": "2:45–4:30 PM",
+          "title": "Suryalanka Beach Return (Relax or Swim)",
+          "description": "Dip, relax under palms, enjoy sunset vibe.",
+          "cost": "Free",
+          "distance": "~30 km (45 min) to beach"
+        },
+        {
+          "time": "5:30–6:30 PM",
+          "title": "Final Dinner at Chirala Beachside or Town",
+          "cost": "₹300–₹500 per person"
+        },
+        {
+          "time": "6:45–7:00 PM",
+          "title": "Return to Chirala Centre & Wrap Up",
+          "distance": "~6 km (~10 min)"
+        }
+      ]
+    }
+  ]
+}

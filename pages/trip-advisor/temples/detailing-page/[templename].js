@@ -20,8 +20,8 @@ import 'swiper/css/navigation';
 
 function TempleInfo({ name }) {
   const templeData = Array.isArray(td?.[name]) ? td[name][0] : {};
-  console.log(templeData,'kkkk');
-  
+  console.log(templeData, 'kkkk');
+
   return (
     <div className="space-y-4">
       <p className="font-bold text-2xl text-[#A94A4A]">Temple Information</p>
@@ -95,7 +95,7 @@ function ItinerarySelector({ name }) {
         ))}
       </div>
 
-      <div className="bg-white text-lg lg:text-xl shadow rounded-xl px-3 py-4 space-y-6">
+      <div className="bg-white text-lg  shadow rounded-xl px-3 py-4 space-y-6">
         <h2 className=" font-semibold text-[#A94A4A]">
           {temple[selected]?.title || 'Title Unavailable'}
           <span className="text-gray-600 pl-3 ">
@@ -104,7 +104,7 @@ function ItinerarySelector({ name }) {
         </h2>
 
         {temple[selected]?.days?.map((day, idx) => (
-          <div key={idx} className="bg-gray-50 rounded-xl p-4 border border-gray-200">
+          <div key={idx} className="bg-gray-50 rounded-xl lg:text-base p-4 border border-gray-200">
             <h3 className=" font-bold mb-3 text-gray-800">
               {day.title || 'Day Title Unavailable'}
             </h3>
@@ -175,8 +175,8 @@ function SevaDarshanam({ name }) {
 
   return (
     <div className="space-y-3 relative py-10">
-      <h3 className="text-2xl font-semibold text-[#A94A4A] text-center py-4">Sevas & Darshanam</h3>
-      <ul className="flex flex-wrap items-center justify-center gap-8">
+      <h3 className="text-2xl font-semibold text-[#A94A4A] text- py-4">Sevas & Darshanam</h3>
+      <ul className="flex flex-wrap items-center  gap-8">
         {sevaList.map((seva, index) => (
           <li key={index} className="border-2 border-gray-100 shadow-md rounded-lg p-2 py-4 w-fit">
             <div className="flex flex-col items-center gap-y-4 w-[280px]">
@@ -422,30 +422,35 @@ export default function TempleDetailPage() {
             <div className="w-full lg:w-1/3">
               <div className="">
                 <Swiper
+                  key={templeData?.images?.length || 0} // Add this to re-init Swiper when images are loaded
                   modules={[Navigation, Autoplay]}
                   navigation={true}
                   autoplay={{
                     delay: 1500,
                     disableOnInteraction: false,
-                    pauseOnMouseEnter: false, // Ensure it doesn’t pause on hover
+                    pauseOnMouseEnter: false,
                   }}
                   loop={true}
                   spaceBetween={1}
                   slidesPerView="1"
                   style={{ padding: '10px 0' }}
                 >
-                  {templeData?.images.map((src, index) => (
+                  {templeData?.images?.map((src, index) => (
                     <SwiperSlide
                       key={index}
-                      style={{
-                        flexShrink: 0,
-                      }}
                       className="rounded overflow-hidden shadow lg:w-[400px]"
                     >
-                      <Image width={500} height={500} src={src} alt={`Slide ${index}`} className=" object-cover h-[421px]" />
+                      <Image
+                        width={500}
+                        height={500}
+                        src={src}
+                        alt={`Slide ${index}`}
+                        className="object-cover h-[421px]"
+                      />
                     </SwiperSlide>
                   ))}
                 </Swiper>
+
               </div>
               <div className="mt-4 flex flex-col gap-y-1 pb-5">
                 <h1 className="text-2xl font-bold text-gray-800 capitalize">

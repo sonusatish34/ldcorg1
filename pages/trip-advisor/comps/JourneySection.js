@@ -44,12 +44,6 @@ export default function JourneySection() {
               <h2 className="text-white text-2xl font-semibold lobster-font">Travel</h2>
               <div className="absolute bottom-4 left-5">
                 <div>
-                  {/* <p>kooooo</p> */}
-                  {/* <ul className=" lg:text-lg text-sm flex gap-x-3 text-white">
-                    {['solo', 'family', 'Friends', 'Group'].map((item) => (
-                      <li className="py-1 px-4 font-semibold rounded-lg transition-all bg-white/50 text-black hover:bg-white/20">{item}</li>
-                    ))}
-                  </ul> */}
                   <p className="py-1 capitalize text-white">packages from </p>
                   <ul className=" lg:text-lg text-sm flex gap-x-3 text-white">
                     {['₹2000/day', '₹3000/day', '₹4000/day'].map((item) => (
@@ -86,6 +80,17 @@ export default function JourneySection() {
           >
             <div className="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
               <h2 className="text-white text-2xl font-semibold">Cities</h2>
+              <div className="absolute bottom-4 left-5">
+                <div>
+                  <p className="py-1 capitalize text-white">packages from </p>
+                  <ul className=" lg:text-lg text-sm flex gap-x-3 text-white">
+                    {['₹2000/day', '₹3000/day', '₹4000/day'].map((item) => (
+                      <li className="py-1 px-2 font-semibold rounded-lg transition-all bg-white/20 text-white hover:bg-white/20">{item}</li>
+                    ))}
+                  </ul>
+
+                </div>
+              </div>
             </div>
           </Link>
           <Link
@@ -100,6 +105,17 @@ export default function JourneySection() {
           >
             <div className="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
               <h2 className="text-white text-2xl font-semibold">Temples</h2>
+              <div className="absolute bottom-4 left-5">
+                <div>
+                  <p className="py-1 capitalize text-white">packages from </p>
+                  <ul className=" lg:text-lg text-sm flex gap-x-3 text-white">
+                    {['₹2000/day', '₹3000/day', '₹4000/day'].map((item) => (
+                      <li className="py-1 px-2 font-semibold rounded-lg transition-all bg-white/20 text-white hover:bg-white/20">{item}</li>
+                    ))}
+                  </ul>
+
+                </div>
+              </div>
             </div>
           </Link>
 
@@ -114,6 +130,17 @@ export default function JourneySection() {
           >
             <div className="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
               <h2 className="text-white text-2xl font-semibold">Tourism</h2>
+              <div className="absolute bottom-4 left-5">
+                <div>
+                  <p className="py-1 capitalize text-white">packages from </p>
+                  <ul className=" lg:text-lg text-sm flex gap-x-3 text-white">
+                    {['₹2000/day', '₹3000/day', '₹4000/day'].map((item) => (
+                      <li className="py-1 px-2 font-semibold rounded-lg transition-all bg-white/20 text-white hover:bg-white/20">{item}</li>
+                    ))}
+                  </ul>
+
+                </div>
+              </div>
             </div>
           </div>
         </div>

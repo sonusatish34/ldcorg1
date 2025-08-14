@@ -11,7 +11,7 @@ import { Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/autoplay'; // Optional: autoplay styles
 import 'swiper/css/pagination';
-
+import MusicPlayer from './MusicPlayer';
 const temples = [
     {
         name: 'Sri Durga malleswara swamy',
@@ -54,7 +54,7 @@ const temples = [
             "/temples/srisailam2.jpg",
             "/temples/srisailam3.webp"
         ],
-        link: '/trip-advisor/temples/detailing-page/sri-malakarjuna-swamy-srisailam',
+        link: '/trip-advisor/temples/detailing-page/sri-mallikarjuna-swamy-srisailam',
         maplink: 'https://maps.app.goo.gl/g6eiss1kn2wib9wA8'
     },
     {
@@ -87,7 +87,7 @@ const temples = [
             "/temples/dwarakatirumala2.jpg",
             "/temples/dwarakatirumala3.jpg"
         ],
-        link: '/trip-advisor/temples/detailing-page/dwaraka-tirumala',
+        link: '/trip-advisor/temples/detailing-page/dwaraka-tirumala-temple',
         maplink: 'https://maps.app.goo.gl/UbDQyNo5B199vBsNA'
     },
     {
@@ -135,8 +135,8 @@ const temples = [
     },
 ];
 
-
 export default function TemplesPage() {
+
     const [scrolling, setScrolling] = useState(false);
     const [searchTerm, setSearchTerm] = useState('');
     const [filteredTemples, setFilteredTemples] = useState(temples);
@@ -162,15 +162,17 @@ export default function TemplesPage() {
     return (
         <div className="min-h-screen bg-gray-50">
             {/* Navbar */}
-            <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolling ? 'bg-white shadow-md' : 'bg-transparent'} py-4 px-6 flex justify-between items-center`}>
+            
+            <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolling ? 'bg-white shadow-md' : 'bg-transparent text-white'} py-4 px-6 flex justify-between items-center`}>
                 <div className="text-2xl font-bold text-pink-700">Devotional Services</div>
-                <div className="space-x-6 text-sm text-gray-800 font-medium hidden md:flex">
+                <div className="space-x-6 text-sm  font-medium hidden md:flex">
                     <Link href="#">Home</Link>
                     <Link href="#">About Us</Link>
                     <Link href="#">Services</Link>
                     <Link href="#">Temples</Link>
                     <Link href="#">Contact</Link>
                 </div>
+                <MusicPlayer/>
             </nav>
 
             {/* Hero/Header Section */}
@@ -195,7 +197,7 @@ export default function TemplesPage() {
             </header>
 
             {/* Main Grid */}
-            <main className=" lg:px-28 py-10 grid gap-10 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 place-items-center">
+            <main className=" lg:px-28 py-10 grid gap-10 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 place-items-center body-temple">
                 {filteredTemples.length > 0 ? filteredTemples.map((temple, idx) => (
                     <div
                         key={idx}
@@ -207,7 +209,7 @@ export default function TemplesPage() {
                                 <Swiper
                                     modules={[Autoplay]}
                                     autoplay={{
-                                        delay: 1500 + idx * 1000,
+                                        delay: 2500 + idx * 2000,
                                         disableOnInteraction: false,
                                     }}
                                     loop={true}

@@ -146,7 +146,7 @@ const handleLoad = () => {
             <div className="relative w-full rounded-2xl shadow-xl overflow-hidden">
               <video
                 className="absolute inset-0 w-full h-full object-cover"
-                src="/123.mp4"
+                src="/wave2.mp4"
                 autoPlay
                 loop
                 muted
@@ -200,12 +200,12 @@ const handleLoad = () => {
                   )}
                 </div>
 
-                <div className="flex justify-between text-white text-sm mb-2 font-semibold uppercase py-2">
+                <div className="flex justify-between text-black text-sm mb-2 font-semibold uppercase py-2">
                   <span>Start Date</span>
                   <span>End Date</span>
                 </div>
 
-                <div className="flex justify-between mb-4 text-white">
+                <div className="flex justify-between mb-4 text-black">
                   <div className="w-[48%]">
                     <button onClick={handleStartDateClick} className="w-full px-3 py-2 border rounded-md text-sm">
                       {selectedCheckIn ? selectedCheckIn.toDateString() : 'Select Date'}

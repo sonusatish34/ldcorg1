@@ -37,7 +37,7 @@ export default function TripPlannerHero() {
 
   return (
     <div className="relative py-20 bg-gradient-to-r from-indigo-300 via-purple-500 to-pink-900 overflow-hidden">
-      <video className="absolute inset-0 w-full h-full object-cover z-0" src="/green.mp4" autoPlay loop muted />
+      <video className="absolute inset-0 w-full h-full object-cover z-0" src="/trees.mp4" autoPlay loop muted />
       <div className="absolute inset-0 bg-black/10 backdrop-blursm z-0" />
 
       <div className="relative z-10 max-w-4xl mx-auto px-4">
@@ -48,7 +48,7 @@ export default function TripPlannerHero() {
           className="rounded-3xl overflow-hidden shadow-2xl bg-white/10 backdrop-blur-[1px] border border-white/10 py-10 px-6 text-white"
         >
           <h1 className="text-4xl font-extrabold text-center mb-4">
-            ✈️ <span className="text-white">Let's <span className="text-[#FFC300]">Plan</span> Your <span className="text-blue-400">Perfect</span> Trip!</span>
+            ✈️ <span className="text-white">Let's <span className="text-[#FFC300]">Plan</span> Your <span className="text-blue-600">Perfect</span> Trip!</span>
           </h1>
 
           <div className="text-center text-white mb-4 font-semibold text-lg">
@@ -139,12 +139,12 @@ export default function TripPlannerHero() {
 
           {/* 🔱 Focus Buttons */}
           <div className="flex justify-center gap-4 mb-6">
-            <Link href="/trip-advisor">
+            <Link target='_blank' href="/trip-advisor">
               <button className="flex items-center gap-2 px-5 py-2 bg-gradient-to-r from-green-400 to-green-600 hover:brightness-110 text-white rounded-full shadow-md font-semibold">
                 🏞️ Tourism
               </button>
             </Link>
-            <Link href="/trip-advisor/temples">
+            <Link target='_blank' href="/trip-advisor/temples">
               <button className="flex items-center gap-2 px-5 py-2 bg-gradient-to-r from-yellow-300 to-orange-500 hover:brightness-110 text-black rounded-full shadow-md font-semibold">
                 🛕Temples
               </button>

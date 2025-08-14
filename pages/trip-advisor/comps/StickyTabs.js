@@ -31,10 +31,10 @@ export default function StickyTabs() {
       section.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
   };
+  
   console.log(activeTab, 'activeTab');
   // console.log(tab, '-------tab');
   
-
   return (
     <div className="sticky top-0 z-50 bg-white shadow-sm border-b">
       <div className="flex overflow-x-auto scrollbar-hide text-sm lg:text-xl font-bold sm:text-base">

@@ -1,225 +1,444 @@
 {
-        "hitting-the-vizag-streets-full-swag": [
-            {
-                "title": "Vizag Coastal & Cultural Tour",
-                "coverimages": [
-                    "/trips/vizag/4.jpg",
-                    "/trips/vizag/5.jpg",
-                    "/trips/vizag/6.jpg",
-                    "/trips/vizag/7.jpg",
-                    "/trips/vizag/2.jpg"
-                ],
-                "latitude": 17.6868,
-                "longitude": 83.2185,
-                "populartags": [
-                    "vizag",
-                    "beach-tour",
-                    "temples"
-                ],
-                "content": "Vizag is a port city on the southeast coast of India known for its beaches, scenic hills, and rich cultural heritage. This travel guide covers the must-see places and experiences in Visakhapatnam, including historical landmarks, religious sites, natural beauty, and local cuisine.",
-                "besttime": "Best time to visit Vizag is between October and March when the weather is pleasant.",
-                "itineraryData": {
-                    "title": "Vishakapatnam Travel Itinerary",
-                    "summary": "Explore Vizag’s pristine beaches, ancient temples, scenic hills, and tribal culture through our curated 1, 3, and 5-day travel itineraries including meals, transport, and budget details.",
-                    "coverImage": "/trips/vizag/vizagcover.jpg",
-                    "plans": [
-                        {
-                            "type": "1-Day Plan",
-                            "price": "₹5,500 – ₹7,500 (for 5 people)",
-                            "duration": "1 Day",
-                            "schedule": [
-                                {
-                                    "time": "07:00 AM",
-                                    "title": "Simhachalam Temple",
-                                    "description": "Start from Jagadamba (~20 km, ~45 min drive). Reach by 7:45 AM. ₹100 special darshan. Less crowd early morning.",
-                                    "cost": "₹100/person"
-                                },
-                                {
-                                    "time": "09:15 AM",
-                                    "title": "Breakfast near Simhachalam",
-                                    "description": "South Indian tiffin: idli, dosa, sambhar, filter coffee.",
-                                    "cost": "₹300–₹400 (for 5)"
-                                },
-                                {
-                                    "time": "10:00 AM",
-                                    "title": "Sri Kanaka Mahalakshmi Temple",
-                                    "description": "Backtrack ~20 km (~45 min). Sevas like Ksheerabhishekam (Fri only), Panchamruthabhishekam, Samuhika Ashtothara.",
-                                    "cost": "₹20–₹516/person"
-                                },
-                                {
-                                    "time": "11:00 AM",
-                                    "title": "Snacks at Jagadamba",
-                                    "description": "Try vada, upma, or mini biryani in Jagadamba Centre.",
-                                    "cost": "₹300–₹400 (for 5)"
-                                },
-                                {
-                                    "time": "12:00 PM",
-                                    "title": "Kailasagiri Park & Ropeway",
-                                    "description": "Hilltop ropeway ride, views, Shiva-Parvati statue. Toy train optional.",
-                                    "cost": "₹90–₹120 (ropeway) + ₹30–₹100 (rides)"
-                                },
-                                {
-                                    "time": "01:30 PM",
-                                    "title": "Lunch @ Kailasagiri",
-                                    "description": "Eat at hilltop cafe with sea view.",
-                                    "cost": "₹1,000–₹1,500 (for 5)"
-                                },
-                                {
-                                    "time": "02:30 PM",
-                                    "title": "INS Submarine Museum + RK Beach",
-                                    "description": "Visit India’s only submarine museum and walk on RK Beach.",
-                                    "cost": "₹80–₹120 (museum), Free (beach)"
-                                },
-                                {
-                                    "time": "04:30 PM",
-                                    "title": "Evening Temple Visit",
-                                    "description": "Choose Sampath Vinayagar or Venkateswara Temple (near Waltair/Asilmetta).",
-                                    "cost": "Free or ₹30–₹50"
-                                },
-                                {
-                                    "time": "06:00 PM",
-                                    "title": "Dinner at Jagadamba / Suryabagh",
-                                    "description": "Andhra meals or seafood at popular restaurants.",
-                                    "cost": "₹1,500–₹2,000 (for 5)"
-                                }
-                            ],
-                            "note": "Ideal for a car-based day trip from Jagadamba Centre covering iconic temples, beach, and city views."
-                        },
-                        {
-                            "type": "3-Day Plan",
-                            "price": "₹27,500 – ₹30,000 (for 5 people)",
-                            "duration": "3 Days",
-                            "days": [
-                                {
-                                    "title": "Day 1: Temples, Parks & Beach",
-                                    "schedule": [
-                                        {
-                                            "time": "07:00 AM",
-                                            "title": "Simhachalam Temple",
-                                            "description": "Start from Jagadamba (~20 km, ~45 min drive). Reach by 7:45 AM. ₹100 special darshan. Less crowd early morning.",
-                                            "cost": "₹100/person"
-                                        },
-                                        {
-                                            "time": "09:15 AM",
-                                            "title": "Breakfast at Simhachalam",
-                                            "description": "Idli, dosa, sambhar, coffee near temple area.",
-                                            "cost": "₹400"
-                                        },
-                                        {
-                                            "time": "10:00 AM",
-                                            "title": "Sri Kanaka Mahalakshmi Temple",
-                                            "description": "Backtrack ~20 km (~45 min). Minimal queues. Optional sevas ₹20–₹200.",
-                                            "cost": "₹20–₹516/person"
-                                        },
-                                        {
-                                            "time": "11:15 AM",
-                                            "title": "Snack Break in Jagadamba",
-                                            "description": "Light snack near city center.",
-                                            "cost": "₹300"
-                                        },
-                                        {
-                                            "time": "12:00 PM",
-                                            "title": "Kailasagiri Ropeway & Park",
-                                            "description": "Ropeway ride, hilltop park, Shiva-Parvati statue, lunch.",
-                                            "cost": "₹120 ropeway + ₹300 lunch"
-                                        },
-                                        {
-                                            "time": "02:00 PM",
-                                            "title": "INS Submarine Museum + RK Beach",
-                                            "description": "From Kailasagiri, ~12 km (~25 min). Explore museum & stroll on beach.",
-                                            "cost": "₹100 museum, Free beach"
-                                        },
-                                        {
-                                            "time": "04:30 PM",
-                                            "title": "Evening Temple",
-                                            "description": "Nearby temples in Waltair (~2–3 km). Sampath Vinayagar or Venkateswara.",
-                                            "cost": "Free or ₹30–₹50"
-                                        },
-                                        {
-                                            "time": "06:00 PM",
-                                            "title": "Dinner",
-                                            "description": "Andhra thali / seafood at Jagadamba or Suryabagh.",
-                                            "cost": "₹1,500"
-                                        }
-                                    ]
-                                },
-                                {
-                                    "title": "Day 2: Culture & Coastal Vibes",
-                                    "schedule": [
-                                        {
-                                            "time": "09:00 AM",
-                                            "title": "Visakha Museum",
-                                            "description": "Located on RK Beach Road (~4 km from Jagadamba). Maritime and heritage exhibits.",
-                                            "cost": "₹20–₹50"
-                                        },
-                                        {
-                                            "time": "10:30 AM",
-                                            "title": "Tenneti Park",
-                                            "description": "Coastal green park with sea view (~3.5 km).",
-                                            "cost": "Free"
-                                        },
-                                        {
-                                            "time": "01:00 PM",
-                                            "title": "Lunch @ RK Beach",
-                                            "description": "Restaurants nearby. Andhra meals / seafood.",
-                                            "cost": "₹1,500"
-                                        },
-                                        {
-                                            "time": "02:30 PM",
-                                            "title": "Matsyadarshini Aquarium",
-                                            "description": "Air-conditioned marine display. ~4 km from Jagadamba.",
-                                            "cost": "₹30–₹50"
-                                        },
-                                        {
-                                            "time": "06:00 PM",
-                                            "title": "Dinner at Jagadamba",
-                                            "description": "Try Andhra-style thali / snacks.",
-                                            "cost": "₹1,000"
-                                        }
-                                    ]
-                                },
-                                {
-                                    "title": "Day 3: Nature & Wildlife",
-                                    "schedule": [
-                                        {
-                                            "time": "07:00 AM",
-                                            "title": "Kambalakonda Wildlife Sanctuary",
-                                            "description": "Drive ~16 km. Birdwatching and nature walk.",
-                                            "cost": "₹100–₹200"
-                                        },
-                                        {
-                                            "time": "11:00 AM",
-                                            "title": "Lunch Stop",
-                                            "description": "Snacks or meals near sanctuary or return route.",
-                                            "cost": "₹1,000"
-                                        },
-                                        {
-                                            "time": "01:00 PM",
-                                            "title": "Biodiversity Park",
-                                            "description": "Botanical garden with butterflies & bird zone.",
-                                            "cost": "Free or nominal"
-                                        },
-                                        {
-                                            "time": "04:00 PM",
-                                            "title": "Return to City",
-                                            "description": "Drive back to Jagadamba. Evening rest.",
-                                            "cost": "–"
-                                        },
-                                        {
-                                            "time": "06:30 PM",
-                                            "title": "Dinner @ Beach Road",
-                                            "description": "Seafood or regional Andhra cuisine.",
-                                            "cost": "₹1,500"
-                                        }
-                                    ]
-                                }
-                            ],
-                            "note": "Designed for car rental users to explore Vizag with comfort and flexibility across temples, beaches, and nature spots."
-                        }
-                    ]
-                }
+    "hitting-the-vizag-streets-full-swag": [
+        {
+            "title": "Vizag Coastal & Cultural Tour",
+            "coverimages": [
+                "/trips/vizag/4.jpg",
+                "/trips/vizag/5.jpg",
+                "/trips/vizag/6.jpg",
+                "/trips/vizag/7.jpg",
+                "/trips/vizag/2.jpg"
+            ],
+            "latitude": 17.6868,
+            "longitude": 83.2185,
+            "populartags": [
+                "vizag",
+                "beach-tour",
+                "temples"
+            ],
+            "content": "Vizag is a port city on the southeast coast of India known for its beaches, scenic hills, and rich cultural heritage. This travel guide covers the must-see places and experiences in Visakhapatnam, including historical landmarks, religious sites, natural beauty, and local cuisine.",
+            "besttime": "Best time to visit Vizag is between October and March when the weather is pleasant.",
+            "itineraryData": {
+                "title": "Vishakapatnam Travel Itinerary",
+                "summary": "Explore Vizag’s pristine beaches, ancient temples, scenic hills, and tribal culture through our curated 1, 3, and 5-day travel itineraries including meals, transport, and budget details.",
+                "coverImage": "/trips/vizag/vizagcover.jpg",
+                "plans": [
+                    {
+                        "type": "1-Day Plan",
+                        "price": "₹5,500 – ₹7,500 (for 5 people)",
+                        "duration": "1 Day",
+                        "schedule": [
+                            {
+                                "time": "07:00 AM",
+                                "title": "Simhachalam Temple",
+                                "description": "Start from Jagadamba (~20 km, ~45 min drive). Reach by 7:45 AM. ₹100 special darshan. Less crowd early morning.",
+                                "cost": "₹100/person"
+                            },
+                            {
+                                "time": "09:15 AM",
+                                "title": "Breakfast near Simhachalam",
+                                "description": "South Indian tiffin: idli, dosa, sambhar, filter coffee.",
+                                "cost": "₹300–₹400 (for 5)"
+                            },
+                            {
+                                "time": "10:00 AM",
+                                "title": "Sri Kanaka Mahalakshmi Temple",
+                                "description": "Backtrack ~20 km (~45 min). Sevas like Ksheerabhishekam (Fri only), Panchamruthabhishekam, Samuhika Ashtothara.",
+                                "cost": "₹20–₹516/person"
+                            },
+                            {
+                                "time": "11:00 AM",
+                                "title": "Snacks at Jagadamba",
+                                "description": "Try vada, upma, or mini biryani in Jagadamba Centre.",
+                                "cost": "₹300–₹400 (for 5)"
+                            },
+                            {
+                                "time": "12:00 PM",
+                                "title": "Kailasagiri Park & Ropeway",
+                                "description": "Hilltop ropeway ride, views, Shiva-Parvati statue. Toy train optional.",
+                                "cost": "₹90–₹120 (ropeway) + ₹30–₹100 (rides)"
+                            },
+                            {
+                                "time": "01:30 PM",
+                                "title": "Lunch @ Kailasagiri",
+                                "description": "Eat at hilltop cafe with sea view.",
+                                "cost": "₹1,000–₹1,500 (for 5)"
+                            },
+                            {
+                                "time": "02:30 PM",
+                                "title": "INS Submarine Museum + RK Beach",
+                                "description": "Visit India’s only submarine museum and walk on RK Beach.",
+                                "cost": "₹80–₹120 (museum), Free (beach)"
+                            },
+                            {
+                                "time": "04:30 PM",
+                                "title": "Evening Temple Visit",
+                                "description": "Choose Sampath Vinayagar or Venkateswara Temple (near Waltair/Asilmetta).",
+                                "cost": "Free or ₹30–₹50"
+                            },
+                            {
+                                "time": "06:00 PM",
+                                "title": "Dinner at Jagadamba / Suryabagh",
+                                "description": "Andhra meals or seafood at popular restaurants.",
+                                "cost": "₹1,500–₹2,000 (for 5)"
+                            }
+                        ],
+                        "note": "Ideal for a car-based day trip from Jagadamba Centre covering iconic temples, beach, and city views."
+                    },
+                    {
+                        "type": "3-Day Plan",
+                        "price": "₹27,500 – ₹30,000 (for 5 people)",
+                        "duration": "3 Days",
+                        "days": [
+                            {
+                                "title": "Day 1: Temples, Parks & Beach",
+                                "schedule": [
+                                    {
+                                        "time": "07:00 AM",
+                                        "title": "Simhachalam Temple",
+                                        "description": "Start from Jagadamba (~20 km, ~45 min drive). Reach by 7:45 AM. ₹100 special darshan. Less crowd early morning.",
+                                        "cost": "₹100/person"
+                                    },
+                                    {
+                                        "time": "09:15 AM",
+                                        "title": "Breakfast at Simhachalam",
+                                        "description": "Idli, dosa, sambhar, coffee near temple area.",
+                                        "cost": "₹400"
+                                    },
+                                    {
+                                        "time": "10:00 AM",
+                                        "title": "Sri Kanaka Mahalakshmi Temple",
+                                        "description": "Backtrack ~20 km (~45 min). Minimal queues. Optional sevas ₹20–₹200.",
+                                        "cost": "₹20–₹516/person"
+                                    },
+                                    {
+                                        "time": "11:15 AM",
+                                        "title": "Snack Break in Jagadamba",
+                                        "description": "Light snack near city center.",
+                                        "cost": "₹300"
+                                    },
+                                    {
+                                        "time": "12:00 PM",
+                                        "title": "Kailasagiri Ropeway & Park",
+                                        "description": "Ropeway ride, hilltop park, Shiva-Parvati statue, lunch.",
+                                        "cost": "₹120 ropeway + ₹300 lunch"
+                                    },
+                                    {
+                                        "time": "02:00 PM",
+                                        "title": "INS Submarine Museum + RK Beach",
+                                        "description": "From Kailasagiri, ~12 km (~25 min). Explore museum & stroll on beach.",
+                                        "cost": "₹100 museum, Free beach"
+                                    },
+                                    {
+                                        "time": "04:30 PM",
+                                        "title": "Evening Temple",
+                                        "description": "Nearby temples in Waltair (~2–3 km). Sampath Vinayagar or Venkateswara.",
+                                        "cost": "Free or ₹30–₹50"
+                                    },
+                                    {
+                                        "time": "06:00 PM",
+                                        "title": "Dinner",
+                                        "description": "Andhra thali / seafood at Jagadamba or Suryabagh.",
+                                        "cost": "₹1,500"
+                                    }
+                                ]
+                            },
+                            {
+                                "title": "Day 2: Culture & Coastal Vibes",
+                                "schedule": [
+                                    {
+                                        "time": "09:00 AM",
+                                        "title": "Visakha Museum",
+                                        "description": "Located on RK Beach Road (~4 km from Jagadamba). Maritime and heritage exhibits.",
+                                        "cost": "₹20–₹50"
+                                    },
+                                    {
+                                        "time": "10:30 AM",
+                                        "title": "Tenneti Park",
+                                        "description": "Coastal green park with sea view (~3.5 km).",
+                                        "cost": "Free"
+                                    },
+                                    {
+                                        "time": "01:00 PM",
+                                        "title": "Lunch @ RK Beach",
+                                        "description": "Restaurants nearby. Andhra meals / seafood.",
+                                        "cost": "₹1,500"
+                                    },
+                                    {
+                                        "time": "02:30 PM",
+                                        "title": "Matsyadarshini Aquarium",
+                                        "description": "Air-conditioned marine display. ~4 km from Jagadamba.",
+                                        "cost": "₹30–₹50"
+                                    },
+                                    {
+                                        "time": "06:00 PM",
+                                        "title": "Dinner at Jagadamba",
+                                        "description": "Try Andhra-style thali / snacks.",
+                                        "cost": "₹1,000"
+                                    }
+                                ]
+                            },
+                            {
+                                "title": "Day 3: Nature & Wildlife",
+                                "schedule": [
+                                    {
+                                        "time": "07:00 AM",
+                                        "title": "Kambalakonda Wildlife Sanctuary",
+                                        "description": "Drive ~16 km. Birdwatching and nature walk.",
+                                        "cost": "₹100–₹200"
+                                    },
+                                    {
+                                        "time": "11:00 AM",
+                                        "title": "Lunch Stop",
+                                        "description": "Snacks or meals near sanctuary or return route.",
+                                        "cost": "₹1,000"
+                                    },
+                                    {
+                                        "time": "01:00 PM",
+                                        "title": "Biodiversity Park",
+                                        "description": "Botanical garden with butterflies & bird zone.",
+                                        "cost": "Free or nominal"
+                                    },
+                                    {
+                                        "time": "04:00 PM",
+                                        "title": "Return to City",
+                                        "description": "Drive back to Jagadamba. Evening rest.",
+                                        "cost": "–"
+                                    },
+                                    {
+                                        "time": "06:30 PM",
+                                        "title": "Dinner @ Beach Road",
+                                        "description": "Seafood or regional Andhra cuisine.",
+                                        "cost": "₹1,500"
+                                    }
+                                ]
+                            }
+                        ],
+                        "note": "Designed for car rental users to explore Vizag with comfort and flexibility across temples, beaches, and nature spots."
+                    },
+                    {
+                        "type": "5-Day Plan",
+                        "price": "₹12,000 – ₹15,000 (per person, approx.)",
+                        "duration": "5 Days",
+                        "days": [
+                            {
+                                "title": "Day 1: Arrival & Local Beaches + Museums",
+                                "schedule": [
+                                    {
+                                        "time": "08:00 AM",
+                                        "title": "Hotel Check-in",
+                                        "description": "Stay at The Park Visakhapatnam (4★, with buffet breakfast ~₹500 extra) or budget hotel in MVP Colony (~₹1,200/night including breakfast).",
+                                        "cost": "₹1,200 – ₹5,000/night"
+                                    },
+                                    {
+                                        "time": "09:00 AM",
+                                        "title": "Breakfast",
+                                        "description": "Buffet at hotel or local breakfast.",
+                                        "cost": "₹100"
+                                    },
+                                    {
+                                        "time": "10:00 AM",
+                                        "title": "RK Beach & INS Kursura Submarine Museum",
+                                        "description": "Stroll along RK Beach and explore India's only submarine museum.",
+                                        "cost": "₹50 (museum)"
+                                    },
+                                    {
+                                        "time": "01:00 PM",
+                                        "title": "Lunch @ Beachside Restaurant",
+                                        "description": "Seafood or thali at a sea-view restaurant.",
+                                        "cost": "₹300–₹400"
+                                    },
+                                    {
+                                        "time": "02:30 PM",
+                                        "title": "Kailasagiri Park & Cable Car",
+                                        "description": "Enjoy panoramic views via ropeway ride.",
+                                        "cost": "₹100 (round trip)"
+                                    },
+                                    {
+                                        "time": "05:00 PM",
+                                        "title": "Hawa Mahal Viewpoint",
+                                        "description": "Free external view of the palace and sunset stroll along Beach Road.",
+                                        "cost": "Free"
+                                    },
+                                    {
+                                        "time": "07:30 PM",
+                                        "title": "Dinner",
+                                        "description": "Hotel or fine-dine seafood restaurant.",
+                                        "cost": "₹500–₹700"
+                                    }
+                                ]
+                            },
+                            {
+                                "title": "Day 2: Culture, Temples & Dolphin’s Nose",
+                                "schedule": [
+                                    {
+                                        "time": "07:00 AM",
+                                        "title": "Simhachalam Temple",
+                                        "description": "Varaha Lakshmi Narasimha Temple with optional ₹50 special darshan.",
+                                        "cost": "Free – ₹50"
+                                    },
+                                    {
+                                        "time": "09:30 AM",
+                                        "title": "Breakfast",
+                                        "description": "Local tiffin near Simhachalam.",
+                                        "cost": "₹100"
+                                    },
+                                    {
+                                        "time": "12:00 PM",
+                                        "title": "Lunch @ Temple Area",
+                                        "description": "Vegetarian thali.",
+                                        "cost": "₹200"
+                                    },
+                                    {
+                                        "time": "01:30 PM",
+                                        "title": "Indira Gandhi Zoological Park",
+                                        "description": "Wildlife park with diverse species.",
+                                        "cost": "₹100/adult"
+                                    },
+                                    {
+                                        "time": "03:30 PM",
+                                        "title": "Dolphin’s Nose & Ross Hill",
+                                        "description": "Scenic viewpoint, plus cluster of temple, church & mosque.",
+                                        "cost": "Free"
+                                    },
+                                    {
+                                        "time": "05:00 PM",
+                                        "title": "Optional Boat Ride",
+                                        "description": "Fishing harbour boat trip.",
+                                        "cost": "₹200–₹300"
+                                    },
+                                    {
+                                        "time": "07:30 PM",
+                                        "title": "Dinner @ Lawson Bay or Beachside Grill",
+                                        "description": "Seafood specials.",
+                                        "cost": "₹500"
+                                    }
+                                ]
+                            },
+                            {
+                                "title": "Day 3: Scenic Drive to Araku Valley & Nature",
+                                "schedule": [
+                                    {
+                                        "time": "06:00 AM",
+                                        "title": "Depart to Araku",
+                                        "description": "Take the scenic train (~₹2,500) or drive to Araku Valley.",
+                                        "cost": "₹2,500 (train)"
+                                    },
+                                    {
+                                        "time": "08:00 AM",
+                                        "title": "Breakfast in Vizag",
+                                        "description": "Light breakfast before departure.",
+                                        "cost": "₹200"
+                                    },
+                                    {
+                                        "time": "01:00 PM",
+                                        "title": "Check-in & Lunch at Resort",
+                                        "description": "Stay at Araku Valley resort (~₹2,000–₹3,000/night).",
+                                        "cost": "₹400–₹500 (lunch)"
+                                    },
+                                    {
+                                        "time": "02:30 PM",
+                                        "title": "Borra Caves",
+                                        "description": "Explore ancient limestone caves.",
+                                        "cost": "₹50–₹100"
+                                    },
+                                    {
+                                        "time": "04:00 PM",
+                                        "title": "Ananthagiri Waterfalls",
+                                        "description": "Picturesque waterfall stop.",
+                                        "cost": "Nominal local fee"
+                                    },
+                                    {
+                                        "time": "07:30 PM",
+                                        "title": "Dinner at Resort",
+                                        "description": "Simple buffet or à la carte.",
+                                        "cost": "₹300"
+                                    }
+                                ]
+                            },
+                            {
+                                "title": "Day 4: Araku Excursion & Return to Vizag",
+                                "schedule": [
+                                    {
+                                        "time": "08:00 AM",
+                                        "title": "Breakfast at Resort",
+                                        "description": "Fresh coffee & local breakfast.",
+                                        "cost": "₹400"
+                                    },
+                                    {
+                                        "time": "09:00 AM",
+                                        "title": "Tribal Museum",
+                                        "description": "Cultural exhibits and handicrafts.",
+                                        "cost": "₹50"
+                                    },
+                                    {
+                                        "time": "10:30 AM",
+                                        "title": "Coffee Estate Tour (Optional)",
+                                        "description": "Taste and learn about Araku coffee.",
+                                        "cost": "₹100"
+                                    },
+                                    {
+                                        "time": "01:00 PM",
+                                        "title": "Lunch",
+                                        "description": "Andhra thali at local eatery.",
+                                        "cost": "₹250–₹350"
+                                    },
+                                    {
+                                        "time": "02:30 PM",
+                                        "title": "Return to Vizag",
+                                        "description": "Scenic drive back (~3–4 hrs).",
+                                        "cost": "₹150–₹200"
+                                    },
+                                    {
+                                        "time": "06:30 PM",
+                                        "title": "Hotel Check-in & Dinner",
+                                        "description": "Stay at same hotel as Days 1–2.",
+                                        "cost": "₹500"
+                                    }
+                                ]
+                            },
+                            {
+                                "title": "Day 5: Leisure, Shopping & Departure",
+                                "schedule": [
+                                    {
+                                        "time": "08:00 AM",
+                                        "title": "Breakfast",
+                                        "description": "Hotel buffet or Jagadamba Centre cafe.",
+                                        "cost": "₹200"
+                                    },
+                                    {
+                                        "time": "09:30 AM",
+                                        "title": "Shopping at Jagadamba Centre",
+                                        "description": "Souvenirs, clothing, and handicrafts.",
+                                        "cost": "₹200–₹500"
+                                    },
+                                    {
+                                        "time": "12:30 PM",
+                                        "title": "Lunch at Mall Café or Hotel",
+                                        "description": "Casual lunch before departure.",
+                                        "cost": "₹300"
+                                    },
+                                    {
+                                        "time": "02:00 PM",
+                                        "title": "Rushi Konda Beach or VUDA Park",
+                                        "description": "Relaxation before journey.",
+                                        "cost": "₹50"
+                                    },
+                                    {
+                                        "time": "05:00 PM",
+                                        "title": "Light Dinner near Airport/Station",
+                                        "description": "Quick meal before departure.",
+                                        "cost": "₹300–₹400"
+                                    }
+                                ]
+                            }
+                        ],
+                        "note": "Covers a balanced mix of beaches, temples, nature, culture, and leisure. Ideal for travelers wanting both Vizag city highlights and Araku Valley experience."
+                    }
+                ]
             }
-        ],
+        }
+    ],
     "the-og-hill-queen-of-vijayawada": [
         {
             "title": "Vijayawada Cultural & Riverfront Tour",
@@ -246,214 +465,196 @@
                 "plans": [
                     {
                         "type": "1-Day Plan",
-                        "price": "₹5,500 – ₹7,500",
+                        "price": "₹5,500 – ₹7,500 (for 5 people)",
                         "duration": "1 Day",
                         "schedule": [
                             {
                                 "time": "07:00 AM",
                                 "title": "Breakfast",
-                                "description": "Idli, dosa, vada at local South Indian restaurant",
+                                "description": "At your hotel or a nearby South Indian breakfast place: idli, sambar, dosa, vada, chutney.",
                                 "cost": "₹600–₹700 (for 5)"
                             },
                             {
                                 "time": "08:30 AM",
                                 "title": "Kanaka Durga Temple",
-                                "description": "Famous temple on Indrakeeladri Hill",
+                                "description": "Located on Indrakeeladri Hill overlooking the Krishna River. Entry free, donations accepted.",
                                 "cost": "Free"
                             },
                             {
                                 "time": "10:00 AM",
                                 "title": "Prakasam Barrage & Bhavani Island",
-                                "description": "Barrage visit + boat to Bhavani Island",
-                                "cost": "₹300–₹500 (boat), ₹1,000–₹1,500 (optional activities)"
+                                "description": "Visit iconic barrage; boat ride to Bhavani Island. Optional water sports.",
+                                "cost": "₹300–₹500 (boats) + ₹1,000–₹1,500 (optional sports)"
                             },
                             {
                                 "time": "12:00 PM",
                                 "title": "Undavalli Caves",
-                                "description": "Ancient rock-cut caves",
-                                "cost": "₹5–₹10 per person"
+                                "description": "Ancient rock-cut temple complex (~40–60 min visit).",
+                                "cost": "₹5–₹10/person"
                             },
                             {
                                 "time": "01:00 PM",
                                 "title": "Lunch",
-                                "description": "Traditional Andhra thali or biryani",
+                                "description": "Traditional Andhra thali or biryani at a mid-range restaurant.",
                                 "cost": "₹1,000–₹1,500 (for 5)"
                             },
                             {
                                 "time": "02:00 PM",
-                                "title": "Victoria Jubilee Museum",
-                                "description": "Historic artefacts and sculptures",
-                                "cost": "₹10–₹20 per person"
+                                "title": "Victoria Jubilee Museum (Bapu Museum)",
+                                "description": "Collection of sculptures, paintings & artefacts.",
+                                "cost": "₹10–₹20/person"
                             },
                             {
                                 "time": "03:00 PM",
-                                "title": "Gandhi Hill",
-                                "description": "Viewpoint with stupas and planetarium",
-                                "cost": "₹10–₹20 per person"
+                                "title": "Gandhi Hill & Viewpoint",
+                                "description": "Memorial with stupas, planetarium & city view.",
+                                "cost": "₹10–₹20/person"
                             },
                             {
                                 "time": "04:00 PM",
                                 "title": "Kondapalli Fort",
-                                "description": "Hill fort with city view",
-                                "cost": "₹5 per adult"
+                                "description": "500 ft hill fort with medieval architecture.",
+                                "cost": "₹5/adult, ₹3/child"
                             },
                             {
                                 "time": "06:00 PM",
-                                "title": "Shopping at Besant Road",
-                                "description": "Vibrant area with food and shopping",
-                                "cost": "₹200–₹300 (group)"
+                                "title": "Evening Shopping",
+                                "description": "Besant Road or PVP Square Mall; snacks or coffee.",
+                                "cost": "₹200–₹300"
                             },
                             {
                                 "time": "07:30 PM",
                                 "title": "Dinner",
-                                "description": "Dinner at local restaurant",
+                                "description": "Andhra curries, tandoori, biryani at local restaurant.",
                                 "cost": "₹1,500–₹2,000 (for 5)"
                             }
                         ],
-                        "note": "Perfect for a quick spiritual and cultural dive into the city."
+                        "note": "Perfect for covering Vijayawada's temples, heritage, and leisure spots in a single day."
                     },
                     {
                         "type": "3-Day Plan",
-                        "price": "₹27,500 – ₹30,000 (for 5 people)",
+                        "price": "Varies (~₹27,775 total for 5)",
                         "duration": "3 Days",
                         "days": [
                             {
-                                "title": "Temple & Island",
+                                "title": "Day 1: Temples & Island",
                                 "schedule": [
                                     {
                                         "time": "08:30 AM",
                                         "title": "Kanaka Durga Temple",
-                                        "description": "Hilltop temple with Krishna River view",
-                                        "cost": "Free / ₹2,500 for special darshan"
+                                        "description": "Special darshan available.",
+                                        "cost": "Free – ₹500/person"
                                     },
                                     {
                                         "time": "11:00 AM",
                                         "title": "Bhavani Island",
-                                        "description": "Boat ride and water activities",
-                                        "cost": "₹250 (entry) + ₹500 (boating) + ₹1200 (lunch)"
+                                        "description": "Boat ride, water games, rope courses.",
+                                        "cost": "₹50 entry + ₹100 boat/person"
+                                    },
+                                    {
+                                        "time": "01:00 PM",
+                                        "title": "Lunch at Haritha Resort",
+                                        "description": "South Indian thali.",
+                                        "cost": "₹1,200 (for 5)"
                                     },
                                     {
                                         "time": "03:00 PM",
                                         "title": "Victoria Museum",
-                                        "description": "Historic exhibits",
-                                        "cost": "₹20 per person"
+                                        "description": "Heritage and cultural exhibits.",
+                                        "cost": "₹20/person"
                                     },
                                     {
                                         "time": "05:00 PM",
                                         "title": "Undavalli Caves",
-                                        "description": "Rock-cut caves with sculpture",
-                                        "cost": "₹25 per person"
+                                        "description": "Rock-cut temple visit.",
+                                        "cost": "₹25/person"
                                     },
                                     {
-                                        "time": "07:30 PM",
+                                        "time": "07:00 PM",
                                         "title": "Dinner @ Babai Hotel",
-                                        "description": "Andhra meals & Gongura chicken",
-                                        "cost": "₹1000 (for 5)"
-                                    },
-                                    {
-                                        "time": "Night",
-                                        "title": "Stay @ Gateway Hotel",
-                                        "description": "2 Rooms for 1 night",
-                                        "cost": "₹4000"
+                                        "description": "Andhra meals, Gongura chicken.",
+                                        "cost": "₹1,000 (for 5)"
                                     }
                                 ]
                             },
                             {
-                                "title": "History & Fun",
+                                "title": "Day 2: History, Fun & Viewpoints",
                                 "schedule": [
-                                    {
-                                        "time": "08:00 AM",
-                                        "title": "Breakfast @ Idli Dosa & Co",
-                                        "description": "Ghee karam dosa & tea",
-                                        "cost": "₹500"
-                                    },
                                     {
                                         "time": "09:30 AM",
                                         "title": "Prakasam Barrage",
-                                        "description": "Iconic bridge view",
+                                        "description": "Iconic bridge with river views.",
                                         "cost": "Free"
                                     },
                                     {
                                         "time": "11:00 AM",
                                         "title": "Kondapalli Fort",
-                                        "description": "Panoramic view + toy shops",
-                                        "cost": "₹20 per person"
+                                        "description": "Hilltop fort & wooden toys shopping.",
+                                        "cost": "₹20/person"
                                     },
                                     {
                                         "time": "01:00 PM",
                                         "title": "Lunch @ Sweet Magic",
-                                        "description": "Biryani combo",
-                                        "cost": "₹1500"
+                                        "description": "Biryani combo + drinks.",
+                                        "cost": "₹1,500 (for 5)"
                                     },
                                     {
                                         "time": "03:00 PM",
                                         "title": "Haailand Theme Park",
-                                        "description": "Rides, rain dance, slides",
-                                        "cost": "₹750 per person"
+                                        "description": "Rides, rain dance, water slides.",
+                                        "cost": "₹750/person"
                                     },
                                     {
-                                        "time": "07:30 PM",
+                                        "time": "07:00 PM",
                                         "title": "Dinner @ R.R. Durbar",
-                                        "description": "Andhra curry & jeera rice",
-                                        "cost": "₹1000"
-                                    },
-                                    {
-                                        "time": "Night",
-                                        "title": "Stay @ Treebo Trend Empire",
-                                        "description": "2 Rooms",
-                                        "cost": "₹3000"
+                                        "description": "Andhra chicken curry, chapati, rice.",
+                                        "cost": "₹1,000 (for 5)"
                                     }
                                 ]
                             },
                             {
-                                "title": "Culture & Leisure",
+                                "title": "Day 3: Nature & Local Culture",
                                 "schedule": [
                                     {
-                                        "time": "08:00 AM",
-                                        "title": "Breakfast @ Sri Ramayya Mess",
-                                        "description": "Mini tiffin & coffee",
-                                        "cost": "₹450"
-                                    },
-                                    {
                                         "time": "09:00 AM",
-                                        "title": "Mangalagiri Temple & Handloom",
-                                        "description": "Cotton sarees & temple",
+                                        "title": "Mangalagiri Temple & Handloom Visit",
+                                        "description": "Temple visit + saree/kurtas shopping.",
                                         "cost": "Free"
                                     },
                                     {
                                         "time": "12:00 PM",
                                         "title": "Rajiv Gandhi Park",
-                                        "description": "Mini Zoo & gardens",
-                                        "cost": "₹10 per person"
+                                        "description": "Mini zoo & gardens.",
+                                        "cost": "₹10/person"
                                     },
                                     {
-                                        "time": "01:30 PM",
+                                        "time": "01:00 PM",
                                         "title": "Lunch @ Minerva Grand",
-                                        "description": "Veg thali / buffet",
-                                        "cost": "₹1500"
+                                        "description": "Veg thali / buffet.",
+                                        "cost": "₹1,500 (for 5)"
                                     },
                                     {
                                         "time": "02:30 PM",
-                                        "title": "INOX @ PVP Mall",
-                                        "description": "Movie + snacks",
-                                        "cost": "₹1750 (5 pax)"
+                                        "title": "PVP Mall & INOX",
+                                        "description": "Movie + snacks.",
+                                        "cost": "₹250 ticket/person + snacks"
                                     },
                                     {
                                         "time": "05:30 PM",
-                                        "title": "Barista Café",
-                                        "description": "Evening coffee break",
-                                        "cost": "₹700"
+                                        "title": "Evening Coffee",
+                                        "description": "At Barista, MG Road.",
+                                        "cost": "₹700 (for 5)"
                                     },
                                     {
-                                        "time": "07:30 PM",
+                                        "time": "07:00 PM",
                                         "title": "Dinner @ TFL Rooftop",
-                                        "description": "Chinese & Indian fusion",
-                                        "cost": "₹1300"
+                                        "description": "Chinese & Indian fusion.",
+                                        "cost": "₹1,300 (for 5)"
                                     }
                                 ]
                             }
                         ],
-                        "note": "Ideal for families and groups seeking a mix of heritage, fun, and leisure."
+                        "note": "Combines temples, history, leisure, shopping, and fun parks over 3 days."
                     }
                 ]
             }
@@ -486,40 +687,391 @@
                 "plans": [
                     {
                         "type": "1-Day Plan",
-                        "price": "₹4,000",
+                        "price": "₹20,400 – ₹20,650 (for 5 people)",
                         "duration": "1 Day",
-                        "highlights": [
-                            "Hope Island Boat Ride",
-                            "Coringa Wildlife Sanctuary",
-                            "Kakinada Beach & Lighthouse",
-                            "Kothapeta Market / Fishing Harbor",
-                            "Dinner at Subbayya Gari Hotel"
+                        "schedule": [
+                            {
+                                "time": "07:30 AM",
+                                "title": "Breakfast",
+                                "description": "Start the day at a popular café or local restaurant near Kakinada Bay with tea/coffee and light breakfast.",
+                                "cost": "₹1,500 (for 5)"
+                            },
+                            {
+                                "time": "08:30 AM",
+                                "title": "Hope Island Boat Ride",
+                                "description": "Enjoy a scenic boat ride to Hope Island for beaches and coconut groves. Beach time for relaxation.",
+                                "cost": "₹4,000 (for 5)"
+                            },
+                            {
+                                "time": "10:30 AM",
+                                "title": "Coringa Wildlife Sanctuary",
+                                "description": "Visit mangrove forest and estuary; optional boat ride for backwater safari.",
+                                "cost": "₹50 (entry) + ₹2,500 (boat) + ₹1,000 cab"
+                            },
+                            {
+                                "time": "12:30 PM",
+                                "title": "Lunch",
+                                "description": "Butta Bhojanam (traditional veg thali buffet) at Subbayya Gari Hotel.",
+                                "cost": "₹1,250 (for 5)"
+                            },
+                            {
+                                "time": "01:30 PM",
+                                "title": "Kakinada Beach & Lighthouse",
+                                "description": "Walk along the beach and climb the lighthouse for panoramic views.",
+                                "cost": "Free or minor entry fee"
+                            },
+                            {
+                                "time": "03:00 PM",
+                                "title": "Kothapeta Market & Fishing Harbor",
+                                "description": "Explore local seafood trade and shop spices, crafts. Try Kakinada Kaja sweets.",
+                                "cost": "₹250 (snacks & shopping)"
+                            },
+                            {
+                                "time": "05:00 PM",
+                                "title": "Sunset Walk & Street Food",
+                                "description": "Relax along Beach Road near SRMT Mall. Try tea and local snacks.",
+                                "cost": "₹300"
+                            },
+                            {
+                                "time": "07:30 PM",
+                                "title": "Dinner",
+                                "description": "Enjoy Andhra-style seafood or veg dinner at a quality local restaurant.",
+                                "cost": "₹1,750–₹2,000 (for 5)"
+                            }
                         ],
-                        "note": "Perfect for a short coastal and cultural getaway."
+                        "note": "Best for exploring Kakinada’s coast, nature, and local markets in one fulfilling day."
                     },
                     {
                         "type": "3-Day Plan",
-                        "price": "₹12,000",
+                        "price": "Varies (~₹31,530 total for 5)",
                         "duration": "3 Days",
-                        "highlights": [
-                            "Day 1: Culture & Coast (Temples, Beaches, Hope Island, and Subbayya Gari Hotel)",
-                            "Day 2: Nature & Wildlife (Coringa Sanctuary, Boat Rides, and Local Eateries)",
-                            "Day 3: Temples & Local Delights (Kukkuteswara Swamy Temple, Kakinada Kaja, and Local Markets)"
+                        "days": [
+                            {
+                                "title": "Day 1: Culture & Coast",
+                                "schedule": [
+                                    {
+                                        "time": "08:00 AM",
+                                        "title": "Sri Bhavanarayana Swamy Temple",
+                                        "description": "Historic temple at Sarpavaram near Kakinada.",
+                                        "cost": "Free"
+                                    },
+                                    {
+                                        "time": "09:30 AM",
+                                        "title": "Breakfast",
+                                        "description": "Local tiffins like pesarattu or masala dosa.",
+                                        "cost": "₹500 (for 5)"
+                                    },
+                                    {
+                                        "time": "11:00 AM",
+                                        "title": "Kakinada Beach & Lighthouse",
+                                        "description": "Panoramic beach views and peaceful atmosphere.",
+                                        "cost": "₹100 (entry)"
+                                    },
+                                    {
+                                        "time": "01:00 PM",
+                                        "title": "Lunch",
+                                        "description": "Seafood or vegetarian thali at beach stalls.",
+                                        "cost": "₹1,000 (for 5)"
+                                    },
+                                    {
+                                        "time": "03:00 PM",
+                                        "title": "Hope Island Visit",
+                                        "description": "Short local boat ride to explore the coast.",
+                                        "cost": "₹500 (for 5)"
+                                    },
+                                    {
+                                        "time": "07:00 PM",
+                                        "title": "Dinner",
+                                        "description": "Iconic veg thali at Subbayya Gari Hotel.",
+                                        "cost": "₹1,250 (for 5)"
+                                    }
+                                ]
+                            },
+                            {
+                                "title": "Day 2: Nature & Wildlife",
+                                "schedule": [
+                                    {
+                                        "time": "08:00 AM",
+                                        "title": "Coringa Wildlife Sanctuary",
+                                        "description": "Mangrove walk and birdwatching.",
+                                        "cost": "₹50 entry + ₹500 boat (for 5)"
+                                    },
+                                    {
+                                        "time": "09:30 AM",
+                                        "title": "Breakfast",
+                                        "description": "Local eatery near sanctuary.",
+                                        "cost": "₹600 (for 5)"
+                                    },
+                                    {
+                                        "time": "12:00 PM",
+                                        "title": "Lunch",
+                                        "description": "Simple meals at local dhaba.",
+                                        "cost": "₹900 (for 5)"
+                                    },
+                                    {
+                                        "time": "02:00 PM",
+                                        "title": "Kothapeta Market Visit",
+                                        "description": "Explore traditional crafts, spices, and snacks.",
+                                        "cost": "₹150"
+                                    },
+                                    {
+                                        "time": "07:00 PM",
+                                        "title": "Dinner",
+                                        "description": "Seafood dinner near harbor (if available).",
+                                        "cost": "₹1,500 (for 5)"
+                                    }
+                                ]
+                            },
+                            {
+                                "title": "Day 3: Temples & Local Delights",
+                                "schedule": [
+                                    {
+                                        "time": "08:00 AM",
+                                        "title": "Sri Kukkuteswara Swamy Temple, Pithapuram",
+                                        "description": "Renowned temple with historical architecture.",
+                                        "cost": "₹280 (entry + parking)"
+                                    },
+                                    {
+                                        "time": "09:30 AM",
+                                        "title": "Breakfast",
+                                        "description": "Tiffins in Pithapuram or en route to Kakinada.",
+                                        "cost": "₹600 (for 5)"
+                                    },
+                                    {
+                                        "time": "12:30 PM",
+                                        "title": "Lunch",
+                                        "description": "Kotaiah Sweets meal + Kakinada Kaja sweets.",
+                                        "cost": "₹1,500 (for 5)"
+                                    },
+                                    {
+                                        "time": "03:00 PM",
+                                        "title": "Free Time or 82° East Mall Visit",
+                                        "description": "Shopping, movie, or walk by port area.",
+                                        "cost": "Free / shopping optional"
+                                    },
+                                    {
+                                        "time": "07:00 PM",
+                                        "title": "Dinner",
+                                        "description": "Final meal at resort or popular restaurant.",
+                                        "cost": "₹1,250 (for 5)"
+                                    }
+                                ]
+                            }
                         ],
-                        "note": "A balanced mix of nature, culture, and cuisine, perfect for families and culture lovers."
+                        "note": "Ideal for a mix of nature, temples, and authentic Kakinada culture over a long weekend."
                     },
                     {
                         "type": "5-Day Plan",
-                        "price": "₹20,000 – ₹25,000",
+                        "price": "Varies (~₹39,800 total for 5)",
                         "duration": "5 Days",
-                        "highlights": [
-                            "Day 1: Arrival, Kakinada Beach, Harbor, and Seafood Lunch",
-                            "Day 2: Coringa Wildlife Sanctuary, Hope Island, and Local Markets",
-                            "Day 3: Temple Visits (Bhavanarayana Swamy Temple, Kukkuteswara Swamy Temple, Local Sweets)",
-                            "Day 4: Day Trip to Sri Veera Venkata Sathyanarayana Temple and Kodandarama Temple",
-                            "Day 5: Leisure Day with Shopping and Farewell Dinner"
+                        "days": [
+                            {
+                                "title": "Day 1: Arrival & Kakinada Beach / Harbor",
+                                "schedule": [
+                                    {
+                                        "time": "08:00 AM",
+                                        "title": "Arrival & Check-In",
+                                        "description": "Arrive in Kakinada and check into your hotel.",
+                                        "cost": "₹3,500 (hotel)"
+                                    },
+                                    {
+                                        "time": "09:00 AM",
+                                        "title": "Breakfast",
+                                        "description": "Hotel breakfast or nearby café.",
+                                        "cost": "₹1,250 (for 5)"
+                                    },
+                                    {
+                                        "time": "11:00 AM",
+                                        "title": "Kakinada Fishing Harbor",
+                                        "description": "Watch fishermen and enjoy light seafood snacks (seasonal).",
+                                        "cost": "₹750"
+                                    },
+                                    {
+                                        "time": "01:00 PM",
+                                        "title": "Lunch",
+                                        "description": "Local fish curry or vegetarian meals.",
+                                        "cost": "₹1,500 (for 5)"
+                                    },
+                                    {
+                                        "time": "04:00 PM",
+                                        "title": "Kakinada Beach & Promenade",
+                                        "description": "Evening stroll and relaxation by the sea.",
+                                        "cost": "Free"
+                                    },
+                                    {
+                                        "time": "07:00 PM",
+                                        "title": "Dinner",
+                                        "description": "At a local Andhra-style restaurant.",
+                                        "cost": "₹2,000 (for 5)"
+                                    }
+                                ]
+                            },
+                            {
+                                "title": "Day 2: Coringa Sanctuary & Hope Island",
+                                "schedule": [
+                                    {
+                                        "time": "08:00 AM",
+                                        "title": "Breakfast",
+                                        "description": "Included at hotel.",
+                                        "cost": "Included"
+                                    },
+                                    {
+                                        "time": "09:00 AM",
+                                        "title": "Coringa Wildlife Sanctuary",
+                                        "description": "Mangrove forest, estuary birds, nature walk.",
+                                        "cost": "₹500 (entry for 5)"
+                                    },
+                                    {
+                                        "time": "12:30 PM",
+                                        "title": "Lunch",
+                                        "description": "Picnic or local eatery near sanctuary.",
+                                        "cost": "₹1,500 (for 5)"
+                                    },
+                                    {
+                                        "time": "02:30 PM",
+                                        "title": "Hope Island",
+                                        "description": "Boat ride to the island and beach relaxation.",
+                                        "cost": "₹500 (for 5)"
+                                    },
+                                    {
+                                        "time": "07:00 PM",
+                                        "title": "Dinner",
+                                        "description": "Seafood or vegetarian dinner in town.",
+                                        "cost": "₹2,000 (for 5)"
+                                    },
+                                    {
+                                        "time": "Night",
+                                        "title": "Hotel Stay",
+                                        "description": "Return to hotel.",
+                                        "cost": "₹3,500"
+                                    }
+                                ]
+                            },
+                            {
+                                "title": "Day 3: Temples & Local Culture",
+                                "schedule": [
+                                    {
+                                        "time": "08:00 AM",
+                                        "title": "Breakfast",
+                                        "description": "Hotel or nearby café.",
+                                        "cost": "Included"
+                                    },
+                                    {
+                                        "time": "09:00 AM",
+                                        "title": "Sri Bhavannarayana & Kukkuteswara Temples",
+                                        "description": "Visit temples in Kakinada and Pithapuram.",
+                                        "cost": "₹250 (donations)"
+                                    },
+                                    {
+                                        "time": "01:00 PM",
+                                        "title": "Lunch",
+                                        "description": "South Indian thali at a local restaurant.",
+                                        "cost": "₹1,000 (for 5)"
+                                    },
+                                    {
+                                        "time": "03:00 PM",
+                                        "title": "Kothapeta Market & Sweets",
+                                        "description": "Buy local crafts and try Kakinada Kaja.",
+                                        "cost": "₹150"
+                                    },
+                                    {
+                                        "time": "07:00 PM",
+                                        "title": "Dinner",
+                                        "description": "Subbayya Gari Hotel – iconic Andhra buffet.",
+                                        "cost": "₹1,750 (for 5)"
+                                    },
+                                    {
+                                        "time": "Night",
+                                        "title": "Hotel Stay",
+                                        "description": "Return and rest.",
+                                        "cost": "₹3,500"
+                                    }
+                                ]
+                            },
+                            {
+                                "title": "Day 4: Temple Day Trip",
+                                "schedule": [
+                                    {
+                                        "time": "08:00 AM",
+                                        "title": "Breakfast",
+                                        "description": "Hotel breakfast.",
+                                        "cost": "Included"
+                                    },
+                                    {
+                                        "time": "09:00 AM",
+                                        "title": "Sri Veera Venkata Sathyanarayana Temple, Annavaram",
+                                        "description": "Outstation visit (~60km), private cab.",
+                                        "cost": "₹1,200 cab + ₹250 donation"
+                                    },
+                                    {
+                                        "time": "01:00 PM",
+                                        "title": "Lunch",
+                                        "description": "Temple mess meals.",
+                                        "cost": "₹750 (for 5)"
+                                    },
+                                    {
+                                        "time": "03:00 PM",
+                                        "title": "Kodandarama Temple, Gollala Mamidada",
+                                        "description": "Peaceful temple stop on return.",
+                                        "cost": "₹250 (donation)"
+                                    },
+                                    {
+                                        "time": "07:00 PM",
+                                        "title": "Dinner",
+                                        "description": "Back in Kakinada – seafood or veg meal.",
+                                        "cost": "₹2,000 (for 5)"
+                                    },
+                                    {
+                                        "time": "Night",
+                                        "title": "Hotel Stay",
+                                        "description": "Relax and rest.",
+                                        "cost": "₹3,500"
+                                    }
+                                ]
+                            },
+                            {
+                                "title": "Day 5: Shopping & Departure",
+                                "schedule": [
+                                    {
+                                        "time": "08:00 AM",
+                                        "title": "Breakfast",
+                                        "description": "Final hotel breakfast.",
+                                        "cost": "Included"
+                                    },
+                                    {
+                                        "time": "10:00 AM",
+                                        "title": "Uppada Beach or 82° East Mall",
+                                        "description": "Leisure stroll or light shopping.",
+                                        "cost": "₹500 (snacks/shopping)"
+                                    },
+                                    {
+                                        "time": "01:00 PM",
+                                        "title": "Lunch",
+                                        "description": "Beach shack or mall café.",
+                                        "cost": "₹1,750 (for 5)"
+                                    },
+                                    {
+                                        "time": "03:00 PM",
+                                        "title": "Kaja Souvenirs",
+                                        "description": "Buy final sweets and local crafts.",
+                                        "cost": "₹150"
+                                    },
+                                    {
+                                        "time": "06:00 PM",
+                                        "title": "Farewell Dinner",
+                                        "description": "Final dinner at GRT or Subbayya Hotel.",
+                                        "cost": "₹2,000 (for 5)"
+                                    },
+                                    {
+                                        "time": "Night",
+                                        "title": "Hotel Stay or Checkout",
+                                        "description": "Based on travel schedule.",
+                                        "cost": "₹3,500"
+                                    }
+                                ]
+                            }
                         ],
-                        "note": "Ideal for those looking for a comprehensive, relaxing experience, including nature, temples, beaches, and local shopping."
+                        "note": "Ideal for a relaxed coastal holiday with culture, wildlife, temples, seafood, and leisure spread across 5 days."
                     }
                 ]
             }
@@ -553,28 +1105,370 @@
                 "coverImage": "/trips/kurnool/1.jpg",
                 "plans": [
                     {
+                        "type": "1-Day Plan",
+                        "price": "Approx ₹4,500 total for 5",
+                        "duration": "1 Day",
+                        "days": [
+                            {
+                                "title": "Day 1: Explore Kurnool City Highlights",
+                                "schedule": [
+                                    {
+                                        "time": "07:30 AM",
+                                        "title": "Breakfast",
+                                        "description": "Hotel Suraj Grand – Idli, Dosa, Upma, Tea",
+                                        "cost": "₹500"
+                                    },
+                                    {
+                                        "time": "09:00 AM",
+                                        "title": "Konda Reddy Fort",
+                                        "description": "Historic site and photography spot",
+                                        "cost": "Free"
+                                    },
+                                    {
+                                        "time": "11:00 AM",
+                                        "title": "Oravakallu Rock Garden",
+                                        "description": "Rock formations and optional boating",
+                                        "cost": "₹250 (entry + boating for 5)"
+                                    },
+                                    {
+                                        "time": "01:30 PM",
+                                        "title": "Lunch at The Grand Saheb",
+                                        "description": "Veg Thali and Biryani Combo",
+                                        "cost": "₹1,200"
+                                    },
+                                    {
+                                        "time": "03:30 PM",
+                                        "title": "Kurnool Museum",
+                                        "description": "Archaeological exhibits",
+                                        "cost": "₹50"
+                                    },
+                                    {
+                                        "time": "07:30 PM",
+                                        "title": "Dinner at Silver Spoon",
+                                        "description": "Chicken 65, Veg Kurma, Naan, Rice",
+                                        "cost": "₹1,500"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
                         "type": "3-Day Plan",
-                        "price": "₹12,000",
+                        "price": "Approx ₹13,500 – ₹14,500 total for 5",
                         "duration": "3 Days",
-                        "highlights": [
-                            "Day 1: Kurnool City Exploration (Konda Reddy Fort, Oravakallu Rock Garden, Kurnool Museum)",
-                            "Day 2: Belum Caves & Yaganti Temple Visit",
-                            "Day 3: Ahobilam Temple, Mahanandi Temple, and Local Heritage"
-                        ],
-                        "note": "Perfect for a historical and cultural exploration of Kurnool with a mix of nature, temples, and heritage."
+                        "days": [
+                            {
+                                "title": "Day 1: Arrival & City Exploration",
+                                "schedule": [
+                                    {
+                                        "time": "07:30 AM",
+                                        "title": "Breakfast at Suraj Grand",
+                                        "description": "Idli, Dosa, Tea",
+                                        "cost": "₹500"
+                                    },
+                                    {
+                                        "time": "09:00 AM",
+                                        "title": "Konda Reddy Fort",
+                                        "description": "Explore the fort structure and tower climb",
+                                        "cost": "Free"
+                                    },
+                                    {
+                                        "time": "11:00 AM",
+                                        "title": "Oravakallu Rock Garden",
+                                        "description": "Boating and photography",
+                                        "cost": "₹250"
+                                    },
+                                    {
+                                        "time": "01:30 PM",
+                                        "title": "Lunch at Grand Saheb",
+                                        "description": "Andhra meals",
+                                        "cost": "₹1,200"
+                                    },
+                                    {
+                                        "time": "03:30 PM",
+                                        "title": "Kurnool Museum",
+                                        "description": "Sculptures and history",
+                                        "cost": "₹50"
+                                    },
+                                    {
+                                        "time": "07:30 PM",
+                                        "title": "Dinner at Silver Spoon",
+                                        "description": "Multi-cuisine meal",
+                                        "cost": "₹1,500"
+                                    }
+                                ]
+                            },
+                            {
+                                "title": "Day 2: Belum Caves & Yaganti",
+                                "schedule": [
+                                    {
+                                        "time": "07:00 AM",
+                                        "title": "Breakfast at Subbayya Gari Hotel",
+                                        "description": "Poori, Pongal, Vada",
+                                        "cost": "₹500"
+                                    },
+                                    {
+                                        "time": "09:30 AM",
+                                        "title": "Belum Caves",
+                                        "description": "Cave exploration – 2nd longest in India",
+                                        "cost": "₹300"
+                                    },
+                                    {
+                                        "time": "12:30 PM",
+                                        "title": "Lunch at Haritha Hotel, Belum",
+                                        "description": "Veg meals",
+                                        "cost": "₹1,000"
+                                    },
+                                    {
+                                        "time": "02:00 PM",
+                                        "title": "Yaganti Temple",
+                                        "description": "Sacred temple with cave shrines",
+                                        "cost": "Free"
+                                    },
+                                    {
+                                        "time": "04:30 PM",
+                                        "title": "Tea Break near temple",
+                                        "description": "Tea & snacks",
+                                        "cost": "₹150"
+                                    },
+                                    {
+                                        "time": "07:30 PM",
+                                        "title": "Dinner at Spice Inn",
+                                        "description": "Andhra meals",
+                                        "cost": "₹1,500"
+                                    }
+                                ]
+                            },
+                            {
+                                "title": "Day 3: Ahobilam & Mahanandi",
+                                "schedule": [
+                                    {
+                                        "time": "07:30 AM",
+                                        "title": "Breakfast at Sri Krishna Bhavan",
+                                        "description": "Dosa, Idli-Vada, Coffee",
+                                        "cost": "₹500"
+                                    },
+                                    {
+                                        "time": "09:30 AM",
+                                        "title": "Ahobilam Temple",
+                                        "description": "Trek to Narasimha shrines",
+                                        "cost": "₹250 + ₹500 (guide optional)"
+                                    },
+                                    {
+                                        "time": "01:00 PM",
+                                        "title": "Lunch at Haritha Ahobilam",
+                                        "description": "Simple South Indian meals",
+                                        "cost": "₹1,000"
+                                    },
+                                    {
+                                        "time": "03:00 PM",
+                                        "title": "Mahanandi Temple",
+                                        "description": "Spring pool and peaceful visit",
+                                        "cost": "Free"
+                                    },
+                                    {
+                                        "time": "07:30 PM",
+                                        "title": "Dinner at RR Family Dhaba",
+                                        "description": "Andhra Chicken Curry, Pulao",
+                                        "cost": "₹1,500"
+                                    }
+                                ]
+                            }
+                        ]
                     },
                     {
                         "type": "5-Day Plan",
-                        "price": "₹20,000",
+                        "price": "Approx ₹21,000 – ₹23,000 total for 5",
                         "duration": "5 Days",
-                        "highlights": [
-                            "Day 1: Kurnool City Exploration (Konda Reddy Fort, Rock Garden, Local Markets)",
-                            "Day 2: Belum Caves, Oravakallu Rock Garden, and Local Dhabas",
-                            "Day 3: Yaganti Temple, Jwala Narasimha Temple (Ahobilam), and evening snacks",
-                            "Day 4: Nallamala Forest, Rollapadu Sanctuary, and Kurnool Museum Visit",
-                            "Day 5: Mahanandeeshwara Swamy Temple and Local Heritage Walks"
-                        ],
-                        "note": "An extensive tour of Kurnool that covers historical, spiritual, and nature-filled experiences across five days."
+                        "days": [
+                            {
+                                "title": "Day 1: Arrival & City Exploration",
+                                "schedule": [
+                                    {
+                                        "time": "07:30 AM",
+                                        "title": "Breakfast at hotel",
+                                        "description": "Included in stay",
+                                        "cost": "Included"
+                                    },
+                                    {
+                                        "time": "09:00 AM",
+                                        "title": "Konda Reddy Fort",
+                                        "description": "Historic tower and view",
+                                        "cost": "₹20 (approx)"
+                                    },
+                                    {
+                                        "time": "01:00 PM",
+                                        "title": "Lunch",
+                                        "description": "Andhra thali",
+                                        "cost": "₹750"
+                                    },
+                                    {
+                                        "time": "04:00 PM",
+                                        "title": "Local Market Walk",
+                                        "description": "Explore old town and street snacks",
+                                        "cost": "₹250"
+                                    },
+                                    {
+                                        "time": "07:30 PM",
+                                        "title": "Dinner",
+                                        "description": "Gongura, chicken curry, roti",
+                                        "cost": "₹1,500"
+                                    }
+                                ]
+                            },
+                            {
+                                "title": "Day 2: Belum Caves & Orvakal",
+                                "schedule": [
+                                    {
+                                        "time": "07:30 AM",
+                                        "title": "Breakfast",
+                                        "description": "Hotel breakfast",
+                                        "cost": "Included"
+                                    },
+                                    {
+                                        "time": "10:00 AM",
+                                        "title": "Belum Caves",
+                                        "description": "Large cave network tour",
+                                        "cost": "₹240 (entry)"
+                                    },
+                                    {
+                                        "time": "01:00 PM",
+                                        "title": "Lunch",
+                                        "description": "Local dhaba near caves",
+                                        "cost": "₹600"
+                                    },
+                                    {
+                                        "time": "03:00 PM",
+                                        "title": "Oravakallu Rock Garden",
+                                        "description": "Rock formations, photos",
+                                        "cost": "₹500"
+                                    },
+                                    {
+                                        "time": "07:30 PM",
+                                        "title": "Dinner",
+                                        "description": "Local hotel",
+                                        "cost": "₹1,250"
+                                    }
+                                ]
+                            },
+                            {
+                                "title": "Day 3: Yaganti & Jwala Narasimha",
+                                "schedule": [
+                                    {
+                                        "time": "07:30 AM",
+                                        "title": "Breakfast",
+                                        "description": "Hotel",
+                                        "cost": "Included"
+                                    },
+                                    {
+                                        "time": "10:00 AM",
+                                        "title": "Yaganti Temple",
+                                        "description": "Explore ancient caves and shrines",
+                                        "cost": "Free"
+                                    },
+                                    {
+                                        "time": "01:00 PM",
+                                        "title": "Lunch",
+                                        "description": "Veg Thali at local place",
+                                        "cost": "₹600"
+                                    },
+                                    {
+                                        "time": "03:00 PM",
+                                        "title": "Jwala Narasimha (Ahobilam)",
+                                        "description": "Hiking & darshan",
+                                        "cost": "₹250"
+                                    },
+                                    {
+                                        "time": "07:30 PM",
+                                        "title": "Dinner",
+                                        "description": "Fixed menu restaurant in Kurnool",
+                                        "cost": "₹1,500"
+                                    }
+                                ]
+                            },
+                            {
+                                "title": "Day 4: Nature & Wildlife",
+                                "schedule": [
+                                    {
+                                        "time": "07:30 AM",
+                                        "title": "Breakfast",
+                                        "description": "Hotel",
+                                        "cost": "Included"
+                                    },
+                                    {
+                                        "time": "09:00 AM",
+                                        "title": "Nallamala Forest Drive",
+                                        "description": "Optional safari, nature trails",
+                                        "cost": "₹150"
+                                    },
+                                    {
+                                        "time": "01:00 PM",
+                                        "title": "Lunch",
+                                        "description": "Garden resort or packed lunch",
+                                        "cost": "₹750"
+                                    },
+                                    {
+                                        "time": "03:00 PM",
+                                        "title": "Kurnool Museum Visit",
+                                        "description": "Cultural artifacts and local history",
+                                        "cost": "₹60"
+                                    },
+                                    {
+                                        "time": "05:30 PM",
+                                        "title": "Evening Snacks",
+                                        "description": "Local vendors",
+                                        "cost": "₹200"
+                                    },
+                                    {
+                                        "time": "07:30 PM",
+                                        "title": "Dinner",
+                                        "description": "Hotel or nearby restaurant",
+                                        "cost": "₹1,500"
+                                    }
+                                ]
+                            },
+                            {
+                                "title": "Day 5: Heritage & Departure",
+                                "schedule": [
+                                    {
+                                        "time": "07:30 AM",
+                                        "title": "Breakfast",
+                                        "description": "Hotel",
+                                        "cost": "Included"
+                                    },
+                                    {
+                                        "time": "09:00 AM",
+                                        "title": "Sri Mahanandeeshwara Temple",
+                                        "description": "Spiritual visit and natural spring pool",
+                                        "cost": "₹250 (offerings)"
+                                    },
+                                    {
+                                        "time": "11:30 AM",
+                                        "title": "Visit Local Markets or Sunkesula Barrage",
+                                        "description": "Local crafts or lake views",
+                                        "cost": "Free"
+                                    },
+                                    {
+                                        "time": "01:30 PM",
+                                        "title": "Lunch",
+                                        "description": "Final Andhra meal at local restaurant",
+                                        "cost": "₹1,500"
+                                    },
+                                    {
+                                        "time": "04:30 PM",
+                                        "title": "Evening Tea & Snacks",
+                                        "description": "Tea & samosas",
+                                        "cost": "₹200"
+                                    },
+                                    {
+                                        "time": "07:30 PM",
+                                        "title": "Dinner before departure",
+                                        "description": "Hotel or highway restaurant",
+                                        "cost": "₹1,500"
+                                    }
+                                ]
+                            }
+                        ]
                     }
                 ]
             },
@@ -662,28 +1556,352 @@
                 "coverImage": "/trips/chittoor/1.jpg",
                 "plans": [
                     {
+                        "type": "1-Day Plan",
+                        "price": "Approx ₹1,500 total for 5",
+                        "duration": "1 Day",
+                        "days": [
+                            {
+                                "title": "Day 1: Temples & Nature Close to Chittoor",
+                                "schedule": [
+                                    {
+                                        "time": "07:30 AM",
+                                        "title": "Breakfast",
+                                        "description": "Sri Vishnu Bhavan – dosas, idli, vada",
+                                        "cost": "₹500"
+                                    },
+                                    {
+                                        "time": "09:00 AM",
+                                        "title": "Kanipakam Vinayaka Temple",
+                                        "description": "11th‑century self‑manifested Ganesha; healing waters",
+                                        "cost": "₹200 (donation for 5)"
+                                    },
+                                    {
+                                        "time": "11:00 AM",
+                                        "title": "Kaigal Waterfalls (Kaundinya Sanctuary)",
+                                        "description": "Rock‑pool falls in elephant reserve; nature walk",
+                                        "cost": "Free"
+                                    },
+                                    {
+                                        "time": "01:00 PM",
+                                        "title": "Lunch",
+                                        "description": "Local thali at mid‑range restaurant",
+                                        "cost": "₹750"
+                                    },
+                                    {
+                                        "time": "03:00 PM",
+                                        "title": "Local Market or City Walk",
+                                        "description": "Explore Chittoor town, try street snacks",
+                                        "cost": "₹250"
+                                    },
+                                    {
+                                        "time": "07:00 PM",
+                                        "title": "Dinner",
+                                        "description": "South‑Indian meal at hotel/restaurant",
+                                        "cost": "₹1,000"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
                         "type": "3-Day Plan",
-                        "price": "₹11,500",
+                        "price": "Approx ₹13,000 total for 5",
                         "duration": "3 Days",
-                        "highlights": [
-                            "Day 1: Kanipakam Vinayaka Temple, Kaundinya Waterfalls, and Chittoor City Exploration",
-                            "Day 2: Nagalapuram Falls, Horsley Hills, and Scenic Hill Station Escape",
-                            "Day 3: Srikalahasti Temple, Talakona Waterfalls, and Rural Temples"
-                        ],
-                        "note": "This 3-day plan covers a variety of spiritual, natural, and cultural experiences, including temples, hill stations, and wildlife exploration."
+                        "days": [
+                            {
+                                "title": "Day 1: Temples & Nature near Chittoor",
+                                "schedule": [
+                                    {
+                                        "time": "07:30 AM",
+                                        "title": "Breakfast",
+                                        "description": "Sri Vishnu Bhavan – South‑Indian tiffin",
+                                        "cost": "₹500"
+                                    },
+                                    {
+                                        "time": "09:00 AM",
+                                        "title": "Kanipakam Vinayaka Temple",
+                                        "description": "11th‑century Ganesha shrine",
+                                        "cost": "₹200"
+                                    },
+                                    {
+                                        "time": "11:00 AM",
+                                        "title": "Kaigal Waterfalls",
+                                        "description": "Waterfall within elephant sanctuary",
+                                        "cost": "Free"
+                                    },
+                                    {
+                                        "time": "01:00 PM",
+                                        "title": "Lunch",
+                                        "description": "Local thali at Hotel Manu Sri",
+                                        "cost": "₹750"
+                                    },
+                                    {
+                                        "time": "03:00 PM",
+                                        "title": "Kaundinya Sanctuary trek",
+                                        "description": "Short wildlife walk",
+                                        "cost": "₹250"
+                                    },
+                                    {
+                                        "time": "07:00 PM",
+                                        "title": "Dinner",
+                                        "description": "South‑Indian meal",
+                                        "cost": "₹1,000"
+                                    }
+                                ]
+                            },
+                            {
+                                "title": "Day 2: Waterfalls & Hill Escape",
+                                "schedule": [
+                                    {
+                                        "time": "07:30 AM",
+                                        "title": "Breakfast",
+                                        "description": "Hotel or café",
+                                        "cost": "₹500"
+                                    },
+                                    {
+                                        "time": "09:00 AM",
+                                        "title": "Nagalapuram Waterfalls",
+                                        "description": "Trek & swim in scenic cascade",
+                                        "cost": "Free"
+                                    },
+                                    {
+                                        "time": "12:30 PM",
+                                        "title": "Lunch",
+                                        "description": "Pack‑up meal or roadside",
+                                        "cost": "₹750"
+                                    },
+                                    {
+                                        "time": "02:00 PM",
+                                        "title": "Horsley Hills",
+                                        "description": "Hill station: viewpoints, zoo, cool climate",
+                                        "cost": "Free"
+                                    },
+                                    {
+                                        "time": "07:00 PM",
+                                        "title": "Dinner",
+                                        "description": "Hill‑resort local fare",
+                                        "cost": "₹1,000"
+                                    }
+                                ]
+                            },
+                            {
+                                "title": "Day 3: Cultural Heritage & Wildlife",
+                                "schedule": [
+                                    {
+                                        "time": "07:30 AM",
+                                        "title": "Breakfast",
+                                        "description": "Hotel or local café",
+                                        "cost": "₹500"
+                                    },
+                                    {
+                                        "time": "09:00 AM",
+                                        "title": "Srikalahasti Temple",
+                                        "description": "Historic Lord Shiva temple (~50 km)",
+                                        "cost": "Free"
+                                    },
+                                    {
+                                        "time": "12:30 PM",
+                                        "title": "Lunch",
+                                        "description": "Local vegetarian hotel",
+                                        "cost": "₹750"
+                                    },
+                                    {
+                                        "time": "02:00 PM",
+                                        "title": "Optional: Talakona Falls or Gurramkonda Fort",
+                                        "description": "Nature trek/waterfall or hill fort history",
+                                        "cost": "₹200"
+                                    },
+                                    {
+                                        "time": "07:00 PM",
+                                        "title": "Dinner",
+                                        "description": "Farewell meal in Chittoor",
+                                        "cost": "₹1,000"
+                                    }
+                                ]
+                            }
+                        ]
                     },
                     {
                         "type": "5-Day Plan",
-                        "price": "₹18,500",
+                        "price": "Approx ₹25,000 total for 5",
                         "duration": "5 Days",
-                        "highlights": [
-                            "Day 1: Local temples in Chittoor, Swami Pushkarini Lake, and Pandava Theertham",
-                            "Day 2: Kanipakam Vinayaka Temple, Gurramkonda Fort, and Kanipakam Biryani",
-                            "Day 3: Excursion to Horsley Hills for trekking and hill station retreat",
-                            "Day 4: Talakona Waterfalls, Siddheswara Swamy Temple, and countryside exploration",
-                            "Day 5: Palamaner Temples, Konetirayala Temple, and Chittoor Bazaar"
-                        ],
-                        "note": "A complete 5-day experience covering temples, wildlife, waterfalls, and hill stations with a focus on both history and nature."
+                        "days": [
+                            {
+                                "title": "Day 1: Arrival & Temples in Town",
+                                "schedule": [
+                                    {
+                                        "time": "08:00 AM",
+                                        "title": "Breakfast",
+                                        "description": "Hotel Bhaskara included",
+                                        "cost": "Included"
+                                    },
+                                    {
+                                        "time": "09:00 AM",
+                                        "title": "Sri Kalyana Venkateswara & Pandava Theertham",
+                                        "description": "Temple cluster in Chittoor",
+                                        "cost": "Free"
+                                    },
+                                    {
+                                        "time": "01:00 PM",
+                                        "title": "Lunch",
+                                        "description": "Local tiffin centre",
+                                        "cost": "₹500"
+                                    },
+                                    {
+                                        "time": "03:00 PM",
+                                        "title": "Pushkarini Lake & Theertham",
+                                        "description": "Scenic temple tank tour",
+                                        "cost": "Free"
+                                    },
+                                    {
+                                        "time": "07:00 PM",
+                                        "title": "Dinner",
+                                        "description": "South‑Indian street combo meal",
+                                        "cost": "₹1,000"
+                                    }
+                                ]
+                            },
+                            {
+                                "title": "Day 2: Kanipakam & Gurramkonda",
+                                "schedule": [
+                                    {
+                                        "time": "08:00 AM",
+                                        "title": "Breakfast",
+                                        "description": "Prabhaa Grand Inn",
+                                        "cost": "Included"
+                                    },
+                                    {
+                                        "time": "09:00 AM",
+                                        "title": "Kanipakam Temple",
+                                        "description": "Spiritual Ganesha shrine",
+                                        "cost": "₹200"
+                                    },
+                                    {
+                                        "time": "01:00 PM",
+                                        "title": "Lunch",
+                                        "description": "South‑Indian thali",
+                                        "cost": "₹750"
+                                    },
+                                    {
+                                        "time": "03:00 PM",
+                                        "title": "Gurramkonda Fort",
+                                        "description": "14th‑century hill fort & museum",
+                                        "cost": "₹50"
+                                    },
+                                    {
+                                        "time": "07:00 PM",
+                                        "title": "Dinner",
+                                        "description": "Tea + pakoras + local dinner",
+                                        "cost": "₹1,300"
+                                    }
+                                ]
+                            },
+                            {
+                                "title": "Day 3: Horsley & Wildlife",
+                                "schedule": [
+                                    {
+                                        "time": "08:00 AM",
+                                        "title": "Breakfast",
+                                        "description": "Hotel Bhaskara",
+                                        "cost": "Included"
+                                    },
+                                    {
+                                        "time": "09:00 AM",
+                                        "title": "Horsley Hills",
+                                        "description": "Hill station & adventure activities",
+                                        "cost": "Free"
+                                    },
+                                    {
+                                        "time": "01:00 PM",
+                                        "title": "Lunch",
+                                        "description": "Resort dhaba",
+                                        "cost": "₹900"
+                                    },
+                                    {
+                                        "time": "03:00 PM",
+                                        "title": "Kaundinya Sanctuary",
+                                        "description": "Safari, bird‑watching, elephants",
+                                        "cost": "₹500"
+                                    },
+                                    {
+                                        "time": "07:00 PM",
+                                        "title": "Dinner",
+                                        "description": "Chittoor return dinner",
+                                        "cost": "₹1,200"
+                                    }
+                                ]
+                            },
+                            {
+                                "title": "Day 4: Talakona & Countryside",
+                                "schedule": [
+                                    {
+                                        "time": "08:00 AM",
+                                        "title": "Breakfast",
+                                        "description": "Hotel or packed",
+                                        "cost": "Included"
+                                    },
+                                    {
+                                        "time": "09:00 AM",
+                                        "title": "Talakona Falls & Siddheswara Temple",
+                                        "description": "Trek, waterfall, temple visit",
+                                        "cost": "₹20"
+                                    },
+                                    {
+                                        "time": "01:00 PM",
+                                        "title": "Lunch",
+                                        "description": "Picnic or local eatery",
+                                        "cost": "₹750"
+                                    },
+                                    {
+                                        "time": "03:00 PM",
+                                        "title": "Countryside Drive",
+                                        "description": "Village roads & temples",
+                                        "cost": "₹400"
+                                    },
+                                    {
+                                        "time": "07:00 PM",
+                                        "title": "Dinner",
+                                        "description": "Local meal near Kanipakam/Chittoor",
+                                        "cost": "₹1,200"
+                                    }
+                                ]
+                            },
+                            {
+                                "title": "Day 5: Keelapatla Temple & Departure",
+                                "schedule": [
+                                    {
+                                        "time": "08:00 AM",
+                                        "title": "Breakfast",
+                                        "description": "Hotel Bhaskara or local café",
+                                        "cost": "Included"
+                                    },
+                                    {
+                                        "time": "09:00 AM",
+                                        "title": "Konetirayala Temple (Keelapatla)",
+                                        "description": "Ancient Venkateswara shrine",
+                                        "cost": "₹300"
+                                    },
+                                    {
+                                        "time": "01:00 PM",
+                                        "title": "Lunch",
+                                        "description": "Local vegetarian set meal",
+                                        "cost": "₹750"
+                                    },
+                                    {
+                                        "time": "03:00 PM",
+                                        "title": "Last‑minute shopping / snacks",
+                                        "description": "Street chaat/juice",
+                                        "cost": "₹250"
+                                    },
+                                    {
+                                        "time": "07:00 PM",
+                                        "title": "Dinner",
+                                        "description": "Final meal before departure",
+                                        "cost": "₹1,000"
+                                    }
+                                ]
+                            }
+                        ]
                     }
                 ]
             },
@@ -774,94 +1992,141 @@
                 "coverImage": "/trips/bangalore/bangalorecover.jpg",
                 "plans": [
                     {
-                        "type": "1-Day Plan",
-                        "price": "₹3,700",
-                        "duration": "1 Day",
-                        "highlights": [
-                            "Morning: Lalbagh Botanical Garden, Tipu Sultan's Palace, or Bangalore Palace",
-                            "Afternoon: Visvesvaraya Museum or Aquarium & Cubbon Park walk",
-                            "Evening: ISKCON Temple visit & Dinner at UB City"
-                        ],
-                        "note": "Ideal for a day packed with history, science, greenery, and spiritual calm."
+                        "type": "Day 1: Heritage & Art",
+                        "schedule": [
+                            {
+                                "time": "09:00 AM",
+                                "title": "Cubbon Park",
+                                "description": "Relax in the city’s green heart.",
+                                "cost": "₹0"
+                            },
+                            {
+                                "time": "10:00 AM",
+                                "title": "Bangalore Palace",
+                                "description": "Detailed palace visit.",
+                                "cost": "₹230"
+                            },
+                            {
+                                "time": "12:00 PM",
+                                "title": "Breakfast",
+                                "description": "At MTR / Vidyarthi Bhavan.",
+                                "cost": "₹150"
+                            },
+                            {
+                                "time": "01:00 PM",
+                                "title": "NGMA – National Gallery of Modern Art",
+                                "description": "Modern art exhibits in a serene mansion.",
+                                "cost": "₹20"
+                            },
+                            {
+                                "time": "02:30 PM",
+                                "title": "Lunch – Koshy’s / Mid‑City Café",
+                                "description": "Classic colonial-era cuisine.",
+                                "cost": "₹500"
+                            },
+                            {
+                                "time": "04:00 PM",
+                                "title": "UB City & Vidhana Soudha view",
+                                "description": "Walk through luxury mall and admire the historic legislative building.",
+                                "cost": "₹0–₹50"
+                            },
+                            {
+                                "time": "06:00 PM",
+                                "title": "Evening – Indiranagar Dining",
+                                "description": "Coffee or dinner in lively neighborhood.",
+                                "cost": "₹600–₹800"
+                            }
+                        ]
                     },
                     {
-                        "type": "3-Day Plan",
-                        "price": "₹11,000–₹15,600",
-                        "duration": "3 Days",
-                        "highlights": [
-                            "Day 1: Palace, Lalbagh Garden, Aquarium, and Local Cuisine",
-                            "Day 2: Museum Visit, ISKCON Temple & UB City shopping",
-                            "Day 3: Bannerghatta Safari or Wonderla Amusement Park"
-                        ],
-                        "note": "Perfect short family vacation mixing history, science, wildlife, and amusement fun."
+                        "type": "Day 2: Markets, Temples & Culture",
+                        "schedule": [
+                            {
+                                "time": "09:00 AM",
+                                "title": "Breakfast – Vidyarthi Bhavan",
+                                "description": "Iconic South Indian breakfast.",
+                                "cost": "₹150"
+                            },
+                            {
+                                "time": "10:00 AM",
+                                "title": "Lalbagh Botanical Gardens",
+                                "description": "Enjoy nature and glasshouse.",
+                                "cost": "₹25"
+                            },
+                            {
+                                "time": "12:00 PM",
+                                "title": "Lunch – VV Puram Food Street",
+                                "description": "Street food specialties.",
+                                "cost": "₹200"
+                            },
+                            {
+                                "time": "01:00 PM",
+                                "title": "Old Bangalore Walk – KR Market / Heritage lanes",
+                                "description": "Immerse in spices, history, spice shops.",
+                                "cost": "₹0–₹100"
+                            },
+                            {
+                                "time": "03:00 PM",
+                                "title": "ISKCON or Bull Temple",
+                                "description": "Visit either for peace or religious interest.",
+                                "cost": "₹0"
+                            },
+                            {
+                                "time": "04:00 PM",
+                                "title": "Commercial/Brigade Road Shopping",
+                                "description": "Browse shops and cafés.",
+                                "cost": "₹500"
+                            },
+                            {
+                                "time": "06:00 PM",
+                                "title": "Dinner – Rooftop café or street",
+                                "description": "Relax with evening meals.",
+                                "cost": "₹600"
+                            }
+                        ]
                     },
                     {
-                        "type": "5-Day Plan",
-                        "price": "₹23,300",
-                        "duration": "5 Days",
-                        "highlights": [
-                            "Day 1: Bangalore Palace, Lalbagh, Tipu's Palace, Cubbon Park",
-                            "Day 2: Museum visit, ISKCON Temple, UB City outing",
-                            "Day 3: Safari at Bannerghatta & Butterfly Park",
-                            "Day 4: Day trip to Nandi Hills & hillside dining",
-                            "Day 5: Full day at Wonderla Amusement Park"
-                        ],
-                        "note": "Comprehensive city and outskirts exploration for families who want a bit of everything."
+                        "type": "Day 3: Nature & Spiritual Calm",
+                        "schedule": [
+                            {
+                                "time": "09:00 AM",
+                                "title": "Government Aquarium at Cubbon Park",
+                                "description": "Aquatic life exhibits.",
+                                "cost": "₹150"
+                            },
+                            {
+                                "time": "10:15 AM",
+                                "title": "Local temple visit or park",
+                                "description": "Quick serene stop.",
+                                "cost": "₹0"
+                            },
+                            {
+                                "time": "11:30 AM",
+                                "title": "Lunch – Richmond Road café",
+                                "description": "Light brunch or South/North Indian fare.",
+                                "cost": "₹300"
+                            },
+                            {
+                                "time": "01:00 PM",
+                                "title": "Bannerghatta National Park",
+                                "description": "Safari and wildlife.",
+                                "cost": "₹300 + ₹200 (safari)"
+                            },
+                            {
+                                "time": "05:30 PM",
+                                "title": "Evening Tea – Malleswaram",
+                                "description": "Relax with local tea.",
+                                "cost": "₹150"
+                            },
+                            {
+                                "time": "06:30 PM",
+                                "title": "Dinner – Local eatery",
+                                "description": "Ahimsa or neighborhood dining.",
+                                "cost": "₹500"
+                            }
+                        ]
                     }
                 ]
-            },
-            "detailedItinerary": {
-                "Day 1": {
-                    "title": "Historic & Garden City Highlights",
-                    "highlights": [
-                        "Bangalore Palace (₹480/adult, ₹240/child)",
-                        "Lalbagh Botanical Garden (₹25/adult + ₹60 camera)",
-                        "Lunch: Local South Indian near Basavanagudi (~₹400/person)",
-                        "Tipu Sultan’s Palace (₹20/adult)",
-                        "Cubbon Park + Government Aquarium (₹150/adult, ₹70/child)",
-                        "Dinner: Local restaurant (~₹500/person)"
-                    ]
-                },
-                "Day 2": {
-                    "title": "Culture & Science Day",
-                    "highlights": [
-                        "Breakfast: Brahmin’s Coffee Bar or MTR (~₹250–₹400)",
-                        "Visvesvaraya Museum (₹95/adult, ₹70/child)",
-                        "Lunch: Local spot (~₹500/person)",
-                        "ISKCON Temple (donation-based, free prasadam)",
-                        "Evening at UB City or short shopping walk",
-                        "Dinner: UB City or Lido Mall (~₹1,000/person)"
-                    ]
-                },
-                "Day 3": {
-                    "title": "Wildlife & Adventure",
-                    "highlights": [
-                        "Drive to Bannerghatta Biological Park (~1 hr)",
-                        "Safari & Zoo (₹480/adult, ₹360/child)",
-                        "Lunch at park cafeteria (~₹400/person)",
-                        "Visit Butterfly Park",
-                        "Dinner: Local casual restaurant (~₹500/person)"
-                    ]
-                },
-                "Day 4": {
-                    "title": "Nandi Hills Day Trip",
-                    "highlights": [
-                        "Early drive to Nandi Hills for sunrise (minor parking fees)",
-                        "Breakfast: Hillside restaurant (~₹400/person)",
-                        "Explore: Tipu’s Drop, gardens, optional cycling/paragliding",
-                        "Lunch: Local restaurant (~₹500/person)",
-                        "Dinner: Return to city (~₹500/person)"
-                    ]
-                },
-                "Day 5": {
-                    "title": "Fun at Wonderla Amusement Park",
-                    "highlights": [
-                        "Wonderla Entry: ₹1,150/adult, ₹1,050/child",
-                        "Water rides, coasters, family activities",
-                        "Lunch inside the park (~₹500/person)",
-                        "Dinner post-visit (~₹500/person)"
-                    ]
-                }
             }
         }
     ],
@@ -891,39 +2156,481 @@
                 "coverImage": "/trips/nellore/nellorecover.jpg",
                 "plans": [
                     {
-                        "type": "1-Day Plan",
-                        "price": "₹1,500–₹1,600",
+                        "type": "1-Day Nellore Itinerary",
+                        "price": "₹550–₹1,000 approx. per person",
                         "duration": "1 Day",
-                        "highlights": [
-                            "Morning: Talpagiri Temple & Kodandarama Temple",
-                            "Afternoon: Mypadu Beach & Barah Shaheed Dargah",
-                            "Evening: Lakeside boating & dinner at Spicy Box"
+                        "schedule": [
+                            {
+                                "time": "09:00–10:30 AM",
+                                "title": "Sri Ranganathaswamy Temple",
+                                "description": "Ancient Vishnu temple on Pennar River bank with iconic 70 ft Gaaligopuram tower. Free entry, donations accepted. Expect 15–20 min wait near sanctum.",
+                                "cost": "Free"
+                            },
+                            {
+                                "time": "10:30–11:10 AM",
+                                "title": "Bara Shaheed Dargah",
+                                "description": "Peaceful shrine of twelve martyrs near Pennar River. Free entry. Minimal wait except festivals.",
+                                "cost": "Free"
+                            },
+                            {
+                                "time": "11:10–11:25 AM",
+                                "title": "Snack Break",
+                                "description": "Local tea, coffee, and snacks at nearby stall.",
+                                "cost": "₹50–₹100 per person"
+                            },
+                            {
+                                "time": "11:45 AM–12:45 PM",
+                                "title": "Sri Moolastaneswara Swamy Temple",
+                                "description": "Ancient Shiva temple with Kakatiya-era architecture. Free entry. Moderate queue (~5 min).",
+                                "cost": "Free"
+                            },
+                            {
+                                "time": "01:00–01:45 PM",
+                                "title": "Lunch",
+                                "description": "Traditional Andhra banana leaf meal including fish curry and Gongura.",
+                                "cost": "₹200–₹300 per person"
+                            },
+                            {
+                                "time": "02:00–03:00 PM",
+                                "title": "Nellore Nagara Vanam Park",
+                                "description": "Urban garden with shaded trees and bird watching. Entry approx ₹50.",
+                                "cost": "₹50 per person"
+                            },
+                            {
+                                "time": "03:00–05:30 PM",
+                                "title": "Mypadu Beach or Local Market",
+                                "description": "Option A: Beach walk, water sports (₹100–₹300), photography. Option B: Gandhi Bomma or Fathekhan Pet Market shopping.",
+                                "cost": "Free; water sports ₹100–₹300 extra"
+                            },
+                            {
+                                "time": "05:00–05:30 PM",
+                                "title": "Evening Tea or Snack",
+                                "description": "Café or beach stall near city centre.",
+                                "cost": "₹50–₹100"
+                            },
+                            {
+                                "time": "05:30–06:30 PM",
+                                "title": "Dinner",
+                                "description": "Local family restaurant or seafood specialty place like Simhapuri Bar n Restaurant.",
+                                "cost": "₹300–₹500 per person"
+                            },
+                            {
+                                "time": "06:30–07:00 PM",
+                                "title": "Return to Hub",
+                                "description": "Relax and wind down before departure.",
+                                "cost": "—"
+                            }
                         ],
-                        "note": "A relaxed one-day trip through Nellore’s spiritual sites and coastal charm."
+                        "note": "Compact itinerary covering Nellore's temples, culture, and beach in one day."
                     },
                     {
-                        "type": "3-Day Plan",
-                        "price": "₹5,700",
+                        "type": "3-Day Nellore Self-Drive Itinerary",
+                        "price": "Approx ₹3,000–₹4,000 per person",
                         "duration": "3 Days",
-                        "highlights": [
-                            "Day 1: Temples & Dargah with evening at Vanam Park",
-                            "Day 2: Narasimhakonda & Penchalakona Temple trek",
-                            "Day 3: Mypadu Beach & Nelapattu Bird Sanctuary"
+                        "days": [
+                            {
+                                "title": "Day 1: Temples & Local Culture",
+                                "schedule": [
+                                    {
+                                        "time": "09:00–10:30 AM",
+                                        "title": "Sri Ranganathaswamy Temple",
+                                        "description": "Iconic Vishnu temple on Pennar River bank; 70 ft Gaaligopuram. Free entry, donations accepted. Expect 15–20 min wait.",
+                                        "cost": "Free"
+                                    },
+                                    {
+                                        "time": "10:30–10:50 AM",
+                                        "title": "Mid-morning Snack",
+                                        "description": "Tea and snacks at local stall.",
+                                        "cost": "₹50–₹100 per person"
+                                    },
+                                    {
+                                        "time": "10:50–11:30 AM",
+                                        "title": "Bara Shaheed Dargah",
+                                        "description": "Peaceful shrine near Pennar River. Free entry.",
+                                        "cost": "Free"
+                                    },
+                                    {
+                                        "time": "12:00–12:45 PM",
+                                        "title": "Lunch",
+                                        "description": "Local Andhra meal featuring fish curry and Gongura pachadi.",
+                                        "cost": "₹200–₹300 per person"
+                                    },
+                                    {
+                                        "time": "01:00–02:00 PM",
+                                        "title": "Sri Moolastaneswara Swamy Temple",
+                                        "description": "Ancient Shiva temple with Kakatiya architecture. Free entry.",
+                                        "cost": "Free"
+                                    },
+                                    {
+                                        "time": "02:15–03:15 PM",
+                                        "title": "Nellore Nagar Vanam Park",
+                                        "description": "Urban garden with birds and shaded areas. Entry approx ₹50.",
+                                        "cost": "₹50 per person"
+                                    },
+                                    {
+                                        "time": "05:30–06:30 PM",
+                                        "title": "Dinner",
+                                        "description": "Local family restaurant near city centre.",
+                                        "cost": "₹300–₹400 per person"
+                                    }
+                                ]
+                            },
+                            {
+                                "title": "Day 2: Mypadu Beach & Coastal Relaxation",
+                                "schedule": [
+                                    {
+                                        "time": "08:00 AM",
+                                        "title": "Depart for Mypadu Beach",
+                                        "description": "45 min drive from city centre.",
+                                        "cost": "—"
+                                    },
+                                    {
+                                        "time": "09:00–11:30 AM",
+                                        "title": "Mypadu Beach",
+                                        "description": "Golden sands, calm sea, fishing boats, water sports (banana boat, paddle rides).",
+                                        "cost": "Free entry; water sports ₹100–₹300"
+                                    },
+                                    {
+                                        "time": "11:30–11:50 AM",
+                                        "title": "Beach Snack",
+                                        "description": "Tea, coconut water, local snacks.",
+                                        "cost": "₹50–₹150"
+                                    },
+                                    {
+                                        "time": "12:00–12:45 PM",
+                                        "title": "Lunch at Beachside Café",
+                                        "description": "Seafood or vegetarian buffet.",
+                                        "cost": "₹200–₹400 per person"
+                                    },
+                                    {
+                                        "time": "12:45–02:00 PM",
+                                        "title": "Leisure at Beach",
+                                        "description": "Walk, photo ops, beach games.",
+                                        "cost": "—"
+                                    },
+                                    {
+                                        "time": "02:00–02:45 PM",
+                                        "title": "Return to Nellore",
+                                        "description": "Rest at hotel or café.",
+                                        "cost": "—"
+                                    },
+                                    {
+                                        "time": "05:30–06:30 PM",
+                                        "title": "Dinner",
+                                        "description": "Seafood or local specialty restaurant.",
+                                        "cost": "₹400–₹600 per person"
+                                    }
+                                ]
+                            },
+                            {
+                                "title": "Day 3: Bird Sanctuary & Pilgrimage",
+                                "schedule": [
+                                    {
+                                        "time": "07:30 AM",
+                                        "title": "Depart for Nelapattu Bird Sanctuary",
+                                        "description": "1h30min drive.",
+                                        "cost": "—"
+                                    },
+                                    {
+                                        "time": "09:00–11:30 AM",
+                                        "title": "Nelapattu Bird Sanctuary",
+                                        "description": "Pelicans, flamingos, migratory birds. Entry ₹2/adult, ₹400 foreigner; vehicle ₹50; camera ₹50.",
+                                        "cost": "₹2–₹400 (visitor type dependent)"
+                                    },
+                                    {
+                                        "time": "11:30–11:50 AM",
+                                        "title": "Tea Break",
+                                        "description": "Snacks and chai at local stall.",
+                                        "cost": "₹50–₹100"
+                                    },
+                                    {
+                                        "time": "12:15–01:45 PM",
+                                        "title": "Jonnawada Kamakshi Temple",
+                                        "description": "Historic temple from 1150 AD near Pennar River. Free entry. Wait ~15 min at peak.",
+                                        "cost": "Free"
+                                    },
+                                    {
+                                        "time": "01:45–02:30 PM",
+                                        "title": "Lunch",
+                                        "description": "Local meals at roadside eateries.",
+                                        "cost": "₹150–₹300 per person"
+                                    },
+                                    {
+                                        "time": "02:30–04:00 PM",
+                                        "title": "Return to Nellore and Rest",
+                                        "description": "Relax at hotel or explore city.",
+                                        "cost": "—"
+                                    },
+                                    {
+                                        "time": "04:15–05:30 PM",
+                                        "title": "Evening Market Walk",
+                                        "description": "Shopping at Gandhi Bomma Center or textile markets.",
+                                        "cost": "Free"
+                                    },
+                                    {
+                                        "time": "05:30–06:30 PM",
+                                        "title": "Farewell Dinner",
+                                        "description": "Seafood speciality restaurant in Nellore.",
+                                        "cost": "₹400–₹700 per person"
+                                    },
+                                    {
+                                        "time": "06:30–07:00 PM",
+                                        "title": "Return to City Centre Hub",
+                                        "description": "Prepare for onward journey.",
+                                        "cost": "—"
+                                    }
+                                ]
+                            }
                         ],
-                        "note": "Compact yet diverse itinerary with religious, natural, and recreational experiences."
+                        "note": "Three-day itinerary covering temples, coastal relaxation, bird sanctuary, pilgrimage, and local culture."
                     },
                     {
                         "type": "5-Day Plan",
-                        "price": "₹14,500",
+                        "price": "Approx ₹6,000 – ₹8,000 per person total",
                         "duration": "5 Days",
-                        "highlights": [
-                            "Day 1: Talpagiri Temple, Jonnawada, and local markets",
-                            "Day 2: Nelapattu Bird Sanctuary & Pulicat Lake",
-                            "Day 3: Mypadu Beach & Venkatagiri Fort",
-                            "Day 4: Penchalakona Temple trek & Narasimhakonda Hill",
-                            "Day 5: Udayagiri Fort, Nellore Art Gallery & Street Shopping"
-                        ],
-                        "note": "Comprehensive 5-day Nellore circuit with culture, birding, beaches, heritage, and temple visits."
+                        "days": [
+                            {
+                                "title": "Day 1: Temples & Local Culture",
+                                "schedule": [
+                                    {
+                                        "time": "09:00–10:30 AM",
+                                        "title": "Sri Ranganathaswamy Temple",
+                                        "description": "Ancient temple on Pennar River banks, iconic gilded Gaaligopuram tower (70 ft high). Free entry, donations welcome. Expect 15–20 min wait near sanctum.",
+                                        "cost": "Free"
+                                    },
+                                    {
+                                        "time": "10:45–11:15 AM",
+                                        "title": "Snack Break",
+                                        "description": "Local chai and snacks at nearby stall.",
+                                        "cost": "₹50–₹100 per person"
+                                    },
+                                    {
+                                        "time": "11:15 AM–12:00 PM",
+                                        "title": "Bara Shaheed Dargah",
+                                        "description": "Shrine of twelve martyrs, peaceful lakeside complex. Free entry.",
+                                        "cost": "Free"
+                                    },
+                                    {
+                                        "time": "12:15–1:00 PM",
+                                        "title": "Lunch",
+                                        "description": "Local Andhra meal at Murali Krishna or Balaji restaurants.",
+                                        "cost": "₹200–₹300 per person"
+                                    },
+                                    {
+                                        "time": "1:15–2:15 PM",
+                                        "title": "Sri Mulastaneswara Swamy Temple",
+                                        "description": "11th century Shiva temple with Kakatiya-era architecture. Free entry, light queue (~5 min).",
+                                        "cost": "Free"
+                                    },
+                                    {
+                                        "time": "2:30–3:30 PM",
+                                        "title": "Nellore Nagara Vanam Park",
+                                        "description": "Lush urban garden, great for an evening stroll.",
+                                        "cost": "Approx ₹50 per person"
+                                    },
+                                    {
+                                        "time": "5:00–6:00 PM",
+                                        "title": "Dinner",
+                                        "description": "At Adyar Ananda Bhavan or local family restaurant.",
+                                        "cost": "₹300–₹400 per person"
+                                    }
+                                ]
+                            },
+                            {
+                                "title": "Day 2: Mypadu Beach & Coastal Relaxation",
+                                "schedule": [
+                                    {
+                                        "time": "8:00 AM",
+                                        "title": "Departure from city centre",
+                                        "description": "Drive approx 25 km to Mypadu Beach.",
+                                        "cost": "Car fuel"
+                                    },
+                                    {
+                                        "time": "9:00–11:30 AM",
+                                        "title": "Mypadu Beach",
+                                        "description": "Calm Bay of Bengal shoreline, sunrise views, fishing boats, water activities (banana boat, paddle rides ₹100–₹300 extra).",
+                                        "cost": "Free entry"
+                                    },
+                                    {
+                                        "time": "11:30 AM–12:00 PM",
+                                        "title": "Beach Snack",
+                                        "description": "Tea, coconut water or local snacks.",
+                                        "cost": "₹50–₹150"
+                                    },
+                                    {
+                                        "time": "12:00–12:45 PM",
+                                        "title": "Lunch at Beachside Café",
+                                        "description": "Fresh seafood or vegetarian buffet.",
+                                        "cost": "₹200–₹400 per person"
+                                    },
+                                    {
+                                        "time": "12:45–2:00 PM",
+                                        "title": "Afternoon Leisure",
+                                        "description": "Walking barefoot, photo time, beach games.",
+                                        "cost": "Free"
+                                    },
+                                    {
+                                        "time": "2:00–2:45 PM",
+                                        "title": "Return to Nellore & rest",
+                                        "description": "Relax at hotel or local café.",
+                                        "cost": "Free"
+                                    },
+                                    {
+                                        "time": "5:30–6:30 PM",
+                                        "title": "Dinner",
+                                        "description": "Mypadu-style dinner at seaside hotel or seafood place in Nellore.",
+                                        "cost": "₹400–₹600 per person"
+                                    }
+                                ]
+                            },
+                            {
+                                "title": "Day 3: Nelapattu Bird Sanctuary & Pulicat Lake",
+                                "schedule": [
+                                    {
+                                        "time": "7:30 AM",
+                                        "title": "Departure to Nelapattu Bird Sanctuary",
+                                        "description": "Drive approx 73 km (1h30m).",
+                                        "cost": "Car fuel"
+                                    },
+                                    {
+                                        "time": "9:00–11:30 AM",
+                                        "title": "Nelapattu Bird Sanctuary",
+                                        "description": "Asia’s largest pelican habitat, flamingos and migratory birds. Entry ₹50–₹100, binocular rental ₹50.",
+                                        "cost": "₹100–₹150"
+                                    },
+                                    {
+                                        "time": "11:45 AM–12:15 PM",
+                                        "title": "Tea & Snacks",
+                                        "description": "Local stall near sanctuary.",
+                                        "cost": "₹50–₹100"
+                                    },
+                                    {
+                                        "time": "12:45–2:15 PM",
+                                        "title": "Pulicat Lake Visit",
+                                        "description": "Scenic lake views, boat ride ₹100–₹150 per person.",
+                                        "cost": "₹100–₹150"
+                                    },
+                                    {
+                                        "time": "2:15–3:00 PM",
+                                        "title": "Lunch Nearby",
+                                        "description": "Local Andhra thali at roadside eatery.",
+                                        "cost": "₹150–₹250"
+                                    },
+                                    {
+                                        "time": "3:00–4:30 PM",
+                                        "title": "Return to Nellore & rest",
+                                        "description": "Rest or explore local shops.",
+                                        "cost": "Free"
+                                    },
+                                    {
+                                        "time": "6:00–7:00 PM",
+                                        "title": "Dinner",
+                                        "description": "Recommended restaurant.",
+                                        "cost": "₹300–₹500 per person"
+                                    }
+                                ]
+                            },
+                            {
+                                "title": "Day 4: Forts, Temple & Dam",
+                                "schedule": [
+                                    {
+                                        "time": "9:00–11:30 AM",
+                                        "title": "Venkatagiri Fort",
+                                        "description": "Historic fort with Mughal-Nagara influences, museums, courtyards. Entry ₹30–₹50.",
+                                        "cost": "₹30–₹50"
+                                    },
+                                    {
+                                        "time": "11:30 AM–12:00 PM",
+                                        "title": "Tea & Snacks",
+                                        "description": "Packaged snacks near fort.",
+                                        "cost": "₹50"
+                                    },
+                                    {
+                                        "time": "12:45–1:45 PM",
+                                        "title": "Sri Ranganayaka Swamy Temple or Krishna Mandir",
+                                        "description": "Peaceful Vishnu/Krishna temple. Free entry.",
+                                        "cost": "Free"
+                                    },
+                                    {
+                                        "time": "2:00–2:45 PM",
+                                        "title": "Lunch",
+                                        "description": "Local eatery meal.",
+                                        "cost": "₹200–₹300"
+                                    },
+                                    {
+                                        "time": "3:30–5:00 PM",
+                                        "title": "Kandaleru Dam Visit",
+                                        "description": "Scenic dam and picnic site. Free entry.",
+                                        "cost": "Free"
+                                    },
+                                    {
+                                        "time": "5:00–6:00 PM",
+                                        "title": "Freshen up at accommodation",
+                                        "description": "Rest after return to Nellore.",
+                                        "cost": "Free"
+                                    },
+                                    {
+                                        "time": "6:30–7:30 PM",
+                                        "title": "Dinner",
+                                        "description": "Family restaurant dinner.",
+                                        "cost": "₹300–₹500"
+                                    }
+                                ]
+                            },
+                            {
+                                "title": "Day 5: Spiritual Sites & Local Markets",
+                                "schedule": [
+                                    {
+                                        "time": "9:00–9:45 AM",
+                                        "title": "Breakfast & Local Market Walk",
+                                        "description": "Traditional breakfast at Shiva Ram or Jain restaurant, then visit Gandhi Bomma Center or Fathekhan Pet Market.",
+                                        "cost": "₹150"
+                                    },
+                                    {
+                                        "time": "10:30–11:30 AM",
+                                        "title": "Jonnawada Kamakshi Temple",
+                                        "description": "Historic 1150 AD temple, spiritual rituals. Free entry. Allow 15 min wait during festivals.",
+                                        "cost": "Free"
+                                    },
+                                    {
+                                        "time": "11:30 AM–12:15 PM",
+                                        "title": "Lunch near Jonnawada",
+                                        "description": "Local meal.",
+                                        "cost": "₹200–₹300"
+                                    },
+                                    {
+                                        "time": "1:00–2:15 PM",
+                                        "title": "Ramateertham (Ramathirtham)",
+                                        "description": "Historical Shiva temple with Buddhist remains and hilltop view. Free entry.",
+                                        "cost": "Free"
+                                    },
+                                    {
+                                        "time": "2:15–2:45 PM",
+                                        "title": "Tea Break",
+                                        "description": "Local stall tea.",
+                                        "cost": "₹50"
+                                    },
+                                    {
+                                        "time": "3:30–5:00 PM",
+                                        "title": "City Centre Shopping & Souvenirs",
+                                        "description": "Markets for sarees, snacks, decor items.",
+                                        "cost": "Varies"
+                                    },
+                                    {
+                                        "time": "5:00–6:00 PM",
+                                        "title": "Farewell Dinner",
+                                        "description": "Simhapuri Bar n Restaurant or Cloud9 with seafood or vegetarian fare.",
+                                        "cost": "₹400–₹600"
+                                    },
+                                    {
+                                        "time": "6:00–6:30 PM",
+                                        "title": "Wrap Up",
+                                        "description": "Return to city centre hub to relax and prepare for onward journey.",
+                                        "cost": "Free"
+                                    }
+                                ]
+                            }
+                        ]
                     }
                 ]
             },
@@ -978,7 +2685,7 @@
             }
         }
     ],
-    "no-goa?-no-problem-chiralas-got-you": [
+    "no-goa-no-problem-chiralas-got-you": [
         {
             "title": " No Goa? No Problem, Chirala’s Got You!",
             "coverimages": [
@@ -1004,39 +2711,252 @@
                 "coverImage": "/trips/chirala/chiralacover.jpg",
                 "plans": [
                     {
-                        "type": "1-Day Plan",
-                        "price": "₹3,200",
+                        "type": "1-Day Chirala & Bapatla Highlights",
+                        "price": "Approx ₹1,000–₹1,500 per person",
                         "duration": "1 Day",
-                        "highlights": [
-                            "Morning: Chirala/Vodarevu Beach & Handloom Market",
-                            "Afternoon: Bhavanarayana Temple & Suryalanka Beach",
-                            "Evening: Clock Tower Market walk and dinner in Bapatla"
-                        ],
-                        "note": "One-day coastal and cultural highlights of Chirala and Bapatla."
+                        "days": [
+                            {
+                                "title": "Day 1: Chirala & Bapatla Highlights",
+                                "schedule": [
+                                    {
+                                        "time": "8:00–8:45 AM",
+                                        "title": "Breakfast in Chirala Town",
+                                        "description": "Idli, dosa, vada, upma, tea/coffee. Try famous oil dosa.",
+                                        "cost": "₹80–₹120 per person",
+                                        "location": "Sri Lakshmi Tiffin Centre or Hotel Mayuri Grand"
+                                    },
+                                    {
+                                        "time": "9:00–10:30 AM",
+                                        "title": "Vodarevu Beach",
+                                        "description": "Morning breeze, light swimming, beach walk, photography with fishing boats.",
+                                        "cost": "Free",
+                                        "distance": "~6 km from Chirala (15 min)",
+                                        "facilities": "Paid changing rooms and snack stalls"
+                                    },
+                                    {
+                                        "time": "10:30–11:15 AM",
+                                        "title": "Drive to Bapatla Town",
+                                        "description": "Scenic coastal route with lush greenery.",
+                                        "distance": "~35 km (45 min)"
+                                    },
+                                    {
+                                        "time": "11:15 AM–12:00 PM",
+                                        "title": "Bhavanarayana Swamy Temple, Bapatla",
+                                        "description": "Ancient Vishnu temple, peaceful and spiritually significant.",
+                                        "cost": "Free",
+                                        "wait_time": "Minimal during non-festival days",
+                                        "dress_code": "Prefer traditional or modest attire"
+                                    },
+                                    {
+                                        "time": "12:15–1:15 PM",
+                                        "title": "Lunch in Bapatla Town",
+                                        "description": "Andhra meals, fish curry, prawns fry, veg options.",
+                                        "cost": "₹200–₹350 per person",
+                                        "recommended_places": "Hotel Swagruha or Hotel Ravi Teja"
+                                    },
+                                    {
+                                        "time": "1:30–3:00 PM",
+                                        "title": "Suryalanka Beach",
+                                        "description": "Swimming, beach games, sunbathing, photography. Camel rides available.",
+                                        "cost": "Free (parking ₹30–₹50); rides ₹100–₹200",
+                                        "distance": "~9 km from Bapatla (15–20 min)"
+                                    },
+                                    {
+                                        "time": "4:00–4:30 PM",
+                                        "title": "Optional Stop at Ramapuram Beach",
+                                        "description": "Quieter beach for couples, light evening breeze, casual walk.",
+                                        "cost": "Free",
+                                        "distance": "~30 km from Suryalanka (40 min)"
+                                    },
+                                    {
+                                        "time": "4:30–5:00 PM",
+                                        "title": "Tea Break at Chirala",
+                                        "description": "Ginger tea, bajjis, punugulu from local street vendors.",
+                                        "cost": "₹30–₹80 per person",
+                                        "location": "Local café or tea stall near town centre"
+                                    },
+                                    {
+                                        "time": "5:00–5:45 PM",
+                                        "title": "Early Dinner / Takeaway",
+                                        "description": "Veg/non-veg thalis, biryani, paneer curry.",
+                                        "cost": "₹250–₹400 per person",
+                                        "location": "Sri Sai Family Restaurant or Ruchira Dhaba"
+                                    },
+                                    {
+                                        "time": "6:00–6:30 PM",
+                                        "title": "Return to Hotel or Home",
+                                        "description": "Drop-off at Chirala Town, Railway Station, or accommodation.",
+                                        "distance": "Short (5–6 km)"
+                                    }
+                                ]
+                            }
+                        ]
                     },
                     {
-                        "type": "3-Day Plan",
-                        "price": "₹12,400–₹13,400",
+                        "type": "3-Day Chirala & Bapatla Family Road Trip",
+                        "price": "Approx ₹2,000–₹3,500 per person total",
                         "duration": "3 Days",
-                        "highlights": [
-                            "Day 1: Vodarevu & Ramapuram Beach, Church visit, Handloom shopping",
-                            "Day 2: Water sports at beach & artisan village in Pedaganjam",
-                            "Day 3: Bhavanarayana Temple, Suryalanka Beach & Bapatla Market"
-                        ],
-                        "note": "A balanced itinerary with beaches, culture, food, and tradition-filled exploration."
-                    },
-                    {
-                        "type": "5-Day Plan",
-                        "price": "₹16,400",
-                        "duration": "5 Days",
-                        "highlights": [
-                            "Day 1: Vodarevu Beach, Handloom Market & Local Church",
-                            "Day 2: Water sports and Pedaganjam craft village",
-                            "Day 3: Bhavanarayana Temple, Suryalanka Beach & Bapatla Town",
-                            "Day 4: Temple trail & cashew shopping in Chirala",
-                            "Day 5: Relaxation, local souvenirs & final beach meditation"
-                        ],
-                        "note": "Perfect for slow-paced travelers and families wanting to deeply explore the coastal charm of Andhra Pradesh."
+                        "days": [
+                            {
+                                "title": "Day 1: Coastal Charm in Chirala",
+                                "schedule": [
+                                    {
+                                        "time": "9:00–11:00 AM",
+                                        "title": "Ramapuram & Vodarevu Beaches",
+                                        "description": "Enjoy soft sands, morning breeze, local fishing boats. Ramapuram for peaceful stroll; Vodarevu for light swimming & photos.",
+                                        "cost": "Free",
+                                        "distance": "~6 km from Chirala town centre (10 min)"
+                                    },
+                                    {
+                                        "time": "11:00–11:20 AM",
+                                        "title": "Mid-Morning Refreshments",
+                                        "description": "Panipuri, coconut water, oil dosa from street carts.",
+                                        "cost": "₹50–₹150"
+                                    },
+                                    {
+                                        "time": "11:20 AM–12:20 PM",
+                                        "title": "Sri Veera Raghava Swamy Temple",
+                                        "description": "Historic 8th century Pallava Vishnu temple with classic Dravidian architecture.",
+                                        "cost": "Free",
+                                        "distance": "~2 km from beach (5 min)",
+                                        "wait_time": "Possibly 10 min during midday puja"
+                                    },
+                                    {
+                                        "time": "12:30–1:15 PM",
+                                        "title": "Lunch at Local Andhra Seafood & Veg Cuisine",
+                                        "description": "Fish fry, prawn curry, punugulu, masala bajji.",
+                                        "cost": "₹200–₹400 per person"
+                                    },
+                                    {
+                                        "time": "1:15–2:15 PM",
+                                        "title": "Handloom Market & Cashew Shops",
+                                        "description": "Shop Chirala cotton sarees and cashews; see weaving process.",
+                                        "cost": "Free",
+                                        "distance": "Walking distance within town"
+                                    },
+                                    {
+                                        "time": "2:30–4:30 PM",
+                                        "title": "Relax at Ramapuram Beach & Sunset Photography",
+                                        "description": "Capture sunset, relax near Palm Coast Resorts, enjoy quiet ambiance.",
+                                        "cost": "Free",
+                                        "distance": "~6 km (10 min back)"
+                                    },
+                                    {
+                                        "time": "4:30–5:30 PM",
+                                        "title": "Dinner at Popular Local Restaurant",
+                                        "cost": "₹300–₹500 per person"
+                                    }
+                                ]
+                            },
+                            {
+                                "title": "Day 2: Bapatla & Surroundings",
+                                "schedule": [
+                                    {
+                                        "time": "9:00–10:15 AM",
+                                        "title": "Bhavanarayana Swamy Temple, Bapatla",
+                                        "description": "Ancient Vishnu temple from Chola period; managed by ASI; famous chariot festival.",
+                                        "cost": "Free",
+                                        "wait_time": "~10 min if devotees present"
+                                    },
+                                    {
+                                        "time": "10:15–10:30 AM",
+                                        "title": "Snack Break",
+                                        "cost": "₹50–₹100"
+                                    },
+                                    {
+                                        "time": "10:30–11:00 AM",
+                                        "title": "Edward Coronation Memorial Town Hall",
+                                        "description": "Colonial-era structure built 1905; historic during Andhra linguistic movement.",
+                                        "cost": "Free",
+                                        "distance": "~1 km within Bapatla"
+                                    },
+                                    {
+                                        "time": "11:15 AM–1:30 PM",
+                                        "title": "Suryalanka Beach (Bapatla Beach)",
+                                        "description": "Swimming, beach strolls, photos; vendors for snacks. Beach open 9 AM to 10 PM.",
+                                        "cost": "Free",
+                                        "wait_time": "No wait; water rides may wait ~10 min",
+                                        "distance": "~9 km from Bapatla (15 min)"
+                                    },
+                                    {
+                                        "time": "1:30–2:15 PM",
+                                        "title": "Lunch at Beachfront Café or Resort",
+                                        "cost": "₹200–₹400 per person"
+                                    },
+                                    {
+                                        "time": "2:15–3:00 PM",
+                                        "title": "Return & Afternoon Rest",
+                                        "description": "Drive back to Bapatla and relax at hotel."
+                                    },
+                                    {
+                                        "time": "3:30–5:00 PM",
+                                        "title": "Uppalapadu Bird Sanctuary (Optional)",
+                                        "description": "Pelicans, painted storks in nesting season; boat rental available.",
+                                        "cost": "₹50–₹100 entry; boat ₹50–₹100",
+                                        "distance": "~20 km (30 min from Bapatla)",
+                                        "wait_time": "Possible 10 min queue for guided areas or boat"
+                                    },
+                                    {
+                                        "time": "5:30–6:30 PM",
+                                        "title": "Dinner in Bapatla Town",
+                                        "cost": "₹300–₹500 per person"
+                                    },
+                                    {
+                                        "time": "6:30–7:15 PM",
+                                        "title": "Drive back to Chirala",
+                                        "distance": "~40 km, 45 min"
+                                    }
+                                ]
+                            },
+                            {
+                                "title": "Day 3: Heritage & Temples Around Bapatla",
+                                "schedule": [
+                                    {
+                                        "time": "9:30–11:00 AM",
+                                        "title": "Chebrolu Village Exploration",
+                                        "description": "Ancient Buddhist archaeological site with early Brahmi-script urns and Satavahana relics.",
+                                        "cost": "Free",
+                                        "distance": "~45 km (1 hour drive) from Chirala"
+                                    },
+                                    {
+                                        "time": "11:00–11:15 AM",
+                                        "title": "Break",
+                                        "cost": "₹50"
+                                    },
+                                    {
+                                        "time": "11:45 AM–1:00 PM",
+                                        "title": "Singarakonda Hill Temple (Prasannanjaneya Swamy)",
+                                        "description": "Hilltop Lord Hanuman temple with panoramic views; built 14th century.",
+                                        "cost": "Free",
+                                        "distance": "~25 km from Chebrolu (30 min)",
+                                        "wait_time": "Minor queue (~5–10 min)"
+                                    },
+                                    {
+                                        "time": "1:00–1:45 PM",
+                                        "title": "Lunch Nearby",
+                                        "description": "Andhra staples: rice, curries, snacks.",
+                                        "cost": "₹150–₹300 per person"
+                                    },
+                                    {
+                                        "time": "2:45–4:30 PM",
+                                        "title": "Suryalanka Beach Return (Relax or Swim)",
+                                        "description": "Dip, relax under palms, enjoy sunset vibe.",
+                                        "cost": "Free",
+                                        "distance": "~30 km (45 min) to beach"
+                                    },
+                                    {
+                                        "time": "5:30–6:30 PM",
+                                        "title": "Final Dinner at Chirala Beachside or Town",
+                                        "cost": "₹300–₹500 per person"
+                                    },
+                                    {
+                                        "time": "6:45–7:00 PM",
+                                        "title": "Return to Chirala Centre & Wrap Up",
+                                        "distance": "~6 km (~10 min)"
+                                    }
+                                ]
+                            }
+                        ]
                     }
                 ]
             },
